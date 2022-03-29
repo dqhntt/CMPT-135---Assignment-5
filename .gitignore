@@ -1,3 +1,8 @@
+# Misc Folders
+bin/
+build/
+docs/html/
+
 # Prerequisites
 *.d
 

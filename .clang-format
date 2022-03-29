@@ -1,0 +1,17 @@
+﻿# With help from https://zed0.co.uk/clang-format-configurator/ 
+# and https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+BasedOnStyle: WebKit
+AlignConsecutiveDeclarations: true
+AlignTrailingComments: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+ColumnLimit: 100
+FixNamespaceComments: true
+Language: Cpp
+MaxEmptyLinesToKeep: 1
+Standard: Auto
