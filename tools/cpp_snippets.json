@@ -1,0 +1,26 @@
+{
+	"Insert pre/post-conditions": {
+		"prefix": "pre",
+		"body": [
+			"///////////////////////////////////////////////////////////////////////////////",
+			"// ",
+			"// Description:",
+			"//    ${1:brief}.",
+			"// Pre-condition:",
+			"//    ${2:pre-cond}.",
+			"// Post-condition:",
+			"//    ${3:post-cond}."
+		],
+		"description": "Insert pre-condition and post-condition statements."
+	},
+
+	"Leave to-do notes": {
+		"prefix": "todo",
+		"body": [
+			"// TODO (${1:assignee's name}): ",
+			"//  - ${2:Implement this feature.}",
+			"//  - ${3:Remove this TODO when done.}"
+		],
+		"description": "Leave to-do notes for self or others."
+	}
+}
