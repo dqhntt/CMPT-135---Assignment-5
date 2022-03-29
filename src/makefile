@@ -1,8 +1,23 @@
-####################################################################
+###################################################################################################
 #
-# Makefile for CMPT 135 Spring 2021, SFU Surrey.
+# Makefile for assignment 5 of CMPT 135 Spring 2022, SFU Surrey.
 #
-#####################################################################
+# References:
+#     - Modified from the original makefile by Toby Donalson.
+#     - https://makefiletutorial.com/#pattern-rules
+#     - https://nullprogram.com/blog/2017/08/20/
+#     - https://www.gnu.org/software/make/manual/html_node/Makefiles.html
+#     - https://www.gnu.org/software/make/manual/html_node/Catalogue-of-Rules.html
+#     - https://www.gnu.org/software/make/manual/html_node/Special-Targets.html
+#     - https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
+#     - https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
+#     - https://www.gnu.org/software/make/manual/html_node/Pattern-Match.html
+#
+###################################################################################################
+
+# For automatically building main program and executable tests.
+
+# Changing implicit variables for make's built-in rules:
 
 # Set the C++ compiler options:
 #   -std=c++17 compiles using the C++17 standard (or at least as 
@@ -16,10 +31,67 @@
 #    unsigned numbers
 #   -Wnon-virtual-dtor warns about non-virtual destructors
 #   -g puts debugging info into the executables (makes them larger)
-CPPFLAGS = -std=c++17 -Wall -Wextra -Werror -Wfatal-errors -Wno-sign-compare -Wnon-virtual-dtor -g
+CPPFLAGS := -std=c++17 -Wall -Wextra -Werror -Wfatal-errors -Wno-sign-compare -Wnon-virtual-dtor -g
+CPPFLAGS += -MMD -MP  # Tell compiler to generate makefiles for us, with .d extension.
+LDLIBS   := -lncurses # Tell make to link ncurses libraries whenever linker is used.
+CC       := $(CXX)    # Tell make to use g++ or equivalent when auto linking .o files.
 
-ncurses_demo:
-	g++ ncurses_demo.cpp $(CPPFLAGS) -lncurses -o ncurses_demo
+# Explicit variables for use with make:
 
-clean:
-	rm -f ncurses_demo
+SRCS := $(wildcard *.cpp)  # Find all source files with .cpp extension.
+DEPS := $(SOURCES:.cpp=.d) # Substitute all .cpp extension with .d from those above.
+
+TEST_SRCS := $(wildcard *.test.cpp)
+TESTS     := $(TEST_SRCS:.cpp=) # Executable tests have extension .test.
+
+MAINS := main.cpp $(wildcard *.test.cpp)       # List all source files with `int main()` defined.
+NO_MAIN_SRCS := $(filter-out $(MAINS),$(SRCS)) # Filter out all the above from the source files.
+
+MAIN_SRCS := main.cpp $(NO_MAIN_SRCS) # List all source files that can be used to create `main`.
+
+.DELETE_ON_ERROR: # Delete any target files that can't be made without errors.
+
+# Calling `make all` runs the below rules to the right of the colon.
+# `main` is also the name of the main program.
+# `tests` is not the name of a file, a.k.a. a "phony" target.
+all: main tests
+
+# Change extension from .cpp to .o and tell make to automatically create these object files.
+# When done, link them using the implicit variables above to output executable `main`.
+main: $(MAIN_SRCS:.cpp=.o)
+
+# Calling `make tests` create executable tests as defined in explicit variable `TESTS`.
+tests: $(TESTS)
+
+# Create executable tests from its .o file and all other .o files without `int main()` defined.
+# Thus, all files *.test.cpp must have `int main()` defined.
+# Using make's static pattern rule of the form:
+#   target : target_pattern ... : prerequisite_pattern ...
+# make automatically builds all required .o files and link them to create .test.
+# e.g. To create each executable file, e.g, Database.test, with % being Database,
+#      make first builds only Database.o and all mentioned .o files,
+#      then it links only Database.o but with all other .o files without `int main()`
+#      including all the implicit variables we defined.
+$(TESTS): %.test : %.test.o $(NO_MAIN_SRCS:.cpp=.o)
+
+check:
+	for TEST in $(TESTS); do ./$$TEST; done;
+
+check-valgrind:
+	for TEST in $(TESTS); do valgrind ./$$TEST; done;
+
+run:
+	./main
+
+clean: clean-bin clean-build clean-tests
+
+clean-bin:
+	rm -f main $(TESTS)
+
+clean-build:
+	rm -f *.d *.o
+	
+clean-tests:
+	rm -f $(TESTS)
+
+-include $(DEPS)
