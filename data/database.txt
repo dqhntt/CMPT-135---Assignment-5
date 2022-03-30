@@ -1,1739 +1,1739 @@
-city_ascii,province_id,province_name,lat,lng,population,density
-Toronto,ON,Ontario,43.7417,-79.3733,5429524,4334.4
-Montreal,QC,Quebec,45.5089,-73.5617,3519595,3889
-Vancouver,BC,British Columbia,49.25,-123.1,2264823,5492.6
-Calgary,AB,Alberta,51.05,-114.0667,1239220,1501.1
-Edmonton,AB,Alberta,53.5344,-113.4903,1062643,1360.9
-Ottawa,ON,Ontario,45.4247,-75.695,989567,334
-Mississauga,ON,Ontario,43.6,-79.65,721599,2467.6
-Winnipeg,MB,Manitoba,49.8844,-97.1464,705244,1430
-Quebec City,QC,Quebec,46.8139,-71.2081,705103,1173.2
-Hamilton,ON,Ontario,43.2567,-79.8692,693645,480.6
-Brampton,ON,Ontario,43.6833,-79.7667,593638,2228.7
-Surrey,BC,British Columbia,49.19,-122.8489,517887,1636.8
-Kitchener,ON,Ontario,43.4186,-80.4728,470015,3433.5
-Laval,QC,Quebec,45.5833,-73.75,422993,1710.9
-Halifax,NS,Nova Scotia,44.6475,-63.5906,403131,73.4
-London,ON,Ontario,42.9836,-81.2497,383822,913.1
-Victoria,BC,British Columbia,48.4283,-123.3647,335696,4406.3
-Markham,ON,Ontario,43.8767,-79.2633,328966,1549.2
-St. Catharines,ON,Ontario,43.1833,-79.2333,309319,1384.8
-Niagara Falls,ON,Ontario,43.06,-79.1067,308596,419.9
-Vaughan,ON,Ontario,43.8333,-79.5,306233,1119.4
-Gatineau,QC,Quebec,45.4833,-75.65,276245,773.7
-Windsor,ON,Ontario,42.2833,-83,276165,1484.3
-Saskatoon,SK,Saskatchewan,52.1333,-106.6833,246376,1080
-Longueuil,QC,Quebec,45.5333,-73.5167,239700,2002
-Burnaby,BC,British Columbia,49.2667,-122.9667,232755,2568.7
-Regina,SK,Saskatchewan,50.4547,-104.6067,215106,1195.2
-Richmond,BC,British Columbia,49.1667,-123.1333,198309,1534.1
-Richmond Hill,ON,Ontario,43.8667,-79.4333,195022,1928.8
-Oakville,ON,Ontario,43.45,-79.6833,193832,1314.2
-Burlington,ON,Ontario,43.3167,-79.8,183314,946.8
-Barrie,ON,Ontario,44.3711,-79.6769,172657,1428
-Oshawa,ON,Ontario,43.9,-78.85,166000,1027
-Sherbrooke,QC,Quebec,45.4,-71.9,161323,456
-Saguenay,QC,Quebec,48.4167,-71.0667,144746,128.5
-Levis,QC,Quebec,46.8,-71.1833,143414,319.4
-Kelowna,BC,British Columbia,49.8881,-119.4956,142146,601.3
-Abbotsford,BC,British Columbia,49.05,-122.3167,141397,376.5
-Coquitlam,BC,British Columbia,49.2839,-122.7919,139284,1138.9
-Trois-Rivieres,QC,Quebec,46.35,-72.55,134413,1581.2
-Guelph,ON,Ontario,43.55,-80.25,131794,1511.1
-Cambridge,ON,Ontario,43.3972,-80.3114,129920,1149.6
-Whitby,ON,Ontario,43.8833,-78.9417,128377,876.1
-Ajax,ON,Ontario,43.8583,-79.0364,119677,1634.2
-Langley,BC,British Columbia,49.1044,-122.5827,117285,380.8
-Saanich,BC,British Columbia,48.484,-123.381,114148,1099.9
-Terrebonne,QC,Quebec,45.7,-73.6333,111575,687.1
-Milton,ON,Ontario,43.5083,-79.8833,110128,230.11
-St. John's,NL,Newfoundland and Labrador,47.4817,-52.7971,108860,244.1
-Moncton,NB,New Brunswick,46.1328,-64.7714,108620,506
-Thunder Bay,ON,Ontario,48.3822,-89.2461,107909,330.1
-Dieppe,NB,New Brunswick,46.0989,-64.7242,107068,469.6
-Waterloo,ON,Ontario,43.4667,-80.5167,104986,1520.7
-Delta,BC,British Columbia,49.0847,-123.0586,102238,567.4
-Chatham,ON,Ontario,42.4229,-82.1324,101647,41.4
-Red Deer,AB,Alberta,52.2681,-113.8111,100418,958.8
-Kamloops,BC,British Columbia,50.6761,-120.3408,100046,301.7
-Brantford,ON,Ontario,43.1667,-80.25,97496,1345.9
-Cape Breton,NS,Nova Scotia,46.1389,-60.1931,94285,38.8
-Lethbridge,AB,Alberta,49.6942,-112.8328,92729,759.5
-Saint-Jean-sur-Richelieu,QC,Quebec,45.3167,-73.2667,92394,419.7
-Clarington,ON,Ontario,43.935,-78.6083,92013,138.3
-Pickering,ON,Ontario,43.8354,-79.089,91771,383.1
-Nanaimo,BC,British Columbia,49.1642,-123.9364,90504,918
-Sudbury,ON,Ontario,46.49,-81.01,88054,49.7
-North Vancouver,BC,British Columbia,49.3641,-123.0066,85935,534.6
-Brossard,QC,Quebec,45.4667,-73.45,85721,1896
-Repentigny,QC,Quebec,45.7333,-73.4667,84965,1395.4
-Newmarket,ON,Ontario,44.05,-79.4667,84224,2190.5
-Chilliwack,BC,British Columbia,49.1577,-121.9509,83788,320.2
-White Rock,BC,British Columbia,49.025,-122.8028,82368,3893.1
-Maple Ridge,BC,British Columbia,49.2167,-122.6,82256,308.3
-Peterborough,ON,Ontario,44.3,-78.3167,82094,1261.2
-Kawartha Lakes,ON,Ontario,44.35,-78.75,75423,24.5
-Prince George,BC,British Columbia,53.9169,-122.7494,74003,232.5
-Sault Ste. Marie,ON,Ontario,46.5333,-84.35,73368,328.6
-Sarnia,ON,Ontario,42.9994,-82.3089,71594,434.3
-Wood Buffalo,AB,Alberta,57.6042,-111.3284,71589,1.2
-New Westminster,BC,British Columbia,49.2069,-122.9111,70996,4543.4
-Chateauguay,QC,Quebec,45.38,-73.75,70812,1278.9
-Saint-Jerome,QC,Quebec,45.7833,-74,69598,756.3
-Drummondville,QC,Quebec,45.8833,-72.4833,68601,1315.4
-Saint John,NB,New Brunswick,45.2806,-66.0761,67575,213.8
-Caledon,ON,Ontario,43.8667,-79.8667,66502,96.6
-St. Albert,AB,Alberta,53.6303,-113.6258,65589,1353.9
-Granby,QC,Quebec,45.4,-72.7333,63433,415.3
-Medicine Hat,AB,Alberta,50.0417,-110.6775,63260,564.6
-Grande Prairie,AB,Alberta,55.1708,-118.7947,63166,475.9
-St. Thomas,ON,Ontario,42.775,-81.1833,61707,1067.3
-Airdrie,AB,Alberta,51.2917,-114.0144,61581,728.2
-Halton Hills,ON,Ontario,43.63,-79.95,61161,221.4
-Saint-Hyacinthe,QC,Quebec,45.6167,-72.95,59614,294.5
-Lac-Brome,QC,Quebec,45.2167,-72.5167,58889,27.3
-Port Coquitlam,BC,British Columbia,49.2625,-122.7811,58612,2009.4
-Fredericton,NB,New Brunswick,45.9636,-66.6431,58220,439.2
-Blainville,QC,Quebec,45.67,-73.88,56363,1030.9
-Aurora,ON,Ontario,44,-79.4667,55445,1112.3
-Welland,ON,Ontario,42.9833,-79.2333,52293,645.3
-North Bay,ON,Ontario,46.3,-79.45,51553,161.6
-Beloeil,QC,Quebec,45.5667,-73.2,50796,862.8
-Belleville,ON,Ontario,44.1667,-77.3833,50716,205.1
-Mirabel,QC,Quebec,45.65,-74.0833,50513,104.1
-Shawinigan,QC,Quebec,46.5667,-72.75,50060,68.2
-Dollard-des-Ormeaux,QC,Quebec,45.4833,-73.8167,49637,3286.7
-Brandon,MB,Manitoba,49.8483,-99.95,48859,599.1
-Rimouski,QC,Quebec,48.45,-68.53,48664,143.3
-Cornwall,ON,Ontario,45.0275,-74.74,46589,756.8
-Stouffville,ON,Ontario,43.9667,-79.25,45837,222.3
-Georgina,ON,Ontario,44.3,-79.4333,45418,157.8
-Victoriaville,QC,Quebec,46.05,-71.9667,45309,516.2
-Vernon,BC,British Columbia,50.267,-119.272,44600,417.7
-Duncan,BC,British Columbia,48.7787,-123.7079,44451,2387.1
-Saint-Eustache,QC,Quebec,45.57,-73.9,44154,634.3
-Quinte West,ON,Ontario,44.1833,-77.5667,43577,88.2
-Charlottetown,PE,Prince Edward Island,46.2403,-63.1347,42602,779.7
-Mascouche,QC,Quebec,45.75,-73.6,42491,398.4
-West Vancouver,BC,British Columbia,49.3667,-123.1667,42473,486.8
-Salaberry-de-Valleyfield,QC,Quebec,45.25,-74.13,42410,395.5
-Rouyn-Noranda,QC,Quebec,48.2333,-79.0167,42334,7
-Timmins,ON,Ontario,48.4667,-81.3333,41788,14
-Sorel-Tracy,QC,Quebec,46.0333,-73.1167,41629,241.1
-New Tecumseth,ON,Ontario,44.0833,-79.75,41439,151.1
-Woodstock,ON,Ontario,43.1306,-80.7467,40902,835.3
-Boucherville,QC,Quebec,45.6,-73.45,40753,575.5
-Mission,BC,British Columbia,49.1337,-122.3112,38833,170.6
-Vaudreuil-Dorion,QC,Quebec,45.4,-74.0333,38117,524.1
-Brant,ON,Ontario,43.1167,-80.3667,36707,43.5
-Lakeshore,ON,Ontario,42.2399,-82.6511,36611,69
-Innisfil,ON,Ontario,44.3,-79.5833,36566,139.2
-Prince Albert,SK,Saskatchewan,53.2,-105.75,35926,534.4
-Langford Station,BC,British Columbia,48.4506,-123.5058,35342,885
-Bradford West Gwillimbury,ON,Ontario,44.1333,-79.6333,35325,175.7
-Campbell River,BC,British Columbia,50.0244,-125.2475,35138,1143.9
-Spruce Grove,AB,Alberta,53.545,-113.9008,34066,1057.9
-Moose Jaw,SK,Saskatchewan,50.3933,-105.5519,33890,710.7
-Penticton,BC,British Columbia,49.4911,-119.5886,33761,801.8
-Port Moody,BC,British Columbia,49.2831,-122.8317,33551,1295.9
-Leamington,ON,Ontario,42.0667,-82.5833,32991,105.3
-East Kelowna,BC,British Columbia,49.8625,-119.5833,32655,264.4
-Cote-Saint-Luc,QC,Quebec,45.4687,-73.6673,32448,4662.5
-Val-d'Or,QC,Quebec,48.1,-77.7833,31862,9
-Owen Sound,ON,Ontario,44.5667,-80.9333,31820,1311.1
-Stratford,ON,Ontario,43.3708,-80.9819,31465,1167.5
-Lloydminster,SK,Saskatchewan,53.2783,-110.005,31410,742.2
-Pointe-Claire,QC,Quebec,45.45,-73.8167,31380,1662
-Orillia,ON,Ontario,44.6,-79.4167,31166,1090.3
-Alma,QC,Quebec,48.55,-71.65,30904,158
-Orangeville,ON,Ontario,43.9167,-80.1167,30734,69.3
-Fort Erie,ON,Ontario,42.9167,-79.0167,30710,184.7
-LaSalle,ON,Ontario,42.2167,-83.0667,30180,461.8
-Sainte-Julie,QC,Quebec,45.5833,-73.3333,30104,607.8
-Leduc,AB,Alberta,53.2594,-113.5492,29993,706.7
-North Cowichan,BC,British Columbia,48.8236,-123.7192,29676,147.3
-Chambly,QC,Quebec,45.4311,-73.2873,29120,1158.7
-Okotoks,AB,Alberta,50.725,-113.975,28881,1471
-Sept-Iles,QC,Quebec,50.2167,-66.3833,28534,16.1
-Centre Wellington,ON,Ontario,43.7,-80.3667,28191,69.2
-Saint-Constant,QC,Quebec,45.37,-73.57,27359,478.9
-Grimsby,ON,Ontario,43.2,-79.55,27314,396.3
-Boisbriand,QC,Quebec,45.62,-73.83,26884,966.5
-Conception Bay South,NL,Newfoundland and Labrador,47.5167,-52.9833,26199,443.3
-Saint-Bruno-de-Montarville,QC,Quebec,45.5333,-73.35,26107,603.3
-Sainte-Therese,QC,Quebec,45.6333,-73.85,26025,2716.1
-Cochrane,AB,Alberta,51.189,-114.467,25853,866.7
-Thetford Mines,QC,Quebec,46.1,-71.3,25709,113.3
-Courtenay,BC,British Columbia,49.6878,-124.9944,25599,789.9
-Magog,QC,Quebec,45.2667,-72.15,25358,175.9
-Whitehorse,YT,Yukon,60.7029,-135.0691,25085,60.2
-Woolwich,ON,Ontario,43.5667,-80.4833,25006,76.7
-Clarence-Rockland,ON,Ontario,45.4833,-75.2,24512,82.3
-Fort Saskatchewan,AB,Alberta,53.7128,-113.2133,24149,501.3
-East Gwillimbury,ON,Ontario,44.1333,-79.4167,23991,97.9
-Lincoln,ON,Ontario,43.13,-79.43,23787,146.1
-La Prairie,QC,Quebec,45.42,-73.5,23357,539.7
-Tecumseh,ON,Ontario,42.2431,-82.9256,23229,245.4
-Mount Pearl Park,NL,Newfoundland and Labrador,47.5189,-52.8058,22957,1456.8
-Amherstburg,ON,Ontario,42.1,-83.0833,21936,118.2
-Saint-Lambert,QC,Quebec,45.5,-73.5167,21861,2880.6
-Brockville,ON,Ontario,44.5833,-75.6833,21854,1167.8
-Collingwood,ON,Ontario,44.5,-80.2167,21793,645.1
-Scugog,ON,Ontario,44.09,-78.936,21617,45.4
-Kingsville,ON,Ontario,42.1,-82.7167,21552,87.3
-Baie-Comeau,QC,Quebec,49.2167,-68.15,21536,64
-Paradise,NL,Newfoundland and Labrador,47.5333,-52.8667,21389,731.5
-Uxbridge,ON,Ontario,44.1167,-79.1333,21176,45.6
-Essa,ON,Ontario,44.25,-79.7833,21083,75.3
-Candiac,QC,Quebec,45.38,-73.52,21047,1215.8
-Oro-Medonte,ON,Ontario,44.5667,-79.5833,21036,35.8
-Varennes,QC,Quebec,45.6833,-73.4333,20994,226.9
-Strathroy-Caradoc,ON,Ontario,42.9575,-81.6167,20867,77.1
-Wasaga Beach,ON,Ontario,44.5206,-80.0167,20675,352.6
-New Glasgow,NS,Nova Scotia,45.5926,-62.6455,20609,911.6
-Wilmot,ON,Ontario,43.4,-80.65,20545,77.9
-Essex,ON,Ontario,42.0833,-82.9,20427,73.5
-Fort St. John,BC,British Columbia,56.2465,-120.8476,20155,820.2
-Kirkland,QC,Quebec,45.45,-73.8667,20151,2204.4
-L'Assomption,QC,Quebec,45.8333,-73.4167,20065,202.9
-Westmount,QC,Quebec,45.4833,-73.6,19931,4952.8
-Saint-Lazare,QC,Quebec,45.4,-74.1333,19889,289.6
-Chestermere,AB,Alberta,51.05,-113.8225,19887,603.8
-Huntsville,ON,Ontario,45.3333,-79.2167,19816,27.9
-Corner Brook,NL,Newfoundland and Labrador,48.9287,-57.926,19806,133.6
-Riverview,NB,New Brunswick,46.0613,-64.8052,19667,554.8
-Lloydminster,AB,Alberta,53.2807,-110.035,19645,817.3
-Joliette,QC,Quebec,46.0167,-73.45,19621,860.3
-Yellowknife,NT,Northwest Territories,62.4709,-114.4053,19569,185.5
-Squamish,BC,British Columbia,49.7017,-123.1589,19512,186.1
-Mont-Royal,QC,Quebec,45.5161,-73.6431,19503,2545.3
-Riviere-du-Loup,QC,Quebec,47.8333,-69.5333,19447,230.9
-Cobourg,ON,Ontario,43.9667,-78.1667,19440,869.3
-Cranbrook,BC,British Columbia,49.5097,-115.7667,19259,604.7
-Beaconsfield,QC,Quebec,45.4333,-73.8667,19115,1752.6
-Springwater,ON,Ontario,44.4333,-79.7333,19059,35.5
-Dorval,QC,Quebec,45.45,-73.75,18980,839.2
-Thorold,ON,Ontario,43.1167,-79.2,18801,226.5
-Camrose,AB,Alberta,53.0167,-112.8333,18742,439.8
-South Frontenac,ON,Ontario,44.5081,-76.4939,18646,19.2
-Pitt Meadows,BC,British Columbia,49.2333,-122.6833,18573,214.7
-Port Colborne,ON,Ontario,42.8833,-79.25,18306,150.1
-Quispamsis,NB,New Brunswick,45.4322,-65.9462,18245,318.9
-Mont-Saint-Hilaire,QC,Quebec,45.5622,-73.1917,18200,410.9
-Bathurst,NB,New Brunswick,47.62,-65.65,18154,129.3
-Saint-Augustin-de-Desmaures,QC,Quebec,46.7333,-71.4667,18141,211.5
-Oak Bay,BC,British Columbia,48.4264,-123.3228,18094,1717.7
-Sainte-Marthe-sur-le-Lac,QC,Quebec,45.53,-73.93,18074,2066.7
-Salmon Arm,BC,British Columbia,50.7022,-119.2722,17706,144
-Port Alberni,BC,British Columbia,49.2339,-124.805,17678,894.6
-Esquimalt,BC,British Columbia,48.4306,-123.4147,17655,2494.7
-Deux-Montagnes,QC,Quebec,45.5333,-73.8833,17553,2850.1
-Miramichi,NB,New Brunswick,47.0196,-65.5072,17537,97.7
-Niagara-on-the-Lake,ON,Ontario,43.2553,-79.0717,17511,131.8
-Saint-Lin--Laurentides,QC,Quebec,45.85,-73.7667,17463,147.3
-Beaumont,AB,Alberta,53.3572,-113.4147,17396,1661.1
-Middlesex Centre,ON,Ontario,43.05,-81.45,17262,29.4
-Inverness,NS,Nova Scotia,46.2,-61.1,17235,4.5
-Stony Plain,AB,Alberta,53.5264,-114.0069,17189,481.2
-Petawawa,ON,Ontario,45.9,-77.2833,17187,103.1
-Pelham,ON,Ontario,43.0333,-79.3333,17110,135.3
-Selwyn,ON,Ontario,44.4167,-78.3333,17060,54
-Loyalist,ON,Ontario,44.25,-76.75,16971,49.8
-Midland,ON,Ontario,44.75,-79.8833,16864,477.3
-Colwood,BC,British Columbia,48.4236,-123.4958,16859,954.2
-Central Saanich,BC,British Columbia,48.5142,-123.3839,16814,406.8
-Sainte-Catherine,QC,Quebec,45.4,-73.58,16762,1764.1
-Port Hope,ON,Ontario,43.95,-78.3,16753,60.1
-L'Ancienne-Lorette,QC,Quebec,46.8,-71.35,16745,2193.6
-Saint-Basile-le-Grand,QC,Quebec,45.5333,-73.2833,16736,463.6
-Swift Current,SK,Saskatchewan,50.2881,-107.7939,16604,566.5
-Edmundston,NB,New Brunswick,47.3765,-68.3253,16580,155.2
-Russell,ON,Ontario,45.2569,-75.3583,16520,83
-North Grenville,ON,Ontario,44.9667,-75.65,16451,46.7
-Yorkton,SK,Saskatchewan,51.2139,-102.4628,16343,449.9
-Tracadie,NB,New Brunswick,47.5124,-64.9101,16114,31.2
-Bracebridge,ON,Ontario,45.0333,-79.3,16010,25.5
-Greater Napanee,ON,Ontario,44.25,-76.95,15892,34.5
-Tillsonburg,ON,Ontario,42.8667,-80.7333,15872,710.8
-Steinbach,MB,Manitoba,49.5258,-96.6839,15829,618.6
-Hanover,MB,Manitoba,49.4433,-96.8492,15733,21.2
-Terrace,BC,British Columbia,54.5164,-128.5997,15723,212.7
-Springfield,MB,Manitoba,49.9292,-96.6939,15342,13.9
-Gaspe,QC,Quebec,48.8333,-64.4833,15163,13.5
-Kenora,ON,Ontario,49.7667,-94.4833,15096,71.3
-Cold Lake,AB,Alberta,54.4642,-110.1825,14961,249.7
-Summerside,PE,Prince Edward Island,46.4,-63.7833,14829,520.5
-Comox,BC,British Columbia,49.6733,-124.9022,14828,838.2
-Sylvan Lake,AB,Alberta,52.3083,-114.0964,14816,634.2
-Pincourt,QC,Quebec,45.3833,-73.9833,14558,2048.1
-West Lincoln,ON,Ontario,43.0667,-79.5667,14500,37.4
-Matane,QC,Quebec,48.85,-67.5333,14462,74
-Brooks,AB,Alberta,50.5642,-111.8989,14451,777.3
-Sainte-Anne-des-Plaines,QC,Quebec,45.7617,-73.8204,14421,154.1
-West Nipissing / Nipissing Ouest,ON,Ontario,46.3667,-79.9167,14364,7.2
-Rosemere,QC,Quebec,45.6369,-73.8,14294,1326.9
-Mistassini,QC,Quebec,48.8229,-72.2154,14250,48.2
-Grand Falls,NL,Newfoundland and Labrador,48.9578,-55.6633,14171,259.2
-Clearview,ON,Ontario,44.3981,-80.0742,14151,25.4
-St. Clair,ON,Ontario,42.7833,-82.35,14086,22.8
-Canmore,AB,Alberta,51.089,-115.359,13992,201.5
-North Battleford,SK,Saskatchewan,52.7575,-108.2861,13888,414
-Pembroke,ON,Ontario,45.8167,-77.1,13882,953.3
-Mont-Laurier,QC,Quebec,46.55,-75.5,13779,23.3
-Strathmore,AB,Alberta,51.0378,-113.4003,13756,502
-Saugeen Shores,ON,Ontario,44.4333,-81.3667,13715,80.2
-Thompson,MB,Manitoba,55.7433,-97.8553,13678,657.91
-Lavaltrie,QC,Quebec,45.8833,-73.2833,13657,199.7
-High River,AB,Alberta,50.5808,-113.8744,13584,635.1
-Severn,ON,Ontario,44.75,-79.5167,13477,24.5
-Sainte-Sophie,QC,Quebec,45.82,-73.9,13375,120.2
-Saint-Charles-Borromee,QC,Quebec,46.05,-73.4667,13321,715
-Portage La Prairie,MB,Manitoba,49.9728,-98.2919,13304,539.1
-Thames Centre,ON,Ontario,43.03,-81.08,13191,30.4
-Mississippi Mills,ON,Ontario,45.2167,-76.2,13163,25.3
-Powell River,BC,British Columbia,49.8353,-124.5247,13157,444.1
-South Glengarry,ON,Ontario,45.2,-74.5833,13150,21.7
-North Perth,ON,Ontario,43.73,-80.95,13130,26.6
-Mercier,QC,Quebec,45.32,-73.75,13115,284.6
-South Stormont,ON,Ontario,45.0833,-74.9667,13110,28.2
-Saint-Colomban,QC,Quebec,45.73,-74.13,13080,139.8
-Lacombe,AB,Alberta,52.4683,-113.7369,13057,627.5
-Sooke,BC,British Columbia,48.3761,-123.7378,13001,229.6
-Dawson Creek,BC,British Columbia,55.7606,-120.2356,12978,475.4
-Lake Country,BC,British Columbia,50.0833,-119.4142,12922,105.8
-Trent Hills,ON,Ontario,44.3142,-77.8514,12900,25.2
-Sainte-Marie,QC,Quebec,46.45,-71.0333,12889,120.3
-Guelph/Eramosa,ON,Ontario,43.63,-80.22,12854,44.1
-Truro,NS,Nova Scotia,45.3647,-63.28,12826,355.5
-Amos,QC,Quebec,48.5667,-78.1167,12823,29.8
-The Nation / La Nation,ON,Ontario,45.35,-75.0333,12808,19.5
-Ingersoll,ON,Ontario,43.0392,-80.8836,12757,1000.7
-Winkler,MB,Manitoba,49.1817,-97.9397,12660,740.5
-Wetaskiwin,AB,Alberta,52.9694,-113.3769,12655,691.1
-Central Elgin,ON,Ontario,42.7667,-81.1,12607,45
-Lachute,QC,Quebec,45.65,-74.3333,12551,114.9
-West Grey,ON,Ontario,44.1833,-80.8167,12518,14.3
-Parksville,BC,British Columbia,49.315,-124.312,12514,854.6
-Cowansville,QC,Quebec,45.2,-72.75,12489,271
-Becancour,QC,Quebec,46.3333,-72.4333,12438,28.2
-Gravenhurst,ON,Ontario,44.9167,-79.3667,12311,23.8
-Perth East,ON,Ontario,43.47,-80.95,12261,17.2
-Prince Rupert,BC,British Columbia,54.3122,-130.3271,12220,227.7
-Prevost,QC,Quebec,45.87,-74.08,12171,347.2
-Sainte-Adele,QC,Quebec,45.95,-74.13,12137,100.4
-Kentville,NS,Nova Scotia,45.0775,-64.4958,12088,363.3
-Beauharnois,QC,Quebec,45.32,-73.87,12011,173.9
-Les Iles-de-la-Madeleine,QC,Quebec,47.3833,-61.8667,12010,69.5
-Wellington North,ON,Ontario,43.9,-80.57,11914,22.6
-St. Andrews,MB,Manitoba,50.27,-96.9747,11913,15.8
-Carleton Place,ON,Ontario,45.1333,-76.1333,11901,1176.2
-Whistler,BC,British Columbia,50.1208,-122.9544,11854,49.3
-Brighton,ON,Ontario,44.1222,-77.7642,11844,43.2
-Tiny,ON,Ontario,44.6833,-79.95,11787,35
-Gander,NL,Newfoundland and Labrador,48.9569,-54.6089,11688,112.1
-Sidney,BC,British Columbia,48.6506,-123.3986,11672,2290.7
-Rothesay,NB,New Brunswick,45.3831,-65.9969,11659,335.8
-Brock,ON,Ontario,44.3167,-79.0833,11642,27.5
-Summerland,BC,British Columbia,49.6006,-119.6778,11615,156.8
-Val-des-Monts,QC,Quebec,45.65,-75.6667,11582,26.2
-Tache,MB,Manitoba,49.7081,-96.6736,11568,19.9
-Montmagny,QC,Quebec,46.9833,-70.55,11491,91.1
-Erin,ON,Ontario,43.7667,-80.0667,11439,38.4
-Kincardine,ON,Ontario,44.1667,-81.6333,11389,21.2
-North Dundas,ON,Ontario,45.0833,-75.35,11278,22.4
-Wellesley,ON,Ontario,43.55,-80.7167,11260,40.5
-Estevan,SK,Saskatchewan,49.1392,-102.9861,11258,586.6
-North Saanich,BC,British Columbia,48.6142,-123.42,11249,301.8
-Warman,SK,Saskatchewan,52.3219,-106.5842,11020,844.6
-La Tuque,QC,Quebec,48.0652,-74.0528,11001,0.4
-Norwich,ON,Ontario,42.9833,-80.6,11001,25.5
-Meaford,ON,Ontario,44.58,-80.73,10991,18.7
-Adjala-Tosorontio,ON,Ontario,44.1333,-79.9333,10975,29.5
-Hamilton Township,ON,Ontario,44.054,-78.2164,10942,42.7
-St. Clements,MB,Manitoba,50.2689,-96.6742,10876,14.9
-Saint-Amable,QC,Quebec,45.65,-73.3,10870,296.3
-Weyburn,SK,Saskatchewan,49.6611,-103.8525,10870,688.8
-South Dundas,ON,Ontario,44.9167,-75.2667,10833,20.8
-L'Ile-Perrot,QC,Quebec,45.3833,-73.95,10756,1955.6
-Notre-Dame-de-l'Ile-Perrot,QC,Quebec,45.3667,-73.9333,10756,386.9
-Williams Lake,BC,British Columbia,52.1294,-122.1383,10753,327
-Elliot Lake,ON,Ontario,46.3833,-82.65,10741,15.9
-Cantley,QC,Quebec,45.5667,-75.7833,10699,83.4
-Nelson,BC,British Columbia,49.5,-117.2833,10664,1552.3
-Lambton Shores,ON,Ontario,43.1833,-81.9,10631,32.1
-Mapleton,ON,Ontario,43.7358,-80.6681,10527,19.7
-Georgian Bluffs,ON,Ontario,44.65,-81.0333,10479,17.3
-Rawdon,QC,Quebec,46.05,-73.7167,10416,55.7
-Campbellton,NB,New Brunswick,48.005,-66.6731,10411,370.5
-View Royal,BC,British Columbia,48.4517,-123.4339,10408,724.8
-Coldstream,BC,British Columbia,50.22,-119.2481,10314,155.6
-Chester,NS,Nova Scotia,44.65,-64.3,10310,9.2
-Queens,NS,Nova Scotia,44.0333,-64.7167,10307,4.3
-Selkirk,MB,Manitoba,50.1436,-96.8839,10278,413.4
-Saint-Felicien,QC,Quebec,48.65,-72.45,10278,28.3
-Hawkesbury,ON,Ontario,45.6,-74.6,10263,1067.3
-Roberval,QC,Quebec,48.52,-72.23,10227,66.8
-Sainte-Agathe-des-Monts,QC,Quebec,46.05,-74.28,10223,78.6
-North Dumfries,ON,Ontario,43.32,-80.38,10215,54.5
-Rideau Lakes,ON,Ontario,44.6667,-76.2167,10207,14
-Sechelt,BC,British Columbia,49.4742,-123.7542,10200,212.9
-North Glengarry,ON,Ontario,45.3333,-74.7333,10109,15.7
-South Huron,ON,Ontario,43.32,-81.5,10096,23.4
-Marieville,QC,Quebec,45.4333,-73.1667,10094,160.8
-Tay,ON,Ontario,44.7167,-79.7667,10033,72.1
-Temiskaming Shores,ON,Ontario,47.5167,-79.6833,9920,55.7
-Hinton,AB,Alberta,53.4114,-117.5639,9882,294.8
-Saint-Sauveur,QC,Quebec,45.9,-74.17,9881,206.8
-Quesnel,BC,British Columbia,52.9784,-122.4927,9879,279.2
-Elizabethtown-Kitley,ON,Ontario,44.7,-75.8833,9854,17.7
-Morinville,AB,Alberta,53.8022,-113.6497,9848,882.8
-Grey Highlands,ON,Ontario,44.3333,-80.5,9804,11.1
-Stratford,PE,Prince Edward Island,46.2167,-63.0893,9706,430.8
-Alfred and Plantagenet,ON,Ontario,45.5667,-74.9167,9680,24.7
-Mont-Tremblant,QC,Quebec,46.1167,-74.6,9646,40.5
-Martensville,SK,Saskatchewan,52.2897,-106.6667,9645,1421.2
-Saint-Raymond,QC,Quebec,46.9,-71.8333,9615,14.3
-Amherst,NS,Nova Scotia,45.8167,-64.2167,9550,779.7
-Ramara,ON,Ontario,44.6333,-79.2167,9488,22.7
-Bois-des-Filion,QC,Quebec,45.6667,-73.75,9485,2216.2
-Leeds and the Thousand Islands,ON,Ontario,44.45,-76.08,9465,15.1
-Carignan,QC,Quebec,45.45,-73.3,9462,151.9
-Brockton,ON,Ontario,44.1667,-81.2167,9461,16.7
-Laurentian Valley,ON,Ontario,45.7681,-77.2239,9387,17
-East St. Paul,MB,Manitoba,49.9772,-97.0103,9372,222.6
-Lorraine,QC,Quebec,45.6833,-73.7833,9352,1570
-Sainte-Julienne,QC,Quebec,45.97,-73.72,9331,94
-Blackfalds,AB,Alberta,52.3833,-113.8,9328,567.3
-Malahide,ON,Ontario,42.7928,-80.9361,9292,23.5
-Oromocto,NB,New Brunswick,45.8488,-66.4788,9223,411
-Olds,AB,Alberta,51.7928,-114.1067,9184,615.3
-Huron East,ON,Ontario,43.63,-81.28,9138,13.8
-Stanley,MB,Manitoba,49.1331,-98.0656,9038,10.8
-Penetanguishene,ON,Ontario,44.7667,-79.9333,8962,350.3
-Qualicum Beach,BC,British Columbia,49.35,-124.4333,8943,497.4
-Notre-Dame-des-Prairies,QC,Quebec,46.05,-73.4333,8868,487.3
-West Perth,ON,Ontario,43.47,-81.2,8865,15.3
-Cavan Monaghan,ON,Ontario,44.2,-78.4667,8829,28.8
-Arnprior,ON,Ontario,45.4333,-76.35,8795,672.7
-Smiths Falls,ON,Ontario,44.9,-76.0167,8780,909.1
-Pont-Rouge,QC,Quebec,46.75,-71.7,8723,72
-Champlain,ON,Ontario,45.5333,-74.65,8706,42
-Coaticook,QC,Quebec,45.1333,-71.8,8698,39.6
-Minto,ON,Ontario,43.9167,-80.8667,8671,28.8
-Morden,MB,Manitoba,49.1919,-98.1006,8668,401
-Mono,ON,Ontario,44.0167,-80.0667,8609,31
-Corman Park No. 344,SK,Saskatchewan,52.2291,-106.8002,8568,4.5
-Ladysmith,BC,British Columbia,48.9975,-123.8203,8537,711.9
-Bridgewater,NS,Nova Scotia,44.37,-64.52,8532,625.9
-Dauphin,MB,Manitoba,51.1992,-100.0633,8457,670.7
-Otterburn Park,QC,Quebec,45.5333,-73.2167,8450,1580.6
-Taber,AB,Alberta,49.7847,-112.1508,8428,537.9
-South Bruce Peninsula,ON,Ontario,44.7333,-81.2,8416,15.8
-Edson,AB,Alberta,53.5817,-116.4344,8414,283.1
-Farnham,QC,Quebec,45.2833,-72.9833,8330,90.5
-Kapuskasing,ON,Ontario,49.4167,-82.4333,8292,98.3
-La Malbaie,QC,Quebec,47.65,-70.15,8271,18
-Renfrew,ON,Ontario,45.4717,-76.6831,8223,643.4
-Coaldale,AB,Alberta,49.7333,-112.6167,8215,1028.5
-Portugal Cove-St. Philip's,NL,Newfoundland and Labrador,47.6272,-52.8506,8147,128.4
-Zorra,ON,Ontario,43.15,-80.95,8138,15.4
-Kitimat,BC,British Columbia,54,-128.7,8131,34.7
-Shelburne,ON,Ontario,44.0833,-80.2,8126,907.1
-Happy Valley,NL,Newfoundland and Labrador,53.3396,-60.4467,8109,26.5
-Saint-Hippolyte,QC,Quebec,45.93,-74.02,8083,67
-Castlegar,BC,British Columbia,49.3256,-117.6661,8039,408.6
-Church Point,NS,Nova Scotia,44.3333,-66.1167,8018,9.4
-Drumheller,AB,Alberta,51.4636,-112.7194,7982,73.9
-Kirkland Lake,ON,Ontario,48.15,-80.0333,7981,30.4
-Argyle,NS,Nova Scotia,43.8,-65.85,7899,5.2
-Torbay,NL,Newfoundland and Labrador,47.65,-52.7333,7899,212.1
-La Peche,QC,Quebec,45.6833,-75.9833,7863,13.4
-Banff,AB,Alberta,51.1781,-115.5719,7847,1646
-Innisfail,AB,Alberta,52.0333,-113.95,7847,404.6
-Nicolet,QC,Quebec,46.2167,-72.6167,7828,81.5
-Rockwood,MB,Manitoba,50.2856,-97.2869,7823,6.5
-Drummond/North Elmsley,ON,Ontario,44.9667,-76.2,7773,21.2
-Dryden,ON,Ontario,49.7833,-92.8333,7749,117.1
-Iqaluit,NU,Nunavut,63.7598,-68.5107,7740,147.4
-Fort Frances,ON,Ontario,48.6167,-93.4,7739,303.4
-La Sarre,QC,Quebec,48.8,-79.2,7719,51.9
-Trail,BC,British Columbia,49.095,-117.71,7709,220.7
-Chandler,QC,Quebec,48.35,-64.6833,7703,18.4
-Stone Mills,ON,Ontario,44.45,-76.9167,7702,10.9
-Hanover,ON,Ontario,44.15,-81.0333,7688,763.8
-South-West Oxford,ON,Ontario,42.95,-80.8,7664,20.7
-Acton Vale,QC,Quebec,45.65,-72.5667,7664,84.2
-Bromont,QC,Quebec,45.3167,-72.65,7649,66.9
-Beckwith,ON,Ontario,45.0833,-76.0667,7644,31.8
-Goderich,ON,Ontario,43.7333,-81.7,7628,882.8
-Plympton-Wyoming,ON,Ontario,43.0167,-82.0833,7576,23.8
-Central Huron,ON,Ontario,43.63,-81.57,7576,16.9
-Rigaud,QC,Quebec,45.4833,-74.3,7566,74.1
-Louiseville,QC,Quebec,46.25,-72.95,7517,120.1
-Chibougamau,QC,Quebec,49.9167,-74.3667,7504,10.7
-Aylmer,ON,Ontario,42.7667,-80.9833,7492,1197.6
-Delson,QC,Quebec,45.37,-73.55,7462,982.6
-Kimberley,BC,British Columbia,49.6697,-115.9775,7425,122.5
-Blandford-Blenheim,ON,Ontario,43.2333,-80.6,7399,19.4
-Bayham,ON,Ontario,42.7333,-80.7833,7396,30.2
-Augusta,ON,Ontario,44.7511,-75.6003,7353,23.4
-Puslinch,ON,Ontario,43.45,-80.1667,7336,34.2
-Beauport,QC,Quebec,46.9667,-71.3,7281,118.8
-Saint-Remi,QC,Quebec,45.2667,-73.6167,7265,92.2
-St. Marys,ON,Ontario,43.2583,-81.1333,7265,583.5
-Drayton Valley,AB,Alberta,53.2222,-114.9769,7235,235.5
-Ponoka,AB,Alberta,52.6833,-113.5667,7229,417.1
-Labrador City,NL,Newfoundland and Labrador,52.95,-66.9167,7220,186
-Donnacona,QC,Quebec,46.6747,-71.7294,7200,357.6
-Southgate,ON,Ontario,44.1,-80.5833,7190,11.4
-McNab/Braeside,ON,Ontario,45.45,-76.5,7178,28.1
-Macdonald,MB,Manitoba,49.6725,-97.4472,7162,6.2
-Hampstead,QC,Quebec,45.4833,-73.6333,7153,3996.5
-Baie-Saint-Paul,QC,Quebec,47.45,-70.5,7146,13.1
-Merritt,BC,British Columbia,50.1128,-120.7897,7139,273.9
-Bluewater,ON,Ontario,43.45,-81.6,7136,17.1
-East Zorra-Tavistock,ON,Ontario,43.2333,-80.7833,7129,29.4
-Brownsburg,QC,Quebec,45.6703,-74.4467,7122,28.8
-Stoneham-et-Tewkesbury,QC,Quebec,47.1667,-71.4333,7106,10.6
-Asbestos,QC,Quebec,45.7667,-71.9333,7096,239.1
-Huron-Kinloss,ON,Ontario,44.05,-81.5333,7069,16
-Coteau-du-Lac,QC,Quebec,45.3,-74.18,7044,150.2
-The Blue Mountains,ON,Ontario,44.4833,-80.3833,7025,24.5
-Whitewater Region,ON,Ontario,45.7167,-76.8333,7009,13
-Edwardsburgh/Cardinal,ON,Ontario,44.8333,-75.5,6959,22.3
-Sainte-Anne-des-Monts,QC,Quebec,49.1333,-66.5,6933,26.3
-Old Chelsea,QC,Quebec,45.5,-75.7833,6909,60.7
-North Stormont,ON,Ontario,45.2167,-75,6873,13.3
-Alnwick/Haldimand,ON,Ontario,44.0833,-78.0333,6869,17.25
-Peace River,AB,Alberta,56.2339,-117.2897,6842,260.6
-Arran-Elderslie,ON,Ontario,44.4,-81.2,6803,14.8
-Saint-Zotique,QC,Quebec,45.25,-74.25,6773,268.8
-Val-Shefford,QC,Quebec,45.35,-72.5667,6711,56.7
-Douro-Dummer,ON,Ontario,44.45,-78.1,6709,14.6
-Plessisville,QC,Quebec,46.2167,-71.7833,6688,1546
-Ritchot,MB,Manitoba,49.6647,-97.1167,6679,20
-Otonabee-South Monaghan,ON,Ontario,44.2333,-78.2333,6670,19.2
-Shediac,NB,New Brunswick,46.2167,-64.5333,6664,123.5
-Slave Lake,AB,Alberta,55.2853,-114.7706,6651,460.5
-Port-Cartier,QC,Quebec,50.0333,-66.8667,6651,6
-Saint-Lambert-de-Lauzon,QC,Quebec,46.5865,-71.2271,6647,62.2
-Barrington,NS,Nova Scotia,43.5646,-65.5639,6646,10.5
-Rocky Mountain House,AB,Alberta,52.3753,-114.9217,6635,521.8
-Chatsworth,ON,Ontario,44.38,-80.87,6630,11.1
-Stephenville,NL,Newfoundland and Labrador,48.55,-58.5667,6623,185.6
-Muskoka Falls,ON,Ontario,45.1264,-79.558,6588,8.3
-Devon,AB,Alberta,53.3633,-113.7322,6578,460.2
-Yarmouth,NS,Nova Scotia,43.8361,-66.1175,6518,616.9
-Boischatel,QC,Quebec,46.9,-71.15,6465,308.8
-Parry Sound,ON,Ontario,45.3333,-80.0333,6408,478.2
-Pointe-Calumet,QC,Quebec,45.5,-73.97,6396,1382.4
-Beaubassin East / Beaubassin-est,NB,New Brunswick,46.1726,-64.3122,6376,21.9
-Wainfleet,ON,Ontario,42.925,-79.375,6372,29.3
-Cramahe,ON,Ontario,44.0833,-77.8833,6355,31.4
-Beauceville,QC,Quebec,46.2,-70.7833,6354,37.9
-North Middlesex,ON,Ontario,43.15,-81.6333,6352,10.6
-Amqui,QC,Quebec,48.4667,-67.4333,6322,52.3
-Sainte-Catherine-de-la-Jacques-Cartier,QC,Quebec,46.85,-71.6167,6319,52.1
-Clarenville,NL,Newfoundland and Labrador,48.1566,-53.965,6291,44.7
-Mont-Joli,QC,Quebec,48.58,-68.18,6281,272.6
-Dysart et al,ON,Ontario,45.2042,-78.4047,6280,4.2
-Wainwright,AB,Alberta,52.8333,-110.8667,6270,688.7
-Contrecoeur,QC,Quebec,45.85,-73.2333,6252,102.2
-Beresford,NB,New Brunswick,47.7181,-65.8794,6248,13.7
-Saint-Joseph-du-Lac,QC,Quebec,45.5333,-74,6195,149.7
-Hope,BC,British Columbia,49.3858,-121.4419,6181,151
-Gimli,MB,Manitoba,50.6619,-97.0297,6181,19.5
-Douglas,NB,New Brunswick,46.2819,-66.942,6154,4.3
-Saint-Apollinaire,QC,Quebec,46.6167,-71.5167,6110,63
-Hindon Hill,ON,Ontario,44.9333,-78.7333,6088,6.9
-Les Cedres,QC,Quebec,45.3,-74.05,6079,78.1
-La Broquerie,MB,Manitoba,49.3994,-96.5103,6076,10.5
-Kent,BC,British Columbia,49.2833,-121.75,6067,35.9
-Tweed,ON,Ontario,44.6,-77.3333,6044,6.3
-Saint-Felix-de-Valois,QC,Quebec,46.17,-73.43,6029,68.6
-Bay Roberts,NL,Newfoundland and Labrador,47.5847,-53.2783,6012,249.9
-Melfort,SK,Saskatchewan,52.8564,-104.61,5992,405.4
-Bonnyville,AB,Alberta,54.2667,-110.75,5975,421.4
-Stettler,AB,Alberta,52.3236,-112.7192,5952,453
-Saint-Calixte,QC,Quebec,45.95,-73.85,5934,41.4
-Lac-Megantic,QC,Quebec,45.5833,-70.8833,5932,272.5
-Perth,ON,Ontario,44.9,-76.25,5930,484.1
-Oliver Paipoonge,ON,Ontario,48.39,-89.52,5922,16.9
-Humboldt,SK,Saskatchewan,52.2019,-105.1231,5869,1783.4
-Charlemagne,QC,Quebec,45.7167,-73.4833,5853,2704
-Pontiac,QC,Quebec,45.5833,-76.1333,5850,13.1
-St. Paul,AB,Alberta,53.9928,-111.2972,5827,674.2
-Petrolia,ON,Ontario,42.8833,-82.1417,5742,452.8
-Southwest Middlesex,ON,Ontario,42.75,-81.7,5723,13.4
-Front of Yonge,ON,Ontario,44.5333,-75.8667,5710,20.3
-Vegreville,AB,Alberta,53.4928,-112.0522,5708,405.4
-Sainte-Brigitte-de-Laval,QC,Quebec,47,-71.2,5696,52.4
-Princeville,QC,Quebec,46.1667,-71.8833,5693,29.3
-Vercheres,QC,Quebec,45.7833,-73.35,5692,77.7
-The Pas,MB,Manitoba,53.825,-101.2533,5689,115.3
-Saint-Cesaire,QC,Quebec,45.4167,-73,5686,68.1
-La Ronge,SK,Saskatchewan,55.1,-105.3,5671,163.9
-Tay Valley,ON,Ontario,44.8667,-76.3833,5665,10.3
-South Bruce,ON,Ontario,44.0333,-81.2,5639,11.6
-McMasterville,QC,Quebec,45.55,-73.2333,5615,1810.3
-Redcliff,AB,Alberta,50.0792,-110.7783,5600,344.6
-Crowsnest Pass,AB,Alberta,49.5955,-114.5136,5589,15
-Saint-Philippe,QC,Quebec,45.35,-73.47,5495,88.5
-Richelieu,QC,Quebec,45.45,-73.25,5467,176.2
-Notre-Dame-du-Mont-Carmel,QC,Quebec,46.4833,-72.65,5467,42.6
-L'Ange-Gardien,QC,Quebec,45.5833,-75.45,5464,25
-Sainte-Martine,QC,Quebec,45.25,-73.8,5461,86.4
-Saint-Pie,QC,Quebec,45.5,-72.9,5438,49.9
-Peachland,BC,British Columbia,49.7736,-119.7369,5428,340.1
-Ashfield-Colborne-Wawanosh,ON,Ontario,43.8667,-81.6,5422,9.2
-Trent Lakes,ON,Ontario,44.6667,-78.4333,5397,6.3
-Northern Rockies,BC,British Columbia,59,-123.75,5393,0.063
-Cookshire,QC,Quebec,45.3729,-71.672,5393,18.2
-West St. Paul,MB,Manitoba,50.0119,-97.115,5368,61.1
-Windsor,QC,Quebec,45.5667,-72,5367,375.5
-L'Epiphanie,QC,Quebec,45.85,-73.4833,5353,2367.9
-Creston,BC,British Columbia,49.09,-116.51,5351,626.8
-Smithers,BC,British Columbia,54.7819,-127.1681,5351,514.9
-Cornwall,PE,Prince Edward Island,46.2407,-63.2009,5348,189.7
-Meadow Lake,SK,Saskatchewan,54.1242,-108.4358,5344,433.6
-Lanark Highlands,ON,Ontario,45.088,-76.517,5338,5.1
-Sackville,NB,New Brunswick,45.9,-64.3667,5331,71.9
-Grand Falls,NB,New Brunswick,47.0344,-67.7394,5326,294.4
-Cochrane,ON,Ontario,49.0667,-81.0167,5321,9.9
-Marystown,NL,Newfoundland and Labrador,47.1667,-55.1667,5316,85.8
-Sioux Lookout,ON,Ontario,50.1,-91.9167,5272,13.9
-Didsbury,AB,Alberta,51.6658,-114.1311,5268,321.7
-Saint-Honore,QC,Quebec,48.5333,-71.0833,5257,27.8
-Fernie,BC,British Columbia,49.5042,-115.0628,5249,388.8
-Deer Lake,NL,Newfoundland and Labrador,49.1744,-57.4269,5249,71.7
-Woodstock,NB,New Brunswick,46.1522,-67.5983,5228,356.7
-Val-David,QC,Quebec,46.03,-74.22,5209,103.9
-Flin Flon,SK,Saskatchewan,54.7667,-101.8778,5185,448.9
-Hudson,QC,Quebec,45.45,-74.15,5165,234.5
-Gananoque,ON,Ontario,44.33,-76.17,5159,733.6
-Brokenhead,MB,Manitoba,50.1428,-96.5319,5122,6.8
-Saint-Paul,QC,Quebec,45.9833,-73.45,5122,103.7
-Burton,NB,New Brunswick,45.8009,-66.4066,5119,19.8
-Spallumcheen,BC,British Columbia,50.4462,-119.2121,5106,20
-Westlock,AB,Alberta,54.1522,-113.8511,5101,381.4
-Temiscouata-sur-le-Lac,QC,Quebec,47.68,-68.88,5096,23.3
-Shannon,QC,Quebec,46.8833,-71.5167,5086,79.8
-Osoyoos,BC,British Columbia,49.0325,-119.4661,5085,598.2
-Montreal-Ouest,QC,Quebec,45.4536,-73.6472,5085,3614.6
-Hearst,ON,Ontario,49.6869,-83.6544,5070,51.5
-Saint-Henri,QC,Quebec,46.7,-71.0667,5023,41.1
-Ste. Anne,MB,Manitoba,49.6186,-96.5708,5003,10.5
-Antigonish,NS,Nova Scotia,45.6167,-61.9833,5002,871.7
-Espanola,ON,Ontario,46.25,-81.7667,4996,60.3
-West Elgin,ON,Ontario,42.5833,-81.6667,4995,15.5
-Flin Flon (Part),MB,Manitoba,54.7712,-101.8419,4982,359.2
-Grand Bay-Westfield,NB,New Brunswick,45.3608,-66.2415,4964,83
-Sainte-Anne-de-Bellevue,QC,Quebec,45.4039,-73.9525,4958,473
-North Huron,ON,Ontario,43.83,-81.42,4932,27.6
-Oliver,BC,British Columbia,49.1844,-119.55,4928,896
-Saint-Roch-de-l'Achigan,QC,Quebec,45.85,-73.6,4892,60.6
-Stirling-Rawdon,ON,Ontario,44.3667,-77.5917,4882,17.3
-Chisasibi,QC,Quebec,53.6645,-78.7938,4872,5.9
-Carbonear,NL,Newfoundland and Labrador,47.7375,-53.2294,4838,411.5
-Saint Marys,NB,New Brunswick,46.1748,-66.4897,4837,6.4
-Chertsey,QC,Quebec,46.17,-73.92,4836,16.8
-Armstrong,BC,British Columbia,50.4483,-119.1961,4830,927.7
-Stonewall,MB,Manitoba,50.1344,-97.3261,4809,802.8
-Shippagan,NB,New Brunswick,47.8557,-64.6012,4800,23.1
-Lanoraie,QC,Quebec,45.9667,-73.2167,4787,46.4
-Memramcook,NB,New Brunswick,46,-64.55,4778,25.5
-Centre Hastings,ON,Ontario,44.4167,-77.4417,4774,20.4
-Warwick,QC,Quebec,45.95,-71.9833,4766,43.3
-East Ferris,ON,Ontario,46.2667,-79.3,4750,30.6
-Hanwell,NB,New Brunswick,45.8681,-66.7947,4750,31.4
-Saint-Joseph-de-Beauce,QC,Quebec,46.3,-70.8833,4722,42.6
-Metchosin,BC,British Columbia,48.3819,-123.5378,4708,66.2
-Lucan Biddulph,ON,Ontario,43.2,-81.3833,4700,27.8
-Riviere-Rouge,QC,Quebec,46.4167,-74.8667,4645,10.2
-Greenstone,ON,Ontario,50,-86.7333,4636,1.7
-Saint-Mathias-sur-Richelieu,QC,Quebec,45.4667,-73.2667,4618,97.8
-Neepawa,MB,Manitoba,50.2289,-99.4656,4609,206.5
-Gibsons,BC,British Columbia,49.4028,-123.5036,4605,1066
-Kindersley,SK,Saskatchewan,51.4678,-109.1567,4597,347.5
-Jasper,AB,Alberta,52.9013,-118.1312,4590,5
-Barrhead,AB,Alberta,54.1167,-114.4,4579,560.4
-Les Coteaux,QC,Quebec,45.28,-74.23,4568,393.2
-Melville,SK,Saskatchewan,50.9306,-102.8078,4562,307.8
-Saint-Germain-de-Grantham,QC,Quebec,45.8333,-72.5667,4551,51.9
-Iroquois Falls,ON,Ontario,48.7667,-80.6667,4537,7.6
-Havelock-Belmont-Methuen,ON,Ontario,44.5667,-77.9,4530,8.3
-Cornwallis,MB,Manitoba,49.7981,-99.8481,4520,9
-Saint-Boniface,QC,Quebec,46.5,-72.8167,4511,41.4
-Edenwold No. 158,SK,Saskatchewan,50.5166,-104.3451,4490,5.3
-Coverdale,NB,New Brunswick,46.0003,-64.8859,4466,18.9
-Vanderhoof,BC,British Columbia,54.0143,-124.0089,4439,81
-Southwold,ON,Ontario,42.75,-81.3167,4421,14.7
-Goulds,NL,Newfoundland and Labrador,47.4517,-52.7647,4418,721.3
-Saint Stephen,NB,New Brunswick,45.2,-67.2833,4415,326.6
-Waterloo,QC,Quebec,45.35,-72.5167,4410,360.2
-Nipawin,SK,Saskatchewan,53.3572,-104.0192,4401,505
-Neuville,QC,Quebec,46.7,-71.5833,4392,61
-Saint-Cyrille-de-Wendover,QC,Quebec,45.9333,-72.4333,4389,39.8
-Central Frontenac,ON,Ontario,44.7167,-76.8,4373,4.3
-Mont-Orford,QC,Quebec,45.3661,-72.1838,4337,31.8
-Saint-Jean-de-Matha,QC,Quebec,46.23,-73.53,4335,39.6
-Seguin,ON,Ontario,45.2882,-79.8116,4304,7.2
-Tyendinaga,ON,Ontario,44.3,-77.2,4297,13.7
-Hampton,NB,New Brunswick,45.533,-65.833,4289,203.4
-Sussex,NB,New Brunswick,45.7167,-65.5167,4282,478.3
-Grand Forks,BC,British Columbia,49.0333,-118.44,4274,388.1
-La Pocatiere,QC,Quebec,47.3667,-70.0333,4266,196.3
-Caraquet,NB,New Brunswick,47.7853,-64.9592,4248,62.1
-Saint-Etienne-des-Gres,QC,Quebec,46.4333,-72.7667,4217,40.2
-Altona,MB,Manitoba,49.1044,-97.5625,4212,445.2
-Stellarton,NS,Nova Scotia,45.5567,-62.66,4208,468.1
-Wolfville,NS,Nova Scotia,45.0833,-64.3667,4195,649.8
-New Maryland,NB,New Brunswick,45.8911,-66.6847,4174,195.7
-Port Hardy,BC,British Columbia,50.7225,-127.4928,4132,106.7
-Saint-Donat,QC,Quebec,46.3167,-74.2167,4130,11.7
-Chateau-Richer,QC,Quebec,46.9667,-71.0167,4126,18
-Madawaska Valley,ON,Ontario,45.5,-77.6667,4123,6.1
-Deep River,ON,Ontario,46.1,-77.4917,4109,82
-Asphodel-Norwood,ON,Ontario,44.3531,-78.0183,4109,25.5
-Red Lake,ON,Ontario,51.0333,-93.8333,4107,6.7
-Metabetchouan-Lac-a-la-Croix,QC,Quebec,48.4333,-71.8667,4097,21.9
-Berthierville,QC,Quebec,46.0833,-73.1833,4091,596.8
-Vermilion,AB,Alberta,53.3542,-110.8528,4084,315.8
-Niverville,MB,Manitoba,49.6056,-97.0417,4083,1767.5
-Hastings Highlands,ON,Ontario,45.2333,-77.9333,4078,4.2
-Carstairs,AB,Alberta,51.5619,-114.0953,4077,342.1
-Danville,QC,Quebec,45.7833,-72.0167,4070,26.7
-Channel-Port aux Basques,NL,Newfoundland and Labrador,47.5694,-59.1361,4067,104.9
-Battleford,SK,Saskatchewan,52.7383,-108.3153,4065,174.2
-Lac-Etchemin,QC,Quebec,46.4,-70.5,4061,25.8
-Saint-Antonin,QC,Quebec,47.7667,-69.4833,4027,22.9
-Saint-Jacques,QC,Quebec,45.95,-73.5667,4021,59.7
-Swan River,MB,Manitoba,52.1058,-101.2667,4014,560.4
-Sutton,QC,Quebec,45.091,-72.5792,4012,16.3
-Northern Bruce Peninsula,ON,Ontario,45.08,-81.38,3999,5.1
-L'Islet-sur-Mer,QC,Quebec,47.1,-70.35,3999,33.3
-Carleton-sur-Mer,QC,Quebec,48.1,-66.1333,3991,18
-Oka,QC,Quebec,45.47,-74.08,3969,69.3
-Prescott,ON,Ontario,44.7167,-75.5167,3965,1273.5
-Amaranth,ON,Ontario,43.9833,-80.2333,3963,15
-Marmora and Lake,ON,Ontario,44.6425,-77.7372,3953,7.1
-Maniwaki,QC,Quebec,46.375,-75.9667,3930,677.7
-Morin-Heights,QC,Quebec,45.9,-74.25,3925,69.5
-Dundas,NB,New Brunswick,46.3155,-64.6947,3914,22.4
-Napierville,QC,Quebec,45.1833,-73.4,3899,796.6
-Crabtree,QC,Quebec,45.9667,-73.4667,3887,155
-Bancroft,ON,Ontario,45.05,-77.85,3881,16.9
-Saint-Tite,QC,Quebec,46.7333,-72.5667,3880,41.9
-Howick,ON,Ontario,43.9,-81.07,3873,13.4
-Dutton/Dunwich,ON,Ontario,42.6667,-81.5,3866,13.1
-Callander,ON,Ontario,46.1781,-79.4125,3863,36.4
-Simonds,NB,New Brunswick,45.3145,-65.803,3843,13.7
-Baie-d'Urfe,QC,Quebec,45.4167,-73.9167,3823,633.9
-New Richmond,QC,Quebec,48.1667,-65.8667,3810,22.6
-Perth South,ON,Ontario,43.3,-81.15,3810,9.7
-Roxton Pond,QC,Quebec,45.4833,-72.6667,3786,38.8
-Sparwood,BC,British Columbia,49.7331,-114.8853,3784,19.4
-Claresholm,AB,Alberta,50.0194,-113.5783,3780,465.9
-Breslau,ON,Ontario,43.4816,-80.408,3778,691.9
-Montague,ON,Ontario,44.9667,-75.9667,3761,13.4
-Cumberland,BC,British Columbia,49.6206,-125.0261,3753,128.9
-Beaupre,QC,Quebec,47.05,-70.9,3752,163.4
-Saint-Andre-Avellin,QC,Quebec,45.7167,-75.0667,3749,27.2
-Saint-Ambroise-de-Kildare,QC,Quebec,46.0833,-73.55,3747,55.3
-East Angus,QC,Quebec,45.4833,-71.6667,3741,472.7
-Rossland,BC,British Columbia,49.0786,-117.7992,3729,62.4
-Mackenzie,BC,British Columbia,55.3381,-123.0944,3714,22.6
-Golden,BC,British Columbia,51.3019,-116.9667,3708,325
-Raymond,AB,Alberta,49.4658,-112.6508,3708,557.1
-Saint-Adolphe-d'Howard,QC,Quebec,45.97,-74.33,3702,26.6
-Warwick,ON,Ontario,43,-81.8917,3692,12.7
-Bowen Island,BC,British Columbia,49.3833,-123.3833,3680,73.4
-Bonnechere Valley,ON,Ontario,45.5333,-77.1,3674,6.2
-Windsor,NS,Nova Scotia,44.9803,-64.1292,3648,400.6
-Pincher Creek,AB,Alberta,49.4861,-113.95,3642,361.1
-Alnwick,NB,New Brunswick,47.2656,-65.2292,3640,5.4
-Westville,NS,Nova Scotia,45.55,-62.7,3628,254.9
-Fruitvale,BC,British Columbia,49.1161,-117.5414,3627,1363.5
-Pasadena,NL,Newfoundland and Labrador,49.0161,-57.605,3620,73.6
-Saint-Prosper,QC,Quebec,46.2167,-70.4833,3605,27
-Ormstown,QC,Quebec,45.13,-74,3595,25.2
-Cardston,AB,Alberta,49.2025,-113.3019,3585,417.5
-Westbank,BC,British Columbia,49.8423,-119.6743,3581,80.6
-De Salaberry,MB,Manitoba,49.4403,-96.9844,3580,5.3
-Headingley,MB,Manitoba,49.8681,-97.3908,3579,33.4
-Grande Cache,AB,Alberta,53.8773,-119.1199,3571,102.1
-Atholville,NB,New Brunswick,47.9894,-66.7125,3570,29.8
-Saint-Agapit,QC,Quebec,46.5667,-71.4333,3567,54.5
-Prince Albert No. 461,SK,Saskatchewan,53.1089,-105.6574,3562,3.5
-Casselman,ON,Ontario,45.3,-75.0833,3548,693.4
-Saint-Ambroise,QC,Quebec,48.55,-71.3333,3546,23.5
-Hay River,NT,Northwest Territories,60.7531,-115.9004,3528,26.5
-Mistissini,QC,Quebec,50.5707,-73.6829,3523,4.1
-Studholm,NB,New Brunswick,45.8133,-65.5747,3522,7.8
-Lumby,BC,British Columbia,50.2494,-118.9656,3500,379.5
-Saint-Faustin--Lac-Carre,QC,Quebec,46.0813,-74.4668,3499,28.8
-Morris-Turnberry,ON,Ontario,43.85,-81.25,3496,9.1
-Placentia,NL,Newfoundland and Labrador,47.2458,-53.9611,3496,60.2
-Saint-Pascal,QC,Quebec,47.5333,-69.8,3490,58.8
-Mulmur,ON,Ontario,44.1917,-80.1083,3478,12.1
-Blind River,ON,Ontario,46.1833,-82.95,3472,6.6
-Dunham,QC,Quebec,45.1333,-72.8,3471,17.8
-Havre-Saint-Pierre,QC,Quebec,50.2333,-63.6,3460,1.2
-Saint-Anselme,QC,Quebec,46.6333,-70.9667,3458,46.9
-Trois-Pistoles,QC,Quebec,48.12,-69.18,3456,450.9
-Grande-Riviere,QC,Quebec,48.4,-64.5,3456,39.5
-Powassan,ON,Ontario,46.0825,-79.3619,3455,15.4
-Malartic,QC,Quebec,48.1333,-78.1333,3449,23.2
-Bonavista,NL,Newfoundland and Labrador,48.6597,-53.1208,3448,109.4
-Killarney - Turtle Mountain,MB,Manitoba,49.1775,-99.6906,3429,3.7
-Woodlands,MB,Manitoba,50.2408,-97.7358,3416,2.9
-Lewisporte,NL,Newfoundland and Labrador,49.23,-55.07,3409,92.4
-Saint-Denis-de-Brompton,QC,Quebec,45.45,-72.0833,3402,48.1
-Invermere,BC,British Columbia,50.5083,-116.0303,3391,315.9
-Salisbury,NB,New Brunswick,46.0776,-65.1996,3388,3.9
-Bifrost-Riverton,MB,Manitoba,51.0603,-97.1436,3378,2.1
-Buckland No. 491,SK,Saskatchewan,53.3276,-105.7804,3375,4.3
-Cartier,MB,Manitoba,49.9161,-97.7,3368,6.1
-Sainte-Anne-des-Lacs,QC,Quebec,45.85,-74.1333,3363,135.8
-Highlands East,ON,Ontario,44.9667,-78.25,3343,4.7
-Alexander,MB,Manitoba,50.4222,-96.075,3333,2.1
-Sainte-Claire,QC,Quebec,46.6,-70.8667,3325,37.8
-Perce,QC,Quebec,48.5333,-64.2167,3312,7.7
-Saint-Jean-Port-Joli,QC,Quebec,47.2167,-70.2667,3304,47.9
-East Hawkesbury,ON,Ontario,45.5167,-74.4667,3296,14
-Bright,NB,New Brunswick,46.1205,-67.0545,3289,8.1
-Penhold,AB,Alberta,52.1333,-113.8667,3277,619.9
-Saint-Andre-d'Argenteuil,QC,Quebec,45.5667,-74.3333,3275,33.5
-Saint-Come--Liniere,QC,Quebec,46.0667,-70.5167,3274,21.8
-Saint-Sulpice,QC,Quebec,45.8333,-73.35,3273,90
-Marathon,ON,Ontario,48.75,-86.3667,3273,19.2
-Forestville,QC,Quebec,48.7333,-69.0833,3270,16.8
-Inuvik,NT,Northwest Territories,68.3407,-133.6096,3243,51.9
-Richmond,QC,Quebec,45.6667,-72.15,3232,460.2
-Lake Cowichan,BC,British Columbia,48.8258,-124.0542,3226,369.6
-Sables-Spanish Rivers,ON,Ontario,46.2333,-82,3214,3.9
-Hillsburg-Roblin-Shell River,MB,Manitoba,51.3343,-101.2929,3214,1.9
-Port Hawkesbury,NS,Nova Scotia,45.6153,-61.3642,3214,396.6
-Three Hills,AB,Alberta,51.7072,-113.2647,3212,475.7
-Lorette,MB,Manitoba,49.7414,-96.8761,3208,685
-Paspebiac,QC,Quebec,48.0333,-65.25,3198,33.8
-Saint-Thomas,QC,Quebec,46.0167,-73.35,3193,33.6
-Saint-Jean-Baptiste,QC,Quebec,45.5167,-73.1167,3191,44.3
-Portneuf,QC,Quebec,46.7,-71.8833,3187,29.1
-Pictou,NS,Nova Scotia,45.6814,-62.7119,3186,397.6
-Tisdale,SK,Saskatchewan,52.85,-104.05,3180,491.5
-Lake of Bays,ON,Ontario,45.3043,-79.018,3167,4.7
-High Level,AB,Alberta,58.5169,-117.1361,3159,108.2
-Gibbons,AB,Alberta,53.8278,-113.3228,3159,421.3
-Bishops Falls,NL,Newfoundland and Labrador,49.0167,-55.5167,3156,112.2
-WestLake-Gladstone,MB,Manitoba,50.2862,-98.8415,3154,1.7
-Normandin,QC,Quebec,48.8333,-72.5333,3137,14.8
-Saint-Alphonse-Rodriguez,QC,Quebec,46.1833,-73.7,3134,32
-Beausejour,MB,Manitoba,50.0622,-96.5161,3126,584.4
-Dalhousie,NB,New Brunswick,48.1,-66.6167,3126,205.3
-Saint-Alphonse-de-Granby,QC,Quebec,45.3333,-72.8167,3125,62.6
-Lac du Bonnet,MB,Manitoba,50.2577,-96.1209,3121,2.8
-Clermont,QC,Quebec,47.6833,-70.2333,3118,62.8
-Virden,MB,Manitoba,49.8508,-100.9317,3114,370.2
-Compton,QC,Quebec,45.2333,-71.8167,3112,15.1
-White City,SK,Saskatchewan,50.4353,-104.3572,3099,7.5
-Ellison,BC,British Columbia,49.9646,-119.3178,3094,37.6
-Mont-Saint-Gregoire,QC,Quebec,45.3333,-73.1667,3086,38.8
-Wellington,NB,New Brunswick,46.4768,-64.7478,3079,16.7
-Merrickville,ON,Ontario,44.8539,-75.8269,3067,14.3
-Saint-Liboire,QC,Quebec,45.65,-72.7667,3051,41.9
-Degelis,QC,Quebec,47.55,-68.65,3051,5.5
-Morris,MB,Manitoba,49.3986,-97.4592,3047,2.9
-Saint-Alexis-des-Monts,QC,Quebec,46.4667,-73.1333,3046,2.9
-Cap-Saint-Ignace,QC,Quebec,47.0333,-70.4667,3045,14.6
-Saint-Anaclet-de-Lessard,QC,Quebec,48.48,-68.42,3035,23.9
-Carman,MB,Manitoba,49.4992,-98.0008,3027,702.4
-Athens,ON,Ontario,44.625,-75.95,3013,23.6
-Melancthon,ON,Ontario,44.15,-80.2667,3008,9.7
-Cap Sante,QC,Quebec,46.6667,-71.7833,2996,54.7
-Harbour Grace,NL,Newfoundland and Labrador,47.6917,-53.2167,2995,88.8
-Houston,BC,British Columbia,54.3975,-126.6419,2993,41
-Adelaide-Metcalfe,ON,Ontario,42.95,-81.7,2990,9
-Crossfield,AB,Alberta,51.4333,-114.0333,2983,249.3
-Springdale,NL,Newfoundland and Labrador,49.4974,-56.0727,2971,168.8
-Fort Macleod,AB,Alberta,49.7256,-113.3975,2967,126.8
-Athabasca,AB,Alberta,54.7197,-113.2856,2965,168
-Enderby,BC,British Columbia,50.5508,-119.1397,2964,695.8
-Saint-Ferreol-les-Neiges,QC,Quebec,47.1167,-70.85,2964,35.6
-Laurentian Hills,ON,Ontario,46.1333,-77.55,2961,4.6
-Grand Valley,ON,Ontario,43.95,-80.3667,2956,18.7
-Senneterre,QC,Quebec,48.3833,-77.2333,2953,0.2
-Sainte-Marie-Madeleine,QC,Quebec,45.6,-73.1,2935,57.7
-Admaston/Bromley,ON,Ontario,45.5292,-76.8969,2935,5.6
-Saint-Gabriel-de-Valcartier,QC,Quebec,46.9333,-71.4667,2933,6.7
-North Algona Wilberforce,ON,Ontario,45.6167,-77.2,2915,7.7
-Kingston,NB,New Brunswick,45.4663,-66.0217,2913,14.5
-Wawa,ON,Ontario,47.9931,-84.7736,2905,7
-Saint-Christophe-d'Arthabaska,QC,Quebec,46.0333,-71.8833,2892,41.9
-Sainte-Melanie,QC,Quebec,46.1333,-73.5167,2892,38.1
-Ascot Corner,QC,Quebec,45.45,-71.7667,2891,35.1
-Horton,ON,Ontario,45.5,-76.6667,2887,18.2
-Saint-Michel,QC,Quebec,45.2333,-73.5667,2884,48.2
-Botwood,NL,Newfoundland and Labrador,49.15,-55.3667,2875,191
-Saint-Paul-d'Abbotsford,QC,Quebec,45.4333,-72.8833,2870,36.1
-Saint-Marc-des-Carrieres,QC,Quebec,46.6833,-72.05,2862,172
-Stanstead,QC,Quebec,45.0167,-72.1,2857,125.8
-Sainte-Anne-de-Beaupre,QC,Quebec,47.0167,-70.9333,2854,45.6
-Sainte-Luce,QC,Quebec,48.55,-68.38,2851,39
-Saint-Gabriel,QC,Quebec,46.3,-73.3833,2844,1012.3
-Rankin Inlet,NU,Nunavut,62.83,-92.1321,2842,140.4
-Vanscoy No. 345,SK,Saskatchewan,52.0073,-107.0552,2840,3.3
-Cedar,BC,British Columbia,49.0853,-123.8259,2836,83.8
-Princeton,BC,British Columbia,49.4589,-120.506,2828,47.4
-La Loche,SK,Saskatchewan,56.4833,-109.4333,2827,181.3
-Kingsclear,NB,New Brunswick,45.8796,-66.8695,2822,18.6
-Ferme-Neuve,QC,Quebec,46.7,-75.45,2822,3.6
-Thurso,QC,Quebec,45.5969,-75.2433,2818,449
-Adstock,QC,Quebec,46.05,-71.08,2806,9.7
-Shuniah,ON,Ontario,48.5833,-88.8333,2798,4.9
-Enniskillen,ON,Ontario,42.8167,-82.125,2796,8.3
-Yamachiche,QC,Quebec,46.2667,-72.8333,2787,26.2
-Saint-Maurice,QC,Quebec,46.4667,-72.5333,2775,30.3
-Bonaventure,QC,Quebec,48.05,-65.4833,2775,26.6
-Val-Morin,QC,Quebec,46,-74.18,2772,70.3
-Pohenegamook,QC,Quebec,47.4667,-69.2167,2770,8.1
-Wakefield,NB,New Brunswick,46.2406,-67.6248,2767,14.1
-Stoke,QC,Quebec,45.5333,-71.8,2765,10.8
-Sainte-Marguerite-du-Lac-Masson,QC,Quebec,46.056,-74.0723,2763,30
-Saint-Prime,QC,Quebec,48.58,-72.33,2758,18.7
-Kuujjuaq,QC,Quebec,58.1429,-68.3742,2754,9.4
-Atikokan,ON,Ontario,48.75,-91.6167,2753,8.6
-Grenville-sur-la-Rouge,QC,Quebec,45.65,-74.6333,2746,8.7
-North Cypress-Langford,MB,Manitoba,49.9969,-99.3982,2745,1.6
-Sainte-Anne-de-Sorel,QC,Quebec,46.05,-73.0667,2742,71.4
-Macamic,QC,Quebec,48.75,-79,2734,13.5
-Sundre,AB,Alberta,51.7972,-114.6406,2729,245.6
-Rougemont,QC,Quebec,45.4333,-73.05,2723,62
-Piedmont,QC,Quebec,45.9,-74.13,2721,111.7
-Grimshaw,AB,Alberta,56.1908,-117.6117,2718,383.4
-Lac-des-Ecorces,QC,Quebec,46.55,-75.35,2713,18.8
-Northeastern Manitoulin and the Islands,ON,Ontario,45.9667,-81.9333,2706,5.5
-Pelican Narrows,SK,Saskatchewan,55.1883,-102.9342,2703,295
-McDougall,ON,Ontario,45.45,-80.0167,2702,10.1
-Black Diamond,AB,Alberta,50.6881,-114.2333,2700,702.7
-Saint-Pamphile,QC,Quebec,46.9667,-69.7833,2685,19.6
-Bedford,QC,Quebec,45.1167,-72.9833,2684,639.4
-Weedon-Centre,QC,Quebec,45.7,-71.4667,2683,12.4
-Lacolle,QC,Quebec,45.0833,-73.3667,2680,54
-Saint-Gabriel-de-Brandon,QC,Quebec,46.2667,-73.3833,2679,26.8
-Errington,BC,British Columbia,49.2874,-124.3433,2677,97.4
-Coalhurst,AB,Alberta,49.7457,-112.9319,2668,857.5
-French River / Riviere des Francais,ON,Ontario,46.1667,-80.5,2662,3.6
-Arviat,NU,Nunavut,61.0996,-94.1688,2657,20.1
-Saint-David-de-Falardeau,QC,Quebec,48.6167,-71.1167,2657,6.6
-Markstay,ON,Ontario,46.4912,-80.4717,2656,5.2
-Spaniards Bay,NL,Newfoundland and Labrador,47.6181,-53.3369,2653,40.4
-Cocagne,NB,New Brunswick,46.3406,-64.62,2649,66.78
-Saint-Bruno,QC,Quebec,48.4667,-71.65,2636,33.8
-Chetwynd,BC,British Columbia,55.6972,-121.6333,2635,43.1
-Laurier-Station,QC,Quebec,46.5333,-71.6333,2634,219.3
-Saint-Anicet,QC,Quebec,45.12,-74.35,2626,19.4
-Saint-Mathieu-de-Beloeil,QC,Quebec,45.5667,-73.2,2624,65.8
-Cap-Chat,QC,Quebec,49.1,-66.6833,2623,14.4
-Sexsmith,AB,Alberta,55.3508,-118.7825,2620,197.9
-Notre-Dame-de-Lourdes,QC,Quebec,46.1,-73.4333,2595,72.6
-Ville-Marie,QC,Quebec,47.3333,-79.4333,2595,424.8
-Saint-Isidore,QC,Quebec,45.3,-73.68,2581,49.7
-Shippegan,NB,New Brunswick,47.7439,-64.7178,2580,257.6
-East Garafraxa,ON,Ontario,43.85,-80.25,2579,15.5
-Pemberton,BC,British Columbia,50.3203,-122.8053,2574,217.5
-Unity,SK,Saskatchewan,52.4333,-109.1667,2573,244.6
-Rimbey,AB,Alberta,52.6333,-114.2167,2567,225.1
-High Prairie,AB,Alberta,55.4325,-116.4861,2564,355.3
-Turner Valley,AB,Alberta,50.6739,-114.2786,2559,442.1
-Hanna,AB,Alberta,51.6383,-111.9419,2559,290.6
-Fort Smith,NT,Northwest Territories,60.026,-112.0821,2542,27.4
-Maria,QC,Quebec,48.1667,-65.9833,2536,26.7
-Saint-Chrysostome,QC,Quebec,45.1,-73.7667,2522,25.2
-Greater Madawaska,ON,Ontario,45.2722,-76.8589,2518,2.4
-Berwick,NS,Nova Scotia,45.0475,-64.736,2509,381.3
-Saint-Damase,QC,Quebec,45.5333,-73,2506,31.7
-Lincoln,NB,New Brunswick,45.8716,-66.5437,2504,98.2
-Disraeli,QC,Quebec,45.9,-71.35,2502,362.1
-Sainte-Victoire-de-Sorel,QC,Quebec,45.95,-73.0833,2501,33.5
-Meadow Lake No. 588,SK,Saskatchewan,54.1213,-108.2837,2501,0.4
-Elkford,BC,British Columbia,50.0214,-114.9158,2499,24.6
-Georgian Bay,ON,Ontario,44.9833,-79.8167,2499,4.6
-Saint-Alexandre,QC,Quebec,45.2333,-73.1167,2495,32.8
-Herbertville,QC,Quebec,48.3473,-71.6784,2491,9.5
-Moosomin,SK,Saskatchewan,50.142,-101.67,2485,327.5
-North Kawartha,ON,Ontario,44.75,-78.1,2479,3.2
-Sainte-Thecle,QC,Quebec,46.8167,-72.5,2478,11.6
-Trenton,NS,Nova Scotia,45.6193,-62.6332,2474,407.8
-Fermont,QC,Quebec,52.7833,-67.0833,2474,5.2
-Esterhazy,SK,Saskatchewan,50.65,-102.0667,2472,520.9
-Wickham,QC,Quebec,45.75,-72.5,2470,25
-La Presentation,QC,Quebec,45.6667,-73.05,2466,26.1
-Beaverlodge,AB,Alberta,55.2094,-119.4292,2465,430.5
-Sainte-Catherine-de-Hatley,QC,Quebec,45.25,-72.05,2464,28.5
-Saint-Basile,QC,Quebec,46.75,-71.8167,2463,25.1
-Saint-Raphael,QC,Quebec,46.8,-70.75,2463,20.3
-Holyrood,NL,Newfoundland and Labrador,47.3833,-53.1333,2463,19.6
-Gracefield,QC,Quebec,46.0926,-75.9574,2462,6.4
-Saint-Martin,QC,Quebec,45.9667,-70.65,2462,20.8
-Causapscal,QC,Quebec,48.3667,-67.2333,2458,15.2
-Brigham,QC,Quebec,45.25,-72.85,2457,28.2
-Perry,ON,Ontario,45.5,-79.2833,2454,13.1
-Port-Daniel--Gascons,QC,Quebec,48.1833,-64.9667,2453,8.1
-Rosetown,SK,Saskatchewan,51.55,-107.9833,2451,201.9
-Minnedosa,MB,Manitoba,50.2453,-99.8428,2449,161.1
-Labelle,QC,Quebec,46.2833,-74.7333,2445,12.3
-Huntingdon,QC,Quebec,45.08,-74.17,2444,879.2
-Hebertville,QC,Quebec,48.4,-71.6833,2441,9.3
-Black River-Matheson,ON,Ontario,48.5333,-80.4667,2438,2.1
-Saint-Michel-des-Saints,QC,Quebec,46.6833,-73.9167,2436,4.9
-Dufferin,MB,Manitoba,49.5319,-98.07,2435,2.7
-Saint-Victor,QC,Quebec,46.15,-70.9,2430,20.2
-Sicamous,BC,British Columbia,50.8378,-118.9703,2429,192
-Cap Pele,NB,New Brunswick,46.2172,-64.2822,2425,103.8
-Kelsey,MB,Manitoba,53.7356,-101.395,2424,2.8
-"Killaloe, Hagarty and Richards",ON,Ontario,45.6,-77.5,2420,6.1
-Alvinston,ON,Ontario,42.8489,-81.9049,2411,7.7
-Dundurn No. 314,SK,Saskatchewan,51.8261,-106.5416,2404,3
-Saint-Ephrem-de-Beauce,QC,Quebec,46.0516,-70.9374,2400,20.2
-Assiniboia,SK,Saskatchewan,49.6167,-105.9833,2389,630.3
-Temiscaming,QC,Quebec,46.7167,-79.1,2385,3.3
-Magrath,AB,Alberta,49.4239,-112.8683,2374,396.4
-Sainte-Genevieve-de-Berthier,QC,Quebec,46.0833,-73.2167,2365,35.5
-Buctouche,NB,New Brunswick,46.4719,-64.7249,2361,130.5
-Grand Manan,NB,New Brunswick,44.69,-66.82,2360,15.8
-Sainte-Madeleine,QC,Quebec,45.6,-73.1,2356,439.8
-Boissevain,MB,Manitoba,49.1779,-100.0955,2353,2.2
-Scott,QC,Quebec,46.512,-71.077,2352,75.1
-Sainte-Croix,QC,Quebec,46.62,-71.73,2352,33.8
-Algonquin Highlands,ON,Ontario,45.4,-78.75,2351,2.3
-Valcourt,QC,Quebec,45.5,-72.3167,2349,467.3
-Saint George,NB,New Brunswick,45.2916,-66.8501,2341,4.7
-Paquetville,NB,New Brunswick,47.6334,-65.1803,2329,10.6
-Saint-Dominique,QC,Quebec,45.5667,-72.85,2327,33.7
-Clearwater,BC,British Columbia,51.65,-120.0333,2324,41.7
-Addington Highlands,ON,Ontario,45,-77.25,2323,1.7
-Lillooet,BC,British Columbia,50.6864,-121.9364,2321,84.4
-Burin,NL,Newfoundland and Labrador,47.05,-55.18,2315,67.8
-Grand Bank,NL,Newfoundland and Labrador,47.1,-55.7833,2310,136.1
-Lery,QC,Quebec,45.35,-73.8,2307,218.2
-Minto,NB,New Brunswick,46.1497,-66.1067,2305,72.8
-Rosthern No. 403,SK,Saskatchewan,52.6206,-106.3967,2300,2.4
-Chase,BC,British Columbia,50.8189,-119.6844,2286,607
-Mansfield-et-Pontefract,QC,Quebec,45.8611,-76.7392,2285,4.8
-Saint-Denis,QC,Quebec,45.7833,-73.15,2285,26.9
-Outlook,SK,Saskatchewan,51.5,-107.05,2279,291
-Mitchell,MB,Manitoba,49.5363,-96.7634,2279,704.7
-Saint-Gedeon-de-Beauce,QC,Quebec,45.85,-70.6333,2277,11.6
-Saint-Leonard-d'Aston,QC,Quebec,46.1,-72.3667,2271,27.5
-Lunenburg,NS,Nova Scotia,44.3833,-64.3167,2263,560.1
-Northesk,NB,New Brunswick,47.2569,-66.2613,2263,0.7
-Albanel,QC,Quebec,48.8833,-72.45,2262,11.4
-St. Anthony,NL,Newfoundland and Labrador,51.3725,-55.5947,2258,61
-Pessamit,QC,Quebec,49.0485,-68.6814,2256,8.8
-Maskinonge,QC,Quebec,46.2333,-73.0167,2253,30.2
-Saint-Charles-de-Bellechasse,QC,Quebec,46.7667,-70.95,2246,24.1
-Fogo Island,NL,Newfoundland and Labrador,49.6667,-54.1833,2244,9.4
-East Broughton,QC,Quebec,46.2167,-71.0667,2229,255.3
-Lantz,NS,Nova Scotia,44.9894,-63.4736,2229,749.9
-Calmar,AB,Alberta,53.25,-113.7833,2228,476.2
-Highlands,BC,British Columbia,48.52,-123.5,2225,58.5
-Saint-Polycarpe,QC,Quebec,45.3,-74.3,2224,31.8
-Logy Bay-Middle Cove-Outer Cove,NL,Newfoundland and Labrador,47.63,-52.68,2221,130.9
-Deschambault,QC,Quebec,46.6436,-72.0236,2220,17.8
-Canora,SK,Saskatchewan,51.6339,-102.4369,2219,303.7
-Upper Miramichi,NB,New Brunswick,46.5254,-66.2085,2218,1.2
-Anmore,BC,British Columbia,49.3144,-122.8564,2210,80.2
-Hardwicke,NB,New Brunswick,47.0208,-65.0302,2201,7.9
-Saint-Come,QC,Quebec,46.27,-73.78,2198,13.5
-Waskaganish,QC,Quebec,51.3674,-78.7069,2196,4.4
-Twillingate,NL,Newfoundland and Labrador,49.6444,-54.7436,2196,85.3
-Saint-Quentin,NB,New Brunswick,47.5135,-67.3921,2194,517.2
-Lebel-sur-Quevillon,QC,Quebec,49.05,-76.9833,2187,53.8
-Pilot Butte,SK,Saskatchewan,50.4667,-104.4167,2183,377.7
-Nanton,AB,Alberta,50.3494,-113.7717,2181,447.8
-Pierreville,QC,Quebec,46.0667,-72.8167,2176,27.8
-New-Wes-Valley,NL,Newfoundland and Labrador,49.15,-53.5833,2172,16.3
-Pennfield Ridge,NB,New Brunswick,45.1924,-66.6858,2170,6
-West Interlake,MB,Manitoba,50.9837,-98.3572,2162,1.3
-Biggar,SK,Saskatchewan,52.059,-107.979,2161,137.2
-Britannia No. 502,SK,Saskatchewan,53.4236,-109.7772,2153,2.3
-Kent,NB,New Brunswick,46.6221,-67.2953,2153,2.6
-Wabana,NL,Newfoundland and Labrador,47.65,-52.9333,2146,148
-Saint-Gilles,QC,Quebec,46.5167,-71.3667,2138,12.1
-Wendake,QC,Quebec,46.8693,-71.3628,2134,1253.9
-Saint-Bernard,QC,Quebec,46.5,-71.1333,2131,23.7
-Sainte-Cecile-de-Milton,QC,Quebec,45.4833,-72.75,2128,29.1
-Saint-Roch-de-Richelieu,QC,Quebec,45.8833,-73.1667,2122,60.9
-Saint-Nazaire,QC,Quebec,48.5833,-71.5333,2114,14.6
-Saint-Elzear,QC,Quebec,46.4,-71.0667,2107,24.1
-Hinchinbrooke,QC,Quebec,45.05,-74.1,2103,14.1
-Saint-Francois-Xavier-de-Brompton,QC,Quebec,45.5333,-72.05,2101,21.5
-Papineauville,QC,Quebec,45.6167,-75.0167,2101,34.3
-Prairie View,MB,Manitoba,50.3304,-100.9803,2088,1.2
-Cowichan Bay,BC,British Columbia,48.7666,-123.6743,2086,89.5
-Saint-Ignace-de-Loyola,QC,Quebec,46.0667,-73.1333,2086,57.7
-Central Manitoulin,ON,Ontario,45.7167,-82.2,2084,4.8
-Maple Creek,SK,Saskatchewan,49.9167,-109.4667,2084,471.3
-Glovertown,NL,Newfoundland and Labrador,48.6667,-54.05,2083,29.6
-Tofield,AB,Alberta,53.3703,-112.6667,2081,253.4
-Madoc,ON,Ontario,44.5833,-77.5167,2078,7.9
-Upton,QC,Quebec,45.65,-72.6833,2075,37.3
-Sainte-Anne-de-Sabrevois,QC,Quebec,45.2,-73.2167,2074,46.3
-Logan Lake,BC,British Columbia,50.4911,-120.8153,2073,6.4
-Sainte-Anne-de-la-Perade,QC,Quebec,46.5833,-72.2,2072,18.8
-Saint-Damien-de-Buckland,QC,Quebec,46.6333,-70.6667,2071,25.2
-Baker Lake,NU,Nunavut,64.3287,-96.0308,2069,11.4
-Saltair,BC,British Columbia,48.9504,-123.7637,2069,305.1
-Pouch Cove,NL,Newfoundland and Labrador,47.767,-52.767,2069,35.5
-Saint-Ferdinand,QC,Quebec,46.1,-71.5667,2067,15.1
-Port McNeill,BC,British Columbia,50.5903,-127.0847,2064,149.9
-Digby,NS,Nova Scotia,44.6222,-65.7606,2060,654.6
-Manouane,QC,Quebec,47.2091,-74.3833,2060,258.4
-Saint-Gervais,QC,Quebec,46.7167,-70.8833,2058,23.1
-Neebing,ON,Ontario,48.1833,-89.4667,2055,2.3
-Redwater,AB,Alberta,53.9489,-113.1067,2053,102.5
-Saint-Alexandre-de-Kamouraska,QC,Quebec,47.6817,-69.625,2050,18.4
-Saint-Marc-sur-Richelieu,QC,Quebec,45.6833,-73.2,2050,33.8
-Mandeville,QC,Quebec,46.3667,-73.35,2043,6.3
-Caplan,QC,Quebec,48.1,-65.6833,2039,23.7
-Point Edward,ON,Ontario,42.9931,-82.4083,2037,620.6
-Allardville,NB,New Brunswick,47.4321,-65.4383,2032,3.1
-Waterville,QC,Quebec,45.2667,-71.9,2028,45.7
-Saint-Damien,QC,Quebec,46.33,-73.48,2020,7.9
-Lac-Nominingue,QC,Quebec,46.4,-75.0333,2019,6.6
-Obedjiwan,QC,Quebec,48.6686,-74.9289,2019,234.4
-Rama,SK,Saskatchewan,51.7578,-103.0008,2016,3087.3
-McCreary,MB,Manitoba,50.7494,-99.485,2011,274.7
-Deloraine-Winchester,MB,Manitoba,49.1775,-100.4322,2011,2
-Oakland-Wawanesa,MB,Manitoba,49.6208,-99.8481,2011,2.9
-Brenda-Waskada,MB,Manitoba,49.1775,-100.7019,2011,0.9
-Russell-Binscarth,MB,Manitoba,50.7272,-101.3689,2011,4.3
-Ellice-Archie,MB,Manitoba,50.3239,-101.2729,2011,0.8
-Souris-Glenwood,MB,Manitoba,49.6208,-100.2581,2011,4.4
-Riverdale,MB,Manitoba,49.975,-100.2789,2011,3.7
-Pembina,MB,Manitoba,49.1775,-98.5408,2011,2.1
-Wallace-Woodworth,MB,Manitoba,49.9156,-100.9389,2011,1.5
-Lorne,MB,Manitoba,49.4436,-98.7494,2011,3.3
-Ethelbert,MB,Manitoba,51.5364,-100.4981,2011,104.3
-Yellowhead,MB,Manitoba,50.4847,-100.4828,2011,1.8
-Swan Valley West,MB,Manitoba,51.9978,-101.3944,2011,1.6
-Grey,MB,Manitoba,49.7094,-98.0736,2011,2.8
-Gilbert Plains,MB,Manitoba,51.1547,-100.4381,2011,1.4
-Norfolk-Treherne,MB,Manitoba,49.6653,-98.5967,2011,2.4
-Hamiota,MB,Manitoba,50.1964,-100.6342,2011,248.3
-Emerson-Franklin,MB,Manitoba,49.1333,-97.0331,2011,2.6
-Sifton,MB,Manitoba,49.6653,-100.6678,2011,2.6
-Rossburn,MB,Manitoba,50.7272,-100.7408,2011,150.4
-Grand View,MB,Manitoba,51.155,-100.7892,2011,310.3
-Grassland,MB,Manitoba,49.4306,-100.3103,2011,1.2
-Louise,MB,Manitoba,49.1772,-98.8794,2011,2
-Ste. Rose,MB,Manitoba,51.0222,-99.4306,2011,2.7
-Cartwright-Roblin,MB,Manitoba,49.1331,-99.2797,2011,1.8
-Mossey River,MB,Manitoba,51.755,-99.9664,2011,1
-Lakeshore,MB,Manitoba,51.244,-99.6562,2011,1.1
-Riding Mountain West,MB,Manitoba,50.8347,-101.0961,2011,0.9
-Clanwilliam-Erickson,MB,Manitoba,50.5061,-99.8156,2011,2.5
-Glenboro-South Cypress,MB,Manitoba,49.665,-99.3708,2011,1.4
-North Norfolk,MB,Manitoba,49.9308,-98.8356,2011,3.3
-Reinland,MB,Manitoba,49.1331,-97.5942,2011,6.2
-Minitonas-Bowsman,MB,Manitoba,52.1433,-100.9772,2011,1.4
-Kippens,NL,Newfoundland and Labrador,48.5492,-58.6236,2008,140.3
-Blucher,SK,Saskatchewan,52.0134,-106.2176,2006,2.5
-Hatley,QC,Quebec,45.27,-71.95,2003,28
-Saint-Gedeon,QC,Quebec,48.5,-71.7667,2001,31.5
-Kingsey Falls,QC,Quebec,45.85,-72.0667,2000,28.7
-Provost,AB,Alberta,52.3539,-110.2686,1998,423
-Saint-Charles,NB,New Brunswick,46.6692,-65.0184,1997,11.4
-Mattawa,ON,Ontario,46.3167,-78.7,1993,544.8
-Tumbler Ridge,BC,British Columbia,55.1333,-121,1987,1.3
-Terrasse-Vaudreuil,QC,Quebec,45.4,-73.9833,1986,1865.2
-L'Ascension-de-Notre-Seigneur,QC,Quebec,48.7,-71.6833,1983,15
-Bow Island,AB,Alberta,49.8667,-111.3667,1983,341.6
-Barraute,QC,Quebec,48.4333,-77.6333,1980,4
-One Hundred Mile House,BC,British Columbia,51.6413,-121.3127,1980,37.2
-Kedgwick,NB,New Brunswick,47.6456,-67.3431,1979,3
-Gambo,NL,Newfoundland and Labrador,48.7833,-54.2167,1978,21.5
-Saint-Liguori,QC,Quebec,46.0167,-73.5667,1976,39.1
-Bonfield,ON,Ontario,46.2167,-79.1333,1975,9.5
-Pointe-Lebel,QC,Quebec,49.1667,-68.2,1973,23.3
-Saint Mary,NB,New Brunswick,46.3987,-64.8681,1972,8.3
-Saint-Patrice-de-Sherrington,QC,Quebec,45.1667,-73.5167,1971,21.3
-Fox Creek,AB,Alberta,54.395,-116.8092,1971,159.4
-Dawn-Euphemia,ON,Ontario,42.7,-82.0167,1967,4.4
-Chapleau,ON,Ontario,47.8333,-83.4,1964,138.2
-Saint-Esprit,QC,Quebec,45.9,-73.6667,1963,36.4
-Westfield Beach,NB,New Brunswick,45.3432,-66.2868,1962,6.6
-Montague,PE,Prince Edward Island,46.1652,-62.65,1961,620.8
-Mashteuiatsh,QC,Quebec,48.569,-72.2495,1957,134.9
-Saint-Francois-du-Lac,QC,Quebec,46.0667,-72.8333,1957,30.4
-Eel River Crossing,NB,New Brunswick,48.0125,-66.4208,1953,29.8
-Saint-Fulgence,QC,Quebec,48.45,-70.9,1949,5.5
-Millet,AB,Alberta,53.0978,-113.4728,1945,522.9
-Vallee-Jonction,QC,Quebec,46.3667,-70.9167,1940,76.6
-Saint-Georges-de-Cacouna,QC,Quebec,47.9167,-69.5,1939,30.6
-Lumsden No. 189,SK,Saskatchewan,50.6734,-104.7686,1938,2.4
-Manitouwadge,ON,Ontario,49.1333,-85.8333,1937,5.5
-Wellington,ON,Ontario,43.9579,-77.3534,1932,275.4
-Swift Current No. 137,SK,Saskatchewan,50.2211,-107.8559,1932,1.8
-Tofino,BC,British Columbia,49.1275,-125.8852,1932,183.1
-Fort Qu'Appelle,SK,Saskatchewan,50.7667,-103.7833,1919,363.2
-Vulcan,AB,Alberta,50.4,-113.25,1917,302.3
-Indian Head,SK,Saskatchewan,50.5333,-103.6667,1910,602
-Petit Rocher,NB,New Brunswick,47.7839,-65.7159,1908,425.2
-Wabush,NL,Newfoundland and Labrador,52.9081,-66.869,1906,41.2
-Saint-Fabien,QC,Quebec,48.3,-68.87,1906,15.9
-Watrous,SK,Saskatchewan,51.6841,-105.4661,1900,170.1
-North Frontenac,ON,Ontario,44.95,-76.9,1898,1.6
-Lac-Superieur,QC,Quebec,46.2,-74.4667,1892,5.1
-Les Escoumins,QC,Quebec,48.35,-69.4,1891,7
-Richibucto,NB,New Brunswick,46.6189,-64.8385,1887,7.6
-Riviere-Beaudette,QC,Quebec,45.2333,-74.3333,1885,101.9
-Saint-Barthelemy,QC,Quebec,46.1833,-73.1333,1883,17.9
-Nisga'a,BC,British Columbia,55.1078,-129.4293,1880,0.9
-Austin,QC,Quebec,45.1833,-72.2833,1880,25.5
-Saint-Mathieu,QC,Quebec,45.3167,-73.5164,1879,59.5
-Saint-Paul-de-l'Ile-aux-Noix,QC,Quebec,45.1333,-73.2833,1877,63.4
-Orkney No. 244,SK,Saskatchewan,51.2557,-102.6469,1875,2.3
-Behchoko,NT,Northwest Territories,62.8184,-115.9933,1874,24.9
-Saint-Joseph-de-Coleraine,QC,Quebec,45.97,-71.37,1870,14.7
-Saint-Cyprien-de-Napierville,QC,Quebec,45.1833,-73.4167,1869,19.2
-Sayabec,QC,Quebec,48.5667,-67.6833,1864,14.3
-Valleyview,AB,Alberta,55.0686,-117.2683,1863,199.9
-Deleage,QC,Quebec,46.3833,-75.9167,1856,7.5
-Potton,QC,Quebec,45.0833,-72.3667,1849,7.1
-Sainte-Beatrix,QC,Quebec,46.2,-73.6167,1849,22
-Sainte-Justine,QC,Quebec,46.4,-70.35,1845,14.6
-Eastman,QC,Quebec,45.3341,-72.3041,1843,25
-Saint-Valerien-de-Milton,QC,Quebec,45.5667,-72.7167,1840,17.1
-Saint-Cuthbert,QC,Quebec,46.15,-73.2333,1839,13.9
-Saint-Blaise-sur-Richelieu,QC,Quebec,45.2167,-73.2833,1837,26.3
-Middleton,NS,Nova Scotia,44.9418,-65.0686,1832,329.1
-Maugerville,NB,New Brunswick,46.1301,-66.2859,1831,2
-Dalmeny,SK,Saskatchewan,52.3411,-106.7733,1826,805.7
-Kamsack,SK,Saskatchewan,51.565,-101.8947,1825,311.8
-Lumsden,SK,Saskatchewan,50.6463,-104.8676,1824,402
-Trinity Bay North,NL,Newfoundland and Labrador,48.4978,-53.086,1819,71.5
-Saint-Michel-de-Bellechasse,QC,Quebec,46.8667,-70.9167,1816,41
-Sainte-Angele-de-Monnoir,QC,Quebec,45.3833,-73.1,1812,39.9
-Picture Butte,AB,Alberta,49.8731,-112.78,1810,635.1
-Sacre-Coeur-Saguenay,QC,Quebec,48.2479,-69.854,1803,5.9
-Saint-Louis,NB,New Brunswick,46.7048,-65.1046,1802,7
-Victoria,NL,Newfoundland and Labrador,47.7675,-53.2411,1800,102
-Saint-Robert,QC,Quebec,45.9667,-73,1794,27.7
-Armstrong,MB,Manitoba,50.64,-97.495,1792,1
-Saint-Pierre-de-l'Ile-d'Orleans,QC,Quebec,46.8833,-71.0667,1789,57.1
-La Guadeloupe,QC,Quebec,45.95,-70.93,1787,54.8
-Saint Andrews,NB,New Brunswick,45.074,-67.0521,1786,213.9
-Burns Lake,BC,British Columbia,54.2292,-125.7625,1779,269.8
-Povungnituk,QC,Quebec,60.0477,-77.2751,1779,20.6
-Manners Sutton,NB,New Brunswick,45.6417,-67.0609,1777,3.4
-Gore,QC,Quebec,45.77,-74.25,1775,19.1
-Deseronto,ON,Ontario,44.2,-77.05,1774,705.7
-Lamont,AB,Alberta,53.7603,-112.7778,1774,192.8
-Chambord,QC,Quebec,48.4333,-72.0667,1773,14.6
-Dudswell,QC,Quebec,45.5833,-71.5833,1771,8.1
-Wynyard,SK,Saskatchewan,51.7667,-104.1833,1767,334.1
-Cambridge Bay,NU,Nunavut,69.1528,-105.1707,1766,8.7
-Saint-Narcisse,QC,Quebec,46.5667,-72.4667,1762,16.8
-Frontenac Islands,ON,Ontario,44.2,-76.3833,1760,10.1
-Waswanipi,QC,Quebec,49.7883,-75.9544,1759,4.2
-Inukjuak,QC,Quebec,58.4824,-78.1309,1757,31.6
-Piney,MB,Manitoba,49.2069,-95.8333,1755,0
-Komoka,ON,Ontario,42.958,-81.4001,1754,1576.6
-Saint-Zacharie,QC,Quebec,46.1333,-70.3667,1751,9.4
-Hemmingford,QC,Quebec,45.0833,-73.5833,1747,11.1
-Shelburne,NS,Nova Scotia,43.7633,-65.3236,1743,197.2
-Saint-Clet,QC,Quebec,45.35,-74.22,1738,44.3
-Carberry,MB,Manitoba,49.8689,-99.3594,1738,350.7
-Brighton,NB,New Brunswick,46.3316,-67.3585,1735,3.4
-Saint-Antoine,NB,New Brunswick,46.3629,-64.753,1733,274.3
-Warfield,BC,British Columbia,49.0953,-117.7344,1729,910
-Northampton,NB,New Brunswick,46.1313,-67.4713,1724,7.1
-Saint-Ours,QC,Quebec,45.8833,-73.15,1721,29
-Stephenville Crossing,NL,Newfoundland and Labrador,48.5167,-58.4167,1719,55.1
-Sainte-Anne-de-la-Pocatiere,QC,Quebec,47.35,-70,1717,31.1
-Ucluelet,BC,British Columbia,48.9358,-125.5433,1717,264.5
-Saint-Placide,QC,Quebec,45.5333,-74.2,1715,39.8
-Barriere,BC,British Columbia,51.1803,-120.1261,1713,164.7
-Fisher,MB,Manitoba,51.0825,-97.6611,1708,1.2
-Nipissing,ON,Ontario,46.05,-79.55,1707,4.3
-Sainte-Clotilde,QC,Quebec,45.15,-73.6833,1704,21.6
-Shaunavon,SK,Saskatchewan,49.651,-108.412,1699,344.2
-Wicklow,NB,New Brunswick,46.5017,-67.7067,1697,8.7
-Southesk,NB,New Brunswick,46.9901,-66.4336,1694,0.7
-Nouvelle,QC,Quebec,48.1333,-66.3167,1689,7.3
-Rosthern,SK,Saskatchewan,52.65,-106.3333,1688,392
-Yamaska,QC,Quebec,46.0236,-72.9391,1687,23.2
-Neguac,NB,New Brunswick,47.2333,-65.05,1684,62.9
-Flat Rock,NL,Newfoundland and Labrador,47.7086,-52.7144,1683,92.9
-Igloolik,NU,Nunavut,69.3817,-81.6811,1682,16.3
-Grunthal,MB,Manitoba,49.4065,-96.8603,1680,593.7
-Naramata,BC,British Columbia,49.5886,-119.5838,1676,207.8
-Saint-Elie-de-Caxton,QC,Quebec,46.4833,-72.9667,1676,14.2
-Blumenort,MB,Manitoba,49.6033,-96.7006,1675,526.3
-Balmoral,NB,New Brunswick,47.9667,-66.45,1674,38.6
-Price,QC,Quebec,48.6017,-68.1227,1673,646
-Rosedale,MB,Manitoba,50.4397,-99.5389,1672,1.9
-Saint-Jacques-le-Mineur,QC,Quebec,45.2833,-73.4167,1672,24.9
-Huron Shores,ON,Ontario,46.2833,-83.2,1664,3.8
-Champlain,QC,Quebec,46.45,-72.35,1664,28.4
-Whitehead,MB,Manitoba,49.7981,-100.2575,1661,2.9
-Saint-Antoine-sur-Richelieu,QC,Quebec,45.7833,-73.1833,1659,25.2
-Saint-Pacome,QC,Quebec,47.4,-69.95,1658,57.5
-Saint-Stanislas-de-Kostka,QC,Quebec,45.18,-74.13,1654,28.7
-Frontenac,QC,Quebec,45.58,-70.83,1650,7.4
-Stuartburn,MB,Manitoba,49.1331,-96.5158,1648,1.4
-Yamaska-Est,QC,Quebec,46,-72.92,1644,22.5
-Sainte-Emelie-de-l'Energie,QC,Quebec,46.3167,-73.65,1644,10.7
-Saint-Charles-sur-Richelieu,QC,Quebec,45.6833,-73.1833,1643,25.2
-Saint-Joseph-de-Sorel,QC,Quebec,46.0446,-73.1308,1642,1192.7
-Nipigon,ON,Ontario,49.0153,-88.2683,1642,15
-Riviere-Blanche,QC,Quebec,48.7833,-67.7,1642,13.6
-Sainte-Helene-de-Bagot,QC,Quebec,45.7333,-72.7333,1637,22.3
-Franklin Centre,QC,Quebec,45.0467,-73.9005,1636,14.5
-Harbour Breton,NL,Newfoundland and Labrador,47.4833,-55.8333,1634,118.9
-Massey Drive,NL,Newfoundland and Labrador,48.9372,-57.9,1632,658.7
-Mille-Isles,QC,Quebec,45.82,-74.22,1629,26.8
-Wilton No. 472,SK,Saskatchewan,53.124,-109.7885,1629,1.6
-Lyster,QC,Quebec,46.3667,-71.6167,1628,9.7
-Oakview,MB,Manitoba,50.1964,-100.2167,1626,1.4
-Balgonie,SK,Saskatchewan,50.488,-104.269,1625,515.8
-Harrison Park,MB,Manitoba,50.5563,-100.1674,1622,1.7
-Kensington,PE,Prince Edward Island,46.4333,-63.65,1619,537.9
-Witless Bay,NL,Newfoundland and Labrador,47.28,-52.83,1619,92.6
-Pond Inlet,NU,Nunavut,72.6808,-77.7503,1617,9.3
-Royston,BC,British Columbia,49.6405,-124.9406,1616,361.3
-Sainte-Clotilde-de-Horton,QC,Quebec,45.9833,-72.2333,1616,14.2
-Burford,ON,Ontario,43.1036,-80.424,1615,208.2
-Fossambault-sur-le-Lac,QC,Quebec,46.8667,-71.6167,1613,141.7
-Saint-Benoit-Labre,QC,Quebec,46.0667,-70.8,1612,19
-Coombs,BC,British Columbia,49.3008,-124.4049,1612,102.8
-Terrace Bay,ON,Ontario,48.8,-87.1,1611,10.5
-Chapais,QC,Quebec,49.7819,-74.8544,1610,25.3
-Saint-Honore-de-Shenley,QC,Quebec,45.9667,-70.8333,1610,12.1
-Cleveland,QC,Quebec,45.67,-72.08,1609,12.9
-"Macdonald, Meredith and Aberdeen Additional",ON,Ontario,46.4833,-84.0667,1609,9.8
-Messines,QC,Quebec,46.2333,-76.0167,1608,14.1
-Saint-Jean-de-Dieu,QC,Quebec,48,-69.05,1606,10.6
-Nakusp,BC,British Columbia,50.2434,-117.8002,1605,195.2
-Florenceville,NB,New Brunswick,46.4435,-67.6152,1604,102.7
-Saint-Antoine-de-Tilly,QC,Quebec,46.6667,-71.5833,1604,26.6
-Lakeview,BC,British Columbia,49.9026,-119.5699,1600,63.5
-Humbermouth,NL,Newfoundland and Labrador,49.0156,-58.1678,1599,24.6
-Fort St. James,BC,British Columbia,54.4431,-124.2542,1598,72
-Saint-Francois-de-la-Riviere-du-Sud,QC,Quebec,46.8833,-70.7167,1596,17
-Saint-Jacques,NB,New Brunswick,47.5634,-68.3693,1596,5.3
-Uashat,QC,Quebec,50.233,-66.3947,1592,681.8
-Perth,NB,New Brunswick,46.7393,-67.6984,1590,177.3
-Eeyou Istchee Baie-James,QC,Quebec,52.3382,-75.1977,1589,0
-Shellbrook No. 493,SK,Saskatchewan,53.3545,-106.2553,1587,1.3
-Shawville,QC,Quebec,45.6,-76.4833,1587,294.5
-Saint-Lucien,QC,Quebec,45.8667,-72.2667,1584,14.2
-Lambton,QC,Quebec,45.83,-71.08,1584,14.6
-Saint-Laurent-de-l'Ile-d'Orleans,QC,Quebec,46.8667,-71.0167,1580,44.2
-Saint-Flavien,QC,Quebec,46.5167,-71.6,1578,23.4
-Grenville,QC,Quebec,45.6333,-74.6,1577,560.4
-Chute-aux-Outardes,QC,Quebec,49.1167,-68.4,1577,216
-Sainte-Marcelline-de-Kildare,QC,Quebec,46.1167,-73.6,1567,45.2
-Saint-Felix-de-Kingsey,QC,Quebec,45.8,-72.1833,1563,12.3
-Upper Island Cove,NL,Newfoundland and Labrador,47.6472,-53.2233,1561,199
-Glenelg,NB,New Brunswick,46.9455,-65.2893,1560,3.1
-Sainte-Elisabeth,QC,Quebec,46.0833,-73.35,1559,18.8
-Ashcroft,BC,British Columbia,50.7256,-121.2806,1558,32.3
-Clarkes Beach,NL,Newfoundland and Labrador,47.5447,-53.2824,1558,122.6
-Saint-Bernard-de-Lacolle,QC,Quebec,45.0833,-73.4167,1549,13
-Belledune,NB,New Brunswick,47.9,-65.8167,1548,8.2
-Saint-Guillaume,QC,Quebec,45.8833,-72.7667,1547,17.6
-Venise-en-Quebec,QC,Quebec,45.0833,-73.1333,1547,116.9
-Maliotenam,QC,Quebec,50.2114,-66.1911,1542,288.7
-Ripon,QC,Quebec,45.7833,-75.1,1542,11.7
-Hilliers,BC,British Columbia,49.3022,-124.4727,1540,53
-Saint-Joseph,NB,New Brunswick,47.558,-68.3082,1538,4.8
-Saint-Paulin,QC,Quebec,46.4167,-73.0333,1534,16
-Bon Accord,AB,Alberta,53.8328,-113.4189,1529,718.7
-Saint David,NB,New Brunswick,45.2918,-67.1983,1529,8
-Saint-Albert,QC,Quebec,46,-72.0833,1526,21.8
-Matagami,QC,Quebec,49.75,-77.6333,1526,22.8
-Springfield,NB,New Brunswick,45.7005,-65.8079,1525,6.1
-Amherst,QC,Quebec,46.05,-74.7667,1524,6.6
-Notre-Dame-du-Laus,QC,Quebec,46.0833,-75.6167,1518,1.8
-St. George,NB,New Brunswick,45.1333,-66.8167,1517,93.8
-Wembley,AB,Alberta,55.1572,-119.1392,1516,318.9
-Victoria,MB,Manitoba,49.6644,-98.9153,1514,2.2
-Springbrook,AB,Alberta,52.1796,-113.885,1507,286.3
-Saint-Tite-des-Caps,QC,Quebec,47.1333,-70.7667,1506,11.7
-Hudson Bay,SK,Saskatchewan,52.851,-102.392,1504,86.7
-Pinawa,MB,Manitoba,50.1707,-95.9547,1504,11.7
-"Brudenell, Lyndoch and Raglan",ON,Ontario,45.3167,-77.4,1503,2.1
-Carlyle,SK,Saskatchewan,49.6333,-102.2667,1503,451.1
-Keremeos,BC,British Columbia,49.2025,-119.8294,1502,717.5
-Val-Joli,QC,Quebec,45.6,-71.97,1501,16.5
-Gold River,BC,British Columbia,49.7769,-126.0514,1500,15
-Saint-Casimir,QC,Quebec,46.65,-72.1333,1500,22.5
-Bay Bulls,NL,Newfoundland and Labrador,47.3158,-52.8103,1500,48.8
-Langham,SK,Saskatchewan,52.3667,-106.9667,1496,374.9
-Frenchman Butte,SK,Saskatchewan,53.6052,-109.4298,1494,0.8
-Gordon,NB,New Brunswick,46.8363,-67.1913,1493,1
-Kugluktuk,NU,Nunavut,67.8055,-115.3223,1491,2.7
-Saint-Malachie,QC,Quebec,46.5333,-70.7667,1489,14.8
-Southampton,NB,New Brunswick,46.0789,-67.3124,1484,3.3
-Salluit,QC,Quebec,62.2013,-75.6337,1483,101.1
-Pangnirtung,NU,Nunavut,66.1436,-65.6829,1481,190.6
-Saint-Louis-de-Gonzague,QC,Quebec,45.2,-73.98,1481,18.6
-Moosonee,ON,Ontario,51.2722,-80.6431,1481,2.7
-Englehart,ON,Ontario,47.8167,-79.8667,1479,489.7
-Saint-Urbain,QC,Quebec,47.55,-70.5333,1474,4.4
-Tring-Jonction,QC,Quebec,46.2667,-70.9833,1473,57.5
-Nauwigewauk,NB,New Brunswick,45.4812,-65.8738,1472,48.2
-Pointe-a-la-Croix,QC,Quebec,48.0167,-66.6833,1472,3.7
-Denmark,NB,New Brunswick,47.1155,-67.4771,1471,2
-Saint-Joachim,QC,Quebec,47.05,-70.85,1471,34.5
-Torch River No. 488,SK,Saskatchewan,53.5445,-104.4619,1471,0.3
-Saint-Theodore-d'Acton,QC,Quebec,45.6833,-72.5833,1471,17.7
-Grindrod,BC,British Columbia,50.63,-119.1314,1470,34
-L' Isle-Verte,QC,Quebec,48.0167,-69.3333,1469,12.5
-Harrison Hot Springs,BC,British Columbia,49.3,-121.7819,1468,263.4
-Palmarolle,QC,Quebec,48.6667,-79.2,1465,12.5
-Henryville,QC,Quebec,45.1333,-73.1833,1464,22.6
-Sussex Corner,NB,New Brunswick,45.7122,-65.4719,1461,156.4
-Saint-Odilon-de-Cranbourne,QC,Quebec,46.3667,-70.6833,1459,11.2
-Pipestone,MB,Manitoba,49.6653,-101.1444,1458,1.3
-Laurierville,QC,Quebec,46.3,-71.65,1454,13.6
-La Dore,QC,Quebec,48.72,-72.65,1453,5
-Lac-au-Saumon,QC,Quebec,48.4167,-67.35,1453,17.7
-Wotton,QC,Quebec,45.7333,-71.8,1453,10.1
-Prairie Lakes,MB,Manitoba,49.4034,-99.6298,1453,1.4
-Elk Point,AB,Alberta,53.8967,-110.8972,1452,295.5
-Shellbrook,SK,Saskatchewan,53.2167,-106.4,1444,390.3
-Wemindji,QC,Quebec,53.044,-78.7384,1444,3.7
-Cape Dorset,NU,Nunavut,64.2237,-76.5405,1441,147.9
-Strong,ON,Ontario,45.75,-79.4,1439,9
-Lappe,ON,Ontario,48.5693,-89.3573,1436,9.8
-Riviere-Heva,QC,Quebec,48.2333,-78.2167,1433,3.4
-Fort-Coulonge,QC,Quebec,45.85,-76.7333,1433,462.4
-Irishtown-Summerside,NL,Newfoundland and Labrador,48.9833,-57.95,1418,119.2
-Godmanchester,QC,Quebec,45.08,-74.25,1417,10.2
-Macklin,SK,Saskatchewan,52.33,-109.94,1415,450.7
-Armour,ON,Ontario,45.6289,-79.3436,1414,8.6
-Saint-Simon,QC,Quebec,45.719,-72.8463,1413,20.5
-St. Francois Xavier,MB,Manitoba,49.9903,-97.6722,1411,6.9
-Tingwick,QC,Quebec,45.8873,-71.9244,1410,8.3
-Saint-Aubert,QC,Quebec,47.1833,-70.2167,1409,14
-Saint-Mathieu-du-Parc,QC,Quebec,46.5667,-72.9167,1407,6.3
-Wabasca,AB,Alberta,55.9855,-113.8566,1406,65.8
-Ragueneau,QC,Quebec,49.0667,-68.5333,1405,7.6
-Notre-Dame-du-Bon-Conseil,QC,Quebec,46,-72.35,1404,331.4
-Wasagamack,MB,Manitoba,53.9056,-94.9412,1403,17.3
-Saint-Ubalde,QC,Quebec,46.75,-72.2667,1403,10
-Creighton,SK,Saskatchewan,54.7561,-101.8973,1402,97.4
-Fortune,NL,Newfoundland and Labrador,47.0733,-55.8217,1401,25.5
-Faraday,ON,Ontario,45,-77.9167,1401,6.4
-Berthier-sur-Mer,QC,Quebec,46.9167,-70.7333,1398,52.2
-Frampton,QC,Quebec,46.4667,-70.8,1393,9.2
-Magnetawan,ON,Ontario,45.6667,-79.6333,1390,2.6
-New Carlisle,QC,Quebec,48.0167,-65.3333,1388,20.5
-Laird No. 404,SK,Saskatchewan,52.5696,-106.7312,1387,1.9
-Petitcodiac,NB,New Brunswick,45.9333,-65.1667,1383,80.4
-Popkum,BC,British Columbia,49.1911,-121.7553,1382,216.7
-Norton,NB,New Brunswick,45.6387,-65.6955,1382,18.3
-Canwood No. 494,SK,Saskatchewan,53.4574,-106.7768,1381,0.7
-Wentworth-Nord,QC,Quebec,45.85,-74.45,1381,8.8
-Bas Caraquet,NB,New Brunswick,47.8,-64.8333,1380,44.5
-Sainte-Ursule,QC,Quebec,46.2833,-73.0333,1375,20.2
-Dawson,YT,Yukon,64.0464,-139.3893,1375,42.4
-Nantes,QC,Quebec,45.6333,-71.0333,1374,11.4
-Lac-aux-Sables,QC,Quebec,46.8667,-72.4,1373,5.1
-Stewiacke,NS,Nova Scotia,45.1422,-63.3483,1373,77.9
-Taylor,BC,British Columbia,56.159,-120.6878,1373,80.3
-Rosser,MB,Manitoba,49.99,-97.4592,1372,3.1
-Estevan No. 5,SK,Saskatchewan,49.1308,-103.0126,1370,1.8
-Falmouth,NS,Nova Scotia,44.9967,-64.1634,1368,262.3
-Vaudreuil-sur-le-Lac,QC,Quebec,45.4,-74.0333,1359,989.2
-Grahamdale,MB,Manitoba,51.42,-98.3733,1359,0.6
-Cardwell,NB,New Brunswick,45.7848,-65.3037,1353,4.3
-Two Hills,AB,Alberta,53.715,-111.7461,1352,400
-Spiritwood No. 496,SK,Saskatchewan,53.4435,-107.4495,1347,0.6
-Legal,AB,Alberta,53.9492,-113.595,1345,423.4
-Amulet,QC,Quebec,48.2938,-79.0274,1340,724.3
-Herouxville,QC,Quebec,46.6667,-72.6167,1340,25.3
-Pointe-des-Cascades,QC,Quebec,45.3333,-73.9667,1340,502.2
-Weldford,NB,New Brunswick,46.5221,-65.1114,1338,2.2
-Reynolds,MB,Manitoba,49.7678,-95.8842,1338,0.4
-St. Laurent,MB,Manitoba,50.43,-97.7933,1338,2.9
-Lions Bay,BC,British Columbia,49.4581,-123.2369,1334,526.5
-L'Isle-aux-Allumettes,QC,Quebec,45.8667,-77.0667,1334,7.2
-Emo,ON,Ontario,48.6333,-93.8333,1333,6.6
-Sainte-Brigide-d'Iberville,QC,Quebec,45.3167,-73.0667,1331,18.7
-Les Eboulements,QC,Quebec,47.4833,-70.3167,1331,8.5
-Dunsmuir,BC,British Columbia,49.3696,-124.5772,1330,62.3
-Pointe-aux-Outardes,QC,Quebec,49.05,-68.4333,1330,17.8
-Smooth Rock Falls,ON,Ontario,49.2833,-81.6333,1330,6.6
-Oxbow,SK,Saskatchewan,49.2333,-102.1667,1328,412.6
-Telkwa,BC,British Columbia,54.6972,-127.05,1327,191.9
-Gjoa Haven,NU,Nunavut,68.6448,-95.8912,1324,46.5
-Sainte-Barbe,QC,Quebec,45.1667,-74.2,1324,33
-Mayerthorpe,AB,Alberta,53.9503,-115.1336,1320,302.2
-Saint-Louis-du-Ha! Ha!,QC,Quebec,47.67,-68.98,1318,11.7
-Powerview-Pine Falls,MB,Manitoba,50.5661,-96.1981,1316,262
-Baie Verte,NL,Newfoundland and Labrador,49.9167,-56.1833,1313,3.5
-Saint-Edouard,QC,Quebec,45.2333,-73.5167,1312,24.8
-Charlo,NB,New Brunswick,48,-66.32,1310,41.9
-Hillsborough,NB,New Brunswick,45.9052,-64.7652,1308,4.3
-Bruederheim,AB,Alberta,53.8042,-112.9278,1308,183.8
-Burgeo,NL,Newfoundland and Labrador,47.6,-57.6333,1307,41.7
-Wadena,SK,Saskatchewan,51.9458,-103.8014,1306,449.5
-Richmond,NB,New Brunswick,46.0776,-67.7248,1303,5
-Swan Hills,AB,Alberta,54.7106,-115.4133,1301,49.8
-Wilkie,SK,Saskatchewan,52.4167,-108.7,1301,137.3
-Saint-Leonard,NB,New Brunswick,47.1625,-67.925,1300,249.2
-Riviere-Bleue,QC,Quebec,47.4333,-69.05,1299,7.5
-Noyan,QC,Quebec,45.0667,-73.3,1297,29
-Ile-a-la-Crosse,SK,Saskatchewan,55.45,-107.8833,1296,54.4
-Landmark,MB,Manitoba,49.6711,-96.8179,1292,433.4
-Saint-Hugues,QC,Quebec,45.8,-72.8667,1292,15.4
-Chisholm,ON,Ontario,46.1,-79.2333,1291,6.2
-Sainte-Anne-du-Sault,QC,Quebec,46.1733,-72.1415,1290,21.6
-La Conception,QC,Quebec,46.15,-74.7,1287,9.9
-Saint-Valere,QC,Quebec,46.0667,-72.1,1286,11.9
-Sorrento,BC,British Columbia,50.8832,-119.4782,1285,108.3
-Lameque,NB,New Brunswick,47.7925,-64.6532,1285,102.8
-Thessalon,ON,Ontario,46.25,-83.55,1279,284.6
-L'Isle-aux-Coudres,QC,Quebec,47.4,-70.3833,1279,42.5
-Nobleford,AB,Alberta,49.8822,-113.0531,1278,802.6
-Larouche,QC,Quebec,48.45,-71.5167,1277,15.1
-South Qu'Appelle No. 157,SK,Saskatchewan,50.5389,-104.0141,1275,1.4
-Elton,MB,Manitoba,49.975,-99.8658,1273,2.2
-Lorrainville,QC,Quebec,47.3613,-79.3382,1272,14.5
-Conestogo,ON,Ontario,43.5441,-80.4997,1270,595.5
-Upham,NB,New Brunswick,45.5083,-65.6618,1269,6.7
-St.-Charles,ON,Ontario,46.3422,-80.4497,1269,3.9
-Sainte-Lucie-des-Laurentides,QC,Quebec,46.13,-74.18,1269,11.1
-Saint-Alexis,QC,Quebec,45.9333,-73.6167,1267,29.2
-Gillam,MB,Manitoba,56.3472,-94.7078,1265,0.6
-Roxton Falls,QC,Quebec,45.5667,-72.5167,1265,259.1
-Montcalm,MB,Manitoba,49.1775,-97.3247,1260,2.7
-Clarendon,QC,Quebec,45.65,-76.5167,1256,3.8
-Mervin No. 499,SK,Saskatchewan,53.5455,-108.8762,1256,0.8
-Saint-Ludger,QC,Quebec,45.75,-70.7,1255,9.8
-Coldwell,MB,Manitoba,50.6389,-98.0417,1254,1.4
-Saint-Arsene,QC,Quebec,47.9167,-69.4333,1253,17.7
-Racine,QC,Quebec,45.5,-72.25,1252,11.8
-Saint-Majorique-de-Grantham,QC,Quebec,45.9333,-72.5833,1251,21.6
-Saint-Zenon,QC,Quebec,46.55,-73.8167,1250,2.7
-Saint-Armand,QC,Quebec,45.0333,-73.05,1248,15.1
-Saint-Edouard-de-Lotbiniere,QC,Quebec,46.5667,-71.8333,1248,12.7
-Alonsa,MB,Manitoba,50.9794,-99.0796,1247,0.4
-Listuguj,QC,Quebec,48.0609,-66.7491,1241,28
-Bowden,AB,Alberta,51.9306,-114.0256,1240,442.8
-St. Joseph,ON,Ontario,46.2667,-84,1240,9.3
-Osler,SK,Saskatchewan,52.37,-106.54,1237,796.5
-Saint-Hubert-de-Riviere-du-Loup,QC,Quebec,47.8167,-69.15,1235,6.4
-Saint-Jude,QC,Quebec,45.7667,-72.9833,1235,16
-Dildo,NL,Newfoundland and Labrador,47.5685,-53.5471,1234,152
-La Minerve,QC,Quebec,46.25,-74.9333,1234,4.4
-Lanigan,SK,Saskatchewan,51.85,-105.0333,1233,165.2
-Lajord No. 128,SK,Saskatchewan,50.1965,-104.2507,1232,1.3
-Moonbeam,ON,Ontario,49.35,-82.15,1231,5.2
-Notre-Dame-des-Pins,QC,Quebec,46.1833,-70.7167,1227,51.2
-Saint-Alban,QC,Quebec,46.7167,-72.0833,1225,8.2
-Saint-Pierre-les-Becquets,QC,Quebec,46.5,-72.2,1223,25.6
-Arborg,MB,Manitoba,50.9075,-97.2182,1222,611
-Vauxhall,AB,Alberta,50.0689,-112.0975,1222,449.4
-Bayfield,ON,Ontario,43.5615,-81.6983,1218,439.9
-Beaver River,SK,Saskatchewan,54.3531,-109.5575,1216,0.5
-Irricana,AB,Alberta,51.3189,-113.6106,1216,376.1
-Labrecque,QC,Quebec,48.6667,-71.5333,1215,7.9
-New Bandon,NB,New Brunswick,47.6912,-65.29,1214,3.4
-Wemotaci,QC,Quebec,47.9219,-73.7872,1213,38.5
-Sainte-Henedine,QC,Quebec,46.55,-70.9833,1212,23.6
-L'Anse-Saint-Jean,QC,Quebec,48.2333,-70.2,1208,2.4
-Bassano,AB,Alberta,50.7833,-112.4667,1206,231.2
-Parrsboro,NS,Nova Scotia,45.3998,-64.3312,1205,81.4
-Kaleden,BC,British Columbia,49.3926,-119.5955,1203,278.7
-St. George's,NL,Newfoundland and Labrador,48.4275,-58.4778,1203,46.6
-Fort Simpson,NT,Northwest Territories,61.8082,-121.3199,1202,15.3
-Akwesasne,QC,Quebec,45.0155,-74.5769,1202,48.4
-L'Avenir,QC,Quebec,45.7667,-72.3,1202,12.4
-Ignace,ON,Ontario,49.4167,-91.6667,1202,16.5
-Claremont,ON,Ontario,43.9741,-79.1316,1202,567.5
-Teulon,MB,Manitoba,50.3858,-97.2611,1201,372.3
-Peel,NB,New Brunswick,46.4058,-67.5278,1196,10.6
-Musquash,NB,New Brunswick,45.1836,-66.3514,1194,5.1
-Notre-Dame-du-Portage,QC,Quebec,47.7667,-69.6167,1193,29.9
-St. Lawrence,NL,Newfoundland and Labrador,46.9244,-55.3928,1192,33.6
-Oxford,NS,Nova Scotia,45.7306,-63.8733,1190,110.6
-Minto-Odanah,MB,Manitoba,50.2406,-99.8056,1189,1.6
-St. Alban's,NL,Newfoundland and Labrador,47.8753,-55.8414,1186,56.9
-Saint James,NB,New Brunswick,45.3822,-67.3427,1186,2.1
-Saint-Norbert-d'Arthabaska,QC,Quebec,46.1,-71.8167,1185,11.4
-Manning,AB,Alberta,56.9142,-117.6272,1183,291.9
-Glenella-Lansdowne,MB,Manitoba,50.4163,-99.2097,1181,0.9
-Saint-Hilarion,QC,Quebec,47.5667,-70.4,1181,11.9
-Saint-Simeon,QC,Quebec,48.0667,-65.5667,1179,20.9
-Saint-Barnabe,QC,Quebec,46.4,-72.8833,1179,20
-Sainte-Felicite,QC,Quebec,48.9,-67.3333,1175,12.9
-Two Borders,MB,Manitoba,49.2668,-101.1124,1175,0.5
-Queensbury,NB,New Brunswick,45.9918,-67.0632,1174,3.9
-Bury,QC,Quebec,45.4667,-71.5,1174,4.9
-Lac-Bouchette,QC,Quebec,48.25,-72.18,1174,1.3
-Saint-Lazare-de-Bellechasse,QC,Quebec,46.65,-70.8,1172,13.6
-Saint-Michel-du-Squatec,QC,Quebec,47.88,-68.72,1171,3.2
-Saint-Joachim-de-Shefford,QC,Quebec,45.45,-72.5333,1171,9.2
-St-Pierre-Jolys,MB,Manitoba,49.4403,-96.9844,1170,440.5
-Grand-Remous,QC,Quebec,46.6167,-75.9,1168,3.3
-Saint-Gabriel-de-Rimouski,QC,Quebec,48.4209,-68.1791,1167,9.2
-Armstrong,ON,Ontario,47.7083,-79.825,1166,12.9
-Rogersville,NB,New Brunswick,46.7167,-65.4167,1166,161.9
-Langenburg,SK,Saskatchewan,50.8333,-101.7,1165,337.1
-Sainte-Marie-Salome,QC,Quebec,45.9333,-73.5,1164,34.5
-Moose Jaw No. 161,SK,Saskatchewan,50.4433,-105.5091,1163,1.5
-Saint-Cyprien,QC,Quebec,47.9,-69.0167,1163,8.4
-Maidstone,SK,Saskatchewan,53.092,-109.294,1156,233.5
-Tres-Saint-Sacrement,QC,Quebec,45.1833,-73.85,1155,11.7
-Battle River No. 438,SK,Saskatchewan,52.7343,-108.4452,1154,1.1
-Miltonvale Park,PE,Prince Edward Island,46.318,-63.237,1153,32.4
-McAdam,NB,New Brunswick,45.5944,-67.3258,1151,80.6
-Saints-Anges,QC,Quebec,46.4167,-70.8833,1149,16.6
-Saint-Urbain-Premier,QC,Quebec,45.22,-73.73,1148,21.6
-Centreville-Wareham-Trinity,NL,Newfoundland and Labrador,48.9879,-53.9069,1147,30.8
-Alberton,PE,Prince Edward Island,46.8167,-64.0667,1145,253.5
-Winnipeg Beach,MB,Manitoba,50.5058,-96.9742,1145,295.9
-Sainte-Agathe-de-Lotbiniere,QC,Quebec,46.3833,-71.4167,1145,6.9
-Salmo,BC,British Columbia,49.1942,-117.2778,1141,466.2
-Kipling,SK,Saskatchewan,50.1015,-102.6324,1140,396.5
-Sagamok,ON,Ontario,46.1529,-82.2072,1140,11.6
-Trecesson,QC,Quebec,48.65,-78.3167,1138,5.8
-Tara,ON,Ontario,44.4793,-81.1445,1138,470.3
-Grande-Vallee,QC,Quebec,49.2167,-65.1333,1137,7.9
-Bertrand,NB,New Brunswick,47.7622,-65.0686,1137,24.5
-Newcastle,NB,New Brunswick,47.1725,-65.5551,1136,2
-Mont-Carmel,QC,Quebec,47.4397,-69.8586,1136,2.7
-Saint Martins,NB,New Brunswick,45.4563,-65.4395,1132,1.8
-Saint-Eugene,QC,Quebec,45.8,-72.7,1131,14.9
-Notre-Dame-des-Neiges,QC,Quebec,48.1167,-69.1667,1129,12
-Saint-Andre,NB,New Brunswick,47.1392,-67.7444,1129,8.8
-Centreville,NS,Nova Scotia,45.13,-64.5224,1129,477.5
-Roland,MB,Manitoba,49.3547,-97.8997,1129,2.3
-Saint-Leon-de-Standon,QC,Quebec,46.4833,-70.6167,1128,8.2
-Saint-Modeste,QC,Quebec,47.8333,-69.4,1128,10.3
-Carnduff,SK,Saskatchewan,49.167,-101.783,1126,498.2
-Carling,ON,Ontario,45.4333,-80.2167,1125,4.5
-Eckville,AB,Alberta,52.3622,-114.3614,1125,703.3
-Nain,NL,Newfoundland and Labrador,56.5422,-61.6928,1125,11.9
-Hillsburgh,ON,Ontario,43.7914,-80.1354,1124,384.9
-Foam Lake,SK,Saskatchewan,51.65,-103.5333,1123,189.4
-Sainte-Sabine,QC,Quebec,45.2333,-73.0167,1120,20.3
-Saint-Maxime-du-Mont-Louis,QC,Quebec,49.2333,-65.7333,1118,4.8
-Blanc-Sablon,QC,Quebec,51.4167,-57.1333,1118,4.5
-Cobalt,ON,Ontario,47.4,-79.6833,1118,776
-Gravelbourg,SK,Saskatchewan,49.874,-106.555,1116,346
-South River,ON,Ontario,45.8417,-79.375,1114,268.3
-Hudson Bay No. 394,SK,Saskatchewan,53.0295,-102.3122,1114,0.1
-McKellar,ON,Ontario,45.4833,-79.85,1111,6.1
-Frelighsburg,QC,Quebec,45.0461,-72.8106,1111,9
-Buffalo Narrows,SK,Saskatchewan,55.8769,-108.5244,1110,16.2
-Ayer's Cliff,QC,Quebec,45.1667,-72.05,1109,197.9
-Les Mechins,QC,Quebec,49,-66.9833,1107,2.5
-Sainte-Marguerite,QC,Quebec,46.5167,-70.9333,1107,12.9
-Saint-Claude,QC,Quebec,45.6667,-71.9833,1106,9.3
-Air Ronge,SK,Saskatchewan,55.0872,-105.3318,1106,184.3
-Chipman,NB,New Brunswick,46.171,-65.884,1104,58
-Girardville,QC,Quebec,49,-72.55,1100,8.9
-Saint-Bruno-de-Guigues,QC,Quebec,47.4667,-79.4333,1100,8.8
-Grenfell,SK,Saskatchewan,50.4167,-102.9167,1099,347
-Dorchester,NB,New Brunswick,45.9016,-64.5161,1096,189.3
-South Algonquin,ON,Ontario,45.4967,-78.0239,1096,1.3
-Windermere,BC,British Columbia,50.4856,-115.9948,1092,104
-Saint-Narcisse-de-Beaurivage,QC,Quebec,46.4833,-71.2333,1091,17.6
-Saint-Rene-de-Matane,QC,Quebec,48.7,-67.3833,1089,4.3
-Sainte-Jeanne-d'Arc,QC,Quebec,48.8575,-72.0939,1089,4
-Plaisance,QC,Quebec,45.6167,-75.1167,1088,30.1
-Roxton-Sud,QC,Quebec,45.5521,-72.5265,1086,7.3
-St. Louis No. 431,SK,Saskatchewan,52.8277,-105.7873,1086,1.4
-Youbou,BC,British Columbia,48.8562,-124.1731,1086,122.8
-Duchess,AB,Alberta,50.7333,-111.9,1085,553.4
-Saint-Frederic,QC,Quebec,46.3,-70.9667,1085,14.9
-Viking,AB,Alberta,53.0953,-111.7769,1083,292.5
-Sioux Narrows-Nestor Falls,ON,Ontario,49.4,-94.08,1082,0.5
-Whitecourt,AB,Alberta,54.1417,-115.6833,1082,386
-Repulse Bay,NU,Nunavut,66.5628,-86.3186,1082,2.6
-Montreal-Est,QC,Quebec,45.63,-73.52,1082,299.4
-King,ON,Ontario,44.0463,-79.6044,1082,73.6
-Regina Beach,SK,Saskatchewan,50.79,-104.99,1081,462.4
-Saint-Patrice-de-Beaurivage,QC,Quebec,46.4167,-71.2333,1080,12.6
-Ootischenia,BC,British Columbia,49.2916,-117.6323,1080,135.4
-Hensall,ON,Ontario,43.4345,-81.504,1078,569
-Bentley,AB,Alberta,52.4667,-114.05,1078,482.2
-Durham,NB,New Brunswick,47.7631,-66.0849,1076,2.6
-Sainte-Marthe,QC,Quebec,45.4,-74.3,1075,13.5
-Notre-Dame-du-Nord,QC,Quebec,47.6,-79.4833,1075,14.3
-Pinehouse,SK,Saskatchewan,55.5136,-106.5986,1074,142.9
-Saint-Aime-des-Lacs,QC,Quebec,47.6833,-70.3,1073,11.6
-Lac-Drolet,QC,Quebec,45.72,-70.85,1071,8.6
-Preeceville,SK,Saskatchewan,51.958,-102.6673,1070,0.7
-Maple Creek No. 111,SK,Saskatchewan,49.8044,-109.6508,1068,0.3
-Harbour Main-Chapel's Cove-Lakeview,NL,Newfoundland and Labrador,47.4337,-53.1458,1067,50.6
-Saint-Wenceslas,QC,Quebec,46.1667,-72.3333,1064,13.3
-Weyburn No. 67,SK,Saskatchewan,49.6535,-103.8348,1064,1.3
-Birch Hills,SK,Saskatchewan,52.9833,-105.4333,1064,468.4
-Wedgeport,NS,Nova Scotia,43.7323,-65.9797,1061,109.3
-Kerrobert,SK,Saskatchewan,51.92,-109.1272,1061,141.7
-Havelock,NB,New Brunswick,45.9523,-65.3885,1061,3
-Eston,SK,Saskatchewan,51.15,-108.75,1061,390.3
-Sainte-Genevieve-de-Batiscan,QC,Quebec,46.5333,-72.3333,1060,10.8
-Saint-Justin,QC,Quebec,46.25,-73.0833,1060,13.5
-Saint-Norbert,QC,Quebec,46.1667,-73.3167,1059,14.1
-Schreiber,ON,Ontario,48.8167,-87.2667,1059,28.8
-Trochu,AB,Alberta,51.8236,-113.2328,1058,381.1
-Botsford,NB,New Brunswick,46.1145,-63.9804,1058,3.5
-Riviere-Ouelle,QC,Quebec,47.4333,-70.0167,1058,18.6
-Greenwich,NB,New Brunswick,45.5112,-66.1229,1058,9.2
-Stukely-Sud,QC,Quebec,45.3167,-72.4167,1058,15.8
-Saint-Georges-de-Clarenceville,QC,Quebec,45.0667,-73.25,1056,16.6
-Sainte-Therese-de-Gaspe,QC,Quebec,48.4167,-64.4167,1055,31.5
-Beachburg,ON,Ontario,45.7303,-76.8559,1054,242.8
-Desbiens,QC,Quebec,48.4167,-71.95,1053,101.1
-Clyde River,NU,Nunavut,70.4632,-68.4822,1053,9.9
-La Macaza,QC,Quebec,46.3667,-74.7667,1053,6.5
-Souris,PE,Prince Edward Island,46.3554,-62.2542,1053,303.7
-Kindersley No. 290,SK,Saskatchewan,51.4894,-109.0979,1049,0.5
-Laird,ON,Ontario,46.3833,-84.0667,1047,10.2
-Falher,AB,Alberta,55.7372,-117.2014,1047,376.4
-Saint-Vallier,QC,Quebec,46.8833,-70.8167,1046,23.4
-Coleraine,QC,Quebec,45.9649,-71.3734,1043,249.9
-Melita,MB,Manitoba,49.2681,-100.9958,1042,342.7
-Noonan,NB,New Brunswick,45.9544,-66.4868,1042,13.7
-Sainte-Petronille,QC,Quebec,46.85,-71.1333,1041,227.2
-Delisle,SK,Saskatchewan,51.9254,-107.1333,1038,310.2
-Bristol,QC,Quebec,45.5333,-76.4667,1036,5
-Mahone Bay,NS,Nova Scotia,44.4489,-64.3819,1036,332.1
-Waldheim,SK,Saskatchewan,52.65,-106.6167,1035,525.5
-Saint-Sylvestre,QC,Quebec,46.3667,-71.2333,1035,7.1
-Taloyoak,NU,Nunavut,69.5554,-93.4972,1029,27.3
-Onoway,AB,Alberta,53.7011,-114.1981,1029,310.3
-Saint-Stanislas,QC,Quebec,46.6167,-72.4,1029,11.5
-Malpeque,PE,Prince Edward Island,46.5,-63.6667,1029,8.1
-Plantagenet,ON,Ontario,45.5321,-74.9956,1027,260.5
-Longue-Rive,QC,Quebec,48.55,-69.25,1026,3.3
-Argyle,MB,Manitoba,49.3697,-99.1506,1025,1.3
-Davidson,SK,Saskatchewan,51.2667,-105.9667,1025,228.4
-Plaster Rock,NB,New Brunswick,46.8833,-67.3833,1023,336.1
-Wilmot,NB,New Brunswick,46.3463,-67.7099,1022,5.3
-Valemount,BC,British Columbia,52.8284,-119.2659,1021,197.6
-Saint-Leonard-de-Portneuf,QC,Quebec,46.8833,-71.9167,1019,7.2
-Alberta Beach,AB,Alberta,53.6767,-114.35,1018,507.1
-Saint-Narcisse-de-Rimouski,QC,Quebec,48.28,-68.43,1017,6.2
-Saint-Bonaventure,QC,Quebec,45.9667,-72.6833,1017,12.9
-Longlaketon No. 219,SK,Saskatchewan,50.9386,-104.6913,1016,1
-Papineau-Cameron,ON,Ontario,46.3,-78.7333,1016,1.8
-Assiginack,ON,Ontario,45.7333,-81.8,1013,4.5
-Brebeuf,QC,Quebec,46.0667,-74.6667,1012,27.9
-Hudson Hope,BC,British Columbia,56.0316,-121.9057,1012,1.1
-Prince,ON,Ontario,46.5333,-84.5,1010,11.8
-Baie-du-Febvre,QC,Quebec,46.13,-72.72,1010,10.4
-Durham-Sud,QC,Quebec,45.6667,-72.3333,1008,10.8
-Melbourne,QC,Quebec,45.58,-72.17,1004,5.8
-Nipawin No. 487,SK,Saskatchewan,53.2881,-104.0544,1004,1.1
-Duck Lake No. 463,SK,Saskatchewan,52.9596,-106.2089,1004,1
-Oyen,AB,Alberta,51.3522,-110.4739,1001,189.6
+city_ascii;province_id;province_name;lat;lng;population;density
+Toronto;ON;Ontario;43.7417;-79.3733;5429524;4334.4
+Montreal;QC;Quebec;45.5089;-73.5617;3519595;3889
+Vancouver;BC;British Columbia;49.25;-123.1;2264823;5492.6
+Calgary;AB;Alberta;51.05;-114.0667;1239220;1501.1
+Edmonton;AB;Alberta;53.5344;-113.4903;1062643;1360.9
+Ottawa;ON;Ontario;45.4247;-75.695;989567;334
+Mississauga;ON;Ontario;43.6;-79.65;721599;2467.6
+Winnipeg;MB;Manitoba;49.8844;-97.1464;705244;1430
+Quebec City;QC;Quebec;46.8139;-71.2081;705103;1173.2
+Hamilton;ON;Ontario;43.2567;-79.8692;693645;480.6
+Brampton;ON;Ontario;43.6833;-79.7667;593638;2228.7
+Surrey;BC;British Columbia;49.19;-122.8489;517887;1636.8
+Kitchener;ON;Ontario;43.4186;-80.4728;470015;3433.5
+Laval;QC;Quebec;45.5833;-73.75;422993;1710.9
+Halifax;NS;Nova Scotia;44.6475;-63.5906;403131;73.4
+London;ON;Ontario;42.9836;-81.2497;383822;913.1
+Victoria;BC;British Columbia;48.4283;-123.3647;335696;4406.3
+Markham;ON;Ontario;43.8767;-79.2633;328966;1549.2
+St. Catharines;ON;Ontario;43.1833;-79.2333;309319;1384.8
+Niagara Falls;ON;Ontario;43.06;-79.1067;308596;419.9
+Vaughan;ON;Ontario;43.8333;-79.5;306233;1119.4
+Gatineau;QC;Quebec;45.4833;-75.65;276245;773.7
+Windsor;ON;Ontario;42.2833;-83;276165;1484.3
+Saskatoon;SK;Saskatchewan;52.1333;-106.6833;246376;1080
+Longueuil;QC;Quebec;45.5333;-73.5167;239700;2002
+Burnaby;BC;British Columbia;49.2667;-122.9667;232755;2568.7
+Regina;SK;Saskatchewan;50.4547;-104.6067;215106;1195.2
+Richmond;BC;British Columbia;49.1667;-123.1333;198309;1534.1
+Richmond Hill;ON;Ontario;43.8667;-79.4333;195022;1928.8
+Oakville;ON;Ontario;43.45;-79.6833;193832;1314.2
+Burlington;ON;Ontario;43.3167;-79.8;183314;946.8
+Barrie;ON;Ontario;44.3711;-79.6769;172657;1428
+Oshawa;ON;Ontario;43.9;-78.85;166000;1027
+Sherbrooke;QC;Quebec;45.4;-71.9;161323;456
+Saguenay;QC;Quebec;48.4167;-71.0667;144746;128.5
+Levis;QC;Quebec;46.8;-71.1833;143414;319.4
+Kelowna;BC;British Columbia;49.8881;-119.4956;142146;601.3
+Abbotsford;BC;British Columbia;49.05;-122.3167;141397;376.5
+Coquitlam;BC;British Columbia;49.2839;-122.7919;139284;1138.9
+Trois-Rivieres;QC;Quebec;46.35;-72.55;134413;1581.2
+Guelph;ON;Ontario;43.55;-80.25;131794;1511.1
+Cambridge;ON;Ontario;43.3972;-80.3114;129920;1149.6
+Whitby;ON;Ontario;43.8833;-78.9417;128377;876.1
+Ajax;ON;Ontario;43.8583;-79.0364;119677;1634.2
+Langley;BC;British Columbia;49.1044;-122.5827;117285;380.8
+Saanich;BC;British Columbia;48.484;-123.381;114148;1099.9
+Terrebonne;QC;Quebec;45.7;-73.6333;111575;687.1
+Milton;ON;Ontario;43.5083;-79.8833;110128;230.11
+St. John's;NL;Newfoundland and Labrador;47.4817;-52.7971;108860;244.1
+Moncton;NB;New Brunswick;46.1328;-64.7714;108620;506
+Thunder Bay;ON;Ontario;48.3822;-89.2461;107909;330.1
+Dieppe;NB;New Brunswick;46.0989;-64.7242;107068;469.6
+Waterloo;ON;Ontario;43.4667;-80.5167;104986;1520.7
+Delta;BC;British Columbia;49.0847;-123.0586;102238;567.4
+Chatham;ON;Ontario;42.4229;-82.1324;101647;41.4
+Red Deer;AB;Alberta;52.2681;-113.8111;100418;958.8
+Kamloops;BC;British Columbia;50.6761;-120.3408;100046;301.7
+Brantford;ON;Ontario;43.1667;-80.25;97496;1345.9
+Cape Breton;NS;Nova Scotia;46.1389;-60.1931;94285;38.8
+Lethbridge;AB;Alberta;49.6942;-112.8328;92729;759.5
+Saint-Jean-sur-Richelieu;QC;Quebec;45.3167;-73.2667;92394;419.7
+Clarington;ON;Ontario;43.935;-78.6083;92013;138.3
+Pickering;ON;Ontario;43.8354;-79.089;91771;383.1
+Nanaimo;BC;British Columbia;49.1642;-123.9364;90504;918
+Sudbury;ON;Ontario;46.49;-81.01;88054;49.7
+North Vancouver;BC;British Columbia;49.3641;-123.0066;85935;534.6
+Brossard;QC;Quebec;45.4667;-73.45;85721;1896
+Repentigny;QC;Quebec;45.7333;-73.4667;84965;1395.4
+Newmarket;ON;Ontario;44.05;-79.4667;84224;2190.5
+Chilliwack;BC;British Columbia;49.1577;-121.9509;83788;320.2
+White Rock;BC;British Columbia;49.025;-122.8028;82368;3893.1
+Maple Ridge;BC;British Columbia;49.2167;-122.6;82256;308.3
+Peterborough;ON;Ontario;44.3;-78.3167;82094;1261.2
+Kawartha Lakes;ON;Ontario;44.35;-78.75;75423;24.5
+Prince George;BC;British Columbia;53.9169;-122.7494;74003;232.5
+Sault Ste. Marie;ON;Ontario;46.5333;-84.35;73368;328.6
+Sarnia;ON;Ontario;42.9994;-82.3089;71594;434.3
+Wood Buffalo;AB;Alberta;57.6042;-111.3284;71589;1.2
+New Westminster;BC;British Columbia;49.2069;-122.9111;70996;4543.4
+Chateauguay;QC;Quebec;45.38;-73.75;70812;1278.9
+Saint-Jerome;QC;Quebec;45.7833;-74;69598;756.3
+Drummondville;QC;Quebec;45.8833;-72.4833;68601;1315.4
+Saint John;NB;New Brunswick;45.2806;-66.0761;67575;213.8
+Caledon;ON;Ontario;43.8667;-79.8667;66502;96.6
+St. Albert;AB;Alberta;53.6303;-113.6258;65589;1353.9
+Granby;QC;Quebec;45.4;-72.7333;63433;415.3
+Medicine Hat;AB;Alberta;50.0417;-110.6775;63260;564.6
+Grande Prairie;AB;Alberta;55.1708;-118.7947;63166;475.9
+St. Thomas;ON;Ontario;42.775;-81.1833;61707;1067.3
+Airdrie;AB;Alberta;51.2917;-114.0144;61581;728.2
+Halton Hills;ON;Ontario;43.63;-79.95;61161;221.4
+Saint-Hyacinthe;QC;Quebec;45.6167;-72.95;59614;294.5
+Lac-Brome;QC;Quebec;45.2167;-72.5167;58889;27.3
+Port Coquitlam;BC;British Columbia;49.2625;-122.7811;58612;2009.4
+Fredericton;NB;New Brunswick;45.9636;-66.6431;58220;439.2
+Blainville;QC;Quebec;45.67;-73.88;56363;1030.9
+Aurora;ON;Ontario;44;-79.4667;55445;1112.3
+Welland;ON;Ontario;42.9833;-79.2333;52293;645.3
+North Bay;ON;Ontario;46.3;-79.45;51553;161.6
+Beloeil;QC;Quebec;45.5667;-73.2;50796;862.8
+Belleville;ON;Ontario;44.1667;-77.3833;50716;205.1
+Mirabel;QC;Quebec;45.65;-74.0833;50513;104.1
+Shawinigan;QC;Quebec;46.5667;-72.75;50060;68.2
+Dollard-des-Ormeaux;QC;Quebec;45.4833;-73.8167;49637;3286.7
+Brandon;MB;Manitoba;49.8483;-99.95;48859;599.1
+Rimouski;QC;Quebec;48.45;-68.53;48664;143.3
+Cornwall;ON;Ontario;45.0275;-74.74;46589;756.8
+Stouffville;ON;Ontario;43.9667;-79.25;45837;222.3
+Georgina;ON;Ontario;44.3;-79.4333;45418;157.8
+Victoriaville;QC;Quebec;46.05;-71.9667;45309;516.2
+Vernon;BC;British Columbia;50.267;-119.272;44600;417.7
+Duncan;BC;British Columbia;48.7787;-123.7079;44451;2387.1
+Saint-Eustache;QC;Quebec;45.57;-73.9;44154;634.3
+Quinte West;ON;Ontario;44.1833;-77.5667;43577;88.2
+Charlottetown;PE;Prince Edward Island;46.2403;-63.1347;42602;779.7
+Mascouche;QC;Quebec;45.75;-73.6;42491;398.4
+West Vancouver;BC;British Columbia;49.3667;-123.1667;42473;486.8
+Salaberry-de-Valleyfield;QC;Quebec;45.25;-74.13;42410;395.5
+Rouyn-Noranda;QC;Quebec;48.2333;-79.0167;42334;7
+Timmins;ON;Ontario;48.4667;-81.3333;41788;14
+Sorel-Tracy;QC;Quebec;46.0333;-73.1167;41629;241.1
+New Tecumseth;ON;Ontario;44.0833;-79.75;41439;151.1
+Woodstock;ON;Ontario;43.1306;-80.7467;40902;835.3
+Boucherville;QC;Quebec;45.6;-73.45;40753;575.5
+Mission;BC;British Columbia;49.1337;-122.3112;38833;170.6
+Vaudreuil-Dorion;QC;Quebec;45.4;-74.0333;38117;524.1
+Brant;ON;Ontario;43.1167;-80.3667;36707;43.5
+Lakeshore;ON;Ontario;42.2399;-82.6511;36611;69
+Innisfil;ON;Ontario;44.3;-79.5833;36566;139.2
+Prince Albert;SK;Saskatchewan;53.2;-105.75;35926;534.4
+Langford Station;BC;British Columbia;48.4506;-123.5058;35342;885
+Bradford West Gwillimbury;ON;Ontario;44.1333;-79.6333;35325;175.7
+Campbell River;BC;British Columbia;50.0244;-125.2475;35138;1143.9
+Spruce Grove;AB;Alberta;53.545;-113.9008;34066;1057.9
+Moose Jaw;SK;Saskatchewan;50.3933;-105.5519;33890;710.7
+Penticton;BC;British Columbia;49.4911;-119.5886;33761;801.8
+Port Moody;BC;British Columbia;49.2831;-122.8317;33551;1295.9
+Leamington;ON;Ontario;42.0667;-82.5833;32991;105.3
+East Kelowna;BC;British Columbia;49.8625;-119.5833;32655;264.4
+Cote-Saint-Luc;QC;Quebec;45.4687;-73.6673;32448;4662.5
+Val-d'Or;QC;Quebec;48.1;-77.7833;31862;9
+Owen Sound;ON;Ontario;44.5667;-80.9333;31820;1311.1
+Stratford;ON;Ontario;43.3708;-80.9819;31465;1167.5
+Lloydminster;SK;Saskatchewan;53.2783;-110.005;31410;742.2
+Pointe-Claire;QC;Quebec;45.45;-73.8167;31380;1662
+Orillia;ON;Ontario;44.6;-79.4167;31166;1090.3
+Alma;QC;Quebec;48.55;-71.65;30904;158
+Orangeville;ON;Ontario;43.9167;-80.1167;30734;69.3
+Fort Erie;ON;Ontario;42.9167;-79.0167;30710;184.7
+LaSalle;ON;Ontario;42.2167;-83.0667;30180;461.8
+Sainte-Julie;QC;Quebec;45.5833;-73.3333;30104;607.8
+Leduc;AB;Alberta;53.2594;-113.5492;29993;706.7
+North Cowichan;BC;British Columbia;48.8236;-123.7192;29676;147.3
+Chambly;QC;Quebec;45.4311;-73.2873;29120;1158.7
+Okotoks;AB;Alberta;50.725;-113.975;28881;1471
+Sept-Iles;QC;Quebec;50.2167;-66.3833;28534;16.1
+Centre Wellington;ON;Ontario;43.7;-80.3667;28191;69.2
+Saint-Constant;QC;Quebec;45.37;-73.57;27359;478.9
+Grimsby;ON;Ontario;43.2;-79.55;27314;396.3
+Boisbriand;QC;Quebec;45.62;-73.83;26884;966.5
+Conception Bay South;NL;Newfoundland and Labrador;47.5167;-52.9833;26199;443.3
+Saint-Bruno-de-Montarville;QC;Quebec;45.5333;-73.35;26107;603.3
+Sainte-Therese;QC;Quebec;45.6333;-73.85;26025;2716.1
+Cochrane;AB;Alberta;51.189;-114.467;25853;866.7
+Thetford Mines;QC;Quebec;46.1;-71.3;25709;113.3
+Courtenay;BC;British Columbia;49.6878;-124.9944;25599;789.9
+Magog;QC;Quebec;45.2667;-72.15;25358;175.9
+Whitehorse;YT;Yukon;60.7029;-135.0691;25085;60.2
+Woolwich;ON;Ontario;43.5667;-80.4833;25006;76.7
+Clarence-Rockland;ON;Ontario;45.4833;-75.2;24512;82.3
+Fort Saskatchewan;AB;Alberta;53.7128;-113.2133;24149;501.3
+East Gwillimbury;ON;Ontario;44.1333;-79.4167;23991;97.9
+Lincoln;ON;Ontario;43.13;-79.43;23787;146.1
+La Prairie;QC;Quebec;45.42;-73.5;23357;539.7
+Tecumseh;ON;Ontario;42.2431;-82.9256;23229;245.4
+Mount Pearl Park;NL;Newfoundland and Labrador;47.5189;-52.8058;22957;1456.8
+Amherstburg;ON;Ontario;42.1;-83.0833;21936;118.2
+Saint-Lambert;QC;Quebec;45.5;-73.5167;21861;2880.6
+Brockville;ON;Ontario;44.5833;-75.6833;21854;1167.8
+Collingwood;ON;Ontario;44.5;-80.2167;21793;645.1
+Scugog;ON;Ontario;44.09;-78.936;21617;45.4
+Kingsville;ON;Ontario;42.1;-82.7167;21552;87.3
+Baie-Comeau;QC;Quebec;49.2167;-68.15;21536;64
+Paradise;NL;Newfoundland and Labrador;47.5333;-52.8667;21389;731.5
+Uxbridge;ON;Ontario;44.1167;-79.1333;21176;45.6
+Essa;ON;Ontario;44.25;-79.7833;21083;75.3
+Candiac;QC;Quebec;45.38;-73.52;21047;1215.8
+Oro-Medonte;ON;Ontario;44.5667;-79.5833;21036;35.8
+Varennes;QC;Quebec;45.6833;-73.4333;20994;226.9
+Strathroy-Caradoc;ON;Ontario;42.9575;-81.6167;20867;77.1
+Wasaga Beach;ON;Ontario;44.5206;-80.0167;20675;352.6
+New Glasgow;NS;Nova Scotia;45.5926;-62.6455;20609;911.6
+Wilmot;ON;Ontario;43.4;-80.65;20545;77.9
+Essex;ON;Ontario;42.0833;-82.9;20427;73.5
+Fort St. John;BC;British Columbia;56.2465;-120.8476;20155;820.2
+Kirkland;QC;Quebec;45.45;-73.8667;20151;2204.4
+L'Assomption;QC;Quebec;45.8333;-73.4167;20065;202.9
+Westmount;QC;Quebec;45.4833;-73.6;19931;4952.8
+Saint-Lazare;QC;Quebec;45.4;-74.1333;19889;289.6
+Chestermere;AB;Alberta;51.05;-113.8225;19887;603.8
+Huntsville;ON;Ontario;45.3333;-79.2167;19816;27.9
+Corner Brook;NL;Newfoundland and Labrador;48.9287;-57.926;19806;133.6
+Riverview;NB;New Brunswick;46.0613;-64.8052;19667;554.8
+Lloydminster;AB;Alberta;53.2807;-110.035;19645;817.3
+Joliette;QC;Quebec;46.0167;-73.45;19621;860.3
+Yellowknife;NT;Northwest Territories;62.4709;-114.4053;19569;185.5
+Squamish;BC;British Columbia;49.7017;-123.1589;19512;186.1
+Mont-Royal;QC;Quebec;45.5161;-73.6431;19503;2545.3
+Riviere-du-Loup;QC;Quebec;47.8333;-69.5333;19447;230.9
+Cobourg;ON;Ontario;43.9667;-78.1667;19440;869.3
+Cranbrook;BC;British Columbia;49.5097;-115.7667;19259;604.7
+Beaconsfield;QC;Quebec;45.4333;-73.8667;19115;1752.6
+Springwater;ON;Ontario;44.4333;-79.7333;19059;35.5
+Dorval;QC;Quebec;45.45;-73.75;18980;839.2
+Thorold;ON;Ontario;43.1167;-79.2;18801;226.5
+Camrose;AB;Alberta;53.0167;-112.8333;18742;439.8
+South Frontenac;ON;Ontario;44.5081;-76.4939;18646;19.2
+Pitt Meadows;BC;British Columbia;49.2333;-122.6833;18573;214.7
+Port Colborne;ON;Ontario;42.8833;-79.25;18306;150.1
+Quispamsis;NB;New Brunswick;45.4322;-65.9462;18245;318.9
+Mont-Saint-Hilaire;QC;Quebec;45.5622;-73.1917;18200;410.9
+Bathurst;NB;New Brunswick;47.62;-65.65;18154;129.3
+Saint-Augustin-de-Desmaures;QC;Quebec;46.7333;-71.4667;18141;211.5
+Oak Bay;BC;British Columbia;48.4264;-123.3228;18094;1717.7
+Sainte-Marthe-sur-le-Lac;QC;Quebec;45.53;-73.93;18074;2066.7
+Salmon Arm;BC;British Columbia;50.7022;-119.2722;17706;144
+Port Alberni;BC;British Columbia;49.2339;-124.805;17678;894.6
+Esquimalt;BC;British Columbia;48.4306;-123.4147;17655;2494.7
+Deux-Montagnes;QC;Quebec;45.5333;-73.8833;17553;2850.1
+Miramichi;NB;New Brunswick;47.0196;-65.5072;17537;97.7
+Niagara-on-the-Lake;ON;Ontario;43.2553;-79.0717;17511;131.8
+Saint-Lin--Laurentides;QC;Quebec;45.85;-73.7667;17463;147.3
+Beaumont;AB;Alberta;53.3572;-113.4147;17396;1661.1
+Middlesex Centre;ON;Ontario;43.05;-81.45;17262;29.4
+Inverness;NS;Nova Scotia;46.2;-61.1;17235;4.5
+Stony Plain;AB;Alberta;53.5264;-114.0069;17189;481.2
+Petawawa;ON;Ontario;45.9;-77.2833;17187;103.1
+Pelham;ON;Ontario;43.0333;-79.3333;17110;135.3
+Selwyn;ON;Ontario;44.4167;-78.3333;17060;54
+Loyalist;ON;Ontario;44.25;-76.75;16971;49.8
+Midland;ON;Ontario;44.75;-79.8833;16864;477.3
+Colwood;BC;British Columbia;48.4236;-123.4958;16859;954.2
+Central Saanich;BC;British Columbia;48.5142;-123.3839;16814;406.8
+Sainte-Catherine;QC;Quebec;45.4;-73.58;16762;1764.1
+Port Hope;ON;Ontario;43.95;-78.3;16753;60.1
+L'Ancienne-Lorette;QC;Quebec;46.8;-71.35;16745;2193.6
+Saint-Basile-le-Grand;QC;Quebec;45.5333;-73.2833;16736;463.6
+Swift Current;SK;Saskatchewan;50.2881;-107.7939;16604;566.5
+Edmundston;NB;New Brunswick;47.3765;-68.3253;16580;155.2
+Russell;ON;Ontario;45.2569;-75.3583;16520;83
+North Grenville;ON;Ontario;44.9667;-75.65;16451;46.7
+Yorkton;SK;Saskatchewan;51.2139;-102.4628;16343;449.9
+Tracadie;NB;New Brunswick;47.5124;-64.9101;16114;31.2
+Bracebridge;ON;Ontario;45.0333;-79.3;16010;25.5
+Greater Napanee;ON;Ontario;44.25;-76.95;15892;34.5
+Tillsonburg;ON;Ontario;42.8667;-80.7333;15872;710.8
+Steinbach;MB;Manitoba;49.5258;-96.6839;15829;618.6
+Hanover;MB;Manitoba;49.4433;-96.8492;15733;21.2
+Terrace;BC;British Columbia;54.5164;-128.5997;15723;212.7
+Springfield;MB;Manitoba;49.9292;-96.6939;15342;13.9
+Gaspe;QC;Quebec;48.8333;-64.4833;15163;13.5
+Kenora;ON;Ontario;49.7667;-94.4833;15096;71.3
+Cold Lake;AB;Alberta;54.4642;-110.1825;14961;249.7
+Summerside;PE;Prince Edward Island;46.4;-63.7833;14829;520.5
+Comox;BC;British Columbia;49.6733;-124.9022;14828;838.2
+Sylvan Lake;AB;Alberta;52.3083;-114.0964;14816;634.2
+Pincourt;QC;Quebec;45.3833;-73.9833;14558;2048.1
+West Lincoln;ON;Ontario;43.0667;-79.5667;14500;37.4
+Matane;QC;Quebec;48.85;-67.5333;14462;74
+Brooks;AB;Alberta;50.5642;-111.8989;14451;777.3
+Sainte-Anne-des-Plaines;QC;Quebec;45.7617;-73.8204;14421;154.1
+West Nipissing / Nipissing Ouest;ON;Ontario;46.3667;-79.9167;14364;7.2
+Rosemere;QC;Quebec;45.6369;-73.8;14294;1326.9
+Mistassini;QC;Quebec;48.8229;-72.2154;14250;48.2
+Grand Falls;NL;Newfoundland and Labrador;48.9578;-55.6633;14171;259.2
+Clearview;ON;Ontario;44.3981;-80.0742;14151;25.4
+St. Clair;ON;Ontario;42.7833;-82.35;14086;22.8
+Canmore;AB;Alberta;51.089;-115.359;13992;201.5
+North Battleford;SK;Saskatchewan;52.7575;-108.2861;13888;414
+Pembroke;ON;Ontario;45.8167;-77.1;13882;953.3
+Mont-Laurier;QC;Quebec;46.55;-75.5;13779;23.3
+Strathmore;AB;Alberta;51.0378;-113.4003;13756;502
+Saugeen Shores;ON;Ontario;44.4333;-81.3667;13715;80.2
+Thompson;MB;Manitoba;55.7433;-97.8553;13678;657.91
+Lavaltrie;QC;Quebec;45.8833;-73.2833;13657;199.7
+High River;AB;Alberta;50.5808;-113.8744;13584;635.1
+Severn;ON;Ontario;44.75;-79.5167;13477;24.5
+Sainte-Sophie;QC;Quebec;45.82;-73.9;13375;120.2
+Saint-Charles-Borromee;QC;Quebec;46.05;-73.4667;13321;715
+Portage La Prairie;MB;Manitoba;49.9728;-98.2919;13304;539.1
+Thames Centre;ON;Ontario;43.03;-81.08;13191;30.4
+Mississippi Mills;ON;Ontario;45.2167;-76.2;13163;25.3
+Powell River;BC;British Columbia;49.8353;-124.5247;13157;444.1
+South Glengarry;ON;Ontario;45.2;-74.5833;13150;21.7
+North Perth;ON;Ontario;43.73;-80.95;13130;26.6
+Mercier;QC;Quebec;45.32;-73.75;13115;284.6
+South Stormont;ON;Ontario;45.0833;-74.9667;13110;28.2
+Saint-Colomban;QC;Quebec;45.73;-74.13;13080;139.8
+Lacombe;AB;Alberta;52.4683;-113.7369;13057;627.5
+Sooke;BC;British Columbia;48.3761;-123.7378;13001;229.6
+Dawson Creek;BC;British Columbia;55.7606;-120.2356;12978;475.4
+Lake Country;BC;British Columbia;50.0833;-119.4142;12922;105.8
+Trent Hills;ON;Ontario;44.3142;-77.8514;12900;25.2
+Sainte-Marie;QC;Quebec;46.45;-71.0333;12889;120.3
+Guelph/Eramosa;ON;Ontario;43.63;-80.22;12854;44.1
+Truro;NS;Nova Scotia;45.3647;-63.28;12826;355.5
+Amos;QC;Quebec;48.5667;-78.1167;12823;29.8
+The Nation / La Nation;ON;Ontario;45.35;-75.0333;12808;19.5
+Ingersoll;ON;Ontario;43.0392;-80.8836;12757;1000.7
+Winkler;MB;Manitoba;49.1817;-97.9397;12660;740.5
+Wetaskiwin;AB;Alberta;52.9694;-113.3769;12655;691.1
+Central Elgin;ON;Ontario;42.7667;-81.1;12607;45
+Lachute;QC;Quebec;45.65;-74.3333;12551;114.9
+West Grey;ON;Ontario;44.1833;-80.8167;12518;14.3
+Parksville;BC;British Columbia;49.315;-124.312;12514;854.6
+Cowansville;QC;Quebec;45.2;-72.75;12489;271
+Becancour;QC;Quebec;46.3333;-72.4333;12438;28.2
+Gravenhurst;ON;Ontario;44.9167;-79.3667;12311;23.8
+Perth East;ON;Ontario;43.47;-80.95;12261;17.2
+Prince Rupert;BC;British Columbia;54.3122;-130.3271;12220;227.7
+Prevost;QC;Quebec;45.87;-74.08;12171;347.2
+Sainte-Adele;QC;Quebec;45.95;-74.13;12137;100.4
+Kentville;NS;Nova Scotia;45.0775;-64.4958;12088;363.3
+Beauharnois;QC;Quebec;45.32;-73.87;12011;173.9
+Les Iles-de-la-Madeleine;QC;Quebec;47.3833;-61.8667;12010;69.5
+Wellington North;ON;Ontario;43.9;-80.57;11914;22.6
+St. Andrews;MB;Manitoba;50.27;-96.9747;11913;15.8
+Carleton Place;ON;Ontario;45.1333;-76.1333;11901;1176.2
+Whistler;BC;British Columbia;50.1208;-122.9544;11854;49.3
+Brighton;ON;Ontario;44.1222;-77.7642;11844;43.2
+Tiny;ON;Ontario;44.6833;-79.95;11787;35
+Gander;NL;Newfoundland and Labrador;48.9569;-54.6089;11688;112.1
+Sidney;BC;British Columbia;48.6506;-123.3986;11672;2290.7
+Rothesay;NB;New Brunswick;45.3831;-65.9969;11659;335.8
+Brock;ON;Ontario;44.3167;-79.0833;11642;27.5
+Summerland;BC;British Columbia;49.6006;-119.6778;11615;156.8
+Val-des-Monts;QC;Quebec;45.65;-75.6667;11582;26.2
+Tache;MB;Manitoba;49.7081;-96.6736;11568;19.9
+Montmagny;QC;Quebec;46.9833;-70.55;11491;91.1
+Erin;ON;Ontario;43.7667;-80.0667;11439;38.4
+Kincardine;ON;Ontario;44.1667;-81.6333;11389;21.2
+North Dundas;ON;Ontario;45.0833;-75.35;11278;22.4
+Wellesley;ON;Ontario;43.55;-80.7167;11260;40.5
+Estevan;SK;Saskatchewan;49.1392;-102.9861;11258;586.6
+North Saanich;BC;British Columbia;48.6142;-123.42;11249;301.8
+Warman;SK;Saskatchewan;52.3219;-106.5842;11020;844.6
+La Tuque;QC;Quebec;48.0652;-74.0528;11001;0.4
+Norwich;ON;Ontario;42.9833;-80.6;11001;25.5
+Meaford;ON;Ontario;44.58;-80.73;10991;18.7
+Adjala-Tosorontio;ON;Ontario;44.1333;-79.9333;10975;29.5
+Hamilton Township;ON;Ontario;44.054;-78.2164;10942;42.7
+St. Clements;MB;Manitoba;50.2689;-96.6742;10876;14.9
+Saint-Amable;QC;Quebec;45.65;-73.3;10870;296.3
+Weyburn;SK;Saskatchewan;49.6611;-103.8525;10870;688.8
+South Dundas;ON;Ontario;44.9167;-75.2667;10833;20.8
+L'Ile-Perrot;QC;Quebec;45.3833;-73.95;10756;1955.6
+Notre-Dame-de-l'Ile-Perrot;QC;Quebec;45.3667;-73.9333;10756;386.9
+Williams Lake;BC;British Columbia;52.1294;-122.1383;10753;327
+Elliot Lake;ON;Ontario;46.3833;-82.65;10741;15.9
+Cantley;QC;Quebec;45.5667;-75.7833;10699;83.4
+Nelson;BC;British Columbia;49.5;-117.2833;10664;1552.3
+Lambton Shores;ON;Ontario;43.1833;-81.9;10631;32.1
+Mapleton;ON;Ontario;43.7358;-80.6681;10527;19.7
+Georgian Bluffs;ON;Ontario;44.65;-81.0333;10479;17.3
+Rawdon;QC;Quebec;46.05;-73.7167;10416;55.7
+Campbellton;NB;New Brunswick;48.005;-66.6731;10411;370.5
+View Royal;BC;British Columbia;48.4517;-123.4339;10408;724.8
+Coldstream;BC;British Columbia;50.22;-119.2481;10314;155.6
+Chester;NS;Nova Scotia;44.65;-64.3;10310;9.2
+Queens;NS;Nova Scotia;44.0333;-64.7167;10307;4.3
+Selkirk;MB;Manitoba;50.1436;-96.8839;10278;413.4
+Saint-Felicien;QC;Quebec;48.65;-72.45;10278;28.3
+Hawkesbury;ON;Ontario;45.6;-74.6;10263;1067.3
+Roberval;QC;Quebec;48.52;-72.23;10227;66.8
+Sainte-Agathe-des-Monts;QC;Quebec;46.05;-74.28;10223;78.6
+North Dumfries;ON;Ontario;43.32;-80.38;10215;54.5
+Rideau Lakes;ON;Ontario;44.6667;-76.2167;10207;14
+Sechelt;BC;British Columbia;49.4742;-123.7542;10200;212.9
+North Glengarry;ON;Ontario;45.3333;-74.7333;10109;15.7
+South Huron;ON;Ontario;43.32;-81.5;10096;23.4
+Marieville;QC;Quebec;45.4333;-73.1667;10094;160.8
+Tay;ON;Ontario;44.7167;-79.7667;10033;72.1
+Temiskaming Shores;ON;Ontario;47.5167;-79.6833;9920;55.7
+Hinton;AB;Alberta;53.4114;-117.5639;9882;294.8
+Saint-Sauveur;QC;Quebec;45.9;-74.17;9881;206.8
+Quesnel;BC;British Columbia;52.9784;-122.4927;9879;279.2
+Elizabethtown-Kitley;ON;Ontario;44.7;-75.8833;9854;17.7
+Morinville;AB;Alberta;53.8022;-113.6497;9848;882.8
+Grey Highlands;ON;Ontario;44.3333;-80.5;9804;11.1
+Stratford;PE;Prince Edward Island;46.2167;-63.0893;9706;430.8
+Alfred and Plantagenet;ON;Ontario;45.5667;-74.9167;9680;24.7
+Mont-Tremblant;QC;Quebec;46.1167;-74.6;9646;40.5
+Martensville;SK;Saskatchewan;52.2897;-106.6667;9645;1421.2
+Saint-Raymond;QC;Quebec;46.9;-71.8333;9615;14.3
+Amherst;NS;Nova Scotia;45.8167;-64.2167;9550;779.7
+Ramara;ON;Ontario;44.6333;-79.2167;9488;22.7
+Bois-des-Filion;QC;Quebec;45.6667;-73.75;9485;2216.2
+Leeds and the Thousand Islands;ON;Ontario;44.45;-76.08;9465;15.1
+Carignan;QC;Quebec;45.45;-73.3;9462;151.9
+Brockton;ON;Ontario;44.1667;-81.2167;9461;16.7
+Laurentian Valley;ON;Ontario;45.7681;-77.2239;9387;17
+East St. Paul;MB;Manitoba;49.9772;-97.0103;9372;222.6
+Lorraine;QC;Quebec;45.6833;-73.7833;9352;1570
+Sainte-Julienne;QC;Quebec;45.97;-73.72;9331;94
+Blackfalds;AB;Alberta;52.3833;-113.8;9328;567.3
+Malahide;ON;Ontario;42.7928;-80.9361;9292;23.5
+Oromocto;NB;New Brunswick;45.8488;-66.4788;9223;411
+Olds;AB;Alberta;51.7928;-114.1067;9184;615.3
+Huron East;ON;Ontario;43.63;-81.28;9138;13.8
+Stanley;MB;Manitoba;49.1331;-98.0656;9038;10.8
+Penetanguishene;ON;Ontario;44.7667;-79.9333;8962;350.3
+Qualicum Beach;BC;British Columbia;49.35;-124.4333;8943;497.4
+Notre-Dame-des-Prairies;QC;Quebec;46.05;-73.4333;8868;487.3
+West Perth;ON;Ontario;43.47;-81.2;8865;15.3
+Cavan Monaghan;ON;Ontario;44.2;-78.4667;8829;28.8
+Arnprior;ON;Ontario;45.4333;-76.35;8795;672.7
+Smiths Falls;ON;Ontario;44.9;-76.0167;8780;909.1
+Pont-Rouge;QC;Quebec;46.75;-71.7;8723;72
+Champlain;ON;Ontario;45.5333;-74.65;8706;42
+Coaticook;QC;Quebec;45.1333;-71.8;8698;39.6
+Minto;ON;Ontario;43.9167;-80.8667;8671;28.8
+Morden;MB;Manitoba;49.1919;-98.1006;8668;401
+Mono;ON;Ontario;44.0167;-80.0667;8609;31
+Corman Park No. 344;SK;Saskatchewan;52.2291;-106.8002;8568;4.5
+Ladysmith;BC;British Columbia;48.9975;-123.8203;8537;711.9
+Bridgewater;NS;Nova Scotia;44.37;-64.52;8532;625.9
+Dauphin;MB;Manitoba;51.1992;-100.0633;8457;670.7
+Otterburn Park;QC;Quebec;45.5333;-73.2167;8450;1580.6
+Taber;AB;Alberta;49.7847;-112.1508;8428;537.9
+South Bruce Peninsula;ON;Ontario;44.7333;-81.2;8416;15.8
+Edson;AB;Alberta;53.5817;-116.4344;8414;283.1
+Farnham;QC;Quebec;45.2833;-72.9833;8330;90.5
+Kapuskasing;ON;Ontario;49.4167;-82.4333;8292;98.3
+La Malbaie;QC;Quebec;47.65;-70.15;8271;18
+Renfrew;ON;Ontario;45.4717;-76.6831;8223;643.4
+Coaldale;AB;Alberta;49.7333;-112.6167;8215;1028.5
+Portugal Cove-St. Philip's;NL;Newfoundland and Labrador;47.6272;-52.8506;8147;128.4
+Zorra;ON;Ontario;43.15;-80.95;8138;15.4
+Kitimat;BC;British Columbia;54;-128.7;8131;34.7
+Shelburne;ON;Ontario;44.0833;-80.2;8126;907.1
+Happy Valley;NL;Newfoundland and Labrador;53.3396;-60.4467;8109;26.5
+Saint-Hippolyte;QC;Quebec;45.93;-74.02;8083;67
+Castlegar;BC;British Columbia;49.3256;-117.6661;8039;408.6
+Church Point;NS;Nova Scotia;44.3333;-66.1167;8018;9.4
+Drumheller;AB;Alberta;51.4636;-112.7194;7982;73.9
+Kirkland Lake;ON;Ontario;48.15;-80.0333;7981;30.4
+Argyle;NS;Nova Scotia;43.8;-65.85;7899;5.2
+Torbay;NL;Newfoundland and Labrador;47.65;-52.7333;7899;212.1
+La Peche;QC;Quebec;45.6833;-75.9833;7863;13.4
+Banff;AB;Alberta;51.1781;-115.5719;7847;1646
+Innisfail;AB;Alberta;52.0333;-113.95;7847;404.6
+Nicolet;QC;Quebec;46.2167;-72.6167;7828;81.5
+Rockwood;MB;Manitoba;50.2856;-97.2869;7823;6.5
+Drummond/North Elmsley;ON;Ontario;44.9667;-76.2;7773;21.2
+Dryden;ON;Ontario;49.7833;-92.8333;7749;117.1
+Iqaluit;NU;Nunavut;63.7598;-68.5107;7740;147.4
+Fort Frances;ON;Ontario;48.6167;-93.4;7739;303.4
+La Sarre;QC;Quebec;48.8;-79.2;7719;51.9
+Trail;BC;British Columbia;49.095;-117.71;7709;220.7
+Chandler;QC;Quebec;48.35;-64.6833;7703;18.4
+Stone Mills;ON;Ontario;44.45;-76.9167;7702;10.9
+Hanover;ON;Ontario;44.15;-81.0333;7688;763.8
+South-West Oxford;ON;Ontario;42.95;-80.8;7664;20.7
+Acton Vale;QC;Quebec;45.65;-72.5667;7664;84.2
+Bromont;QC;Quebec;45.3167;-72.65;7649;66.9
+Beckwith;ON;Ontario;45.0833;-76.0667;7644;31.8
+Goderich;ON;Ontario;43.7333;-81.7;7628;882.8
+Plympton-Wyoming;ON;Ontario;43.0167;-82.0833;7576;23.8
+Central Huron;ON;Ontario;43.63;-81.57;7576;16.9
+Rigaud;QC;Quebec;45.4833;-74.3;7566;74.1
+Louiseville;QC;Quebec;46.25;-72.95;7517;120.1
+Chibougamau;QC;Quebec;49.9167;-74.3667;7504;10.7
+Aylmer;ON;Ontario;42.7667;-80.9833;7492;1197.6
+Delson;QC;Quebec;45.37;-73.55;7462;982.6
+Kimberley;BC;British Columbia;49.6697;-115.9775;7425;122.5
+Blandford-Blenheim;ON;Ontario;43.2333;-80.6;7399;19.4
+Bayham;ON;Ontario;42.7333;-80.7833;7396;30.2
+Augusta;ON;Ontario;44.7511;-75.6003;7353;23.4
+Puslinch;ON;Ontario;43.45;-80.1667;7336;34.2
+Beauport;QC;Quebec;46.9667;-71.3;7281;118.8
+Saint-Remi;QC;Quebec;45.2667;-73.6167;7265;92.2
+St. Marys;ON;Ontario;43.2583;-81.1333;7265;583.5
+Drayton Valley;AB;Alberta;53.2222;-114.9769;7235;235.5
+Ponoka;AB;Alberta;52.6833;-113.5667;7229;417.1
+Labrador City;NL;Newfoundland and Labrador;52.95;-66.9167;7220;186
+Donnacona;QC;Quebec;46.6747;-71.7294;7200;357.6
+Southgate;ON;Ontario;44.1;-80.5833;7190;11.4
+McNab/Braeside;ON;Ontario;45.45;-76.5;7178;28.1
+Macdonald;MB;Manitoba;49.6725;-97.4472;7162;6.2
+Hampstead;QC;Quebec;45.4833;-73.6333;7153;3996.5
+Baie-Saint-Paul;QC;Quebec;47.45;-70.5;7146;13.1
+Merritt;BC;British Columbia;50.1128;-120.7897;7139;273.9
+Bluewater;ON;Ontario;43.45;-81.6;7136;17.1
+East Zorra-Tavistock;ON;Ontario;43.2333;-80.7833;7129;29.4
+Brownsburg;QC;Quebec;45.6703;-74.4467;7122;28.8
+Stoneham-et-Tewkesbury;QC;Quebec;47.1667;-71.4333;7106;10.6
+Asbestos;QC;Quebec;45.7667;-71.9333;7096;239.1
+Huron-Kinloss;ON;Ontario;44.05;-81.5333;7069;16
+Coteau-du-Lac;QC;Quebec;45.3;-74.18;7044;150.2
+The Blue Mountains;ON;Ontario;44.4833;-80.3833;7025;24.5
+Whitewater Region;ON;Ontario;45.7167;-76.8333;7009;13
+Edwardsburgh/Cardinal;ON;Ontario;44.8333;-75.5;6959;22.3
+Sainte-Anne-des-Monts;QC;Quebec;49.1333;-66.5;6933;26.3
+Old Chelsea;QC;Quebec;45.5;-75.7833;6909;60.7
+North Stormont;ON;Ontario;45.2167;-75;6873;13.3
+Alnwick/Haldimand;ON;Ontario;44.0833;-78.0333;6869;17.25
+Peace River;AB;Alberta;56.2339;-117.2897;6842;260.6
+Arran-Elderslie;ON;Ontario;44.4;-81.2;6803;14.8
+Saint-Zotique;QC;Quebec;45.25;-74.25;6773;268.8
+Val-Shefford;QC;Quebec;45.35;-72.5667;6711;56.7
+Douro-Dummer;ON;Ontario;44.45;-78.1;6709;14.6
+Plessisville;QC;Quebec;46.2167;-71.7833;6688;1546
+Ritchot;MB;Manitoba;49.6647;-97.1167;6679;20
+Otonabee-South Monaghan;ON;Ontario;44.2333;-78.2333;6670;19.2
+Shediac;NB;New Brunswick;46.2167;-64.5333;6664;123.5
+Slave Lake;AB;Alberta;55.2853;-114.7706;6651;460.5
+Port-Cartier;QC;Quebec;50.0333;-66.8667;6651;6
+Saint-Lambert-de-Lauzon;QC;Quebec;46.5865;-71.2271;6647;62.2
+Barrington;NS;Nova Scotia;43.5646;-65.5639;6646;10.5
+Rocky Mountain House;AB;Alberta;52.3753;-114.9217;6635;521.8
+Chatsworth;ON;Ontario;44.38;-80.87;6630;11.1
+Stephenville;NL;Newfoundland and Labrador;48.55;-58.5667;6623;185.6
+Muskoka Falls;ON;Ontario;45.1264;-79.558;6588;8.3
+Devon;AB;Alberta;53.3633;-113.7322;6578;460.2
+Yarmouth;NS;Nova Scotia;43.8361;-66.1175;6518;616.9
+Boischatel;QC;Quebec;46.9;-71.15;6465;308.8
+Parry Sound;ON;Ontario;45.3333;-80.0333;6408;478.2
+Pointe-Calumet;QC;Quebec;45.5;-73.97;6396;1382.4
+Beaubassin East / Beaubassin-est;NB;New Brunswick;46.1726;-64.3122;6376;21.9
+Wainfleet;ON;Ontario;42.925;-79.375;6372;29.3
+Cramahe;ON;Ontario;44.0833;-77.8833;6355;31.4
+Beauceville;QC;Quebec;46.2;-70.7833;6354;37.9
+North Middlesex;ON;Ontario;43.15;-81.6333;6352;10.6
+Amqui;QC;Quebec;48.4667;-67.4333;6322;52.3
+Sainte-Catherine-de-la-Jacques-Cartier;QC;Quebec;46.85;-71.6167;6319;52.1
+Clarenville;NL;Newfoundland and Labrador;48.1566;-53.965;6291;44.7
+Mont-Joli;QC;Quebec;48.58;-68.18;6281;272.6
+Dysart et al;ON;Ontario;45.2042;-78.4047;6280;4.2
+Wainwright;AB;Alberta;52.8333;-110.8667;6270;688.7
+Contrecoeur;QC;Quebec;45.85;-73.2333;6252;102.2
+Beresford;NB;New Brunswick;47.7181;-65.8794;6248;13.7
+Saint-Joseph-du-Lac;QC;Quebec;45.5333;-74;6195;149.7
+Hope;BC;British Columbia;49.3858;-121.4419;6181;151
+Gimli;MB;Manitoba;50.6619;-97.0297;6181;19.5
+Douglas;NB;New Brunswick;46.2819;-66.942;6154;4.3
+Saint-Apollinaire;QC;Quebec;46.6167;-71.5167;6110;63
+Hindon Hill;ON;Ontario;44.9333;-78.7333;6088;6.9
+Les Cedres;QC;Quebec;45.3;-74.05;6079;78.1
+La Broquerie;MB;Manitoba;49.3994;-96.5103;6076;10.5
+Kent;BC;British Columbia;49.2833;-121.75;6067;35.9
+Tweed;ON;Ontario;44.6;-77.3333;6044;6.3
+Saint-Felix-de-Valois;QC;Quebec;46.17;-73.43;6029;68.6
+Bay Roberts;NL;Newfoundland and Labrador;47.5847;-53.2783;6012;249.9
+Melfort;SK;Saskatchewan;52.8564;-104.61;5992;405.4
+Bonnyville;AB;Alberta;54.2667;-110.75;5975;421.4
+Stettler;AB;Alberta;52.3236;-112.7192;5952;453
+Saint-Calixte;QC;Quebec;45.95;-73.85;5934;41.4
+Lac-Megantic;QC;Quebec;45.5833;-70.8833;5932;272.5
+Perth;ON;Ontario;44.9;-76.25;5930;484.1
+Oliver Paipoonge;ON;Ontario;48.39;-89.52;5922;16.9
+Humboldt;SK;Saskatchewan;52.2019;-105.1231;5869;1783.4
+Charlemagne;QC;Quebec;45.7167;-73.4833;5853;2704
+Pontiac;QC;Quebec;45.5833;-76.1333;5850;13.1
+St. Paul;AB;Alberta;53.9928;-111.2972;5827;674.2
+Petrolia;ON;Ontario;42.8833;-82.1417;5742;452.8
+Southwest Middlesex;ON;Ontario;42.75;-81.7;5723;13.4
+Front of Yonge;ON;Ontario;44.5333;-75.8667;5710;20.3
+Vegreville;AB;Alberta;53.4928;-112.0522;5708;405.4
+Sainte-Brigitte-de-Laval;QC;Quebec;47;-71.2;5696;52.4
+Princeville;QC;Quebec;46.1667;-71.8833;5693;29.3
+Vercheres;QC;Quebec;45.7833;-73.35;5692;77.7
+The Pas;MB;Manitoba;53.825;-101.2533;5689;115.3
+Saint-Cesaire;QC;Quebec;45.4167;-73;5686;68.1
+La Ronge;SK;Saskatchewan;55.1;-105.3;5671;163.9
+Tay Valley;ON;Ontario;44.8667;-76.3833;5665;10.3
+South Bruce;ON;Ontario;44.0333;-81.2;5639;11.6
+McMasterville;QC;Quebec;45.55;-73.2333;5615;1810.3
+Redcliff;AB;Alberta;50.0792;-110.7783;5600;344.6
+Crowsnest Pass;AB;Alberta;49.5955;-114.5136;5589;15
+Saint-Philippe;QC;Quebec;45.35;-73.47;5495;88.5
+Richelieu;QC;Quebec;45.45;-73.25;5467;176.2
+Notre-Dame-du-Mont-Carmel;QC;Quebec;46.4833;-72.65;5467;42.6
+L'Ange-Gardien;QC;Quebec;45.5833;-75.45;5464;25
+Sainte-Martine;QC;Quebec;45.25;-73.8;5461;86.4
+Saint-Pie;QC;Quebec;45.5;-72.9;5438;49.9
+Peachland;BC;British Columbia;49.7736;-119.7369;5428;340.1
+Ashfield-Colborne-Wawanosh;ON;Ontario;43.8667;-81.6;5422;9.2
+Trent Lakes;ON;Ontario;44.6667;-78.4333;5397;6.3
+Northern Rockies;BC;British Columbia;59;-123.75;5393;0.063
+Cookshire;QC;Quebec;45.3729;-71.672;5393;18.2
+West St. Paul;MB;Manitoba;50.0119;-97.115;5368;61.1
+Windsor;QC;Quebec;45.5667;-72;5367;375.5
+L'Epiphanie;QC;Quebec;45.85;-73.4833;5353;2367.9
+Creston;BC;British Columbia;49.09;-116.51;5351;626.8
+Smithers;BC;British Columbia;54.7819;-127.1681;5351;514.9
+Cornwall;PE;Prince Edward Island;46.2407;-63.2009;5348;189.7
+Meadow Lake;SK;Saskatchewan;54.1242;-108.4358;5344;433.6
+Lanark Highlands;ON;Ontario;45.088;-76.517;5338;5.1
+Sackville;NB;New Brunswick;45.9;-64.3667;5331;71.9
+Grand Falls;NB;New Brunswick;47.0344;-67.7394;5326;294.4
+Cochrane;ON;Ontario;49.0667;-81.0167;5321;9.9
+Marystown;NL;Newfoundland and Labrador;47.1667;-55.1667;5316;85.8
+Sioux Lookout;ON;Ontario;50.1;-91.9167;5272;13.9
+Didsbury;AB;Alberta;51.6658;-114.1311;5268;321.7
+Saint-Honore;QC;Quebec;48.5333;-71.0833;5257;27.8
+Fernie;BC;British Columbia;49.5042;-115.0628;5249;388.8
+Deer Lake;NL;Newfoundland and Labrador;49.1744;-57.4269;5249;71.7
+Woodstock;NB;New Brunswick;46.1522;-67.5983;5228;356.7
+Val-David;QC;Quebec;46.03;-74.22;5209;103.9
+Flin Flon;SK;Saskatchewan;54.7667;-101.8778;5185;448.9
+Hudson;QC;Quebec;45.45;-74.15;5165;234.5
+Gananoque;ON;Ontario;44.33;-76.17;5159;733.6
+Brokenhead;MB;Manitoba;50.1428;-96.5319;5122;6.8
+Saint-Paul;QC;Quebec;45.9833;-73.45;5122;103.7
+Burton;NB;New Brunswick;45.8009;-66.4066;5119;19.8
+Spallumcheen;BC;British Columbia;50.4462;-119.2121;5106;20
+Westlock;AB;Alberta;54.1522;-113.8511;5101;381.4
+Temiscouata-sur-le-Lac;QC;Quebec;47.68;-68.88;5096;23.3
+Shannon;QC;Quebec;46.8833;-71.5167;5086;79.8
+Osoyoos;BC;British Columbia;49.0325;-119.4661;5085;598.2
+Montreal-Ouest;QC;Quebec;45.4536;-73.6472;5085;3614.6
+Hearst;ON;Ontario;49.6869;-83.6544;5070;51.5
+Saint-Henri;QC;Quebec;46.7;-71.0667;5023;41.1
+Ste. Anne;MB;Manitoba;49.6186;-96.5708;5003;10.5
+Antigonish;NS;Nova Scotia;45.6167;-61.9833;5002;871.7
+Espanola;ON;Ontario;46.25;-81.7667;4996;60.3
+West Elgin;ON;Ontario;42.5833;-81.6667;4995;15.5
+Flin Flon (Part);MB;Manitoba;54.7712;-101.8419;4982;359.2
+Grand Bay-Westfield;NB;New Brunswick;45.3608;-66.2415;4964;83
+Sainte-Anne-de-Bellevue;QC;Quebec;45.4039;-73.9525;4958;473
+North Huron;ON;Ontario;43.83;-81.42;4932;27.6
+Oliver;BC;British Columbia;49.1844;-119.55;4928;896
+Saint-Roch-de-l'Achigan;QC;Quebec;45.85;-73.6;4892;60.6
+Stirling-Rawdon;ON;Ontario;44.3667;-77.5917;4882;17.3
+Chisasibi;QC;Quebec;53.6645;-78.7938;4872;5.9
+Carbonear;NL;Newfoundland and Labrador;47.7375;-53.2294;4838;411.5
+Saint Marys;NB;New Brunswick;46.1748;-66.4897;4837;6.4
+Chertsey;QC;Quebec;46.17;-73.92;4836;16.8
+Armstrong;BC;British Columbia;50.4483;-119.1961;4830;927.7
+Stonewall;MB;Manitoba;50.1344;-97.3261;4809;802.8
+Shippagan;NB;New Brunswick;47.8557;-64.6012;4800;23.1
+Lanoraie;QC;Quebec;45.9667;-73.2167;4787;46.4
+Memramcook;NB;New Brunswick;46;-64.55;4778;25.5
+Centre Hastings;ON;Ontario;44.4167;-77.4417;4774;20.4
+Warwick;QC;Quebec;45.95;-71.9833;4766;43.3
+East Ferris;ON;Ontario;46.2667;-79.3;4750;30.6
+Hanwell;NB;New Brunswick;45.8681;-66.7947;4750;31.4
+Saint-Joseph-de-Beauce;QC;Quebec;46.3;-70.8833;4722;42.6
+Metchosin;BC;British Columbia;48.3819;-123.5378;4708;66.2
+Lucan Biddulph;ON;Ontario;43.2;-81.3833;4700;27.8
+Riviere-Rouge;QC;Quebec;46.4167;-74.8667;4645;10.2
+Greenstone;ON;Ontario;50;-86.7333;4636;1.7
+Saint-Mathias-sur-Richelieu;QC;Quebec;45.4667;-73.2667;4618;97.8
+Neepawa;MB;Manitoba;50.2289;-99.4656;4609;206.5
+Gibsons;BC;British Columbia;49.4028;-123.5036;4605;1066
+Kindersley;SK;Saskatchewan;51.4678;-109.1567;4597;347.5
+Jasper;AB;Alberta;52.9013;-118.1312;4590;5
+Barrhead;AB;Alberta;54.1167;-114.4;4579;560.4
+Les Coteaux;QC;Quebec;45.28;-74.23;4568;393.2
+Melville;SK;Saskatchewan;50.9306;-102.8078;4562;307.8
+Saint-Germain-de-Grantham;QC;Quebec;45.8333;-72.5667;4551;51.9
+Iroquois Falls;ON;Ontario;48.7667;-80.6667;4537;7.6
+Havelock-Belmont-Methuen;ON;Ontario;44.5667;-77.9;4530;8.3
+Cornwallis;MB;Manitoba;49.7981;-99.8481;4520;9
+Saint-Boniface;QC;Quebec;46.5;-72.8167;4511;41.4
+Edenwold No. 158;SK;Saskatchewan;50.5166;-104.3451;4490;5.3
+Coverdale;NB;New Brunswick;46.0003;-64.8859;4466;18.9
+Vanderhoof;BC;British Columbia;54.0143;-124.0089;4439;81
+Southwold;ON;Ontario;42.75;-81.3167;4421;14.7
+Goulds;NL;Newfoundland and Labrador;47.4517;-52.7647;4418;721.3
+Saint Stephen;NB;New Brunswick;45.2;-67.2833;4415;326.6
+Waterloo;QC;Quebec;45.35;-72.5167;4410;360.2
+Nipawin;SK;Saskatchewan;53.3572;-104.0192;4401;505
+Neuville;QC;Quebec;46.7;-71.5833;4392;61
+Saint-Cyrille-de-Wendover;QC;Quebec;45.9333;-72.4333;4389;39.8
+Central Frontenac;ON;Ontario;44.7167;-76.8;4373;4.3
+Mont-Orford;QC;Quebec;45.3661;-72.1838;4337;31.8
+Saint-Jean-de-Matha;QC;Quebec;46.23;-73.53;4335;39.6
+Seguin;ON;Ontario;45.2882;-79.8116;4304;7.2
+Tyendinaga;ON;Ontario;44.3;-77.2;4297;13.7
+Hampton;NB;New Brunswick;45.533;-65.833;4289;203.4
+Sussex;NB;New Brunswick;45.7167;-65.5167;4282;478.3
+Grand Forks;BC;British Columbia;49.0333;-118.44;4274;388.1
+La Pocatiere;QC;Quebec;47.3667;-70.0333;4266;196.3
+Caraquet;NB;New Brunswick;47.7853;-64.9592;4248;62.1
+Saint-Etienne-des-Gres;QC;Quebec;46.4333;-72.7667;4217;40.2
+Altona;MB;Manitoba;49.1044;-97.5625;4212;445.2
+Stellarton;NS;Nova Scotia;45.5567;-62.66;4208;468.1
+Wolfville;NS;Nova Scotia;45.0833;-64.3667;4195;649.8
+New Maryland;NB;New Brunswick;45.8911;-66.6847;4174;195.7
+Port Hardy;BC;British Columbia;50.7225;-127.4928;4132;106.7
+Saint-Donat;QC;Quebec;46.3167;-74.2167;4130;11.7
+Chateau-Richer;QC;Quebec;46.9667;-71.0167;4126;18
+Madawaska Valley;ON;Ontario;45.5;-77.6667;4123;6.1
+Deep River;ON;Ontario;46.1;-77.4917;4109;82
+Asphodel-Norwood;ON;Ontario;44.3531;-78.0183;4109;25.5
+Red Lake;ON;Ontario;51.0333;-93.8333;4107;6.7
+Metabetchouan-Lac-a-la-Croix;QC;Quebec;48.4333;-71.8667;4097;21.9
+Berthierville;QC;Quebec;46.0833;-73.1833;4091;596.8
+Vermilion;AB;Alberta;53.3542;-110.8528;4084;315.8
+Niverville;MB;Manitoba;49.6056;-97.0417;4083;1767.5
+Hastings Highlands;ON;Ontario;45.2333;-77.9333;4078;4.2
+Carstairs;AB;Alberta;51.5619;-114.0953;4077;342.1
+Danville;QC;Quebec;45.7833;-72.0167;4070;26.7
+Channel-Port aux Basques;NL;Newfoundland and Labrador;47.5694;-59.1361;4067;104.9
+Battleford;SK;Saskatchewan;52.7383;-108.3153;4065;174.2
+Lac-Etchemin;QC;Quebec;46.4;-70.5;4061;25.8
+Saint-Antonin;QC;Quebec;47.7667;-69.4833;4027;22.9
+Saint-Jacques;QC;Quebec;45.95;-73.5667;4021;59.7
+Swan River;MB;Manitoba;52.1058;-101.2667;4014;560.4
+Sutton;QC;Quebec;45.091;-72.5792;4012;16.3
+Northern Bruce Peninsula;ON;Ontario;45.08;-81.38;3999;5.1
+L'Islet-sur-Mer;QC;Quebec;47.1;-70.35;3999;33.3
+Carleton-sur-Mer;QC;Quebec;48.1;-66.1333;3991;18
+Oka;QC;Quebec;45.47;-74.08;3969;69.3
+Prescott;ON;Ontario;44.7167;-75.5167;3965;1273.5
+Amaranth;ON;Ontario;43.9833;-80.2333;3963;15
+Marmora and Lake;ON;Ontario;44.6425;-77.7372;3953;7.1
+Maniwaki;QC;Quebec;46.375;-75.9667;3930;677.7
+Morin-Heights;QC;Quebec;45.9;-74.25;3925;69.5
+Dundas;NB;New Brunswick;46.3155;-64.6947;3914;22.4
+Napierville;QC;Quebec;45.1833;-73.4;3899;796.6
+Crabtree;QC;Quebec;45.9667;-73.4667;3887;155
+Bancroft;ON;Ontario;45.05;-77.85;3881;16.9
+Saint-Tite;QC;Quebec;46.7333;-72.5667;3880;41.9
+Howick;ON;Ontario;43.9;-81.07;3873;13.4
+Dutton/Dunwich;ON;Ontario;42.6667;-81.5;3866;13.1
+Callander;ON;Ontario;46.1781;-79.4125;3863;36.4
+Simonds;NB;New Brunswick;45.3145;-65.803;3843;13.7
+Baie-d'Urfe;QC;Quebec;45.4167;-73.9167;3823;633.9
+New Richmond;QC;Quebec;48.1667;-65.8667;3810;22.6
+Perth South;ON;Ontario;43.3;-81.15;3810;9.7
+Roxton Pond;QC;Quebec;45.4833;-72.6667;3786;38.8
+Sparwood;BC;British Columbia;49.7331;-114.8853;3784;19.4
+Claresholm;AB;Alberta;50.0194;-113.5783;3780;465.9
+Breslau;ON;Ontario;43.4816;-80.408;3778;691.9
+Montague;ON;Ontario;44.9667;-75.9667;3761;13.4
+Cumberland;BC;British Columbia;49.6206;-125.0261;3753;128.9
+Beaupre;QC;Quebec;47.05;-70.9;3752;163.4
+Saint-Andre-Avellin;QC;Quebec;45.7167;-75.0667;3749;27.2
+Saint-Ambroise-de-Kildare;QC;Quebec;46.0833;-73.55;3747;55.3
+East Angus;QC;Quebec;45.4833;-71.6667;3741;472.7
+Rossland;BC;British Columbia;49.0786;-117.7992;3729;62.4
+Mackenzie;BC;British Columbia;55.3381;-123.0944;3714;22.6
+Golden;BC;British Columbia;51.3019;-116.9667;3708;325
+Raymond;AB;Alberta;49.4658;-112.6508;3708;557.1
+Saint-Adolphe-d'Howard;QC;Quebec;45.97;-74.33;3702;26.6
+Warwick;ON;Ontario;43;-81.8917;3692;12.7
+Bowen Island;BC;British Columbia;49.3833;-123.3833;3680;73.4
+Bonnechere Valley;ON;Ontario;45.5333;-77.1;3674;6.2
+Windsor;NS;Nova Scotia;44.9803;-64.1292;3648;400.6
+Pincher Creek;AB;Alberta;49.4861;-113.95;3642;361.1
+Alnwick;NB;New Brunswick;47.2656;-65.2292;3640;5.4
+Westville;NS;Nova Scotia;45.55;-62.7;3628;254.9
+Fruitvale;BC;British Columbia;49.1161;-117.5414;3627;1363.5
+Pasadena;NL;Newfoundland and Labrador;49.0161;-57.605;3620;73.6
+Saint-Prosper;QC;Quebec;46.2167;-70.4833;3605;27
+Ormstown;QC;Quebec;45.13;-74;3595;25.2
+Cardston;AB;Alberta;49.2025;-113.3019;3585;417.5
+Westbank;BC;British Columbia;49.8423;-119.6743;3581;80.6
+De Salaberry;MB;Manitoba;49.4403;-96.9844;3580;5.3
+Headingley;MB;Manitoba;49.8681;-97.3908;3579;33.4
+Grande Cache;AB;Alberta;53.8773;-119.1199;3571;102.1
+Atholville;NB;New Brunswick;47.9894;-66.7125;3570;29.8
+Saint-Agapit;QC;Quebec;46.5667;-71.4333;3567;54.5
+Prince Albert No. 461;SK;Saskatchewan;53.1089;-105.6574;3562;3.5
+Casselman;ON;Ontario;45.3;-75.0833;3548;693.4
+Saint-Ambroise;QC;Quebec;48.55;-71.3333;3546;23.5
+Hay River;NT;Northwest Territories;60.7531;-115.9004;3528;26.5
+Mistissini;QC;Quebec;50.5707;-73.6829;3523;4.1
+Studholm;NB;New Brunswick;45.8133;-65.5747;3522;7.8
+Lumby;BC;British Columbia;50.2494;-118.9656;3500;379.5
+Saint-Faustin--Lac-Carre;QC;Quebec;46.0813;-74.4668;3499;28.8
+Morris-Turnberry;ON;Ontario;43.85;-81.25;3496;9.1
+Placentia;NL;Newfoundland and Labrador;47.2458;-53.9611;3496;60.2
+Saint-Pascal;QC;Quebec;47.5333;-69.8;3490;58.8
+Mulmur;ON;Ontario;44.1917;-80.1083;3478;12.1
+Blind River;ON;Ontario;46.1833;-82.95;3472;6.6
+Dunham;QC;Quebec;45.1333;-72.8;3471;17.8
+Havre-Saint-Pierre;QC;Quebec;50.2333;-63.6;3460;1.2
+Saint-Anselme;QC;Quebec;46.6333;-70.9667;3458;46.9
+Trois-Pistoles;QC;Quebec;48.12;-69.18;3456;450.9
+Grande-Riviere;QC;Quebec;48.4;-64.5;3456;39.5
+Powassan;ON;Ontario;46.0825;-79.3619;3455;15.4
+Malartic;QC;Quebec;48.1333;-78.1333;3449;23.2
+Bonavista;NL;Newfoundland and Labrador;48.6597;-53.1208;3448;109.4
+Killarney - Turtle Mountain;MB;Manitoba;49.1775;-99.6906;3429;3.7
+Woodlands;MB;Manitoba;50.2408;-97.7358;3416;2.9
+Lewisporte;NL;Newfoundland and Labrador;49.23;-55.07;3409;92.4
+Saint-Denis-de-Brompton;QC;Quebec;45.45;-72.0833;3402;48.1
+Invermere;BC;British Columbia;50.5083;-116.0303;3391;315.9
+Salisbury;NB;New Brunswick;46.0776;-65.1996;3388;3.9
+Bifrost-Riverton;MB;Manitoba;51.0603;-97.1436;3378;2.1
+Buckland No. 491;SK;Saskatchewan;53.3276;-105.7804;3375;4.3
+Cartier;MB;Manitoba;49.9161;-97.7;3368;6.1
+Sainte-Anne-des-Lacs;QC;Quebec;45.85;-74.1333;3363;135.8
+Highlands East;ON;Ontario;44.9667;-78.25;3343;4.7
+Alexander;MB;Manitoba;50.4222;-96.075;3333;2.1
+Sainte-Claire;QC;Quebec;46.6;-70.8667;3325;37.8
+Perce;QC;Quebec;48.5333;-64.2167;3312;7.7
+Saint-Jean-Port-Joli;QC;Quebec;47.2167;-70.2667;3304;47.9
+East Hawkesbury;ON;Ontario;45.5167;-74.4667;3296;14
+Bright;NB;New Brunswick;46.1205;-67.0545;3289;8.1
+Penhold;AB;Alberta;52.1333;-113.8667;3277;619.9
+Saint-Andre-d'Argenteuil;QC;Quebec;45.5667;-74.3333;3275;33.5
+Saint-Come--Liniere;QC;Quebec;46.0667;-70.5167;3274;21.8
+Saint-Sulpice;QC;Quebec;45.8333;-73.35;3273;90
+Marathon;ON;Ontario;48.75;-86.3667;3273;19.2
+Forestville;QC;Quebec;48.7333;-69.0833;3270;16.8
+Inuvik;NT;Northwest Territories;68.3407;-133.6096;3243;51.9
+Richmond;QC;Quebec;45.6667;-72.15;3232;460.2
+Lake Cowichan;BC;British Columbia;48.8258;-124.0542;3226;369.6
+Sables-Spanish Rivers;ON;Ontario;46.2333;-82;3214;3.9
+Hillsburg-Roblin-Shell River;MB;Manitoba;51.3343;-101.2929;3214;1.9
+Port Hawkesbury;NS;Nova Scotia;45.6153;-61.3642;3214;396.6
+Three Hills;AB;Alberta;51.7072;-113.2647;3212;475.7
+Lorette;MB;Manitoba;49.7414;-96.8761;3208;685
+Paspebiac;QC;Quebec;48.0333;-65.25;3198;33.8
+Saint-Thomas;QC;Quebec;46.0167;-73.35;3193;33.6
+Saint-Jean-Baptiste;QC;Quebec;45.5167;-73.1167;3191;44.3
+Portneuf;QC;Quebec;46.7;-71.8833;3187;29.1
+Pictou;NS;Nova Scotia;45.6814;-62.7119;3186;397.6
+Tisdale;SK;Saskatchewan;52.85;-104.05;3180;491.5
+Lake of Bays;ON;Ontario;45.3043;-79.018;3167;4.7
+High Level;AB;Alberta;58.5169;-117.1361;3159;108.2
+Gibbons;AB;Alberta;53.8278;-113.3228;3159;421.3
+Bishops Falls;NL;Newfoundland and Labrador;49.0167;-55.5167;3156;112.2
+WestLake-Gladstone;MB;Manitoba;50.2862;-98.8415;3154;1.7
+Normandin;QC;Quebec;48.8333;-72.5333;3137;14.8
+Saint-Alphonse-Rodriguez;QC;Quebec;46.1833;-73.7;3134;32
+Beausejour;MB;Manitoba;50.0622;-96.5161;3126;584.4
+Dalhousie;NB;New Brunswick;48.1;-66.6167;3126;205.3
+Saint-Alphonse-de-Granby;QC;Quebec;45.3333;-72.8167;3125;62.6
+Lac du Bonnet;MB;Manitoba;50.2577;-96.1209;3121;2.8
+Clermont;QC;Quebec;47.6833;-70.2333;3118;62.8
+Virden;MB;Manitoba;49.8508;-100.9317;3114;370.2
+Compton;QC;Quebec;45.2333;-71.8167;3112;15.1
+White City;SK;Saskatchewan;50.4353;-104.3572;3099;7.5
+Ellison;BC;British Columbia;49.9646;-119.3178;3094;37.6
+Mont-Saint-Gregoire;QC;Quebec;45.3333;-73.1667;3086;38.8
+Wellington;NB;New Brunswick;46.4768;-64.7478;3079;16.7
+Merrickville;ON;Ontario;44.8539;-75.8269;3067;14.3
+Saint-Liboire;QC;Quebec;45.65;-72.7667;3051;41.9
+Degelis;QC;Quebec;47.55;-68.65;3051;5.5
+Morris;MB;Manitoba;49.3986;-97.4592;3047;2.9
+Saint-Alexis-des-Monts;QC;Quebec;46.4667;-73.1333;3046;2.9
+Cap-Saint-Ignace;QC;Quebec;47.0333;-70.4667;3045;14.6
+Saint-Anaclet-de-Lessard;QC;Quebec;48.48;-68.42;3035;23.9
+Carman;MB;Manitoba;49.4992;-98.0008;3027;702.4
+Athens;ON;Ontario;44.625;-75.95;3013;23.6
+Melancthon;ON;Ontario;44.15;-80.2667;3008;9.7
+Cap Sante;QC;Quebec;46.6667;-71.7833;2996;54.7
+Harbour Grace;NL;Newfoundland and Labrador;47.6917;-53.2167;2995;88.8
+Houston;BC;British Columbia;54.3975;-126.6419;2993;41
+Adelaide-Metcalfe;ON;Ontario;42.95;-81.7;2990;9
+Crossfield;AB;Alberta;51.4333;-114.0333;2983;249.3
+Springdale;NL;Newfoundland and Labrador;49.4974;-56.0727;2971;168.8
+Fort Macleod;AB;Alberta;49.7256;-113.3975;2967;126.8
+Athabasca;AB;Alberta;54.7197;-113.2856;2965;168
+Enderby;BC;British Columbia;50.5508;-119.1397;2964;695.8
+Saint-Ferreol-les-Neiges;QC;Quebec;47.1167;-70.85;2964;35.6
+Laurentian Hills;ON;Ontario;46.1333;-77.55;2961;4.6
+Grand Valley;ON;Ontario;43.95;-80.3667;2956;18.7
+Senneterre;QC;Quebec;48.3833;-77.2333;2953;0.2
+Sainte-Marie-Madeleine;QC;Quebec;45.6;-73.1;2935;57.7
+Admaston/Bromley;ON;Ontario;45.5292;-76.8969;2935;5.6
+Saint-Gabriel-de-Valcartier;QC;Quebec;46.9333;-71.4667;2933;6.7
+North Algona Wilberforce;ON;Ontario;45.6167;-77.2;2915;7.7
+Kingston;NB;New Brunswick;45.4663;-66.0217;2913;14.5
+Wawa;ON;Ontario;47.9931;-84.7736;2905;7
+Saint-Christophe-d'Arthabaska;QC;Quebec;46.0333;-71.8833;2892;41.9
+Sainte-Melanie;QC;Quebec;46.1333;-73.5167;2892;38.1
+Ascot Corner;QC;Quebec;45.45;-71.7667;2891;35.1
+Horton;ON;Ontario;45.5;-76.6667;2887;18.2
+Saint-Michel;QC;Quebec;45.2333;-73.5667;2884;48.2
+Botwood;NL;Newfoundland and Labrador;49.15;-55.3667;2875;191
+Saint-Paul-d'Abbotsford;QC;Quebec;45.4333;-72.8833;2870;36.1
+Saint-Marc-des-Carrieres;QC;Quebec;46.6833;-72.05;2862;172
+Stanstead;QC;Quebec;45.0167;-72.1;2857;125.8
+Sainte-Anne-de-Beaupre;QC;Quebec;47.0167;-70.9333;2854;45.6
+Sainte-Luce;QC;Quebec;48.55;-68.38;2851;39
+Saint-Gabriel;QC;Quebec;46.3;-73.3833;2844;1012.3
+Rankin Inlet;NU;Nunavut;62.83;-92.1321;2842;140.4
+Vanscoy No. 345;SK;Saskatchewan;52.0073;-107.0552;2840;3.3
+Cedar;BC;British Columbia;49.0853;-123.8259;2836;83.8
+Princeton;BC;British Columbia;49.4589;-120.506;2828;47.4
+La Loche;SK;Saskatchewan;56.4833;-109.4333;2827;181.3
+Kingsclear;NB;New Brunswick;45.8796;-66.8695;2822;18.6
+Ferme-Neuve;QC;Quebec;46.7;-75.45;2822;3.6
+Thurso;QC;Quebec;45.5969;-75.2433;2818;449
+Adstock;QC;Quebec;46.05;-71.08;2806;9.7
+Shuniah;ON;Ontario;48.5833;-88.8333;2798;4.9
+Enniskillen;ON;Ontario;42.8167;-82.125;2796;8.3
+Yamachiche;QC;Quebec;46.2667;-72.8333;2787;26.2
+Saint-Maurice;QC;Quebec;46.4667;-72.5333;2775;30.3
+Bonaventure;QC;Quebec;48.05;-65.4833;2775;26.6
+Val-Morin;QC;Quebec;46;-74.18;2772;70.3
+Pohenegamook;QC;Quebec;47.4667;-69.2167;2770;8.1
+Wakefield;NB;New Brunswick;46.2406;-67.6248;2767;14.1
+Stoke;QC;Quebec;45.5333;-71.8;2765;10.8
+Sainte-Marguerite-du-Lac-Masson;QC;Quebec;46.056;-74.0723;2763;30
+Saint-Prime;QC;Quebec;48.58;-72.33;2758;18.7
+Kuujjuaq;QC;Quebec;58.1429;-68.3742;2754;9.4
+Atikokan;ON;Ontario;48.75;-91.6167;2753;8.6
+Grenville-sur-la-Rouge;QC;Quebec;45.65;-74.6333;2746;8.7
+North Cypress-Langford;MB;Manitoba;49.9969;-99.3982;2745;1.6
+Sainte-Anne-de-Sorel;QC;Quebec;46.05;-73.0667;2742;71.4
+Macamic;QC;Quebec;48.75;-79;2734;13.5
+Sundre;AB;Alberta;51.7972;-114.6406;2729;245.6
+Rougemont;QC;Quebec;45.4333;-73.05;2723;62
+Piedmont;QC;Quebec;45.9;-74.13;2721;111.7
+Grimshaw;AB;Alberta;56.1908;-117.6117;2718;383.4
+Lac-des-Ecorces;QC;Quebec;46.55;-75.35;2713;18.8
+Northeastern Manitoulin and the Islands;ON;Ontario;45.9667;-81.9333;2706;5.5
+Pelican Narrows;SK;Saskatchewan;55.1883;-102.9342;2703;295
+McDougall;ON;Ontario;45.45;-80.0167;2702;10.1
+Black Diamond;AB;Alberta;50.6881;-114.2333;2700;702.7
+Saint-Pamphile;QC;Quebec;46.9667;-69.7833;2685;19.6
+Bedford;QC;Quebec;45.1167;-72.9833;2684;639.4
+Weedon-Centre;QC;Quebec;45.7;-71.4667;2683;12.4
+Lacolle;QC;Quebec;45.0833;-73.3667;2680;54
+Saint-Gabriel-de-Brandon;QC;Quebec;46.2667;-73.3833;2679;26.8
+Errington;BC;British Columbia;49.2874;-124.3433;2677;97.4
+Coalhurst;AB;Alberta;49.7457;-112.9319;2668;857.5
+French River / Riviere des Francais;ON;Ontario;46.1667;-80.5;2662;3.6
+Arviat;NU;Nunavut;61.0996;-94.1688;2657;20.1
+Saint-David-de-Falardeau;QC;Quebec;48.6167;-71.1167;2657;6.6
+Markstay;ON;Ontario;46.4912;-80.4717;2656;5.2
+Spaniards Bay;NL;Newfoundland and Labrador;47.6181;-53.3369;2653;40.4
+Cocagne;NB;New Brunswick;46.3406;-64.62;2649;66.78
+Saint-Bruno;QC;Quebec;48.4667;-71.65;2636;33.8
+Chetwynd;BC;British Columbia;55.6972;-121.6333;2635;43.1
+Laurier-Station;QC;Quebec;46.5333;-71.6333;2634;219.3
+Saint-Anicet;QC;Quebec;45.12;-74.35;2626;19.4
+Saint-Mathieu-de-Beloeil;QC;Quebec;45.5667;-73.2;2624;65.8
+Cap-Chat;QC;Quebec;49.1;-66.6833;2623;14.4
+Sexsmith;AB;Alberta;55.3508;-118.7825;2620;197.9
+Notre-Dame-de-Lourdes;QC;Quebec;46.1;-73.4333;2595;72.6
+Ville-Marie;QC;Quebec;47.3333;-79.4333;2595;424.8
+Saint-Isidore;QC;Quebec;45.3;-73.68;2581;49.7
+Shippegan;NB;New Brunswick;47.7439;-64.7178;2580;257.6
+East Garafraxa;ON;Ontario;43.85;-80.25;2579;15.5
+Pemberton;BC;British Columbia;50.3203;-122.8053;2574;217.5
+Unity;SK;Saskatchewan;52.4333;-109.1667;2573;244.6
+Rimbey;AB;Alberta;52.6333;-114.2167;2567;225.1
+High Prairie;AB;Alberta;55.4325;-116.4861;2564;355.3
+Turner Valley;AB;Alberta;50.6739;-114.2786;2559;442.1
+Hanna;AB;Alberta;51.6383;-111.9419;2559;290.6
+Fort Smith;NT;Northwest Territories;60.026;-112.0821;2542;27.4
+Maria;QC;Quebec;48.1667;-65.9833;2536;26.7
+Saint-Chrysostome;QC;Quebec;45.1;-73.7667;2522;25.2
+Greater Madawaska;ON;Ontario;45.2722;-76.8589;2518;2.4
+Berwick;NS;Nova Scotia;45.0475;-64.736;2509;381.3
+Saint-Damase;QC;Quebec;45.5333;-73;2506;31.7
+Lincoln;NB;New Brunswick;45.8716;-66.5437;2504;98.2
+Disraeli;QC;Quebec;45.9;-71.35;2502;362.1
+Sainte-Victoire-de-Sorel;QC;Quebec;45.95;-73.0833;2501;33.5
+Meadow Lake No. 588;SK;Saskatchewan;54.1213;-108.2837;2501;0.4
+Elkford;BC;British Columbia;50.0214;-114.9158;2499;24.6
+Georgian Bay;ON;Ontario;44.9833;-79.8167;2499;4.6
+Saint-Alexandre;QC;Quebec;45.2333;-73.1167;2495;32.8
+Herbertville;QC;Quebec;48.3473;-71.6784;2491;9.5
+Moosomin;SK;Saskatchewan;50.142;-101.67;2485;327.5
+North Kawartha;ON;Ontario;44.75;-78.1;2479;3.2
+Sainte-Thecle;QC;Quebec;46.8167;-72.5;2478;11.6
+Trenton;NS;Nova Scotia;45.6193;-62.6332;2474;407.8
+Fermont;QC;Quebec;52.7833;-67.0833;2474;5.2
+Esterhazy;SK;Saskatchewan;50.65;-102.0667;2472;520.9
+Wickham;QC;Quebec;45.75;-72.5;2470;25
+La Presentation;QC;Quebec;45.6667;-73.05;2466;26.1
+Beaverlodge;AB;Alberta;55.2094;-119.4292;2465;430.5
+Sainte-Catherine-de-Hatley;QC;Quebec;45.25;-72.05;2464;28.5
+Saint-Basile;QC;Quebec;46.75;-71.8167;2463;25.1
+Saint-Raphael;QC;Quebec;46.8;-70.75;2463;20.3
+Holyrood;NL;Newfoundland and Labrador;47.3833;-53.1333;2463;19.6
+Gracefield;QC;Quebec;46.0926;-75.9574;2462;6.4
+Saint-Martin;QC;Quebec;45.9667;-70.65;2462;20.8
+Causapscal;QC;Quebec;48.3667;-67.2333;2458;15.2
+Brigham;QC;Quebec;45.25;-72.85;2457;28.2
+Perry;ON;Ontario;45.5;-79.2833;2454;13.1
+Port-Daniel--Gascons;QC;Quebec;48.1833;-64.9667;2453;8.1
+Rosetown;SK;Saskatchewan;51.55;-107.9833;2451;201.9
+Minnedosa;MB;Manitoba;50.2453;-99.8428;2449;161.1
+Labelle;QC;Quebec;46.2833;-74.7333;2445;12.3
+Huntingdon;QC;Quebec;45.08;-74.17;2444;879.2
+Hebertville;QC;Quebec;48.4;-71.6833;2441;9.3
+Black River-Matheson;ON;Ontario;48.5333;-80.4667;2438;2.1
+Saint-Michel-des-Saints;QC;Quebec;46.6833;-73.9167;2436;4.9
+Dufferin;MB;Manitoba;49.5319;-98.07;2435;2.7
+Saint-Victor;QC;Quebec;46.15;-70.9;2430;20.2
+Sicamous;BC;British Columbia;50.8378;-118.9703;2429;192
+Cap Pele;NB;New Brunswick;46.2172;-64.2822;2425;103.8
+Kelsey;MB;Manitoba;53.7356;-101.395;2424;2.8
+"Killaloe; Hagarty and Richards";ON;Ontario;45.6;-77.5;2420;6.1
+Alvinston;ON;Ontario;42.8489;-81.9049;2411;7.7
+Dundurn No. 314;SK;Saskatchewan;51.8261;-106.5416;2404;3
+Saint-Ephrem-de-Beauce;QC;Quebec;46.0516;-70.9374;2400;20.2
+Assiniboia;SK;Saskatchewan;49.6167;-105.9833;2389;630.3
+Temiscaming;QC;Quebec;46.7167;-79.1;2385;3.3
+Magrath;AB;Alberta;49.4239;-112.8683;2374;396.4
+Sainte-Genevieve-de-Berthier;QC;Quebec;46.0833;-73.2167;2365;35.5
+Buctouche;NB;New Brunswick;46.4719;-64.7249;2361;130.5
+Grand Manan;NB;New Brunswick;44.69;-66.82;2360;15.8
+Sainte-Madeleine;QC;Quebec;45.6;-73.1;2356;439.8
+Boissevain;MB;Manitoba;49.1779;-100.0955;2353;2.2
+Scott;QC;Quebec;46.512;-71.077;2352;75.1
+Sainte-Croix;QC;Quebec;46.62;-71.73;2352;33.8
+Algonquin Highlands;ON;Ontario;45.4;-78.75;2351;2.3
+Valcourt;QC;Quebec;45.5;-72.3167;2349;467.3
+Saint George;NB;New Brunswick;45.2916;-66.8501;2341;4.7
+Paquetville;NB;New Brunswick;47.6334;-65.1803;2329;10.6
+Saint-Dominique;QC;Quebec;45.5667;-72.85;2327;33.7
+Clearwater;BC;British Columbia;51.65;-120.0333;2324;41.7
+Addington Highlands;ON;Ontario;45;-77.25;2323;1.7
+Lillooet;BC;British Columbia;50.6864;-121.9364;2321;84.4
+Burin;NL;Newfoundland and Labrador;47.05;-55.18;2315;67.8
+Grand Bank;NL;Newfoundland and Labrador;47.1;-55.7833;2310;136.1
+Lery;QC;Quebec;45.35;-73.8;2307;218.2
+Minto;NB;New Brunswick;46.1497;-66.1067;2305;72.8
+Rosthern No. 403;SK;Saskatchewan;52.6206;-106.3967;2300;2.4
+Chase;BC;British Columbia;50.8189;-119.6844;2286;607
+Mansfield-et-Pontefract;QC;Quebec;45.8611;-76.7392;2285;4.8
+Saint-Denis;QC;Quebec;45.7833;-73.15;2285;26.9
+Outlook;SK;Saskatchewan;51.5;-107.05;2279;291
+Mitchell;MB;Manitoba;49.5363;-96.7634;2279;704.7
+Saint-Gedeon-de-Beauce;QC;Quebec;45.85;-70.6333;2277;11.6
+Saint-Leonard-d'Aston;QC;Quebec;46.1;-72.3667;2271;27.5
+Lunenburg;NS;Nova Scotia;44.3833;-64.3167;2263;560.1
+Northesk;NB;New Brunswick;47.2569;-66.2613;2263;0.7
+Albanel;QC;Quebec;48.8833;-72.45;2262;11.4
+St. Anthony;NL;Newfoundland and Labrador;51.3725;-55.5947;2258;61
+Pessamit;QC;Quebec;49.0485;-68.6814;2256;8.8
+Maskinonge;QC;Quebec;46.2333;-73.0167;2253;30.2
+Saint-Charles-de-Bellechasse;QC;Quebec;46.7667;-70.95;2246;24.1
+Fogo Island;NL;Newfoundland and Labrador;49.6667;-54.1833;2244;9.4
+East Broughton;QC;Quebec;46.2167;-71.0667;2229;255.3
+Lantz;NS;Nova Scotia;44.9894;-63.4736;2229;749.9
+Calmar;AB;Alberta;53.25;-113.7833;2228;476.2
+Highlands;BC;British Columbia;48.52;-123.5;2225;58.5
+Saint-Polycarpe;QC;Quebec;45.3;-74.3;2224;31.8
+Logy Bay-Middle Cove-Outer Cove;NL;Newfoundland and Labrador;47.63;-52.68;2221;130.9
+Deschambault;QC;Quebec;46.6436;-72.0236;2220;17.8
+Canora;SK;Saskatchewan;51.6339;-102.4369;2219;303.7
+Upper Miramichi;NB;New Brunswick;46.5254;-66.2085;2218;1.2
+Anmore;BC;British Columbia;49.3144;-122.8564;2210;80.2
+Hardwicke;NB;New Brunswick;47.0208;-65.0302;2201;7.9
+Saint-Come;QC;Quebec;46.27;-73.78;2198;13.5
+Waskaganish;QC;Quebec;51.3674;-78.7069;2196;4.4
+Twillingate;NL;Newfoundland and Labrador;49.6444;-54.7436;2196;85.3
+Saint-Quentin;NB;New Brunswick;47.5135;-67.3921;2194;517.2
+Lebel-sur-Quevillon;QC;Quebec;49.05;-76.9833;2187;53.8
+Pilot Butte;SK;Saskatchewan;50.4667;-104.4167;2183;377.7
+Nanton;AB;Alberta;50.3494;-113.7717;2181;447.8
+Pierreville;QC;Quebec;46.0667;-72.8167;2176;27.8
+New-Wes-Valley;NL;Newfoundland and Labrador;49.15;-53.5833;2172;16.3
+Pennfield Ridge;NB;New Brunswick;45.1924;-66.6858;2170;6
+West Interlake;MB;Manitoba;50.9837;-98.3572;2162;1.3
+Biggar;SK;Saskatchewan;52.059;-107.979;2161;137.2
+Britannia No. 502;SK;Saskatchewan;53.4236;-109.7772;2153;2.3
+Kent;NB;New Brunswick;46.6221;-67.2953;2153;2.6
+Wabana;NL;Newfoundland and Labrador;47.65;-52.9333;2146;148
+Saint-Gilles;QC;Quebec;46.5167;-71.3667;2138;12.1
+Wendake;QC;Quebec;46.8693;-71.3628;2134;1253.9
+Saint-Bernard;QC;Quebec;46.5;-71.1333;2131;23.7
+Sainte-Cecile-de-Milton;QC;Quebec;45.4833;-72.75;2128;29.1
+Saint-Roch-de-Richelieu;QC;Quebec;45.8833;-73.1667;2122;60.9
+Saint-Nazaire;QC;Quebec;48.5833;-71.5333;2114;14.6
+Saint-Elzear;QC;Quebec;46.4;-71.0667;2107;24.1
+Hinchinbrooke;QC;Quebec;45.05;-74.1;2103;14.1
+Saint-Francois-Xavier-de-Brompton;QC;Quebec;45.5333;-72.05;2101;21.5
+Papineauville;QC;Quebec;45.6167;-75.0167;2101;34.3
+Prairie View;MB;Manitoba;50.3304;-100.9803;2088;1.2
+Cowichan Bay;BC;British Columbia;48.7666;-123.6743;2086;89.5
+Saint-Ignace-de-Loyola;QC;Quebec;46.0667;-73.1333;2086;57.7
+Central Manitoulin;ON;Ontario;45.7167;-82.2;2084;4.8
+Maple Creek;SK;Saskatchewan;49.9167;-109.4667;2084;471.3
+Glovertown;NL;Newfoundland and Labrador;48.6667;-54.05;2083;29.6
+Tofield;AB;Alberta;53.3703;-112.6667;2081;253.4
+Madoc;ON;Ontario;44.5833;-77.5167;2078;7.9
+Upton;QC;Quebec;45.65;-72.6833;2075;37.3
+Sainte-Anne-de-Sabrevois;QC;Quebec;45.2;-73.2167;2074;46.3
+Logan Lake;BC;British Columbia;50.4911;-120.8153;2073;6.4
+Sainte-Anne-de-la-Perade;QC;Quebec;46.5833;-72.2;2072;18.8
+Saint-Damien-de-Buckland;QC;Quebec;46.6333;-70.6667;2071;25.2
+Baker Lake;NU;Nunavut;64.3287;-96.0308;2069;11.4
+Saltair;BC;British Columbia;48.9504;-123.7637;2069;305.1
+Pouch Cove;NL;Newfoundland and Labrador;47.767;-52.767;2069;35.5
+Saint-Ferdinand;QC;Quebec;46.1;-71.5667;2067;15.1
+Port McNeill;BC;British Columbia;50.5903;-127.0847;2064;149.9
+Digby;NS;Nova Scotia;44.6222;-65.7606;2060;654.6
+Manouane;QC;Quebec;47.2091;-74.3833;2060;258.4
+Saint-Gervais;QC;Quebec;46.7167;-70.8833;2058;23.1
+Neebing;ON;Ontario;48.1833;-89.4667;2055;2.3
+Redwater;AB;Alberta;53.9489;-113.1067;2053;102.5
+Saint-Alexandre-de-Kamouraska;QC;Quebec;47.6817;-69.625;2050;18.4
+Saint-Marc-sur-Richelieu;QC;Quebec;45.6833;-73.2;2050;33.8
+Mandeville;QC;Quebec;46.3667;-73.35;2043;6.3
+Caplan;QC;Quebec;48.1;-65.6833;2039;23.7
+Point Edward;ON;Ontario;42.9931;-82.4083;2037;620.6
+Allardville;NB;New Brunswick;47.4321;-65.4383;2032;3.1
+Waterville;QC;Quebec;45.2667;-71.9;2028;45.7
+Saint-Damien;QC;Quebec;46.33;-73.48;2020;7.9
+Lac-Nominingue;QC;Quebec;46.4;-75.0333;2019;6.6
+Obedjiwan;QC;Quebec;48.6686;-74.9289;2019;234.4
+Rama;SK;Saskatchewan;51.7578;-103.0008;2016;3087.3
+McCreary;MB;Manitoba;50.7494;-99.485;2011;274.7
+Deloraine-Winchester;MB;Manitoba;49.1775;-100.4322;2011;2
+Oakland-Wawanesa;MB;Manitoba;49.6208;-99.8481;2011;2.9
+Brenda-Waskada;MB;Manitoba;49.1775;-100.7019;2011;0.9
+Russell-Binscarth;MB;Manitoba;50.7272;-101.3689;2011;4.3
+Ellice-Archie;MB;Manitoba;50.3239;-101.2729;2011;0.8
+Souris-Glenwood;MB;Manitoba;49.6208;-100.2581;2011;4.4
+Riverdale;MB;Manitoba;49.975;-100.2789;2011;3.7
+Pembina;MB;Manitoba;49.1775;-98.5408;2011;2.1
+Wallace-Woodworth;MB;Manitoba;49.9156;-100.9389;2011;1.5
+Lorne;MB;Manitoba;49.4436;-98.7494;2011;3.3
+Ethelbert;MB;Manitoba;51.5364;-100.4981;2011;104.3
+Yellowhead;MB;Manitoba;50.4847;-100.4828;2011;1.8
+Swan Valley West;MB;Manitoba;51.9978;-101.3944;2011;1.6
+Grey;MB;Manitoba;49.7094;-98.0736;2011;2.8
+Gilbert Plains;MB;Manitoba;51.1547;-100.4381;2011;1.4
+Norfolk-Treherne;MB;Manitoba;49.6653;-98.5967;2011;2.4
+Hamiota;MB;Manitoba;50.1964;-100.6342;2011;248.3
+Emerson-Franklin;MB;Manitoba;49.1333;-97.0331;2011;2.6
+Sifton;MB;Manitoba;49.6653;-100.6678;2011;2.6
+Rossburn;MB;Manitoba;50.7272;-100.7408;2011;150.4
+Grand View;MB;Manitoba;51.155;-100.7892;2011;310.3
+Grassland;MB;Manitoba;49.4306;-100.3103;2011;1.2
+Louise;MB;Manitoba;49.1772;-98.8794;2011;2
+Ste. Rose;MB;Manitoba;51.0222;-99.4306;2011;2.7
+Cartwright-Roblin;MB;Manitoba;49.1331;-99.2797;2011;1.8
+Mossey River;MB;Manitoba;51.755;-99.9664;2011;1
+Lakeshore;MB;Manitoba;51.244;-99.6562;2011;1.1
+Riding Mountain West;MB;Manitoba;50.8347;-101.0961;2011;0.9
+Clanwilliam-Erickson;MB;Manitoba;50.5061;-99.8156;2011;2.5
+Glenboro-South Cypress;MB;Manitoba;49.665;-99.3708;2011;1.4
+North Norfolk;MB;Manitoba;49.9308;-98.8356;2011;3.3
+Reinland;MB;Manitoba;49.1331;-97.5942;2011;6.2
+Minitonas-Bowsman;MB;Manitoba;52.1433;-100.9772;2011;1.4
+Kippens;NL;Newfoundland and Labrador;48.5492;-58.6236;2008;140.3
+Blucher;SK;Saskatchewan;52.0134;-106.2176;2006;2.5
+Hatley;QC;Quebec;45.27;-71.95;2003;28
+Saint-Gedeon;QC;Quebec;48.5;-71.7667;2001;31.5
+Kingsey Falls;QC;Quebec;45.85;-72.0667;2000;28.7
+Provost;AB;Alberta;52.3539;-110.2686;1998;423
+Saint-Charles;NB;New Brunswick;46.6692;-65.0184;1997;11.4
+Mattawa;ON;Ontario;46.3167;-78.7;1993;544.8
+Tumbler Ridge;BC;British Columbia;55.1333;-121;1987;1.3
+Terrasse-Vaudreuil;QC;Quebec;45.4;-73.9833;1986;1865.2
+L'Ascension-de-Notre-Seigneur;QC;Quebec;48.7;-71.6833;1983;15
+Bow Island;AB;Alberta;49.8667;-111.3667;1983;341.6
+Barraute;QC;Quebec;48.4333;-77.6333;1980;4
+One Hundred Mile House;BC;British Columbia;51.6413;-121.3127;1980;37.2
+Kedgwick;NB;New Brunswick;47.6456;-67.3431;1979;3
+Gambo;NL;Newfoundland and Labrador;48.7833;-54.2167;1978;21.5
+Saint-Liguori;QC;Quebec;46.0167;-73.5667;1976;39.1
+Bonfield;ON;Ontario;46.2167;-79.1333;1975;9.5
+Pointe-Lebel;QC;Quebec;49.1667;-68.2;1973;23.3
+Saint Mary;NB;New Brunswick;46.3987;-64.8681;1972;8.3
+Saint-Patrice-de-Sherrington;QC;Quebec;45.1667;-73.5167;1971;21.3
+Fox Creek;AB;Alberta;54.395;-116.8092;1971;159.4
+Dawn-Euphemia;ON;Ontario;42.7;-82.0167;1967;4.4
+Chapleau;ON;Ontario;47.8333;-83.4;1964;138.2
+Saint-Esprit;QC;Quebec;45.9;-73.6667;1963;36.4
+Westfield Beach;NB;New Brunswick;45.3432;-66.2868;1962;6.6
+Montague;PE;Prince Edward Island;46.1652;-62.65;1961;620.8
+Mashteuiatsh;QC;Quebec;48.569;-72.2495;1957;134.9
+Saint-Francois-du-Lac;QC;Quebec;46.0667;-72.8333;1957;30.4
+Eel River Crossing;NB;New Brunswick;48.0125;-66.4208;1953;29.8
+Saint-Fulgence;QC;Quebec;48.45;-70.9;1949;5.5
+Millet;AB;Alberta;53.0978;-113.4728;1945;522.9
+Vallee-Jonction;QC;Quebec;46.3667;-70.9167;1940;76.6
+Saint-Georges-de-Cacouna;QC;Quebec;47.9167;-69.5;1939;30.6
+Lumsden No. 189;SK;Saskatchewan;50.6734;-104.7686;1938;2.4
+Manitouwadge;ON;Ontario;49.1333;-85.8333;1937;5.5
+Wellington;ON;Ontario;43.9579;-77.3534;1932;275.4
+Swift Current No. 137;SK;Saskatchewan;50.2211;-107.8559;1932;1.8
+Tofino;BC;British Columbia;49.1275;-125.8852;1932;183.1
+Fort Qu'Appelle;SK;Saskatchewan;50.7667;-103.7833;1919;363.2
+Vulcan;AB;Alberta;50.4;-113.25;1917;302.3
+Indian Head;SK;Saskatchewan;50.5333;-103.6667;1910;602
+Petit Rocher;NB;New Brunswick;47.7839;-65.7159;1908;425.2
+Wabush;NL;Newfoundland and Labrador;52.9081;-66.869;1906;41.2
+Saint-Fabien;QC;Quebec;48.3;-68.87;1906;15.9
+Watrous;SK;Saskatchewan;51.6841;-105.4661;1900;170.1
+North Frontenac;ON;Ontario;44.95;-76.9;1898;1.6
+Lac-Superieur;QC;Quebec;46.2;-74.4667;1892;5.1
+Les Escoumins;QC;Quebec;48.35;-69.4;1891;7
+Richibucto;NB;New Brunswick;46.6189;-64.8385;1887;7.6
+Riviere-Beaudette;QC;Quebec;45.2333;-74.3333;1885;101.9
+Saint-Barthelemy;QC;Quebec;46.1833;-73.1333;1883;17.9
+Nisga'a;BC;British Columbia;55.1078;-129.4293;1880;0.9
+Austin;QC;Quebec;45.1833;-72.2833;1880;25.5
+Saint-Mathieu;QC;Quebec;45.3167;-73.5164;1879;59.5
+Saint-Paul-de-l'Ile-aux-Noix;QC;Quebec;45.1333;-73.2833;1877;63.4
+Orkney No. 244;SK;Saskatchewan;51.2557;-102.6469;1875;2.3
+Behchoko;NT;Northwest Territories;62.8184;-115.9933;1874;24.9
+Saint-Joseph-de-Coleraine;QC;Quebec;45.97;-71.37;1870;14.7
+Saint-Cyprien-de-Napierville;QC;Quebec;45.1833;-73.4167;1869;19.2
+Sayabec;QC;Quebec;48.5667;-67.6833;1864;14.3
+Valleyview;AB;Alberta;55.0686;-117.2683;1863;199.9
+Deleage;QC;Quebec;46.3833;-75.9167;1856;7.5
+Potton;QC;Quebec;45.0833;-72.3667;1849;7.1
+Sainte-Beatrix;QC;Quebec;46.2;-73.6167;1849;22
+Sainte-Justine;QC;Quebec;46.4;-70.35;1845;14.6
+Eastman;QC;Quebec;45.3341;-72.3041;1843;25
+Saint-Valerien-de-Milton;QC;Quebec;45.5667;-72.7167;1840;17.1
+Saint-Cuthbert;QC;Quebec;46.15;-73.2333;1839;13.9
+Saint-Blaise-sur-Richelieu;QC;Quebec;45.2167;-73.2833;1837;26.3
+Middleton;NS;Nova Scotia;44.9418;-65.0686;1832;329.1
+Maugerville;NB;New Brunswick;46.1301;-66.2859;1831;2
+Dalmeny;SK;Saskatchewan;52.3411;-106.7733;1826;805.7
+Kamsack;SK;Saskatchewan;51.565;-101.8947;1825;311.8
+Lumsden;SK;Saskatchewan;50.6463;-104.8676;1824;402
+Trinity Bay North;NL;Newfoundland and Labrador;48.4978;-53.086;1819;71.5
+Saint-Michel-de-Bellechasse;QC;Quebec;46.8667;-70.9167;1816;41
+Sainte-Angele-de-Monnoir;QC;Quebec;45.3833;-73.1;1812;39.9
+Picture Butte;AB;Alberta;49.8731;-112.78;1810;635.1
+Sacre-Coeur-Saguenay;QC;Quebec;48.2479;-69.854;1803;5.9
+Saint-Louis;NB;New Brunswick;46.7048;-65.1046;1802;7
+Victoria;NL;Newfoundland and Labrador;47.7675;-53.2411;1800;102
+Saint-Robert;QC;Quebec;45.9667;-73;1794;27.7
+Armstrong;MB;Manitoba;50.64;-97.495;1792;1
+Saint-Pierre-de-l'Ile-d'Orleans;QC;Quebec;46.8833;-71.0667;1789;57.1
+La Guadeloupe;QC;Quebec;45.95;-70.93;1787;54.8
+Saint Andrews;NB;New Brunswick;45.074;-67.0521;1786;213.9
+Burns Lake;BC;British Columbia;54.2292;-125.7625;1779;269.8
+Povungnituk;QC;Quebec;60.0477;-77.2751;1779;20.6
+Manners Sutton;NB;New Brunswick;45.6417;-67.0609;1777;3.4
+Gore;QC;Quebec;45.77;-74.25;1775;19.1
+Deseronto;ON;Ontario;44.2;-77.05;1774;705.7
+Lamont;AB;Alberta;53.7603;-112.7778;1774;192.8
+Chambord;QC;Quebec;48.4333;-72.0667;1773;14.6
+Dudswell;QC;Quebec;45.5833;-71.5833;1771;8.1
+Wynyard;SK;Saskatchewan;51.7667;-104.1833;1767;334.1
+Cambridge Bay;NU;Nunavut;69.1528;-105.1707;1766;8.7
+Saint-Narcisse;QC;Quebec;46.5667;-72.4667;1762;16.8
+Frontenac Islands;ON;Ontario;44.2;-76.3833;1760;10.1
+Waswanipi;QC;Quebec;49.7883;-75.9544;1759;4.2
+Inukjuak;QC;Quebec;58.4824;-78.1309;1757;31.6
+Piney;MB;Manitoba;49.2069;-95.8333;1755;0
+Komoka;ON;Ontario;42.958;-81.4001;1754;1576.6
+Saint-Zacharie;QC;Quebec;46.1333;-70.3667;1751;9.4
+Hemmingford;QC;Quebec;45.0833;-73.5833;1747;11.1
+Shelburne;NS;Nova Scotia;43.7633;-65.3236;1743;197.2
+Saint-Clet;QC;Quebec;45.35;-74.22;1738;44.3
+Carberry;MB;Manitoba;49.8689;-99.3594;1738;350.7
+Brighton;NB;New Brunswick;46.3316;-67.3585;1735;3.4
+Saint-Antoine;NB;New Brunswick;46.3629;-64.753;1733;274.3
+Warfield;BC;British Columbia;49.0953;-117.7344;1729;910
+Northampton;NB;New Brunswick;46.1313;-67.4713;1724;7.1
+Saint-Ours;QC;Quebec;45.8833;-73.15;1721;29
+Stephenville Crossing;NL;Newfoundland and Labrador;48.5167;-58.4167;1719;55.1
+Sainte-Anne-de-la-Pocatiere;QC;Quebec;47.35;-70;1717;31.1
+Ucluelet;BC;British Columbia;48.9358;-125.5433;1717;264.5
+Saint-Placide;QC;Quebec;45.5333;-74.2;1715;39.8
+Barriere;BC;British Columbia;51.1803;-120.1261;1713;164.7
+Fisher;MB;Manitoba;51.0825;-97.6611;1708;1.2
+Nipissing;ON;Ontario;46.05;-79.55;1707;4.3
+Sainte-Clotilde;QC;Quebec;45.15;-73.6833;1704;21.6
+Shaunavon;SK;Saskatchewan;49.651;-108.412;1699;344.2
+Wicklow;NB;New Brunswick;46.5017;-67.7067;1697;8.7
+Southesk;NB;New Brunswick;46.9901;-66.4336;1694;0.7
+Nouvelle;QC;Quebec;48.1333;-66.3167;1689;7.3
+Rosthern;SK;Saskatchewan;52.65;-106.3333;1688;392
+Yamaska;QC;Quebec;46.0236;-72.9391;1687;23.2
+Neguac;NB;New Brunswick;47.2333;-65.05;1684;62.9
+Flat Rock;NL;Newfoundland and Labrador;47.7086;-52.7144;1683;92.9
+Igloolik;NU;Nunavut;69.3817;-81.6811;1682;16.3
+Grunthal;MB;Manitoba;49.4065;-96.8603;1680;593.7
+Naramata;BC;British Columbia;49.5886;-119.5838;1676;207.8
+Saint-Elie-de-Caxton;QC;Quebec;46.4833;-72.9667;1676;14.2
+Blumenort;MB;Manitoba;49.6033;-96.7006;1675;526.3
+Balmoral;NB;New Brunswick;47.9667;-66.45;1674;38.6
+Price;QC;Quebec;48.6017;-68.1227;1673;646
+Rosedale;MB;Manitoba;50.4397;-99.5389;1672;1.9
+Saint-Jacques-le-Mineur;QC;Quebec;45.2833;-73.4167;1672;24.9
+Huron Shores;ON;Ontario;46.2833;-83.2;1664;3.8
+Champlain;QC;Quebec;46.45;-72.35;1664;28.4
+Whitehead;MB;Manitoba;49.7981;-100.2575;1661;2.9
+Saint-Antoine-sur-Richelieu;QC;Quebec;45.7833;-73.1833;1659;25.2
+Saint-Pacome;QC;Quebec;47.4;-69.95;1658;57.5
+Saint-Stanislas-de-Kostka;QC;Quebec;45.18;-74.13;1654;28.7
+Frontenac;QC;Quebec;45.58;-70.83;1650;7.4
+Stuartburn;MB;Manitoba;49.1331;-96.5158;1648;1.4
+Yamaska-Est;QC;Quebec;46;-72.92;1644;22.5
+Sainte-Emelie-de-l'Energie;QC;Quebec;46.3167;-73.65;1644;10.7
+Saint-Charles-sur-Richelieu;QC;Quebec;45.6833;-73.1833;1643;25.2
+Saint-Joseph-de-Sorel;QC;Quebec;46.0446;-73.1308;1642;1192.7
+Nipigon;ON;Ontario;49.0153;-88.2683;1642;15
+Riviere-Blanche;QC;Quebec;48.7833;-67.7;1642;13.6
+Sainte-Helene-de-Bagot;QC;Quebec;45.7333;-72.7333;1637;22.3
+Franklin Centre;QC;Quebec;45.0467;-73.9005;1636;14.5
+Harbour Breton;NL;Newfoundland and Labrador;47.4833;-55.8333;1634;118.9
+Massey Drive;NL;Newfoundland and Labrador;48.9372;-57.9;1632;658.7
+Mille-Isles;QC;Quebec;45.82;-74.22;1629;26.8
+Wilton No. 472;SK;Saskatchewan;53.124;-109.7885;1629;1.6
+Lyster;QC;Quebec;46.3667;-71.6167;1628;9.7
+Oakview;MB;Manitoba;50.1964;-100.2167;1626;1.4
+Balgonie;SK;Saskatchewan;50.488;-104.269;1625;515.8
+Harrison Park;MB;Manitoba;50.5563;-100.1674;1622;1.7
+Kensington;PE;Prince Edward Island;46.4333;-63.65;1619;537.9
+Witless Bay;NL;Newfoundland and Labrador;47.28;-52.83;1619;92.6
+Pond Inlet;NU;Nunavut;72.6808;-77.7503;1617;9.3
+Royston;BC;British Columbia;49.6405;-124.9406;1616;361.3
+Sainte-Clotilde-de-Horton;QC;Quebec;45.9833;-72.2333;1616;14.2
+Burford;ON;Ontario;43.1036;-80.424;1615;208.2
+Fossambault-sur-le-Lac;QC;Quebec;46.8667;-71.6167;1613;141.7
+Saint-Benoit-Labre;QC;Quebec;46.0667;-70.8;1612;19
+Coombs;BC;British Columbia;49.3008;-124.4049;1612;102.8
+Terrace Bay;ON;Ontario;48.8;-87.1;1611;10.5
+Chapais;QC;Quebec;49.7819;-74.8544;1610;25.3
+Saint-Honore-de-Shenley;QC;Quebec;45.9667;-70.8333;1610;12.1
+Cleveland;QC;Quebec;45.67;-72.08;1609;12.9
+"Macdonald; Meredith and Aberdeen Additional";ON;Ontario;46.4833;-84.0667;1609;9.8
+Messines;QC;Quebec;46.2333;-76.0167;1608;14.1
+Saint-Jean-de-Dieu;QC;Quebec;48;-69.05;1606;10.6
+Nakusp;BC;British Columbia;50.2434;-117.8002;1605;195.2
+Florenceville;NB;New Brunswick;46.4435;-67.6152;1604;102.7
+Saint-Antoine-de-Tilly;QC;Quebec;46.6667;-71.5833;1604;26.6
+Lakeview;BC;British Columbia;49.9026;-119.5699;1600;63.5
+Humbermouth;NL;Newfoundland and Labrador;49.0156;-58.1678;1599;24.6
+Fort St. James;BC;British Columbia;54.4431;-124.2542;1598;72
+Saint-Francois-de-la-Riviere-du-Sud;QC;Quebec;46.8833;-70.7167;1596;17
+Saint-Jacques;NB;New Brunswick;47.5634;-68.3693;1596;5.3
+Uashat;QC;Quebec;50.233;-66.3947;1592;681.8
+Perth;NB;New Brunswick;46.7393;-67.6984;1590;177.3
+Eeyou Istchee Baie-James;QC;Quebec;52.3382;-75.1977;1589;0
+Shellbrook No. 493;SK;Saskatchewan;53.3545;-106.2553;1587;1.3
+Shawville;QC;Quebec;45.6;-76.4833;1587;294.5
+Saint-Lucien;QC;Quebec;45.8667;-72.2667;1584;14.2
+Lambton;QC;Quebec;45.83;-71.08;1584;14.6
+Saint-Laurent-de-l'Ile-d'Orleans;QC;Quebec;46.8667;-71.0167;1580;44.2
+Saint-Flavien;QC;Quebec;46.5167;-71.6;1578;23.4
+Grenville;QC;Quebec;45.6333;-74.6;1577;560.4
+Chute-aux-Outardes;QC;Quebec;49.1167;-68.4;1577;216
+Sainte-Marcelline-de-Kildare;QC;Quebec;46.1167;-73.6;1567;45.2
+Saint-Felix-de-Kingsey;QC;Quebec;45.8;-72.1833;1563;12.3
+Upper Island Cove;NL;Newfoundland and Labrador;47.6472;-53.2233;1561;199
+Glenelg;NB;New Brunswick;46.9455;-65.2893;1560;3.1
+Sainte-Elisabeth;QC;Quebec;46.0833;-73.35;1559;18.8
+Ashcroft;BC;British Columbia;50.7256;-121.2806;1558;32.3
+Clarkes Beach;NL;Newfoundland and Labrador;47.5447;-53.2824;1558;122.6
+Saint-Bernard-de-Lacolle;QC;Quebec;45.0833;-73.4167;1549;13
+Belledune;NB;New Brunswick;47.9;-65.8167;1548;8.2
+Saint-Guillaume;QC;Quebec;45.8833;-72.7667;1547;17.6
+Venise-en-Quebec;QC;Quebec;45.0833;-73.1333;1547;116.9
+Maliotenam;QC;Quebec;50.2114;-66.1911;1542;288.7
+Ripon;QC;Quebec;45.7833;-75.1;1542;11.7
+Hilliers;BC;British Columbia;49.3022;-124.4727;1540;53
+Saint-Joseph;NB;New Brunswick;47.558;-68.3082;1538;4.8
+Saint-Paulin;QC;Quebec;46.4167;-73.0333;1534;16
+Bon Accord;AB;Alberta;53.8328;-113.4189;1529;718.7
+Saint David;NB;New Brunswick;45.2918;-67.1983;1529;8
+Saint-Albert;QC;Quebec;46;-72.0833;1526;21.8
+Matagami;QC;Quebec;49.75;-77.6333;1526;22.8
+Springfield;NB;New Brunswick;45.7005;-65.8079;1525;6.1
+Amherst;QC;Quebec;46.05;-74.7667;1524;6.6
+Notre-Dame-du-Laus;QC;Quebec;46.0833;-75.6167;1518;1.8
+St. George;NB;New Brunswick;45.1333;-66.8167;1517;93.8
+Wembley;AB;Alberta;55.1572;-119.1392;1516;318.9
+Victoria;MB;Manitoba;49.6644;-98.9153;1514;2.2
+Springbrook;AB;Alberta;52.1796;-113.885;1507;286.3
+Saint-Tite-des-Caps;QC;Quebec;47.1333;-70.7667;1506;11.7
+Hudson Bay;SK;Saskatchewan;52.851;-102.392;1504;86.7
+Pinawa;MB;Manitoba;50.1707;-95.9547;1504;11.7
+"Brudenell; Lyndoch and Raglan";ON;Ontario;45.3167;-77.4;1503;2.1
+Carlyle;SK;Saskatchewan;49.6333;-102.2667;1503;451.1
+Keremeos;BC;British Columbia;49.2025;-119.8294;1502;717.5
+Val-Joli;QC;Quebec;45.6;-71.97;1501;16.5
+Gold River;BC;British Columbia;49.7769;-126.0514;1500;15
+Saint-Casimir;QC;Quebec;46.65;-72.1333;1500;22.5
+Bay Bulls;NL;Newfoundland and Labrador;47.3158;-52.8103;1500;48.8
+Langham;SK;Saskatchewan;52.3667;-106.9667;1496;374.9
+Frenchman Butte;SK;Saskatchewan;53.6052;-109.4298;1494;0.8
+Gordon;NB;New Brunswick;46.8363;-67.1913;1493;1
+Kugluktuk;NU;Nunavut;67.8055;-115.3223;1491;2.7
+Saint-Malachie;QC;Quebec;46.5333;-70.7667;1489;14.8
+Southampton;NB;New Brunswick;46.0789;-67.3124;1484;3.3
+Salluit;QC;Quebec;62.2013;-75.6337;1483;101.1
+Pangnirtung;NU;Nunavut;66.1436;-65.6829;1481;190.6
+Saint-Louis-de-Gonzague;QC;Quebec;45.2;-73.98;1481;18.6
+Moosonee;ON;Ontario;51.2722;-80.6431;1481;2.7
+Englehart;ON;Ontario;47.8167;-79.8667;1479;489.7
+Saint-Urbain;QC;Quebec;47.55;-70.5333;1474;4.4
+Tring-Jonction;QC;Quebec;46.2667;-70.9833;1473;57.5
+Nauwigewauk;NB;New Brunswick;45.4812;-65.8738;1472;48.2
+Pointe-a-la-Croix;QC;Quebec;48.0167;-66.6833;1472;3.7
+Denmark;NB;New Brunswick;47.1155;-67.4771;1471;2
+Saint-Joachim;QC;Quebec;47.05;-70.85;1471;34.5
+Torch River No. 488;SK;Saskatchewan;53.5445;-104.4619;1471;0.3
+Saint-Theodore-d'Acton;QC;Quebec;45.6833;-72.5833;1471;17.7
+Grindrod;BC;British Columbia;50.63;-119.1314;1470;34
+L' Isle-Verte;QC;Quebec;48.0167;-69.3333;1469;12.5
+Harrison Hot Springs;BC;British Columbia;49.3;-121.7819;1468;263.4
+Palmarolle;QC;Quebec;48.6667;-79.2;1465;12.5
+Henryville;QC;Quebec;45.1333;-73.1833;1464;22.6
+Sussex Corner;NB;New Brunswick;45.7122;-65.4719;1461;156.4
+Saint-Odilon-de-Cranbourne;QC;Quebec;46.3667;-70.6833;1459;11.2
+Pipestone;MB;Manitoba;49.6653;-101.1444;1458;1.3
+Laurierville;QC;Quebec;46.3;-71.65;1454;13.6
+La Dore;QC;Quebec;48.72;-72.65;1453;5
+Lac-au-Saumon;QC;Quebec;48.4167;-67.35;1453;17.7
+Wotton;QC;Quebec;45.7333;-71.8;1453;10.1
+Prairie Lakes;MB;Manitoba;49.4034;-99.6298;1453;1.4
+Elk Point;AB;Alberta;53.8967;-110.8972;1452;295.5
+Shellbrook;SK;Saskatchewan;53.2167;-106.4;1444;390.3
+Wemindji;QC;Quebec;53.044;-78.7384;1444;3.7
+Cape Dorset;NU;Nunavut;64.2237;-76.5405;1441;147.9
+Strong;ON;Ontario;45.75;-79.4;1439;9
+Lappe;ON;Ontario;48.5693;-89.3573;1436;9.8
+Riviere-Heva;QC;Quebec;48.2333;-78.2167;1433;3.4
+Fort-Coulonge;QC;Quebec;45.85;-76.7333;1433;462.4
+Irishtown-Summerside;NL;Newfoundland and Labrador;48.9833;-57.95;1418;119.2
+Godmanchester;QC;Quebec;45.08;-74.25;1417;10.2
+Macklin;SK;Saskatchewan;52.33;-109.94;1415;450.7
+Armour;ON;Ontario;45.6289;-79.3436;1414;8.6
+Saint-Simon;QC;Quebec;45.719;-72.8463;1413;20.5
+St. Francois Xavier;MB;Manitoba;49.9903;-97.6722;1411;6.9
+Tingwick;QC;Quebec;45.8873;-71.9244;1410;8.3
+Saint-Aubert;QC;Quebec;47.1833;-70.2167;1409;14
+Saint-Mathieu-du-Parc;QC;Quebec;46.5667;-72.9167;1407;6.3
+Wabasca;AB;Alberta;55.9855;-113.8566;1406;65.8
+Ragueneau;QC;Quebec;49.0667;-68.5333;1405;7.6
+Notre-Dame-du-Bon-Conseil;QC;Quebec;46;-72.35;1404;331.4
+Wasagamack;MB;Manitoba;53.9056;-94.9412;1403;17.3
+Saint-Ubalde;QC;Quebec;46.75;-72.2667;1403;10
+Creighton;SK;Saskatchewan;54.7561;-101.8973;1402;97.4
+Fortune;NL;Newfoundland and Labrador;47.0733;-55.8217;1401;25.5
+Faraday;ON;Ontario;45;-77.9167;1401;6.4
+Berthier-sur-Mer;QC;Quebec;46.9167;-70.7333;1398;52.2
+Frampton;QC;Quebec;46.4667;-70.8;1393;9.2
+Magnetawan;ON;Ontario;45.6667;-79.6333;1390;2.6
+New Carlisle;QC;Quebec;48.0167;-65.3333;1388;20.5
+Laird No. 404;SK;Saskatchewan;52.5696;-106.7312;1387;1.9
+Petitcodiac;NB;New Brunswick;45.9333;-65.1667;1383;80.4
+Popkum;BC;British Columbia;49.1911;-121.7553;1382;216.7
+Norton;NB;New Brunswick;45.6387;-65.6955;1382;18.3
+Canwood No. 494;SK;Saskatchewan;53.4574;-106.7768;1381;0.7
+Wentworth-Nord;QC;Quebec;45.85;-74.45;1381;8.8
+Bas Caraquet;NB;New Brunswick;47.8;-64.8333;1380;44.5
+Sainte-Ursule;QC;Quebec;46.2833;-73.0333;1375;20.2
+Dawson;YT;Yukon;64.0464;-139.3893;1375;42.4
+Nantes;QC;Quebec;45.6333;-71.0333;1374;11.4
+Lac-aux-Sables;QC;Quebec;46.8667;-72.4;1373;5.1
+Stewiacke;NS;Nova Scotia;45.1422;-63.3483;1373;77.9
+Taylor;BC;British Columbia;56.159;-120.6878;1373;80.3
+Rosser;MB;Manitoba;49.99;-97.4592;1372;3.1
+Estevan No. 5;SK;Saskatchewan;49.1308;-103.0126;1370;1.8
+Falmouth;NS;Nova Scotia;44.9967;-64.1634;1368;262.3
+Vaudreuil-sur-le-Lac;QC;Quebec;45.4;-74.0333;1359;989.2
+Grahamdale;MB;Manitoba;51.42;-98.3733;1359;0.6
+Cardwell;NB;New Brunswick;45.7848;-65.3037;1353;4.3
+Two Hills;AB;Alberta;53.715;-111.7461;1352;400
+Spiritwood No. 496;SK;Saskatchewan;53.4435;-107.4495;1347;0.6
+Legal;AB;Alberta;53.9492;-113.595;1345;423.4
+Amulet;QC;Quebec;48.2938;-79.0274;1340;724.3
+Herouxville;QC;Quebec;46.6667;-72.6167;1340;25.3
+Pointe-des-Cascades;QC;Quebec;45.3333;-73.9667;1340;502.2
+Weldford;NB;New Brunswick;46.5221;-65.1114;1338;2.2
+Reynolds;MB;Manitoba;49.7678;-95.8842;1338;0.4
+St. Laurent;MB;Manitoba;50.43;-97.7933;1338;2.9
+Lions Bay;BC;British Columbia;49.4581;-123.2369;1334;526.5
+L'Isle-aux-Allumettes;QC;Quebec;45.8667;-77.0667;1334;7.2
+Emo;ON;Ontario;48.6333;-93.8333;1333;6.6
+Sainte-Brigide-d'Iberville;QC;Quebec;45.3167;-73.0667;1331;18.7
+Les Eboulements;QC;Quebec;47.4833;-70.3167;1331;8.5
+Dunsmuir;BC;British Columbia;49.3696;-124.5772;1330;62.3
+Pointe-aux-Outardes;QC;Quebec;49.05;-68.4333;1330;17.8
+Smooth Rock Falls;ON;Ontario;49.2833;-81.6333;1330;6.6
+Oxbow;SK;Saskatchewan;49.2333;-102.1667;1328;412.6
+Telkwa;BC;British Columbia;54.6972;-127.05;1327;191.9
+Gjoa Haven;NU;Nunavut;68.6448;-95.8912;1324;46.5
+Sainte-Barbe;QC;Quebec;45.1667;-74.2;1324;33
+Mayerthorpe;AB;Alberta;53.9503;-115.1336;1320;302.2
+Saint-Louis-du-Ha! Ha!;QC;Quebec;47.67;-68.98;1318;11.7
+Powerview-Pine Falls;MB;Manitoba;50.5661;-96.1981;1316;262
+Baie Verte;NL;Newfoundland and Labrador;49.9167;-56.1833;1313;3.5
+Saint-Edouard;QC;Quebec;45.2333;-73.5167;1312;24.8
+Charlo;NB;New Brunswick;48;-66.32;1310;41.9
+Hillsborough;NB;New Brunswick;45.9052;-64.7652;1308;4.3
+Bruederheim;AB;Alberta;53.8042;-112.9278;1308;183.8
+Burgeo;NL;Newfoundland and Labrador;47.6;-57.6333;1307;41.7
+Wadena;SK;Saskatchewan;51.9458;-103.8014;1306;449.5
+Richmond;NB;New Brunswick;46.0776;-67.7248;1303;5
+Swan Hills;AB;Alberta;54.7106;-115.4133;1301;49.8
+Wilkie;SK;Saskatchewan;52.4167;-108.7;1301;137.3
+Saint-Leonard;NB;New Brunswick;47.1625;-67.925;1300;249.2
+Riviere-Bleue;QC;Quebec;47.4333;-69.05;1299;7.5
+Noyan;QC;Quebec;45.0667;-73.3;1297;29
+Ile-a-la-Crosse;SK;Saskatchewan;55.45;-107.8833;1296;54.4
+Landmark;MB;Manitoba;49.6711;-96.8179;1292;433.4
+Saint-Hugues;QC;Quebec;45.8;-72.8667;1292;15.4
+Chisholm;ON;Ontario;46.1;-79.2333;1291;6.2
+Sainte-Anne-du-Sault;QC;Quebec;46.1733;-72.1415;1290;21.6
+La Conception;QC;Quebec;46.15;-74.7;1287;9.9
+Saint-Valere;QC;Quebec;46.0667;-72.1;1286;11.9
+Sorrento;BC;British Columbia;50.8832;-119.4782;1285;108.3
+Lameque;NB;New Brunswick;47.7925;-64.6532;1285;102.8
+Thessalon;ON;Ontario;46.25;-83.55;1279;284.6
+L'Isle-aux-Coudres;QC;Quebec;47.4;-70.3833;1279;42.5
+Nobleford;AB;Alberta;49.8822;-113.0531;1278;802.6
+Larouche;QC;Quebec;48.45;-71.5167;1277;15.1
+South Qu'Appelle No. 157;SK;Saskatchewan;50.5389;-104.0141;1275;1.4
+Elton;MB;Manitoba;49.975;-99.8658;1273;2.2
+Lorrainville;QC;Quebec;47.3613;-79.3382;1272;14.5
+Conestogo;ON;Ontario;43.5441;-80.4997;1270;595.5
+Upham;NB;New Brunswick;45.5083;-65.6618;1269;6.7
+St.-Charles;ON;Ontario;46.3422;-80.4497;1269;3.9
+Sainte-Lucie-des-Laurentides;QC;Quebec;46.13;-74.18;1269;11.1
+Saint-Alexis;QC;Quebec;45.9333;-73.6167;1267;29.2
+Gillam;MB;Manitoba;56.3472;-94.7078;1265;0.6
+Roxton Falls;QC;Quebec;45.5667;-72.5167;1265;259.1
+Montcalm;MB;Manitoba;49.1775;-97.3247;1260;2.7
+Clarendon;QC;Quebec;45.65;-76.5167;1256;3.8
+Mervin No. 499;SK;Saskatchewan;53.5455;-108.8762;1256;0.8
+Saint-Ludger;QC;Quebec;45.75;-70.7;1255;9.8
+Coldwell;MB;Manitoba;50.6389;-98.0417;1254;1.4
+Saint-Arsene;QC;Quebec;47.9167;-69.4333;1253;17.7
+Racine;QC;Quebec;45.5;-72.25;1252;11.8
+Saint-Majorique-de-Grantham;QC;Quebec;45.9333;-72.5833;1251;21.6
+Saint-Zenon;QC;Quebec;46.55;-73.8167;1250;2.7
+Saint-Armand;QC;Quebec;45.0333;-73.05;1248;15.1
+Saint-Edouard-de-Lotbiniere;QC;Quebec;46.5667;-71.8333;1248;12.7
+Alonsa;MB;Manitoba;50.9794;-99.0796;1247;0.4
+Listuguj;QC;Quebec;48.0609;-66.7491;1241;28
+Bowden;AB;Alberta;51.9306;-114.0256;1240;442.8
+St. Joseph;ON;Ontario;46.2667;-84;1240;9.3
+Osler;SK;Saskatchewan;52.37;-106.54;1237;796.5
+Saint-Hubert-de-Riviere-du-Loup;QC;Quebec;47.8167;-69.15;1235;6.4
+Saint-Jude;QC;Quebec;45.7667;-72.9833;1235;16
+Dildo;NL;Newfoundland and Labrador;47.5685;-53.5471;1234;152
+La Minerve;QC;Quebec;46.25;-74.9333;1234;4.4
+Lanigan;SK;Saskatchewan;51.85;-105.0333;1233;165.2
+Lajord No. 128;SK;Saskatchewan;50.1965;-104.2507;1232;1.3
+Moonbeam;ON;Ontario;49.35;-82.15;1231;5.2
+Notre-Dame-des-Pins;QC;Quebec;46.1833;-70.7167;1227;51.2
+Saint-Alban;QC;Quebec;46.7167;-72.0833;1225;8.2
+Saint-Pierre-les-Becquets;QC;Quebec;46.5;-72.2;1223;25.6
+Arborg;MB;Manitoba;50.9075;-97.2182;1222;611
+Vauxhall;AB;Alberta;50.0689;-112.0975;1222;449.4
+Bayfield;ON;Ontario;43.5615;-81.6983;1218;439.9
+Beaver River;SK;Saskatchewan;54.3531;-109.5575;1216;0.5
+Irricana;AB;Alberta;51.3189;-113.6106;1216;376.1
+Labrecque;QC;Quebec;48.6667;-71.5333;1215;7.9
+New Bandon;NB;New Brunswick;47.6912;-65.29;1214;3.4
+Wemotaci;QC;Quebec;47.9219;-73.7872;1213;38.5
+Sainte-Henedine;QC;Quebec;46.55;-70.9833;1212;23.6
+L'Anse-Saint-Jean;QC;Quebec;48.2333;-70.2;1208;2.4
+Bassano;AB;Alberta;50.7833;-112.4667;1206;231.2
+Parrsboro;NS;Nova Scotia;45.3998;-64.3312;1205;81.4
+Kaleden;BC;British Columbia;49.3926;-119.5955;1203;278.7
+St. George's;NL;Newfoundland and Labrador;48.4275;-58.4778;1203;46.6
+Fort Simpson;NT;Northwest Territories;61.8082;-121.3199;1202;15.3
+Akwesasne;QC;Quebec;45.0155;-74.5769;1202;48.4
+L'Avenir;QC;Quebec;45.7667;-72.3;1202;12.4
+Ignace;ON;Ontario;49.4167;-91.6667;1202;16.5
+Claremont;ON;Ontario;43.9741;-79.1316;1202;567.5
+Teulon;MB;Manitoba;50.3858;-97.2611;1201;372.3
+Peel;NB;New Brunswick;46.4058;-67.5278;1196;10.6
+Musquash;NB;New Brunswick;45.1836;-66.3514;1194;5.1
+Notre-Dame-du-Portage;QC;Quebec;47.7667;-69.6167;1193;29.9
+St. Lawrence;NL;Newfoundland and Labrador;46.9244;-55.3928;1192;33.6
+Oxford;NS;Nova Scotia;45.7306;-63.8733;1190;110.6
+Minto-Odanah;MB;Manitoba;50.2406;-99.8056;1189;1.6
+St. Alban's;NL;Newfoundland and Labrador;47.8753;-55.8414;1186;56.9
+Saint James;NB;New Brunswick;45.3822;-67.3427;1186;2.1
+Saint-Norbert-d'Arthabaska;QC;Quebec;46.1;-71.8167;1185;11.4
+Manning;AB;Alberta;56.9142;-117.6272;1183;291.9
+Glenella-Lansdowne;MB;Manitoba;50.4163;-99.2097;1181;0.9
+Saint-Hilarion;QC;Quebec;47.5667;-70.4;1181;11.9
+Saint-Simeon;QC;Quebec;48.0667;-65.5667;1179;20.9
+Saint-Barnabe;QC;Quebec;46.4;-72.8833;1179;20
+Sainte-Felicite;QC;Quebec;48.9;-67.3333;1175;12.9
+Two Borders;MB;Manitoba;49.2668;-101.1124;1175;0.5
+Queensbury;NB;New Brunswick;45.9918;-67.0632;1174;3.9
+Bury;QC;Quebec;45.4667;-71.5;1174;4.9
+Lac-Bouchette;QC;Quebec;48.25;-72.18;1174;1.3
+Saint-Lazare-de-Bellechasse;QC;Quebec;46.65;-70.8;1172;13.6
+Saint-Michel-du-Squatec;QC;Quebec;47.88;-68.72;1171;3.2
+Saint-Joachim-de-Shefford;QC;Quebec;45.45;-72.5333;1171;9.2
+St-Pierre-Jolys;MB;Manitoba;49.4403;-96.9844;1170;440.5
+Grand-Remous;QC;Quebec;46.6167;-75.9;1168;3.3
+Saint-Gabriel-de-Rimouski;QC;Quebec;48.4209;-68.1791;1167;9.2
+Armstrong;ON;Ontario;47.7083;-79.825;1166;12.9
+Rogersville;NB;New Brunswick;46.7167;-65.4167;1166;161.9
+Langenburg;SK;Saskatchewan;50.8333;-101.7;1165;337.1
+Sainte-Marie-Salome;QC;Quebec;45.9333;-73.5;1164;34.5
+Moose Jaw No. 161;SK;Saskatchewan;50.4433;-105.5091;1163;1.5
+Saint-Cyprien;QC;Quebec;47.9;-69.0167;1163;8.4
+Maidstone;SK;Saskatchewan;53.092;-109.294;1156;233.5
+Tres-Saint-Sacrement;QC;Quebec;45.1833;-73.85;1155;11.7
+Battle River No. 438;SK;Saskatchewan;52.7343;-108.4452;1154;1.1
+Miltonvale Park;PE;Prince Edward Island;46.318;-63.237;1153;32.4
+McAdam;NB;New Brunswick;45.5944;-67.3258;1151;80.6
+Saints-Anges;QC;Quebec;46.4167;-70.8833;1149;16.6
+Saint-Urbain-Premier;QC;Quebec;45.22;-73.73;1148;21.6
+Centreville-Wareham-Trinity;NL;Newfoundland and Labrador;48.9879;-53.9069;1147;30.8
+Alberton;PE;Prince Edward Island;46.8167;-64.0667;1145;253.5
+Winnipeg Beach;MB;Manitoba;50.5058;-96.9742;1145;295.9
+Sainte-Agathe-de-Lotbiniere;QC;Quebec;46.3833;-71.4167;1145;6.9
+Salmo;BC;British Columbia;49.1942;-117.2778;1141;466.2
+Kipling;SK;Saskatchewan;50.1015;-102.6324;1140;396.5
+Sagamok;ON;Ontario;46.1529;-82.2072;1140;11.6
+Trecesson;QC;Quebec;48.65;-78.3167;1138;5.8
+Tara;ON;Ontario;44.4793;-81.1445;1138;470.3
+Grande-Vallee;QC;Quebec;49.2167;-65.1333;1137;7.9
+Bertrand;NB;New Brunswick;47.7622;-65.0686;1137;24.5
+Newcastle;NB;New Brunswick;47.1725;-65.5551;1136;2
+Mont-Carmel;QC;Quebec;47.4397;-69.8586;1136;2.7
+Saint Martins;NB;New Brunswick;45.4563;-65.4395;1132;1.8
+Saint-Eugene;QC;Quebec;45.8;-72.7;1131;14.9
+Notre-Dame-des-Neiges;QC;Quebec;48.1167;-69.1667;1129;12
+Saint-Andre;NB;New Brunswick;47.1392;-67.7444;1129;8.8
+Centreville;NS;Nova Scotia;45.13;-64.5224;1129;477.5
+Roland;MB;Manitoba;49.3547;-97.8997;1129;2.3
+Saint-Leon-de-Standon;QC;Quebec;46.4833;-70.6167;1128;8.2
+Saint-Modeste;QC;Quebec;47.8333;-69.4;1128;10.3
+Carnduff;SK;Saskatchewan;49.167;-101.783;1126;498.2
+Carling;ON;Ontario;45.4333;-80.2167;1125;4.5
+Eckville;AB;Alberta;52.3622;-114.3614;1125;703.3
+Nain;NL;Newfoundland and Labrador;56.5422;-61.6928;1125;11.9
+Hillsburgh;ON;Ontario;43.7914;-80.1354;1124;384.9
+Foam Lake;SK;Saskatchewan;51.65;-103.5333;1123;189.4
+Sainte-Sabine;QC;Quebec;45.2333;-73.0167;1120;20.3
+Saint-Maxime-du-Mont-Louis;QC;Quebec;49.2333;-65.7333;1118;4.8
+Blanc-Sablon;QC;Quebec;51.4167;-57.1333;1118;4.5
+Cobalt;ON;Ontario;47.4;-79.6833;1118;776
+Gravelbourg;SK;Saskatchewan;49.874;-106.555;1116;346
+South River;ON;Ontario;45.8417;-79.375;1114;268.3
+Hudson Bay No. 394;SK;Saskatchewan;53.0295;-102.3122;1114;0.1
+McKellar;ON;Ontario;45.4833;-79.85;1111;6.1
+Frelighsburg;QC;Quebec;45.0461;-72.8106;1111;9
+Buffalo Narrows;SK;Saskatchewan;55.8769;-108.5244;1110;16.2
+Ayer's Cliff;QC;Quebec;45.1667;-72.05;1109;197.9
+Les Mechins;QC;Quebec;49;-66.9833;1107;2.5
+Sainte-Marguerite;QC;Quebec;46.5167;-70.9333;1107;12.9
+Saint-Claude;QC;Quebec;45.6667;-71.9833;1106;9.3
+Air Ronge;SK;Saskatchewan;55.0872;-105.3318;1106;184.3
+Chipman;NB;New Brunswick;46.171;-65.884;1104;58
+Girardville;QC;Quebec;49;-72.55;1100;8.9
+Saint-Bruno-de-Guigues;QC;Quebec;47.4667;-79.4333;1100;8.8
+Grenfell;SK;Saskatchewan;50.4167;-102.9167;1099;347
+Dorchester;NB;New Brunswick;45.9016;-64.5161;1096;189.3
+South Algonquin;ON;Ontario;45.4967;-78.0239;1096;1.3
+Windermere;BC;British Columbia;50.4856;-115.9948;1092;104
+Saint-Narcisse-de-Beaurivage;QC;Quebec;46.4833;-71.2333;1091;17.6
+Saint-Rene-de-Matane;QC;Quebec;48.7;-67.3833;1089;4.3
+Sainte-Jeanne-d'Arc;QC;Quebec;48.8575;-72.0939;1089;4
+Plaisance;QC;Quebec;45.6167;-75.1167;1088;30.1
+Roxton-Sud;QC;Quebec;45.5521;-72.5265;1086;7.3
+St. Louis No. 431;SK;Saskatchewan;52.8277;-105.7873;1086;1.4
+Youbou;BC;British Columbia;48.8562;-124.1731;1086;122.8
+Duchess;AB;Alberta;50.7333;-111.9;1085;553.4
+Saint-Frederic;QC;Quebec;46.3;-70.9667;1085;14.9
+Viking;AB;Alberta;53.0953;-111.7769;1083;292.5
+Sioux Narrows-Nestor Falls;ON;Ontario;49.4;-94.08;1082;0.5
+Whitecourt;AB;Alberta;54.1417;-115.6833;1082;386
+Repulse Bay;NU;Nunavut;66.5628;-86.3186;1082;2.6
+Montreal-Est;QC;Quebec;45.63;-73.52;1082;299.4
+King;ON;Ontario;44.0463;-79.6044;1082;73.6
+Regina Beach;SK;Saskatchewan;50.79;-104.99;1081;462.4
+Saint-Patrice-de-Beaurivage;QC;Quebec;46.4167;-71.2333;1080;12.6
+Ootischenia;BC;British Columbia;49.2916;-117.6323;1080;135.4
+Hensall;ON;Ontario;43.4345;-81.504;1078;569
+Bentley;AB;Alberta;52.4667;-114.05;1078;482.2
+Durham;NB;New Brunswick;47.7631;-66.0849;1076;2.6
+Sainte-Marthe;QC;Quebec;45.4;-74.3;1075;13.5
+Notre-Dame-du-Nord;QC;Quebec;47.6;-79.4833;1075;14.3
+Pinehouse;SK;Saskatchewan;55.5136;-106.5986;1074;142.9
+Saint-Aime-des-Lacs;QC;Quebec;47.6833;-70.3;1073;11.6
+Lac-Drolet;QC;Quebec;45.72;-70.85;1071;8.6
+Preeceville;SK;Saskatchewan;51.958;-102.6673;1070;0.7
+Maple Creek No. 111;SK;Saskatchewan;49.8044;-109.6508;1068;0.3
+Harbour Main-Chapel's Cove-Lakeview;NL;Newfoundland and Labrador;47.4337;-53.1458;1067;50.6
+Saint-Wenceslas;QC;Quebec;46.1667;-72.3333;1064;13.3
+Weyburn No. 67;SK;Saskatchewan;49.6535;-103.8348;1064;1.3
+Birch Hills;SK;Saskatchewan;52.9833;-105.4333;1064;468.4
+Wedgeport;NS;Nova Scotia;43.7323;-65.9797;1061;109.3
+Kerrobert;SK;Saskatchewan;51.92;-109.1272;1061;141.7
+Havelock;NB;New Brunswick;45.9523;-65.3885;1061;3
+Eston;SK;Saskatchewan;51.15;-108.75;1061;390.3
+Sainte-Genevieve-de-Batiscan;QC;Quebec;46.5333;-72.3333;1060;10.8
+Saint-Justin;QC;Quebec;46.25;-73.0833;1060;13.5
+Saint-Norbert;QC;Quebec;46.1667;-73.3167;1059;14.1
+Schreiber;ON;Ontario;48.8167;-87.2667;1059;28.8
+Trochu;AB;Alberta;51.8236;-113.2328;1058;381.1
+Botsford;NB;New Brunswick;46.1145;-63.9804;1058;3.5
+Riviere-Ouelle;QC;Quebec;47.4333;-70.0167;1058;18.6
+Greenwich;NB;New Brunswick;45.5112;-66.1229;1058;9.2
+Stukely-Sud;QC;Quebec;45.3167;-72.4167;1058;15.8
+Saint-Georges-de-Clarenceville;QC;Quebec;45.0667;-73.25;1056;16.6
+Sainte-Therese-de-Gaspe;QC;Quebec;48.4167;-64.4167;1055;31.5
+Beachburg;ON;Ontario;45.7303;-76.8559;1054;242.8
+Desbiens;QC;Quebec;48.4167;-71.95;1053;101.1
+Clyde River;NU;Nunavut;70.4632;-68.4822;1053;9.9
+La Macaza;QC;Quebec;46.3667;-74.7667;1053;6.5
+Souris;PE;Prince Edward Island;46.3554;-62.2542;1053;303.7
+Kindersley No. 290;SK;Saskatchewan;51.4894;-109.0979;1049;0.5
+Laird;ON;Ontario;46.3833;-84.0667;1047;10.2
+Falher;AB;Alberta;55.7372;-117.2014;1047;376.4
+Saint-Vallier;QC;Quebec;46.8833;-70.8167;1046;23.4
+Coleraine;QC;Quebec;45.9649;-71.3734;1043;249.9
+Melita;MB;Manitoba;49.2681;-100.9958;1042;342.7
+Noonan;NB;New Brunswick;45.9544;-66.4868;1042;13.7
+Sainte-Petronille;QC;Quebec;46.85;-71.1333;1041;227.2
+Delisle;SK;Saskatchewan;51.9254;-107.1333;1038;310.2
+Bristol;QC;Quebec;45.5333;-76.4667;1036;5
+Mahone Bay;NS;Nova Scotia;44.4489;-64.3819;1036;332.1
+Waldheim;SK;Saskatchewan;52.65;-106.6167;1035;525.5
+Saint-Sylvestre;QC;Quebec;46.3667;-71.2333;1035;7.1
+Taloyoak;NU;Nunavut;69.5554;-93.4972;1029;27.3
+Onoway;AB;Alberta;53.7011;-114.1981;1029;310.3
+Saint-Stanislas;QC;Quebec;46.6167;-72.4;1029;11.5
+Malpeque;PE;Prince Edward Island;46.5;-63.6667;1029;8.1
+Plantagenet;ON;Ontario;45.5321;-74.9956;1027;260.5
+Longue-Rive;QC;Quebec;48.55;-69.25;1026;3.3
+Argyle;MB;Manitoba;49.3697;-99.1506;1025;1.3
+Davidson;SK;Saskatchewan;51.2667;-105.9667;1025;228.4
+Plaster Rock;NB;New Brunswick;46.8833;-67.3833;1023;336.1
+Wilmot;NB;New Brunswick;46.3463;-67.7099;1022;5.3
+Valemount;BC;British Columbia;52.8284;-119.2659;1021;197.6
+Saint-Leonard-de-Portneuf;QC;Quebec;46.8833;-71.9167;1019;7.2
+Alberta Beach;AB;Alberta;53.6767;-114.35;1018;507.1
+Saint-Narcisse-de-Rimouski;QC;Quebec;48.28;-68.43;1017;6.2
+Saint-Bonaventure;QC;Quebec;45.9667;-72.6833;1017;12.9
+Longlaketon No. 219;SK;Saskatchewan;50.9386;-104.6913;1016;1
+Papineau-Cameron;ON;Ontario;46.3;-78.7333;1016;1.8
+Assiginack;ON;Ontario;45.7333;-81.8;1013;4.5
+Brebeuf;QC;Quebec;46.0667;-74.6667;1012;27.9
+Hudson Hope;BC;British Columbia;56.0316;-121.9057;1012;1.1
+Prince;ON;Ontario;46.5333;-84.5;1010;11.8
+Baie-du-Febvre;QC;Quebec;46.13;-72.72;1010;10.4
+Durham-Sud;QC;Quebec;45.6667;-72.3333;1008;10.8
+Melbourne;QC;Quebec;45.58;-72.17;1004;5.8
+Nipawin No. 487;SK;Saskatchewan;53.2881;-104.0544;1004;1.1
+Duck Lake No. 463;SK;Saskatchewan;52.9596;-106.2089;1004;1
+Oyen;AB;Alberta;51.3522;-110.4739;1001;189.6
