@@ -5,14 +5,13 @@
 
 struct City {
     std::string name, province_id, province;
-    double      latitude, longitude;
-    int         population, population_density;
+    int         population;
+    double      population_density, latitude, longitude;
 
-    //Default constructor
     City()
         : name("N/A"), province_id("N/A"), province("N/A")
-        , latitude(0.0), longitude(0.0)
-        , population(0), population_density(0.0) 
+        , population(0)
+        , population_density(0.0), latitude(0.0), longitude(0.0)
     { }
 }; // struct City
 
