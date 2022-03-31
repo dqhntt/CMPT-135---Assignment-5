@@ -22,5 +22,36 @@
 			"//  - ${3:Remove this TODO when done.}"
 		],
 		"description": "Leave to-do notes for self or others."
+	},
+
+	"Insert boilerplate for unit tests": {
+		"prefix": "test",
+		"body": [
+			"#include \" \"",
+			"#include <cassert>",
+			"#include <iostream>",
+			"",
+			"void unit_test_something()",
+			"{",
+			"    cout << \"Testing \" << __func__ << \"() ...\\n\";",
+			"",
+			"    // TODO",
+			"",
+			"    cout << \"... \" << __func__ << \"() passed.\\n\";",
+			"}",
+			"",
+			"int main()",
+			"{",
+			"    cout << \"TEST SUITE:\\n\"",
+			"         << \"  File: \" << __FILE__ << \"\\n\"",
+			"         << \"  Date: \" << __DATE__ << \"\\n\"",
+			"         << \"  Time: \" << __TIME__ << \"\\n\";",
+			"",
+			"    // TODO",
+			"",
+			"    unit_test_something();",
+			"}"
+		],
+		"description": "Insert templates for unit tests"
 	}
 }
