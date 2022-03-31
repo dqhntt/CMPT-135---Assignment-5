@@ -6,7 +6,6 @@ AlignConsecutiveDeclarations: true
 AlignTrailingComments: true
 BreakBeforeBraces: Custom
 BraceWrapping:
-  AfterFunction: true
   SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
