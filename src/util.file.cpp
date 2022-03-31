@@ -10,8 +10,7 @@ const int  BIG_NUMBER = 2147483647;
 const int  ESTIMATED_DB_SIZE = 1750;
 const char SEPARATOR = ';';
 
-vector<City> util::file::read_data(const string& filename, int skip_lines)
-{
+vector<City> util::file::read_data(const string& filename, int skip_lines) {
     ifstream file(filename);
     if (!file) {
         cmpt::error("Error loading data from file: " + filename);
@@ -49,10 +48,9 @@ vector<City> util::file::read_data(const string& filename, int skip_lines)
         next = file.peek();
     } // while
     return data;
-}
+} // read_data
 
-void util::file::write_data(const vector<City>& data, const string& filename, int precision)
-{
+void util::file::write_data(const vector<City>& data, const string& filename, int precision) {
     ofstream file(filename);
     if (!file) {
         cmpt::error("Error writing data to file: " + filename);
@@ -69,4 +67,4 @@ void util::file::write_data(const vector<City>& data, const string& filename, in
              << city.population_density << "\n";
     } // for
     file.flush(); // Write buffer to file.
-}
+} // write_data
