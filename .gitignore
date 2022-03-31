@@ -35,3 +35,5 @@ docs/html/
 *.exe
 *.out
 *.app
+*.test
+src/main

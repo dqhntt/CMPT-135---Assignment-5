@@ -6,12 +6,12 @@
 #     - Modified from the original makefile by Toby Donalson.
 #     - https://makefiletutorial.com/#pattern-rules
 #     - https://nullprogram.com/blog/2017/08/20/
+#     - http://make.mad-scientist.net/papers/advanced-auto-dependency-generation/#output
 #     - https://www.gnu.org/software/make/manual/html_node/Makefiles.html
 #     - https://www.gnu.org/software/make/manual/html_node/Catalogue-of-Rules.html
-#     - https://www.gnu.org/software/make/manual/html_node/Special-Targets.html
 #     - https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
-#     - https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
 #     - https://www.gnu.org/software/make/manual/html_node/Pattern-Match.html
+#     - http://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html
 #
 ###################################################################################################
 
@@ -77,16 +77,16 @@ $(TESTS): %.test : %.test.o $(NO_MAIN_SRCS:.cpp=.o)
 check:
 	for TEST in $(TESTS); do ./$$TEST; done;
 
-check-valgrind:
-	for TEST in $(TESTS); do valgrind ./$$TEST; done;
+check-main:
+	valgrind ./main
 
 run:
 	./main
 
-clean: clean-bin clean-build clean-tests
+clean: clean-main clean-build clean-tests
 
-clean-bin:
-	rm -f main $(TESTS)
+clean-main:
+	rm -f main
 
 clean-build:
 	rm -f *.d *.o
