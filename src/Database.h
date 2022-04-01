@@ -69,6 +69,7 @@ public:
     vector<City> cities_in_number_range(const Field& field, double range_low, double range_high) const;
     vector<City> cities_matching_exact_number(const Field& field, double target_num) const;
 
+    //Checks if a city exists in the database
     bool exists_record(const City& city) const;
 
     // Add a new city to the database
@@ -84,6 +85,9 @@ public:
     // to list all records in alphabetical order.
 
     void sort_cities(const Field& field, bool reversed_mode);
+
+    //Gets the underlying city in the class. 
+    vector<City> get_cities() const;
 
 private:
     std::string       _db_filename;

@@ -175,8 +175,7 @@ void Database::delete_cities(const vector<City>& cities){
     }
 }
 
-int main(){
-    Database test_data;
-
-    return 0;
+//Returns the underlying _cities vector
+vector<City> Database::get_cities() const{
+    return _cities;
 }
