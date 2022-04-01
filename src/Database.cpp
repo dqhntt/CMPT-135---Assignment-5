@@ -135,7 +135,6 @@ void Database::sort_cities(const Field& field, bool reversed_mode){
     }
 }
 
-
 bool Database::exists_record(const City& city) const{
     for(City c : _cities){
         //if the city is already in the list
