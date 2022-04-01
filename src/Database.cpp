@@ -9,7 +9,7 @@ using namespace std;
 Database::Database(const string& db_filename)
     : _db_filename(db_filename)
     , _cities(util::file::read_data(db_filename))
-{ }
+{}
 
 Database::~Database() // Destructor must never let exception escape.
 {
@@ -33,7 +33,6 @@ void Database::open(const string& target_filename)
     }
 }
 
-// TODO
 
 //////////////////////////////////////////////////////////////////////////////////////
 //Finds the target data by the according data types and returns the index
