@@ -95,4 +95,8 @@ private:
 }; // class Database
 
 
+<<<<<<< Updated upstream
 #endif // DATABASE_H
+=======
+#endif // DATABASE_H
+>>>>>>> Stashed changes

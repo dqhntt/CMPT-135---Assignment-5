@@ -11,8 +11,13 @@ struct City {
     //Default constructor
     City()
         : name("N/A"), province_id("N/A"), province("N/A")
+<<<<<<< Updated upstream
         , latitude(0.0), longitude(0.0)
         , population(0), population_density(0.0) 
+=======
+        , population(0)
+        , population_density(0.0), latitude(0.0), longitude(0.0)
+>>>>>>> Stashed changes
     { }
 }; // struct City
 
