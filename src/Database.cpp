@@ -100,7 +100,7 @@ vector<City> Database::cities_matching_exact_number(const Field& field, double t
 
 //Helper function made for sorting the vector<City>. 
 //The comparison logic is depending on the field
-bool comparison(const City& city1 , const City& city2, const Field& field){
+bool less_than(const City& city1 , const City& city2, const Field& field){
     switch(field){
         case Field::city_name:
             return (city1.name < city2.name);
@@ -117,7 +117,7 @@ bool comparison(const City& city1 , const City& city2, const Field& field){
         case Field::population_density:
             return (city1.population_density < city2.population_density);
         default: 
-            cmpt::error("bool comparison: Invalid field.\n");
+            cmpt::error("bool less_than: Invalid field.\n");
     }
     return true; //Never going to reach this line
 }
@@ -128,10 +128,10 @@ bool comparison(const City& city1 , const City& city2, const Field& field){
 void Database::sort_cities(const Field& field, bool reversed_mode){
     if(reversed_mode){ //the order is reversed, we are sorting in descending order
         std::sort(_cities.begin(), _cities.end(),
-            [field](const City& c1 , const City& c2) -> bool{return !comparison(c1,c2,field);});
+            [field](const City& c1 , const City& c2) -> bool{return !less_than(c1,c2,field);});
     } else{// sorting in ascending order
         std::sort(_cities.begin(), _cities.end(),
-            [field](const City& c1 , const City& c2) -> bool{return comparison(c1,c2,field);});
+            [field](const City& c1 , const City& c2) -> bool{return less_than(c1,c2,field);});
     }
 }
 
