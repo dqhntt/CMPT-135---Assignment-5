@@ -174,6 +174,6 @@ void Database::delete_cities(const vector<City>& cities){
 }
 
 //Returns the underlying _cities vector
-vector<City> Database::get_cities() const{
+const vector<City>& Database::get_cities() const {
     return _cities;
 }
