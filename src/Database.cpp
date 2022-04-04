@@ -70,7 +70,7 @@ vector<City> Database::cities_matching_string(const Field& field, bool substring
 //
 vector<City> Database::cities_in_number_range(const Field& field, double range_low, double range_high) const{
     vector<City> result;
-    for(City c : _cities){
+    for(const City& c : _cities){
         double target;
         //Choose the target depending on data type
         if(field == Field::latitude){
@@ -135,13 +135,7 @@ void Database::sort_cities(const Field& field, bool reversed_mode){
 }
 
 bool Database::exists_record(const City& city) const{
-    for(City c : _cities){
-        //if the city is already in the list
-        if(c == city){
-            return true;
-        }
-    }
-    return false;
+    return find(_cities.begin(), _cities.end(), city) != _cities.end();
 }
 
 //Add a new city to the database
@@ -153,27 +147,17 @@ void Database::add_city(const City& city){
 
 //Delete a city from database
 void Database::delete_city(const City& city){
-    int target_index = 0;
-    while(target_index < _cities.size()){
-        if(_cities[target_index] == city){
-            _cities.erase(_cities.begin() + target_index);
-            return;
-        }
-        target_index++;
-    }
-    //if the loop is finished, that means we did not find the target 
-    //print a message to show users theres an error
-    cmpt::error("Unable to delete because the city is not in the list.\n");
+    _cities.erase(remove(_cities.begin(), _cities.end(), city), _cities.end());
 }
 
 //Deletes a list of cities
 void Database::delete_cities(const vector<City>& cities){
-    for(City c : cities){
+    for(const City& c : cities){
         delete_city(c);
     }
 }
 
 //Returns the underlying _cities vector
-vector<City> Database::get_cities() const{
+const vector<City>& Database::get_cities() const{
     return _cities;
 }
