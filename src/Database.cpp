@@ -168,7 +168,7 @@ void Database::delete_city(const City& city){
 
 //Deletes a list of cities
 void Database::delete_cities(const vector<City>& cities){
-    for(City c : cities){
+    for(const City& c : cities) {
         delete_city(c);
     }
 }
