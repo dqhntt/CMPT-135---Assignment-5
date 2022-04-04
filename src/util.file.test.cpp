@@ -29,9 +29,9 @@ void database_format_test()
     for (const City& city : data) {
         assert(city.population >= 0);
         assert(city.population_density >= 0);
-        assert(!util::is_number(city.name));
-        assert(!util::is_number(city.province));
-        assert(!util::is_number(city.province_id));
+        assert(!util::parse::is_valid_num(city.name));
+        assert(!util::parse::is_valid_num(city.province));
+        assert(!util::parse::is_valid_num(city.province_id));
     }
     util::file::write_data(data, filename);
 
