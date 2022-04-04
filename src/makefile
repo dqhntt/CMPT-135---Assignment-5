@@ -67,11 +67,6 @@ tests: $(TESTS)
 # Thus, all files *.test.cpp must have `int main()` defined.
 # Using make's static pattern rule of the form:
 #   target : target_pattern ... : prerequisite_pattern ...
-# make automatically builds all required .o files and link them to create .test.
-# e.g. To create each executable file, e.g, Database.test, with % being Database,
-#      make first builds only Database.o and all mentioned .o files,
-#      then it links only Database.o but with all other .o files without `int main()`
-#      including all the implicit variables we defined.
 $(TESTS): %.test : %.test.o $(NO_MAIN_SRCS:.cpp=.o)
 
 check:
@@ -92,6 +87,6 @@ clean-build:
 	rm -f *.d *.o
 	
 clean-tests:
-	rm -f $(TESTS)
+	rm -f *.test
 
 -include $(DEPS)
