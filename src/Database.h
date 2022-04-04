@@ -6,7 +6,6 @@
 #include <vector>
 using namespace std;
 
-// TODO: Implement this class.
 
 enum class Field {
     city_name,
