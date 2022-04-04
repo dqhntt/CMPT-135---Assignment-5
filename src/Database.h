@@ -84,7 +84,7 @@ public:
     void sort_cities(const Field& field, bool reversed_mode);
 
     //Gets the underlying city in the class. 
-    vector<City> get_cities() const;
+    const vector<City>& get_cities() const;
 
 private:
     std::string       _db_filename;
