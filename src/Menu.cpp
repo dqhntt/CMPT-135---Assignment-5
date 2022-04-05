@@ -1,8 +1,7 @@
 #include "Menu.h"
 #include "cmpt_error.h"
 #include "util.parse.h"
-
-#include <ctime>
+#include "util.time.h"
 #include <iostream>
 using namespace std;
 
@@ -12,7 +11,25 @@ Menu::Menu()
 
 Menu::~Menu() {
     cout << "Saving data to file before exiting...\n"
-         << "Thanks for spending " << (time(nullptr) - _start_time) / 60.0 << " minutes with us!\n";
+         << "Thanks for spending " << (time(0) - _start_time) / 60.0 << " minutes with us!\n";
+}
+
+void Menu::print_records(const vector<City>& records) const {
+    using namespace util::parse;
+    cout << "\n"
+            "Here is a list of matching cities:\n"
+            "(Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
+            "Population-Density)"
+         << endl;
+    size_t count = 1;
+    for (const City& city : records) {
+        cout << count++ << ") \"" << city.name << "\";\n"
+             << "\"" << city.province << "\";\"" << city.province_id << "\";\"" << city.latitude
+             << "\";\"" << city.longitude << "\";\"" << city.population << "\";\""
+             << city.population_density << "\n";
+    }
+    cout << "\n"
+         << "Total = " << records.size() << " records." << endl;
 }
 
 void Menu::show_main_menu() const {
@@ -28,11 +45,11 @@ void Menu::show_main_menu() const {
             "\n";
 }
 
-Menu_Options Menu::get_input_option() const {
+Menu_Options Menu::get_input_option(int max_options) const {
     cout << "Enter the option number of your choice: ";
     string input;
     getline(cin, input);
-    Menu_Options option = util::parse::convert_to_menu_option(input);
+    Menu_Options option = util::parse::convert_to_menu_option(input, max_options);
     while (option == Menu_Options::invalid_option) {
         cout << "You entered an invalid option. Please try again: ";
         getline(cin, input);
@@ -43,7 +60,7 @@ Menu_Options Menu::get_input_option() const {
 
 void Menu::Add_records::show_guides() const {
     cout << "\n"
-            "Add a city\n"
+            "Add a City\n"
             "----------\n"
             "\n"
             "A city has a:\n"
@@ -63,26 +80,25 @@ void Menu::Add_records::show_guides() const {
 }
 
 // Request new string as needed until it doesn't contain ";".
-// Works just like std::getline with added abibility to request correct input.
-istream& getline_no_semicolon(istream& is, string& str) {
+// Works just like std::getline with added feature to request correct input.
+istream& getline_no_semicolon_and_trim(istream& is, string& str) {
     std::getline(is, str);
     while (str.find(';') != string::npos) {
         cout << "Semicolons are reserved for file formatting.\n"
              << "Please try again with no \";\" added: ";
         std::getline(is, str);
     }
+    util::parse::trim(str);
     return is;
 }
 
 void get_input_for_province_id(City& city) {
-    getline_no_semicolon(cin, city.province_id);
+    getline_no_semicolon_and_trim(cin, city.province_id);
     while (city.province_id.size() > city.province.size()) {
         cout << "Hmm... That's actually longer than: " << city.province << ".\n"
              << "Try entering a shorter one: ";
-        getline_no_semicolon(cin, city.province_id);
-        city.province_id = util::parse::trimmed(city.province_id);
+        getline_no_semicolon_and_trim(cin, city.province_id);
     }
-    city.province_id = util::parse::trimmed(city.province_id);
 }
 
 void get_input_for_latitude(City& city) {
@@ -138,12 +154,10 @@ void get_input_for_population_density(City& city) {
 void get_input_and_add_to(City& city, const Field& field) {
     switch (field) {
     case Field::city_name:
-        getline_no_semicolon(cin, city.name);
-        city.name = util::parse::trimmed(city.name);
+        getline_no_semicolon_and_trim(cin, city.name);
         break;
     case Field::province:
-        getline_no_semicolon(cin, city.province);
-        city.province = util::parse::trimmed(city.province);
+        getline_no_semicolon_and_trim(cin, city.province);
         break;
     case Field::province_id:
         get_input_for_province_id(city);
@@ -215,11 +229,95 @@ void print_record(const City& city) {
 }
 
 void Menu::Add_records::say_record_exists(const City& city) const {
-    cout << "This record already exists in the database.\n";
+    cout << "\n"
+         << "This record already exists in the database!\n";
     print_record(city);
 }
 
 void Menu::Add_records::say_record_added(const City& city) const {
-    cout << "This record has been successfully added to the database.\n";
+    cout << "\n"
+         << "This record has been successfully added to the database.\n";
     print_record(city);
+}
+
+void Menu::Find_records::show_guides() const {
+    cout << "\n"
+            "Find a City\n"
+            "-----------\n"
+            "\n"
+            "You can search by:\n"
+            "\n"
+            "(1) City name\n"
+            "(2) Province it's in\n"
+            "(3) Province code\n"
+            "(4) Latitude\n"
+            "(5) Longitude\n"
+            "(6) Population size\n"
+            "(7) Population density\n"
+            "\n"
+            "(8) Return to main menu\n"
+            "\n";
+}
+
+void Menu::By_string::show_guides() const {
+    cout << "\n"
+            "Searching by strings\n"
+            "--------------------\n"
+            "\n"
+            "You can search for exact matches or partial matches to your input.\n"
+            "\n"
+            "(1) Exact matches\n"
+            "(2) Partial matches\n"
+            "\n";
+}
+
+string Menu::By_string::get_input_string(const Menu_Options& option) const {
+    cout << "Enter a " << ((option == Menu_Options::one) ? "" : "sub") << "string to search for: ";
+    string input_str;
+    getline(cin, input_str);
+    return util::parse::trim(input_str);
+}
+
+void Menu::By_number::show_guides() const {
+    cout << "\n"
+            "Searching by numbers\n"
+            "--------------------\n"
+            "\n"
+            "You can search for exact matches or matches in a range of numbers.\n"
+            "\n"
+            "(1) Exact matches\n"
+            "(2) Matches in a range of numbers\n"
+            "\n";
+}
+
+Num_range_t Menu::By_number::get_input_number(const Menu_Options& option) const {
+    cout << "Enter a "
+         << ((option == Menu_Options::one) ? "number" : "range of numbers, one after the other,")
+         << " to search for: ";
+    string input_str;
+    // Get first number.
+    getline(cin, input_str);
+    while (!util::parse::is_valid_num(input_str)) {
+        cout << "Not a single number. Please try again: ";
+        getline(cin, input_str);
+    }
+    Num_range_t input_nums;
+    input_nums.low = stod(input_str);
+    // If only one number is desired.
+    if (option == Menu_Options::one) {
+        input_nums.high = input_nums.low;
+        return input_nums;
+    }
+    // Else get range.
+    cout << "End range: ";
+    getline(cin, input_str);
+    while (!util::parse::is_valid_num(input_str)) {
+        cout << "Not a single number. Please try again: ";
+        getline(cin, input_str);
+    }
+    input_nums.high = stod(input_str);
+    if (input_nums.high < input_nums.low) {
+        swap(input_nums.high, input_nums.low);
+    }
+    return input_nums;
 }
