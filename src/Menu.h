@@ -52,6 +52,17 @@ public:
     } find_records;
     class Delete_records {
     public:
+        void show_guides() const;
+        class By_string {
+        public:
+            void show_guides() const;
+            // TODO: Get input by field.
+        } by_string;
+        class By_number {
+        public:
+            void show_guides() const;
+            // TODO: Get input by field.
+        } by_number;
     } delete_records;
     class List_records {
     public:
