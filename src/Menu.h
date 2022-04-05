@@ -4,8 +4,8 @@
 #include "City.h"
 #include <vector>
 
-enum class Menu_Options { one, two, three, four, five, six, seven, eight, invalid_option };
-enum class YesNo_Options { yes, no, invalid_option };
+enum class Menu_Option { one, two, three, four, five, six, seven, eight, invalid_option };
+enum class YesNo_Option { yes, no, invalid_option };
 
 struct Num_range_t {
     double low {}, high {};
@@ -18,21 +18,22 @@ public:
 
     // Returns any possible Menu_Options up to max_options.
     // All other menu options result in invalid_option.
-    Menu_Options get_input_option(int max_options) const;
+    Menu_Option get_input_option(int max_options) const;
 
     void show_main_menu() const;
     void print_records(const std::vector<City>& records) const;
+    bool ask_if_user_wants_to_try_again() const;
 
     // Common sub-sub-menus.
     class By_string {
     public:
         void        show_guides() const;
-        std::string get_input_string(const Menu_Options& option) const;
+        std::string get_input_string(const Menu_Option& option) const;
     };
     class By_number {
     public:
         void        show_guides() const;
-        Num_range_t get_input_number(const Menu_Options& option) const;
+        Num_range_t get_input_numbers(const Menu_Option& option) const;
     };
 
     // Sub-menus:
@@ -40,7 +41,6 @@ public:
     public:
         void show_guides() const;
         City get_input() const;
-        bool ask_if_user_wants_to_try_again() const;
         void say_record_exists(const City& city) const;
         void say_record_added(const City& city) const;
     } add_records;

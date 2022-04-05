@@ -136,6 +136,7 @@ void Database::add_city(const City& city) { _cities.push_back(city); }
 
 // Delete a city from database
 void Database::delete_city(const City& city) {
+    // https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom
     _cities.erase(remove(_cities.begin(), _cities.end(), city), _cities.end());
 }
 

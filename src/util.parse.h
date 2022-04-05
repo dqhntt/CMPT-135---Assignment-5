@@ -7,19 +7,18 @@
 
 namespace util::parse {
 
-Menu_Options  convert_to_menu_option(const std::string& input, int max_options = 5);
-YesNo_Options convert_to_yesno_option(const std::string& input);
+Menu_Option  convert_to_menu_option(const std::string& input, int max_options = 5);
+YesNo_Option convert_to_yesno_option(const std::string& input);
 
 namespace ncurses {
-    Menu_Options  convert_to_menu_option(const std::string& input);
-    YesNo_Options convert_to_yesno_option(const std::string& input);
+    Menu_Option  convert_to_menu_option(const std::string& input);
+    YesNo_Option convert_to_yesno_option(const std::string& input);
 } // namespace ncurses
 
 inline std::string quote(const std::string& str) { return std::string("\"") + str + "\""; }
 const std::string& trim(std::string& str);
 std::string        trim(const std::string& str);
 std::string        to_lower(const std::string& str);
-std::string        retrieve_data(const City& city, const Field& field);
 bool               is_valid_DD_latitude(const std::string& str);
 bool               is_valid_DD_longitude(const std::string& str);
 

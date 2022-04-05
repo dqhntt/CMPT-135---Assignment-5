@@ -26,10 +26,11 @@ void Menu::print_records(const vector<City>& records) const {
         cout << count++ << ") \"" << city.name << "\";\n"
              << "\"" << city.province << "\";\"" << city.province_id << "\";\"" << city.latitude
              << "\";\"" << city.longitude << "\";\"" << city.population << "\";\""
-             << city.population_density << "\n";
+             << city.population_density << "\"\n";
     }
     cout << "\n"
-         << "Total = " << records.size() << " records." << endl;
+         << "Total = " << records.size() << " records.\n"
+         << endl;
 }
 
 void Menu::show_main_menu() const {
@@ -45,12 +46,12 @@ void Menu::show_main_menu() const {
             "\n";
 }
 
-Menu_Options Menu::get_input_option(int max_options) const {
+Menu_Option Menu::get_input_option(int max_options) const {
     cout << "Enter the option number of your choice: ";
     string input;
     getline(cin, input);
-    Menu_Options option = util::parse::convert_to_menu_option(input, max_options);
-    while (option == Menu_Options::invalid_option) {
+    Menu_Option option = util::parse::convert_to_menu_option(input, max_options);
+    while (option == Menu_Option::invalid_option) {
         cout << "You entered an invalid option. Please try again: ";
         getline(cin, input);
         option = util::parse::convert_to_menu_option(input);
@@ -199,12 +200,12 @@ City Menu::Add_records::get_input() const {
     return city;
 }
 
-YesNo_Options get_yesno_option() {
+YesNo_Option get_yesno_option() {
     cout << "Enter 'y' for Yes, 'n' for No: ";
     string input;
     getline(cin, input);
-    YesNo_Options option = util::parse::convert_to_yesno_option(input);
-    while (option == YesNo_Options::invalid_option) {
+    YesNo_Option option = util::parse::convert_to_yesno_option(input);
+    while (option == YesNo_Option::invalid_option) {
         cout << "Interesting choice.. Please try again: ";
         getline(cin, input);
         option = util::parse::convert_to_yesno_option(input);
@@ -212,9 +213,9 @@ YesNo_Options get_yesno_option() {
     return option;
 }
 
-bool Menu::Add_records::ask_if_user_wants_to_try_again() const {
+bool Menu::ask_if_user_wants_to_try_again() const {
     cout << "Would you like to try again?\n";
-    return (get_yesno_option() == YesNo_Options::yes);
+    return (get_yesno_option() == YesNo_Option::yes);
 }
 
 void print_record(const City& city) {
@@ -271,8 +272,8 @@ void Menu::By_string::show_guides() const {
             "\n";
 }
 
-string Menu::By_string::get_input_string(const Menu_Options& option) const {
-    cout << "Enter a " << ((option == Menu_Options::one) ? "" : "sub") << "string to search for: ";
+string Menu::By_string::get_input_string(const Menu_Option& option) const {
+    cout << "Enter a " << ((option == Menu_Option::one) ? "" : "sub") << "string to search for: ";
     string input_str;
     getline(cin, input_str);
     return util::parse::trim(input_str);
@@ -285,14 +286,14 @@ void Menu::By_number::show_guides() const {
             "\n"
             "You can search for exact matches or matches in a range of numbers.\n"
             "\n"
-            "(1) Exact matches\n"
+            "(1) Exact number matches\n"
             "(2) Matches in a range of numbers\n"
             "\n";
 }
 
-Num_range_t Menu::By_number::get_input_number(const Menu_Options& option) const {
+Num_range_t Menu::By_number::get_input_numbers(const Menu_Option& option) const {
     cout << "Enter a "
-         << ((option == Menu_Options::one) ? "number" : "range of numbers, one after the other,")
+         << ((option == Menu_Option::one) ? "number" : "range of numbers, one after the other,")
          << " to search for: ";
     string input_str;
     // Get first number.
@@ -304,7 +305,7 @@ Num_range_t Menu::By_number::get_input_number(const Menu_Options& option) const 
     Num_range_t input_nums;
     input_nums.low = stod(input_str);
     // If only one number is desired.
-    if (option == Menu_Options::one) {
+    if (option == Menu_Option::one) {
         input_nums.high = input_nums.low;
         return input_nums;
     }
