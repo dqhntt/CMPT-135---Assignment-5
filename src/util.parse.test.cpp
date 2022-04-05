@@ -26,12 +26,12 @@ void trim_test() {
     cout << "Testing " << __func__ << "() ...\n";
     using namespace util::parse;
 
-    assert(trimmed("") == "");
-    assert(trimmed("  ") == "");
-    assert(trimmed("-") == "-");
-    assert(trimmed(" don ") == "don");
-    assert(trimmed(" d o") == "d o");
-    assert(trimmed("So p ") == "So p");
+    assert(trim("") == "");
+    assert(trim("  ") == "");
+    assert(trim("-") == "-");
+    assert(trim(" don ") == "don");
+    assert(trim(" d o") == "d o");
+    assert(trim("So p ") == "So p");
 
     cout << "... " << __func__ << "() passed.\n";
 }
@@ -86,7 +86,11 @@ void parse_menu_test() {
     assert(convert_to_menu_option("3") == Menu_Options::three);
     assert(convert_to_menu_option("4") == Menu_Options::four);
     assert(convert_to_menu_option("5") == Menu_Options::five);
+    assert(convert_to_menu_option("8", 8) == Menu_Options::eight);
     assert(convert_to_menu_option("twenty-two") != Menu_Options::two);
+    assert(convert_to_menu_option("0") == Menu_Options::invalid_option);
+    assert(convert_to_menu_option("5", 4) == Menu_Options::invalid_option);
+    assert(convert_to_menu_option("6", 3) == Menu_Options::invalid_option);
 
     cout << "... " << __func__ << "() passed.\n";
 }
