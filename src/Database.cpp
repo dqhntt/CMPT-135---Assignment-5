@@ -152,14 +152,12 @@ void Database::delete_city(const City& city){
 
 //Deletes a list of cities
 void Database::delete_cities(const vector<City>& cities){
-<<<<<<< HEAD
     for(const City& c : cities){
         delete_city(c);
     }
 }
 
 //Returns the underlying _cities vector
-<<<<<<< HEAD
 const vector<City>& Database::get_cities() const{
     return _cities;
 }

@@ -14,6 +14,7 @@ struct City {
         , population_density(0.0), latitude(0.0), longitude(0.0)
     { }
 
+    
     bool operator ==(const City& c) const{
     return (name == c.name &&
             province == c.province &&
