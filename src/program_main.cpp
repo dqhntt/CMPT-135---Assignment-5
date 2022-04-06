@@ -40,61 +40,6 @@ int program_main() { // Menu controller.
         case Menu_Option::four:
             do_list_records_menu(menu, db);
             break;
-        // case Menu_Option::four: {
-        //     Menu_Option sub_menu_option = Menu_Option::invalid_option;
-        //     while (sub_menu_option != Menu_Option::eight) { // 8 = Return to main menu.
-        //         menu.list_records.show_guides();
-        //         sub_menu_option = menu.get_input_option(8);
-        //         switch (sub_menu_option) {
-        //         case Menu_Option::one:   // By city name.
-        //         case Menu_Option::two:   // By province.
-        //         case Menu_Option::three: // By province id.
-        //             do {
-        //                 menu.list_records.show_options_for_strings();
-        //                 const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
-        //                 if (sub_sub_menu_option == Menu_Option::three) {
-        //                     break; // To previous menu.
-        //                 }
-        //                 const bool reversed_alpha_mode = (sub_sub_menu_option ==
-        //                 Menu_Option::two); const Field field
-        //                     = (sub_menu_option == Menu_Option::one) ? Field::city_name
-        //                     : (sub_menu_option == Menu_Option::two) ? Field::province
-        //                                                             : Field::province_id;
-        //                 db.sort_cities(field, reversed_alpha_mode);
-        //                 menu.print_records(db.get_cities());
-        //                 quick_pause();
-        //             } while (menu.ask_if_user_wants_to_try_again());
-        //             break;
-        //         case Menu_Option::four:  // By latitude.
-        //         case Menu_Option::five:  // By longitude.
-        //         case Menu_Option::six:   // By population.
-        //         case Menu_Option::seven: // By population density.
-        //             do {
-        //                 menu.list_records.show_options_for_numbers();
-        //                 const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
-        //                 if (sub_sub_menu_option == Menu_Option::three) {
-        //                     break; // To previous menu.
-        //                 }
-        //                 const bool descending_mode = (sub_sub_menu_option == Menu_Option::two);
-        //                 const Field field
-        //                     = (sub_menu_option == Menu_Option::four) ? Field::latitude
-        //                     : (sub_menu_option == Menu_Option::five) ? Field::longitude
-        //                     : (sub_menu_option == Menu_Option::six)  ? Field::population
-        //                                                              : Field::population_density;
-        //                 db.sort_cities(field, descending_mode);
-        //                 menu.print_records(db.get_cities());
-        //                 quick_pause();
-        //             } while (menu.ask_if_user_wants_to_try_again());
-        //             break;
-        //         case Menu_Option::eight: // Return to main menu.
-        //             break;
-        //         default:
-        //             cmpt::error("Invalid / Unimplemented menu option.");
-        //         } // switch
-        //         quick_pause();
-        //     } // while
-        // } break;
-        // MENU #5 - Quit.
         case Menu_Option::five:
             break; // Quit program.
         default:
