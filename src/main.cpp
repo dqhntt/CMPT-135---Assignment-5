@@ -23,7 +23,6 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include "program_main.h"
-#include <ctime>
 #include <iostream>
 #include <stdexcept>
 
@@ -35,7 +34,7 @@ void reset_cin() {
 int main() {
     // Ensure cleanup in case of exception.
     try {
-        std::cout << "Choose terminal mode to run in.\n"
+        std::cout << "\nChoose terminal mode to run in.\n"
                      "\n"
                      "(1) Regular mode. [Stable]\n"
                      "(2) With ncurses. [Experimental]\n"
@@ -44,16 +43,7 @@ int main() {
         int mode = 0;
         std::cin >> mode;
         // Handle invalid input.
-        // Give user only 1 second to choose.
-        const time_t timer = time(0) + 1;
         while (!std::cin || (std::cin.peek() != '\n') || (mode < 1) || (mode > 2)) {
-            if (timer < time(0)) {
-                std::cout << "\n"
-                             "You took too long.\n"
-                             "Choosing regular mode...\n\a";
-                reset_cin();
-                return program_main();
-            }
             reset_cin();
             std::cout << "Invalid mode. Please try again: ";
             std::cin >> mode;
