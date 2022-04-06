@@ -1,3 +1,4 @@
+[![C/C++ CI](https://github.com/dqhntt/CMPT-135---Assignment-5/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/dqhntt/CMPT-135---Assignment-5/actions/workflows/c-cpp.yml)
 ## Final Project: A Database
 
 Your task is to create a **database** that can search, sort, and add/delete
