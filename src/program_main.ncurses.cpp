@@ -1,16 +1,12 @@
 #include "Database.h"
 #include "Menu.h"
 #include "program_main.h"
-#include "util.RAII.h"
-#include <ncurses.h>
-
-// #include < ...something... >
+#include "util.ncurses.h"
 
 using namespace std;
 
-int program_main_ncurses()
-{
-
+int program_main_ncurses() {
+    
     ///
     /// @todo Implement the program.
     ///
@@ -20,7 +16,7 @@ int program_main_ncurses()
     // From course webpage.
     //
     // initialize screen in curses mode
-    util::RAII::Ncurses nc;
+    const util::ncurses::Ncurses_RAII nc;
     // print to screen
     printw("Hello World!");
     // move the cursor to row 2, column 20
@@ -43,5 +39,5 @@ int program_main_ncurses()
     // read a character to pause the program
     getch();
 
-    return 0; // Success.
+    return EXIT_SUCCESS;
 }

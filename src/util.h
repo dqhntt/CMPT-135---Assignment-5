@@ -1,23 +1,11 @@
 #ifndef UTIL_H
 #define UTIL_H
 
+#include <utility>
+
 #include "util.file.h"
-#include "util.RAII.h"
-
-#include <string>
-
-namespace util {
-
-inline bool is_number(const std::string& str)
-{
-    try {
-        const double n = std::stod(str);
-        return (n == n); // NaN != NaN
-    } catch (...) {
-        return false;
-    }
-}
-
-} // namespace util
+#include "util.ncurses.h"
+#include "util.parse.h"
+#include "util.time.h"
 
 #endif // UTIL_H

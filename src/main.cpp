@@ -25,19 +25,31 @@
 #include "program_main.h"
 #include <iostream>
 #include <stdexcept>
-using std::cerr;
-using std::exception;
 
-// Wrapping program execution in try catch to ensure clean-ups are performed.
-int main()
-{
+int main() {
+    // Ensure cleanup in case of exception.
     try {
-        // Execute and return exit code.
-        return program_main();
-        // return program_main_ncurses();
-    } catch (const exception& e) {
-        cerr << "\n\n### EXCEPTION CAUGHT: " << e.what() << " ###\n\n\a";
+        std::cout << "Choose terminal mode to run in.\n"
+                     "\n"
+                     "(1) Regular mode. [Stable]\n"
+                     "(2) With ncurses. [Experimental]\n"
+                     "\n"
+                     "Enter your option: ";
+        int mode = 0;
+        std::cin >> mode;
+        // Handle invalid input.
+        while (!std::cin || (std::cin.peek() != '\n') || (mode < 1) || (mode > 2)) {
+            std::cin.clear();
+            std::cin.ignore(10000, '\n');
+            std::cout << "Invalid mode. Please try again: ";
+            std::cin >> mode;
+        }
+        std::cin.ignore(10000, '\n');
+        // Execute accordingly and return exit code.
+        return (mode == 2) ? program_main_ncurses() : program_main();
+    } catch (const std::exception& e) {
+        std::cerr << "\n\n### EXCEPTION CAUGHT: " << e.what() << " ###\n\n\a";
     } catch (...) {
-        cerr << "\n\n### UNKNOWN EXCEPTION OCCURRED. ###\n\n\a";
+        std::cerr << "\n\n### UNKNOWN EXCEPTION OCCURRED. ###\n\n\a";
     }
 }
