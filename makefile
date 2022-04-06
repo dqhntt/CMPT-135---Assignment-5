@@ -34,7 +34,8 @@
 
 main:
 # Call make main and make clean-build in ./src/Makefile
-	$(MAKE) -C ./src/ $@ clean-build
+	$(MAKE) -C ./src/ $@
+	$(MAKE) -C ./src/ clean-build
 
 all:
 # Call make all in ./src/Makefile
