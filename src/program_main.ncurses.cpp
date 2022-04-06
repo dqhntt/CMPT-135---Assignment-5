@@ -1,7 +1,6 @@
 #include "program_main.h"
 #include "Database.h"
-#include "Menu.h"
-#include "util.ncurses.h"
+#include "Menu.ncurses.h"
 
 using namespace std;
 
@@ -100,6 +99,8 @@ int program_main_ncurses() {
     // From course webpage.
     //
     // initialize screen in curses mode
+    //
+    // This RAII object eliminates the needs to call initscr() and endwin() manually.
     const util::ncurses::Ncurses_RAII nc;
     // // print to screen
     // printw("Hello World!");
