@@ -1,6 +1,10 @@
 #ifndef MENU_NCURSES_H
 #define MENU_NCURSES_H
 
+#include "util.ncurses.h" // ncurses library is included in this file.
+
+// #include < ... >
+
 namespace ncurses {
 
 class Menu {
