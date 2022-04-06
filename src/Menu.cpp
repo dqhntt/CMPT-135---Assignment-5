@@ -256,15 +256,8 @@ void Menu::Add_records::say_record_added(const City& city) const {
     print_single_record(city);
 }
 
-// Find mode == true, Delete mode == false.
-void show_search_guides_helper(bool find_records_mode) {
-    cout << "\n";
-    cout << (find_records_mode ? "Find" : "Delete") << " a City\n";
-    show_loading_bar(find_records_mode ? 11 : 13);
-    cout << "\n";
-    cout << "You can search " << (find_records_mode ? "" : "and delete ");
-    cout << "by:\n"
-            "\n"
+void show_menu_options_for_possible_fields() {
+    cout << "\n"
             "(1) City name\n"
             "(2) Province it's in\n"
             "(3) Province code\n"
@@ -278,7 +271,12 @@ void show_search_guides_helper(bool find_records_mode) {
 }
 
 void Menu::Find_records::show_guides() const {
-    show_search_guides_helper(true);
+    cout << "\n"
+            "Find a City\n";
+    show_loading_bar(11);
+    cout << "\n"
+            "You can find cities by:\n";
+    show_menu_options_for_possible_fields();
 }
 
 void Menu::By_string::show_guides() const {
@@ -289,16 +287,22 @@ void Menu::By_string::show_guides() const {
             "You can search for exact or partial matches to your input.\n"
             "Note: queries are case-sensitive, i.e., Van != van\n"
             "\n"
-            "(1) Exact string matches\n"
+            "(1) Exact matches\n"
             "(2) Partial/substring matches\n"
+            "\n"
+            "(3) Return to previous menu\n"
             "\n";
+}
+
+string get_input_string_trimmed() {
+    string input_str;
+    getline(cin, input_str);
+    return util::parse::trim(input_str);
 }
 
 string Menu::By_string::get_input_string(bool substr_mode) const {
     cout << "Enter a " << (substr_mode ? "sub" : "") << "string to search for: ";
-    string input_str;
-    getline(cin, input_str);
-    return util::parse::trim(input_str);
+    return get_input_string_trimmed();
 }
 
 void Menu::By_number::show_guides() const {
@@ -310,6 +314,8 @@ void Menu::By_number::show_guides() const {
             "\n"
             "(1) Exact number matches\n"
             "(2) Matches in a range of numbers\n"
+            "\n"
+            "(3) Return to previous menu\n"
             "\n";
 }
 
@@ -343,7 +349,12 @@ Range_t Menu::By_number::get_input_numbers(bool range_mode) const {
 }
 
 void Menu::Delete_records::show_guides() const {
-    show_search_guides_helper(false);
+    cout << "\n"
+            "Delete a City\n";
+    show_loading_bar(13);
+    cout << "\n"
+            "You can search and delete cities by:\n";
+    show_menu_options_for_possible_fields();
 }
 
 bool Menu::Delete_records::confirm_user_wants_to_delete() const {
@@ -357,5 +368,42 @@ void Menu::Delete_records::say_records_deleted(int how_many) const {
         cout << how_many << " ";
     }
     cout << "Matching records deleted successfully.\n"
+            "\n";
+}
+
+void Menu::List_records::show_guides() const {
+    cout << "\n"
+            "List Cities\n";
+    show_loading_bar(11);
+    cout << "\n"
+            "Cities can be listed in sorted order by:\n";
+    show_menu_options_for_possible_fields();
+}
+
+void Menu::List_records::show_options_for_strings() const {
+    cout << "\n"
+            "Listing by strings\n";
+    show_loading_bar(18);
+    cout << "\n"
+            "Categorical fields in records can be listed in:\n"
+            "\n"
+            "(1) Alphabetical order\n"
+            "(2) Reverse alphabetical order\n"
+            "\n"
+            "(3) Return to previous menu\n"
+            "\n";
+}
+
+void Menu::List_records::show_options_for_numbers() const {
+    cout << "\n"
+            "Listing by numbers\n";
+    show_loading_bar(18);
+    cout << "\n"
+            "Numerical fields in records can be listed in:\n"
+            "\n"
+            "(1) Ascending order\n"
+            "(2) Descending order\n"
+            "\n"
+            "(3) Return to previous menu\n"
             "\n";
 }

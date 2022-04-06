@@ -12,7 +12,6 @@ using Range_t = std::pair<double, double>;
 class Menu {
 private:
     const time_t _start_time;
-
     // Common sub-sub-menus.
     class By_string {
     public:
@@ -28,14 +27,12 @@ private:
 public:
     Menu();
     ~Menu();
-
     // Returns any possible Menu_Options up to max_options.
     // All other menu options result in invalid_option.
     Menu_Option get_input_option(int max_options) const;
-
+    bool ask_if_user_wants_to_try_again() const;
     void show_main_menu() const;
     void print_records(const std::vector<City>& records) const;
-    bool ask_if_user_wants_to_try_again() const;
 
     // Sub-menus:
     class Add_records {
@@ -61,7 +58,9 @@ public:
     } delete_records;
     class List_records {
     public:
-        void list() const;
+        void show_guides() const;
+        void show_options_for_strings() const;
+        void show_options_for_numbers() const;
     } list_records;
 }; // class Menu
 

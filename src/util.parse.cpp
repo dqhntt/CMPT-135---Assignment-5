@@ -53,35 +53,35 @@ Menu_Option util::parse::convert_to_menu_option(const string& input, int max_opt
     const string lowercase_input = to_lower(trim(input));
     switch (max_options) {
     case 8:
-        if (lowercase_input == "8" || lowercase_input == "eight")
+        if (lowercase_input == "8" || lowercase_input == "eight" || lowercase_input == "h")
             return Menu_Option::eight;
         [[fallthrough]];
     case 7:
-        if (lowercase_input == "7" || lowercase_input == "seven")
+        if (lowercase_input == "7" || lowercase_input == "seven" || lowercase_input == "g")
             return Menu_Option::seven;
         [[fallthrough]];
     case 6:
-        if (lowercase_input == "6" || lowercase_input == "six")
+        if (lowercase_input == "6" || lowercase_input == "six" || lowercase_input == "f")
             return Menu_Option::six;
         [[fallthrough]];
     case 5:
-        if (lowercase_input == "5" || lowercase_input == "five")
+        if (lowercase_input == "5" || lowercase_input == "five" || lowercase_input == "e")
             return Menu_Option::five;
         [[fallthrough]];
     case 4:
-        if (lowercase_input == "4" || lowercase_input == "four")
+        if (lowercase_input == "4" || lowercase_input == "four" || lowercase_input == "d")
             return Menu_Option::four;
         [[fallthrough]];
     case 3:
-        if (lowercase_input == "3" || lowercase_input == "three")
+        if (lowercase_input == "3" || lowercase_input == "three" || lowercase_input == "c")
             return Menu_Option::three;
         [[fallthrough]];
     case 2:
-        if (lowercase_input == "2" || lowercase_input == "two")
+        if (lowercase_input == "2" || lowercase_input == "two" || lowercase_input == "b")
             return Menu_Option::two;
         [[fallthrough]];
     case 1:
-        if (lowercase_input == "1" || lowercase_input == "one")
+        if (lowercase_input == "1" || lowercase_input == "one" || lowercase_input == "a")
             return Menu_Option::one;
         [[fallthrough]];
     default:;
