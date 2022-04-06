@@ -2,6 +2,7 @@
 #define UTIL_FORMAT_H
 
 #include <locale>
+#include <ostream>
 
 namespace util::format {
 
@@ -11,13 +12,12 @@ namespace util::format {
 class Commas_thousands_sep_RAII {
 public:
     // Format on given ostream.
-    Commas_thousands_sep_RAII(std::ostream& target_ostream) : out(target_ostream) {
+    Commas_thousands_sep_RAII(std::ostream& target_ostream)
+        : out(target_ostream) {
         out.imbue(std::locale("en_US.UTF8"));
     }
     // Reset format.
-    ~Commas_thousands_sep_RAII() {
-        out.imbue(std::locale());
-    }
+    ~Commas_thousands_sep_RAII() { out.imbue(std::locale()); }
 
 private:
     std::ostream& out;

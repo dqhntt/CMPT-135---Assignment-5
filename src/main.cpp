@@ -26,10 +26,15 @@
 #include <iostream>
 #include <stdexcept>
 
+void reset_cin() {
+    std::cin.clear();
+    std::cin.ignore(10000, '\n');
+}
+
 int main() {
     // Ensure cleanup in case of exception.
     try {
-        std::cout << "Choose terminal mode to run in.\n"
+        std::cout << "\nChoose terminal mode to run in.\n"
                      "\n"
                      "(1) Regular mode. [Stable]\n"
                      "(2) With ncurses. [Experimental]\n"
@@ -39,12 +44,11 @@ int main() {
         std::cin >> mode;
         // Handle invalid input.
         while (!std::cin || (std::cin.peek() != '\n') || (mode < 1) || (mode > 2)) {
-            std::cin.clear();
-            std::cin.ignore(10000, '\n');
+            reset_cin();
             std::cout << "Invalid mode. Please try again: ";
             std::cin >> mode;
         }
-        std::cin.ignore(10000, '\n');
+        reset_cin();
         // Execute accordingly and return exit code.
         return (mode == 2) ? program_main_ncurses() : program_main();
     } catch (const std::exception& e) {
