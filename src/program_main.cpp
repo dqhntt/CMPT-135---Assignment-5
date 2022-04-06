@@ -31,23 +31,14 @@ int program_main() { // Menu controller.
         switch (main_menu_option) {
         // MENU #1 - Add a record.
         case Menu_Option::one: {
+            menu.add_records.show_guides();
             do {
-                menu.add_records.show_guides();
-                City city = menu.add_records.get_input();
-                bool record_exists = db.exists_record(city);
-                while (record_exists) {
-                    quick_pause();
+                const City city = menu.add_records.get_input();
+                quick_pause();
+                if (db.exists_record(city)) {
                     menu.add_records.say_record_exists(city);
-                    if (menu.ask_if_user_wants_to_try_again()) {
-                        city = menu.add_records.get_input();
-                        record_exists = db.exists_record(city);
-                    } else {
-                        break;
-                    }
-                } // while
-                if (!record_exists) {
+                } else {
                     db.add_city(city);
-                    quick_pause();
                     menu.add_records.say_record_added(city);
                 }
                 quick_pause();

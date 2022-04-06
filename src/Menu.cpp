@@ -246,7 +246,7 @@ void print_single_record(const City& city) {
 
 void Menu::Add_records::say_record_exists(const City& city) const {
     cout << "\n"
-         << "This record already exists in the database!\n";
+         << "This record already exists in the database!\n\a";
     print_single_record(city);
 }
 
