@@ -2,6 +2,7 @@
 #include "cmpt_error.h"
 #include "util.parse.h"
 #include "util.time.h"
+#include "util.format.h"
 #include <iostream>
 using namespace std;
 
@@ -15,6 +16,8 @@ Menu::~Menu() {
 }
 
 void Menu::print_records(const vector<City>& records) const {
+    // Put commas in numbers.
+    const util::format::Commas_thousands_sep_RAII formatter(cout);
     cout << "\n"
             "Here is a list of matching cities:\n"
             "(Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
@@ -217,7 +220,9 @@ bool Menu::ask_if_user_wants_to_try_again() const {
     return (get_yesno_option() == YesNo_Option::yes);
 }
 
-void print_record(const City& city) {
+void print_single_record(const City& city) {
+    // Put commas in numbers.
+    const util::format::Commas_thousands_sep_RAII formatter(cout);
     cout << "City:\n"
          << "+ Name: " << city.name << "\n"
          << "+ Province: " << city.province << "\n"

@@ -7,20 +7,20 @@
 
 namespace util::parse {
 
-Menu_Option  convert_to_menu_option(const std::string& input, int max_options = 5);
+Menu_Option convert_to_menu_option(const std::string& input, int max_options);
 YesNo_Option convert_to_yesno_option(const std::string& input);
 
 namespace ncurses {
-    Menu_Option  convert_to_menu_option(const std::string& input);
+    Menu_Option convert_to_menu_option(const std::string& input);
     YesNo_Option convert_to_yesno_option(const std::string& input);
 } // namespace ncurses
 
 inline std::string quote(const std::string& str) { return std::string("\"") + str + "\""; }
 const std::string& trim(std::string& str);
-std::string        trim(const std::string& str);
-std::string        to_lower(const std::string& str);
-bool               is_valid_DD_latitude(const std::string& str);
-bool               is_valid_DD_longitude(const std::string& str);
+std::string trim(const std::string& str);
+std::string to_lower(const std::string& str);
+bool is_valid_DD_latitude(const std::string& str);
+bool is_valid_DD_longitude(const std::string& str);
 
 /**
  * @details
@@ -32,10 +32,9 @@ bool               is_valid_DD_longitude(const std::string& str);
  */
 template <typename Num_Type = double>
 bool is_valid_num(const std::string& str, Num_Type = Num_Type()) {
-    using namespace std;
-    istringstream iss(str);
-    Num_Type      test_num;
-    char          test_char;
+    std::istringstream iss(str);
+    Num_Type test_num;
+    char test_char;
     // True if assignable to test_num and no remaining char after extraction.
     return (iss >> test_num) && !(iss >> test_char);
 }
