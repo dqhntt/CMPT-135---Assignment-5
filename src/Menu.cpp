@@ -10,9 +10,19 @@ Menu::Menu()
     : _start_time(time(0))
 { }
 
+void show_loading_bar(int how_many_bars, char bar = '-', int total_milliseconds = 250) {
+    for (int i = 0; i < how_many_bars; i++) {
+        cout << bar;
+        cout.flush();
+        util::time::pause(total_milliseconds / how_many_bars);
+    }
+    cout << "\n";
+}
+
 Menu::~Menu() {
-    cout << "Saving data to file before exiting...\n"
-         << "Thanks for spending " << (time(0) - _start_time) / 60.0 << " minutes with us!\n";
+    cout << "Saving data to file before exiting";
+    show_loading_bar(5, '.', 1000);
+    cout << "Thanks for spending " << (time(0) - _start_time) / 60.0 << " minutes with us!\n";
 }
 
 void Menu::print_records(const vector<City>& records) const {
@@ -37,9 +47,9 @@ void Menu::print_records(const vector<City>& records) const {
 
 void Menu::show_main_menu() const {
     cout << "\n"
-            "Welcome to the City Database!\n"
-            "-----------------------------\n"
-            "\n"
+            "Welcome to the City Database!\n";
+    show_loading_bar(29);
+    cout << "\n"
             "(1) Add a city.\n"
             "(2) Find a city.\n"
             "(3) Delete a city.\n"
@@ -63,9 +73,9 @@ Menu_Option Menu::get_input_option(int max_options) const {
 
 void Menu::Add_records::show_guides() const {
     cout << "\n"
-            "Add a City\n"
-            "----------\n"
-            "\n"
+            "Add a City\n";
+    show_loading_bar(10);
+    cout << "\n"
             "A city has a:\n"
             "- Name\n"
             "- Province it's in\n"
@@ -250,6 +260,7 @@ void Menu::Add_records::say_record_added(const City& city) const {
 void show_search_guides_helper(bool find_records_mode) {
     cout << "\n";
     cout << (find_records_mode ? "Find" : "Delete") << " a City\n";
+    show_loading_bar(find_records_mode ? 11 : 13);
     cout << "\n";
     cout << "You can search " << (find_records_mode ? "" : "and delete ");
     cout << "by:\n"
@@ -272,10 +283,11 @@ void Menu::Find_records::show_guides() const {
 
 void Menu::By_string::show_guides() const {
     cout << "\n"
-            "Searching by strings\n"
-            "--------------------\n"
-            "\n"
-            "You can search for exact matches or partial matches to your input.\n"
+            "Searching by strings\n";
+    show_loading_bar(20);
+    cout << "\n"
+            "You can search for exact or partial matches to your input.\n"
+            "Note: queries are case-sensitive, i.e., Van != van\n"
             "\n"
             "(1) Exact string matches\n"
             "(2) Partial/substring matches\n"
@@ -291,9 +303,9 @@ string Menu::By_string::get_input_string(bool substr_mode) const {
 
 void Menu::By_number::show_guides() const {
     cout << "\n"
-            "Searching by numbers\n"
-            "--------------------\n"
-            "\n"
+            "Searching by numbers\n";
+    show_loading_bar(20);
+    cout << "\n"
             "You can search for exact matches or matches in a range of numbers.\n"
             "\n"
             "(1) Exact number matches\n"
