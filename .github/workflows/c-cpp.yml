@@ -16,6 +16,6 @@ jobs:
     - name: install ncurses
       run: sudo apt-get install libncurses5-dev libncursesw5-dev -y
     - name: make
-      run: make -j
+      run: make all -j
     - name: make check
       run: make check
