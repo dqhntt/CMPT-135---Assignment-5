@@ -35,11 +35,11 @@ void Menu::print_records(const vector<City>& records) const {
          << endl;
     size_t count = 1;
     for (const City& city : records) {
-        cout << count++ << ") \"" << city.name << "\";\n"
-             << "\"" << city.province << "\";\"" << city.province_id << "\";\"" << city.latitude
-             << "\";\"" << city.longitude << "\";\"" << city.population << "\";\""
-             << city.population_density << "\"\n";
-    }
+        cout << count++ << ") [" << city.name << "];\n"
+             << "[" << city.province << "];[" << city.province_id << "];[" << city.latitude
+             << "];[" << city.longitude << "];[" << city.population << "];["
+             << city.population_density << "]\n";
+    }    
     cout << "\n"
          << "Total = " << records.size() << " records found.\n"
          << endl;
