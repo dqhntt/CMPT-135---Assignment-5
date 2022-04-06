@@ -1,11 +1,11 @@
-#include "Menu.h"
+#include "Menu.ncurses.h"
 #include "cmpt_error.h"
 #include "util.ncurses.h"
-#include "util.parse.h"
+#include "util.h"
 using namespace std;
 
-namespace ncurses {
+ncurses::Menu::Menu() {
+    // This is a constructor.
+}
 
-
-
-} // namespace ncurses
+// Other Menu's methods definitions are preceded by ncurses::
