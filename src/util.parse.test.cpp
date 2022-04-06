@@ -78,7 +78,7 @@ void parse_menu_test() {
 
     assert(convert_to_menu_option("") == Menu_Option::invalid_option);
     assert(convert_to_menu_option("-") == Menu_Option::invalid_option);
-    assert(convert_to_menu_option("a") == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("z") == Menu_Option::invalid_option);
     assert(convert_to_menu_option("On") == Menu_Option::invalid_option);
     assert(convert_to_menu_option("y") == Menu_Option::invalid_option);
     assert(convert_to_menu_option("1") == Menu_Option::one);
