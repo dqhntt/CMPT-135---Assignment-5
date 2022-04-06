@@ -12,9 +12,8 @@ Database::Database(const string& db_filename)
 
 Database::~Database() // Destructor must never let exception escape.
 {
-    if (_db_filename.empty()) {
+    if (_db_filename.empty()) 
         return;
-    }
     try {
         util::file::write_data(_cities, _db_filename);
     } catch (const exception& e) { cerr << e.what() << "\n"; }
@@ -23,10 +22,9 @@ Database::~Database() // Destructor must never let exception escape.
 void Database::open(const string& target_filename) {
     if (!_db_filename.empty()) {
         util::file::write_data(_cities, _db_filename);
-    } else {
-        _cities = util::file::read_data(target_filename);
-        _db_filename = target_filename;
     }
+    _cities = util::file::read_data(target_filename);
+    _db_filename = target_filename;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////

@@ -54,7 +54,7 @@ Menu_Option Menu::get_input_option(int max_options) const {
     while (option == Menu_Option::invalid_option) {
         cout << "You entered an invalid option. Please try again: ";
         getline(cin, input);
-        option = util::parse::convert_to_menu_option(input);
+        option = util::parse::convert_to_menu_option(input, max_options);
     }
     return option;
 }

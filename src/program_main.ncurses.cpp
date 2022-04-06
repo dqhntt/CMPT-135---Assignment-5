@@ -3,13 +3,10 @@
 #include "program_main.h"
 #include "util.ncurses.h"
 
-// #include < ...something... >
-
 using namespace std;
 
 int program_main_ncurses() {
-    using namespace ncurses;
-
+    
     ///
     /// @todo Implement the program.
     ///

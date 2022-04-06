@@ -10,35 +10,28 @@ namespace util::ncurses {
 
 ///////////////////////////////////////////////////////////////////////////////
 // Description:
-//    A simple RAII wrapper for ncurses to prevent memory leak.
+//    A simple RAII wrapper for ncurses to help prevent memory leak.
 // Pre-condition:
 //    ncurses is installed on the system.
-//    endwin() is not manually called elsewhere.
 // Post-condition:
 //    Auto invoke `initscr()` upon object creation,
 //    and `endwin()` upon object destruction.
+// Ref:
+//    https://docs.oracle.com/cd/E36784_01/html/E36880/isendwin-3curses.html
+//    https://invisible-island.net/ncurses/man/curs_memleaks.3x.html
 class Ncurses_RAII {
 public:
     // Initialize terminal in curses mode.
-    Ncurses_RAII() { initscr(); }
+    Ncurses_RAII() {
+        initscr();
+    }
     // End curses mode.
-    // Destructor will not call `endwin()` again.
-    void invoke_endwin() {
-        endwin();
-        _invoked_endwin = true;
-    }
-    // End curses mode if not already done so.
     ~Ncurses_RAII() {
-        if (!_invoked_endwin)
+        if (!isendwin()) {
             endwin();
+        }
+        exit_curses(EXIT_SUCCESS);
     }
-    // Delete copy ctor to prevent copying.
-    Ncurses_RAII(const Ncurses_RAII&) = delete;
-    // Delete copy assignment operator to prevent copying.
-    Ncurses_RAII& operator=(const Ncurses_RAII&) = delete;
-
-private:
-    bool _invoked_endwin = false;
 }; // class Ncurses_RAII
 
 } // namespace util::ncurses
