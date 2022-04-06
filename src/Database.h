@@ -65,7 +65,7 @@ public:
 
     // Sorts the city depending on the field. In here, all 7 fields are allowed.
     // The boolean reversed_mode changes the order from ascending to descending
-    void sort_cities(const Field& field, bool reversed_mode);
+    void sort_cities(const Field& field, bool reversed_mode = false);
 
 private:
     std::string       _db_filename;

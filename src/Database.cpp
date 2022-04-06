@@ -145,5 +145,5 @@ void Database::delete_cities(const vector<City>& cities) {
     }
 }
 
-// Returns the underlying _cities vector
+// Returns a read-only reference to the underlying _cities vector
 const vector<City>& Database::get_cities() const { return _cities; }

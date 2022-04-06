@@ -6,7 +6,7 @@
 using namespace std;
 
 Menu::Menu()
-    : _start_time(time(nullptr))
+    : _start_time(time(0))
 { }
 
 Menu::~Menu() {
@@ -15,7 +15,6 @@ Menu::~Menu() {
 }
 
 void Menu::print_records(const vector<City>& records) const {
-    using namespace util::parse;
     cout << "\n"
             "Here is a list of matching cities:\n"
             "(Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
@@ -29,7 +28,7 @@ void Menu::print_records(const vector<City>& records) const {
              << city.population_density << "\"\n";
     }
     cout << "\n"
-         << "Total = " << records.size() << " records.\n"
+         << "Total = " << records.size() << " records found.\n"
          << endl;
 }
 
@@ -96,7 +95,7 @@ istream& getline_no_semicolon_and_trim(istream& is, string& str) {
 void get_input_for_province_id(City& city) {
     getline_no_semicolon_and_trim(cin, city.province_id);
     while (city.province_id.size() > city.province.size()) {
-        cout << "Hmm... That's actually longer than: " << city.province << ".\n"
+        cout << "Hmm... That's actually longer than: " << city.province << "\n"
              << "Try entering a shorter one: ";
         getline_no_semicolon_and_trim(cin, city.province_id);
     }
@@ -226,27 +225,29 @@ void print_record(const City& city) {
          << "+ Latitude: " << city.latitude << " degrees North\n"
          << "+ Longitude: " << city.longitude << " degrees West\n"
          << "+ Population: " << city.population << " people\n"
-         << "+ Population Density: " << city.population_density << " people per km^2\n";
+         << "+ Population Density: " << city.population_density << " people per km^2\n"
+         << endl;
 }
 
 void Menu::Add_records::say_record_exists(const City& city) const {
     cout << "\n"
          << "This record already exists in the database!\n";
-    print_record(city);
+    print_single_record(city);
 }
 
 void Menu::Add_records::say_record_added(const City& city) const {
     cout << "\n"
          << "This record has been successfully added to the database.\n";
-    print_record(city);
+    print_single_record(city);
 }
 
-void Menu::Find_records::show_guides() const {
-    cout << "\n"
-            "Find a City\n"
-            "-----------\n"
-            "\n"
-            "You can search by:\n"
+// Find mode == true, Delete mode == false.
+void show_search_guides_helper(bool find_records_mode) {
+    cout << "\n";
+    cout << (find_records_mode ? "Find" : "Delete") << " a City\n";
+    cout << "\n";
+    cout << "You can search " << (find_records_mode ? "" : "and delete ");
+    cout << "by:\n"
             "\n"
             "(1) City name\n"
             "(2) Province it's in\n"
@@ -260,6 +261,10 @@ void Menu::Find_records::show_guides() const {
             "\n";
 }
 
+void Menu::Find_records::show_guides() const {
+    show_search_guides_helper(true);
+}
+
 void Menu::By_string::show_guides() const {
     cout << "\n"
             "Searching by strings\n"
@@ -267,13 +272,13 @@ void Menu::By_string::show_guides() const {
             "\n"
             "You can search for exact matches or partial matches to your input.\n"
             "\n"
-            "(1) Exact matches\n"
-            "(2) Partial matches\n"
+            "(1) Exact string matches\n"
+            "(2) Partial/substring matches\n"
             "\n";
 }
 
-string Menu::By_string::get_input_string(const Menu_Option& option) const {
-    cout << "Enter a " << ((option == Menu_Option::one) ? "" : "sub") << "string to search for: ";
+string Menu::By_string::get_input_string(bool substr_mode) const {
+    cout << "Enter a " << (substr_mode ? "sub" : "") << "string to search for: ";
     string input_str;
     getline(cin, input_str);
     return util::parse::trim(input_str);
@@ -291,9 +296,8 @@ void Menu::By_number::show_guides() const {
             "\n";
 }
 
-Num_range_t Menu::By_number::get_input_numbers(const Menu_Option& option) const {
-    cout << "Enter a "
-         << ((option == Menu_Option::one) ? "number" : "range of numbers, one after the other,")
+Range_t Menu::By_number::get_input_numbers(bool range_mode) const {
+    cout << "Enter a " << (!range_mode ? "number" : "range of numbers, one by one,")
          << " to search for: ";
     string input_str;
     // Get first number.
@@ -302,12 +306,10 @@ Num_range_t Menu::By_number::get_input_numbers(const Menu_Option& option) const 
         cout << "Not a single number. Please try again: ";
         getline(cin, input_str);
     }
-    Num_range_t input_nums;
-    input_nums.low = stod(input_str);
+    const double range_low = stod(input_str);
     // If only one number is desired.
-    if (option == Menu_Option::one) {
-        input_nums.high = input_nums.low;
-        return input_nums;
+    if (!range_mode) {
+        return make_pair(range_low, range_low);
     }
     // Else get range.
     cout << "End range: ";
@@ -316,9 +318,27 @@ Num_range_t Menu::By_number::get_input_numbers(const Menu_Option& option) const 
         cout << "Not a single number. Please try again: ";
         getline(cin, input_str);
     }
-    input_nums.high = stod(input_str);
-    if (input_nums.high < input_nums.low) {
-        swap(input_nums.high, input_nums.low);
+    const double range_high = stod(input_str);
+    if (range_low > range_high) {
+        return make_pair(range_high, range_low);
     }
-    return input_nums;
+    return make_pair(range_low, range_high);
+}
+
+void Menu::Delete_records::show_guides() const {
+    show_search_guides_helper(false);
+}
+
+bool Menu::Delete_records::confirm_user_wants_to_delete() const {
+    cout << "Are you sure you want to delete the record(s) above?\n";
+    return (get_yesno_option() == YesNo_Option::yes);
+}
+
+void Menu::Delete_records::say_records_deleted(int how_many) const {
+    cout << "\n";
+    if (how_many >= 0) {
+        cout << how_many << " ";
+    }
+    cout << "Matching records deleted successfully.\n"
+            "\n";
 }

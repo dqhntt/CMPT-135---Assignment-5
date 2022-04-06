@@ -2,16 +2,29 @@
 #define MENU_H
 
 #include "City.h"
+#include <utility>
 #include <vector>
 
 enum class Menu_Option { one, two, three, four, five, six, seven, eight, invalid_option };
 enum class YesNo_Option { yes, no, invalid_option };
-
-struct Num_range_t {
-    double low {}, high {};
-};
+using Range_t = std::pair<double, double>;
 
 class Menu {
+private:
+    const time_t _start_time;
+
+    // Common sub-sub-menus.
+    class By_string {
+    public:
+        void show_guides() const;
+        std::string get_input_string(bool substr_mode) const;
+    };
+    class By_number {
+    public:
+        void show_guides() const;
+        Range_t get_input_numbers(bool range_mode) const;
+    };
+
 public:
     Menu();
     ~Menu();
@@ -24,18 +37,6 @@ public:
     void print_records(const std::vector<City>& records) const;
     bool ask_if_user_wants_to_try_again() const;
 
-    // Common sub-sub-menus.
-    class By_string {
-    public:
-        void        show_guides() const;
-        std::string get_input_string(const Menu_Option& option) const;
-    };
-    class By_number {
-    public:
-        void        show_guides() const;
-        Num_range_t get_input_numbers(const Menu_Option& option) const;
-    };
-
     // Sub-menus:
     class Add_records {
     public:
@@ -46,31 +47,26 @@ public:
     } add_records;
     class Find_records {
     public:
-        void      show_guides() const;
+        void show_guides() const;
         By_string by_string;
         By_number by_number;
     } find_records;
     class Delete_records {
     public:
         void show_guides() const;
-        class By_string {
-        public:
-            void show_guides() const;
-            // TODO: Get input by field.
-        } by_string;
-        class By_number {
-        public:
-            void show_guides() const;
-            // TODO: Get input by field.
-        } by_number;
+        bool confirm_user_wants_to_delete() const;
+        void say_records_deleted(int how_many) const;
+        By_string by_string;
+        By_number by_number;
     } delete_records;
     class List_records {
     public:
         void list() const;
     } list_records;
-
-private:
-    const time_t _start_time;
 }; // class Menu
+
+namespace ncurses {
+class Menu;
+} // namespace ncurses
 
 #endif // MENU_H
