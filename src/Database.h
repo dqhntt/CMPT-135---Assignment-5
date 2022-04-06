@@ -5,10 +5,9 @@
 #include <string>
 #include <vector>
 
-// TODO: Implement this class.
-
 class Database {
 public:
+
     Database() = default;
 
     ///////////////////////////////////////////////////////////////////////////////
@@ -47,8 +46,8 @@ public:
 
     // The below 2 functions find target cities by number.
     // The allowed fields here are "latitude", "longitude", "population" and "population_density"
-    std::vector<City> cities_in_number_range(
-        const Field& field, double range_low, double range_high) const;
+    std::vector<City> cities_in_number_range(const Field& field,
+                                             double range_low, double range_high) const;
     std::vector<City> cities_matching_exact_number(const Field& field, double target_num) const;
 
     // Checks if a city exists in the database
@@ -68,7 +67,7 @@ public:
     void sort_cities(const Field& field, bool reversed_mode = false);
 
 private:
-    std::string       _db_filename;
+    std::string _db_filename;
     std::vector<City> _cities;
 }; // class Database
 

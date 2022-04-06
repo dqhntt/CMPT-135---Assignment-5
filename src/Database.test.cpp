@@ -1,13 +1,15 @@
 #include "Database.h"
 #include <cassert>
 #include <iostream>
+#include <cassert>
 using namespace std;
 
-void database_test() {
+void database_test(){
     cout << "Testing " << __func__ << "() ...\n";
 
-    const string filename = "../data/database.txt";
-    Database     test(filename);
+    const string filename = "../data/test_database.txt";
+    Database test(filename);
+
     test.sort_cities(Field::population, true);
     assert(test.get_cities().size() == 1738);
 

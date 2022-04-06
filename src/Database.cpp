@@ -2,16 +2,15 @@
 #include "cmpt_error.h"
 #include "util.file.h"
 #include <algorithm>
-#include <iostream>
+#include <ostream>
 using namespace std;
 
 Database::Database(const string& db_filename)
     : _db_filename(db_filename)
     , _cities(util::file::read_data(db_filename))
-{ }
+{}
 
-Database::~Database() // Destructor must never let exception escape.
-{
+Database::~Database() { // Destructor must never let exception escape.
     if (_db_filename.empty()) 
         return;
     try {
@@ -20,6 +19,7 @@ Database::~Database() // Destructor must never let exception escape.
 }
 
 void Database::open(const string& target_filename) {
+    // Unload data first if any.
     if (!_db_filename.empty()) {
         util::file::write_data(_cities, _db_filename);
     }
@@ -32,11 +32,11 @@ void Database::open(const string& target_filename) {
 // If it finds the city in database, append the city to the result
 // If it does not find it, return an empty vector
 vector<City> Database::cities_matching_string(
-    const Field& field, bool substring, const string& target_data) const {
+    const Field& field, bool substring_mode, const string& target_data) const {
     vector<City> result;
     for (const City& c : _cities) {
         string target;
-        // Choose the target depending on data typeSS
+        // Choose the target depending on data types
         if (field == Field::city_name) {
             target = c.name;
         } else if (field == Field::province_id) {
@@ -48,11 +48,10 @@ vector<City> Database::cities_matching_string(
         }
 
         // Compare the whole string or substring depending on the boolean "substring"
-        if (substring == true) { // if this is a substring input
-            // Note the find() method below is from <string> class
+        if (substring_mode == true) {
             if (target.find(target_data) != string::npos)
                 result.push_back(c);
-        } else { // has to match the exact string
+        } else {
             if (target == target_data)
                 result.push_back(c);
         }
@@ -60,13 +59,13 @@ vector<City> Database::cities_matching_string(
     return result;
 }
 
-// Find the city by number inputs. If we compare the exact number, only data1 is used.
+// Find the city by number inputs. If we compare the exact number, only 1 number is used.
 //
-vector<City> Database::cities_in_number_range(
-    const Field& field, double range_low, double range_high) const {
+vector<City> Database::cities_in_number_range(const Field& field,
+                                              double range_low, double range_high) const {
     vector<City> result;
     for (const City& c : _cities) {
-        double target {};
+        double target;
         // Choose the target depending on data type
         if (field == Field::latitude) {
             target = c.latitude;
@@ -126,11 +125,14 @@ void Database::sort_cities(const Field& field, bool reversed_mode) {
 }
 
 bool Database::exists_record(const City& city) const {
-    return find(_cities.begin(), _cities.end(), city) != _cities.end();
+    return (find(_cities.begin(), _cities.end(), city) != _cities.end());
 }
 
 // Add a new city to the database
 void Database::add_city(const City& city) { _cities.push_back(city); }
+
+// Returns a read-only reference to the underlying _cities vector
+const vector<City>& Database::get_cities() const { return _cities; }
 
 // Delete a city from database
 void Database::delete_city(const City& city) {
@@ -144,6 +146,3 @@ void Database::delete_cities(const vector<City>& cities) {
         delete_city(c);
     }
 }
-
-// Returns a read-only reference to the underlying _cities vector
-const vector<City>& Database::get_cities() const { return _cities; }
