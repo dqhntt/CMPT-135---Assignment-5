@@ -15,8 +15,8 @@ enum class Field {
 
 struct City {
     std::string name, province_id, province;
-    int         population;
-    double      population_density, latitude, longitude;
+    int population;
+    double population_density, latitude, longitude;
 
     City()
         : name("N/A"), province_id("N/A"), province("N/A")
