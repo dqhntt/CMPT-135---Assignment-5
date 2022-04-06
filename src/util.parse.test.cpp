@@ -76,19 +76,19 @@ void parse_menu_test() {
     cout << "Testing " << __func__ << "() ...\n";
     using namespace util::parse;
 
-    assert(convert_to_menu_option("") == Menu_Option::invalid_option);
-    assert(convert_to_menu_option("-") == Menu_Option::invalid_option);
-    assert(convert_to_menu_option("z") == Menu_Option::invalid_option);
-    assert(convert_to_menu_option("On") == Menu_Option::invalid_option);
-    assert(convert_to_menu_option("y") == Menu_Option::invalid_option);
-    assert(convert_to_menu_option("1") == Menu_Option::one);
-    assert(convert_to_menu_option("2") == Menu_Option::two);
-    assert(convert_to_menu_option("3") == Menu_Option::three);
-    assert(convert_to_menu_option("4") == Menu_Option::four);
-    assert(convert_to_menu_option("5") == Menu_Option::five);
+    assert(convert_to_menu_option("", 5) == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("-", 2) == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("z", 1) == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("On", 3) == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("y", 0) == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("1", 5) == Menu_Option::one);
+    assert(convert_to_menu_option("2", 4) == Menu_Option::two);
+    assert(convert_to_menu_option("3", 3) == Menu_Option::three);
+    assert(convert_to_menu_option("4", 6) == Menu_Option::four);
+    assert(convert_to_menu_option("5", 7) == Menu_Option::five);
     assert(convert_to_menu_option("8", 8) == Menu_Option::eight);
-    assert(convert_to_menu_option("twenty-two") != Menu_Option::two);
-    assert(convert_to_menu_option("0") == Menu_Option::invalid_option);
+    assert(convert_to_menu_option("twenty-two", 2) != Menu_Option::two);
+    assert(convert_to_menu_option("0", 0) == Menu_Option::invalid_option);
     assert(convert_to_menu_option("5", 4) == Menu_Option::invalid_option);
     assert(convert_to_menu_option("6", 3) == Menu_Option::invalid_option);
 

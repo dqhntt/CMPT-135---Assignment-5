@@ -1,28 +1,15 @@
 #include "util.file.h"
-
-#include "util.h"
+#include "util.parse.h"
 
 #include <cassert>
 #include <iostream>
 using namespace std;
 
-void print(const City& city)
-{
-    cout << city.name << ";"
-         << city.province_id << ";"
-         << city.province << ";"
-         << city.latitude << ";"
-         << city.longitude << ";"
-         << city.population << ";"
-         << city.population_density << endl;
-}
-
-void database_format_test()
-{
+void database_format_test() {
     cout << "Testing " << __func__ << "() ...\n";
 
     const string filename = "../data/test_database.txt";
-    vector<City> data     = util::file::read_data(filename);
+    vector<City> data = util::file::read_data(filename);
 
     // Assert properties of each record in the database.
     // Assuming no empty strings.
@@ -38,8 +25,7 @@ void database_format_test()
     cout << "... " << __func__ << "() passed.\n";
 }
 
-int main()
-{
+int main() {
     cout << "TEST SUITE:\n"
          << "  File: " << __FILE__ << "\n"
          << "  Date: " << __DATE__ << "\n"
