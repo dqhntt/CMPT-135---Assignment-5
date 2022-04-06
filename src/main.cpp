@@ -23,8 +23,14 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include "program_main.h"
+#include <ctime>
 #include <iostream>
 #include <stdexcept>
+
+void reset_cin() {
+    std::cin.clear();
+    std::cin.ignore(10000, '\n');
+}
 
 int main() {
     // Ensure cleanup in case of exception.
@@ -38,13 +44,21 @@ int main() {
         int mode = 0;
         std::cin >> mode;
         // Handle invalid input.
+        // Give user only 1 second to choose.
+        const time_t timer = time(0) + 1;
         while (!std::cin || (std::cin.peek() != '\n') || (mode < 1) || (mode > 2)) {
-            std::cin.clear();
-            std::cin.ignore(10000, '\n');
+            if (timer < time(0)) {
+                std::cout << "\n"
+                             "You took too long.\n"
+                             "Choosing regular mode...\n\a";
+                reset_cin();
+                return program_main();
+            }
+            reset_cin();
             std::cout << "Invalid mode. Please try again: ";
             std::cin >> mode;
         }
-        std::cin.ignore(10000, '\n');
+        reset_cin();
         // Execute accordingly and return exit code.
         return (mode == 2) ? program_main_ncurses() : program_main();
     } catch (const std::exception& e) {
