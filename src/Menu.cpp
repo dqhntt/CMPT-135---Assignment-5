@@ -119,8 +119,7 @@ void get_input_for_latitude(City& city) {
     getline(cin, input);
     while (!util::parse::is_valid_DD_latitude(input)) {
         cout << "You entered an invalid latitude.\n"
-                "Only decimal degrees, e.g. 49.25, -123.10, should be used.\n"
-                "And latitude only goes from -90 to 90 degrees.\n"
+                "Please use only decimal degrees from -90.0 to 90.0.\n"
                 "Please try again: ";
         getline(cin, input);
     }
@@ -132,8 +131,7 @@ void get_input_for_longitude(City& city) {
     getline(cin, input);
     while (!util::parse::is_valid_DD_longitude(input)) {
         cout << "You entered an invalid longitude.\n"
-                "Only decimal degrees, e.g. 49.25, -123.10, should be used.\n"
-                "And longitude only goes from -180 to 180 degrees.\n"
+                "Please use only decimal degrees from -180.0 to 180.0.\n"
                 "Please try again: ";
         getline(cin, input);
     }
