@@ -4,8 +4,8 @@
 #include "util.h"
 using namespace std;
 
-ncurses::Menu::Menu() {
-    // This is a constructor.
-}
+// ncurses::Menu::Menu() {
+//     // This is a constructor.
+// }
 
 // Other Menu's methods definitions are preceded by ncurses::

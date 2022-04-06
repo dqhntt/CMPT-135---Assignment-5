@@ -7,15 +7,15 @@
 
 namespace ncurses {
 
-class Menu {
-public:
-    // TODO: Define this class and declare its methods.
-    // Note: This class' full name is ncurses::Menu.
+// class Menu {
+// public:
+//     // TODO: Define this class and declare its methods.
+//     // Note: This class' full name is ncurses::Menu.
 
-private:
+// private:
 
 
-}; // class Menu
+// }; // class Menu
 
 } // namespace ncurses
 
