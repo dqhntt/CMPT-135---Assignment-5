@@ -4,8 +4,6 @@
 BasedOnStyle: WebKit
 AlignTrailingComments: true
 AlwaysBreakTemplateDeclarations: true
-BinPackArguments: false
-BinPackParameters: false
 BreakBeforeBraces: Custom
 BraceWrapping:
   SplitEmptyFunction: false

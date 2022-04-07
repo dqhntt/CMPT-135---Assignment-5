@@ -8,10 +8,10 @@ using namespace std;
 Database::Database(const string& db_filename)
     : _db_filename(db_filename)
     , _cities(util::file::read_data(db_filename))
-{}
+{ }
 
 Database::~Database() { // Destructor must never let exception escape.
-    if (_db_filename.empty()) 
+    if (_db_filename.empty())
         return;
     try {
         util::file::write_data(_cities, _db_filename);
@@ -61,8 +61,8 @@ vector<City> Database::cities_matching_string(
 
 // Find the city by number inputs. If we compare the exact number, only 1 number is used.
 //
-vector<City> Database::cities_in_number_range(const Field& field,
-                                              double range_low, double range_high) const {
+vector<City> Database::cities_in_number_range(
+    const Field& field, double range_low, double range_high) const {
     vector<City> result;
     for (const City& c : _cities) {
         double target;
@@ -118,10 +118,12 @@ bool less_than(const City& city1, const City& city2, const Field& field) {
 // Sorts the data:
 // In ascending order when reversed_mode is false, and
 // descending order when reversed_mode is true.
-void Database::sort_cities(const Field& field, bool reversed_mode) {
-    sort(_cities.begin(), _cities.end(), [&](const City& c1, const City& c2) {
+void Database::sort_cities(const Field& field, bool reversed_mode, bool stable_sort) {
+    auto compare = [&](const City& c1, const City& c2) {
         return (reversed_mode ? !less_than(c1, c2, field) : less_than(c1, c2, field));
-    });
+    };
+    stable_sort ? std::stable_sort(_cities.begin(), _cities.end(), compare)
+                : std::sort(_cities.begin(), _cities.end(), compare);
 }
 
 bool Database::exists_record(const City& city) const {

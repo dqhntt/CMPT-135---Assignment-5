@@ -118,7 +118,7 @@ void do_find_records_by_strings_sub_menu(const Menu& menu, Database& db, const F
         }
         const bool substring_mode = (sub_sub_menu_option == Menu_Option::two);
         const string input = menu.find_records.by_string.get_input_string(substring_mode);
-        db.sort_cities(substring_mode ? field : Field::city_name);
+        db.sort_cities(substring_mode ? field : Field::city_name, 0, substring_mode);
         menu.print_matching_records(db.cities_matching_string(field, substring_mode, input));
         quick_pause();
     } while (menu.ask_if_user_wants_to_try_again());
@@ -133,7 +133,7 @@ void do_find_records_by_numbers_sub_menu(const Menu& menu, Database& db, const F
         }
         const bool range_mode = (sub_sub_menu_option == Menu_Option::two);
         const Range_t inputs = menu.find_records.by_number.get_input_numbers(range_mode);
-        db.sort_cities(range_mode ? field : Field::city_name);
+        db.sort_cities(range_mode ? field : Field::city_name, 0, range_mode);
         menu.print_matching_records(db.cities_in_number_range(field, inputs.first, inputs.second));
         quick_pause();
     } while (menu.ask_if_user_wants_to_try_again());
@@ -189,7 +189,7 @@ void do_delete_records_by_strings_sub_menu(const Menu& menu, Database& db, const
         }
         const bool substring_mode = (sub_sub_menu_option == Menu_Option::two);
         const string input = menu.delete_records.by_string.get_input_string(substring_mode);
-        db.sort_cities(substring_mode ? field : Field::city_name);
+        db.sort_cities(substring_mode ? field : Field::city_name, 0, substring_mode);
         const vector<City> matching_records
             = db.cities_matching_string(field, substring_mode, input);
         menu.print_matching_records(matching_records);
@@ -210,7 +210,7 @@ void do_delete_records_by_numbers_sub_menu(const Menu& menu, Database& db, const
         }
         const bool range_mode = (sub_sub_menu_option == Menu_Option::two);
         const Range_t inputs = menu.delete_records.by_number.get_input_numbers(range_mode);
-        db.sort_cities(range_mode ? field : Field::city_name);
+        db.sort_cities(range_mode ? field : Field::city_name, 0, range_mode);
         const vector<City> matching_records
             = db.cities_in_number_range(field, inputs.first, inputs.second);
         menu.print_matching_records(matching_records);
@@ -271,7 +271,7 @@ void do_list_records_sub_menu(const Menu& menu, Database& db, const Field& field
             return; // To previous menu.
         }
         const bool reverse_mode = (sub_sub_menu_option == Menu_Option::two);
-        db.sort_cities(field, reverse_mode);
+        db.sort_cities(field, reverse_mode, 0);
         menu.print_matching_records(db.get_cities());
         quick_pause();
     } while (menu.ask_if_user_wants_to_try_again());
