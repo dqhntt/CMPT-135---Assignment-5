@@ -45,6 +45,7 @@ vector<City> util::file::read_data(const string& filename, int skip_lines) {
         next = file.peek();
     } // while
     return data;
+}
 
 void util::file::write_data(const vector<City>& data, const string& filename, int precision) {
     ofstream file(filename);
