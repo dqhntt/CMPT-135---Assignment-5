@@ -9,6 +9,8 @@ enum class Menu_Option { one, two, three, four, five, six, seven, eight, invalid
 enum class YesNo_Option { yes, no, invalid_option };
 using Range_t = std::pair<double, double>;
 
+// All methods deal with std::cout.
+// Methods returning non-void also deal with std::cin.
 class Menu {
 private:
     const time_t _start_time;
@@ -29,6 +31,7 @@ public:
     ~Menu();
     // Returns any possible Menu_Options up to max_options.
     // All other menu options result in invalid_option.
+    // Currently support only up to 8 options.
     Menu_Option get_input_option(int max_options) const;
     bool ask_if_user_wants_to_try_again() const;
     void show_main_menu() const;
@@ -51,8 +54,8 @@ public:
     class Delete_records {
     public:
         void show_guides() const;
-        bool confirm_user_wants_to_delete() const;
         void say_records_deleted(int how_many) const;
+        bool confirm_user_wants_to_delete() const;
         By_string by_string;
         By_number by_number;
     } delete_records;
@@ -63,9 +66,5 @@ public:
         void show_options_for_numbers() const;
     } list_records;
 }; // class Menu
-
-namespace ncurses {
-class Menu;
-} // namespace ncurses
 
 #endif // MENU_H

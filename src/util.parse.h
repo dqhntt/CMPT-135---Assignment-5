@@ -15,8 +15,9 @@ namespace ncurses {
     YesNo_Option convert_to_yesno_option(const std::string& input);
 } // namespace ncurses
 
-inline std::string quote(const std::string& str) { return std::string("\"") + str + "\""; }
+// Trim str in-place.
 const std::string& trim(std::string& str);
+// Return trimmed str.
 std::string trim(const std::string& str);
 std::string to_lower(const std::string& str);
 bool is_valid_DD_latitude(const std::string& str);
