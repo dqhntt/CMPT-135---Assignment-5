@@ -6,12 +6,11 @@
 using namespace std;
 
 // = INT_MAX and < streamsize
-const int  BIG_NUMBER = 2147483647;
-const int  ESTIMATED_DB_SIZE = 1750;
+const int BIG_NUMBER = 2147483647;
+const int ESTIMATED_DB_SIZE = 1750;
 const char SEPARATOR = ';';
 
-vector<City> util::file::read_data(const string& filename, int skip_lines)
-{
+vector<City> util::file::read_data(const string& filename, int skip_lines) {
     ifstream file(filename);
     if (!file) {
         cmpt::error("Error loading data from file: " + filename);
@@ -21,9 +20,9 @@ vector<City> util::file::read_data(const string& filename, int skip_lines)
     }
     vector<City> data;
     data.reserve(ESTIMATED_DB_SIZE);
-    City   city;
+    City city;
     string field;
-    char   next = file.peek();
+    char next = file.peek();
     // Parse each line in file.
     while (file.good() && // Not end of file.
            next != EOF && next != '\r' && next != '\n') {
@@ -33,13 +32,10 @@ vector<City> util::file::read_data(const string& filename, int skip_lines)
         try {
             getline(file, field, SEPARATOR);
             city.latitude = stod(field);
-
             getline(file, field, SEPARATOR);
             city.longitude = stod(field);
-
             getline(file, field, SEPARATOR);
             city.population = stoi(field);
-
             getline(file, field, '\n');
             city.population_density = stod(field);
         } catch (const invalid_argument& e) {
@@ -49,10 +45,8 @@ vector<City> util::file::read_data(const string& filename, int skip_lines)
         next = file.peek();
     } // while
     return data;
-}
 
-void util::file::write_data(const vector<City>& data, const string& filename, int precision)
-{
+void util::file::write_data(const vector<City>& data, const string& filename, int precision) {
     ofstream file(filename);
     if (!file) {
         cmpt::error("Error writing data to file: " + filename);
