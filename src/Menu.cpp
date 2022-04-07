@@ -35,11 +35,11 @@ void Menu::print_records(const vector<City>& records) const {
          << endl;
     size_t count = 1;
     for (const City& city : records) {
-        cout << count++ << ") \"" << city.name << "\";\n"
-             << "\"" << city.province << "\";\"" << city.province_id << "\";\"" << city.latitude
-             << "\";\"" << city.longitude << "\";\"" << city.population << "\";\""
-             << city.population_density << "\"\n";
-    }
+        cout << count++ << ") [" << city.name << "];\n"
+             << "[" << city.province << "];[" << city.province_id << "];[" << city.latitude
+             << "];[" << city.longitude << "];[" << city.population << "];["
+             << city.population_density << "]\n";
+    }    
     cout << "\n"
          << "Total = " << records.size() << " records found.\n"
          << endl;
@@ -119,8 +119,7 @@ void get_input_for_latitude(City& city) {
     getline(cin, input);
     while (!util::parse::is_valid_DD_latitude(input)) {
         cout << "You entered an invalid latitude.\n"
-                "Only decimal degrees, e.g. 49.25, -123.10, should be used.\n"
-                "And latitude only goes from -90 to 90 degrees.\n"
+                "Please use only decimal degrees from -90.0 to 90.0.\n"
                 "Please try again: ";
         getline(cin, input);
     }
@@ -132,8 +131,7 @@ void get_input_for_longitude(City& city) {
     getline(cin, input);
     while (!util::parse::is_valid_DD_longitude(input)) {
         cout << "You entered an invalid longitude.\n"
-                "Only decimal degrees, e.g. 49.25, -123.10, should be used.\n"
-                "And longitude only goes from -180 to 180 degrees.\n"
+                "Please use only decimal degrees from -180.0 to 180.0.\n"
                 "Please try again: ";
         getline(cin, input);
     }
@@ -246,7 +244,7 @@ void print_single_record(const City& city) {
 
 void Menu::Add_records::say_record_exists(const City& city) const {
     cout << "\n"
-         << "This record already exists in the database!\n";
+         << "This record already exists in the database!\n\a";
     print_single_record(city);
 }
 

@@ -30,7 +30,7 @@ public:
         if (!isendwin()) {
             endwin();
         }
-        exit_curses(EXIT_SUCCESS);
+        exit_curses(0);
     }
 }; // class Ncurses_RAII
 
