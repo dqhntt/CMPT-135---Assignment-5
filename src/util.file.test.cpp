@@ -12,10 +12,12 @@ void database_format_test() {
     vector<City> data = util::file::read_data(filename);
 
     // Assert properties of each record in the database.
-    // Assuming no empty strings.
+    // Assuming sensible data.
     for (const City& city : data) {
         assert(city.population >= 0);
         assert(city.population_density >= 0);
+        assert(city.latitude >= -90.0 && city.latitude <= 90.0);
+        assert(city.longitude >= -180.0 && city.longitude <= 180.0);
         assert(!util::parse::is_valid_num(city.name));
         assert(!util::parse::is_valid_num(city.province));
         assert(!util::parse::is_valid_num(city.province_id));

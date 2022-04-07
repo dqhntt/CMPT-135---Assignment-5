@@ -10,7 +10,7 @@
 #
 #   make
 #      Build the executable program `main` in ./src/ folder and clean up compiler's output files.
-#      Run the program afterwards.
+#      Run the program automatically afterwards.
 #
 #   make -j
 #      Build `main` possibly a little more quickly. The "-j" option tells
@@ -34,7 +34,7 @@
 ###################################################################################################
 
 main:
-# Call make main and make clean-build and make run in ./src/Makefile
+# Call make main, make clean-build, and make run in ./src/Makefile
 	$(MAKE) -C ./src/ $@
 	$(MAKE) -C ./src/ clean-build
 	$(MAKE) -C ./src/ run

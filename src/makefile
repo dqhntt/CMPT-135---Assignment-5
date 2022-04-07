@@ -53,7 +53,7 @@ MAIN_SRCS := main.cpp $(NO_MAIN_SRCS) # List all source files that can be used t
 
 # Calling `make all` runs the below rules to the right of the colon.
 # `main` is also the name of the main program.
-# `tests` is not the name of a file, a.k.a. a "phony" target.
+# `tests` is not the name of a file, aka. a "phony" target.
 all: main tests
 
 # Change extension from .cpp to .o and tell make to automatically create these object files.
@@ -63,12 +63,13 @@ main: $(MAIN_SRCS:.cpp=.o)
 # Calling `make tests` create executable tests as defined in explicit variable `TESTS`.
 tests: $(TESTS)
 
-# Create executable tests from its .o file and all other .o files without `int main()` defined.
+# Create each executable test from its .o file and all other .o files without `int main()` defined.
 # Thus, all files *.test.cpp must have `int main()` defined.
 # Using make's static pattern rule of the form:
 #   target : target_pattern ... : prerequisite_pattern ...
 $(TESTS): %.test : %.test.o $(NO_MAIN_SRCS:.cpp=.o)
 
+# Run all executable tests one after the other.
 check:
 	for TEST in $(TESTS); do ./$$TEST; done;
 
@@ -89,4 +90,6 @@ clean-build:
 clean-tests:
 	rm -f *.test
 
+# Include makefiles the compiler generated.
+# Variable DEPS is defined on line 42.
 -include $(DEPS)
