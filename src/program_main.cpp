@@ -41,7 +41,7 @@ int program_main() { // Menu controller.
             do_list_records_menu(menu, db);
             break;
         case Menu_Option::five:
-            break; // Quit program.
+            return EXIT_SUCCESS; // Quit program.
         default:
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
@@ -66,8 +66,8 @@ void do_add_records_menu(const Menu& menu, Database& db) {
 } // do_add_records_menu
 
 void do_find_records_menu(const Menu& menu, Database& db) {
-    Menu_Option sub_menu_option = Menu_Option::invalid_option;
-    while (sub_menu_option != Menu_Option::eight) { // 8 = Return to main menu.
+    Menu_Option sub_menu_option;
+    do {
         menu.find_records.show_guides();
         sub_menu_option = menu.get_input_option(8);
         switch (sub_menu_option) {
@@ -85,8 +85,8 @@ void do_find_records_menu(const Menu& menu, Database& db) {
                 const Field field = (sub_menu_option == Menu_Option::one) ? Field::city_name
                     : (sub_menu_option == Menu_Option::two)               ? Field::province
                                                                           : Field::province_id;
-                db.sort_cities(field);
-                menu.print_records(db.cities_matching_string(field, substring_mode, input));
+                db.sort_cities(substring_mode ? field : Field::city_name);
+                menu.print_matching_records(db.cities_matching_string(field, substring_mode, input));
                 quick_pause();
             } while (menu.ask_if_user_wants_to_try_again());
             break;
@@ -106,18 +106,18 @@ void do_find_records_menu(const Menu& menu, Database& db) {
                     : (sub_menu_option == Menu_Option::five)               ? Field::longitude
                     : (sub_menu_option == Menu_Option::six)                ? Field::population
                                                             : Field::population_density;
-                db.sort_cities(field);
-                menu.print_records(db.cities_in_number_range(field, inputs.first, inputs.second));
+                db.sort_cities(range_mode ? field : Field::city_name);
+                menu.print_matching_records(db.cities_in_number_range(field, inputs.first, inputs.second));
                 quick_pause();
             } while (menu.ask_if_user_wants_to_try_again());
             break;
         case Menu_Option::eight: // Return to main menu.
-            break;
+            return;
         default:
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
         quick_pause();
-    } // while
+    } while (sub_menu_option != Menu_Option::eight); // 8 = Return to main menu.
 } // do_find_records_menu
 
 // void do_find_records_menu(const Menu& menu, Database& db) {
@@ -142,7 +142,7 @@ void do_find_records_menu(const Menu& menu, Database& db) {
 //                     : (sub_menu_option == Menu_Option::two)               ? Field::province
 //                                                                           : Field::province_id;
 //                 db.sort_cities(field);
-//                 menu.print_records(db.cities_matching_string(field, substring_mode, input));
+//                 menu.print_matching_records(db.cities_matching_string(field, substring_mode, input));
 //                 quick_pause();
 //             } while (menu.ask_if_user_wants_to_try_again());
 //             break;
@@ -163,7 +163,7 @@ void do_find_records_menu(const Menu& menu, Database& db) {
 //                     : (sub_menu_option == Menu_Option::six)                ? Field::population
 //                                                             : Field::population_density;
 //                 db.sort_cities(field);
-//                 menu.print_records(db.cities_in_number_range(field, inputs.first,
+//                 menu.print_matching_records(db.cities_in_number_range(field, inputs.first,
 //                 inputs.second)); quick_pause();
 //             } while (menu.ask_if_user_wants_to_try_again());
 //             break;
@@ -177,8 +177,8 @@ void do_find_records_menu(const Menu& menu, Database& db) {
 // } // do_find_records_menu
 
 void do_delete_records_menu(const Menu& menu, Database& db) {
-    Menu_Option sub_menu_option = Menu_Option::invalid_option;
-    while (sub_menu_option != Menu_Option::eight) { // 8 = Return to main menu.
+    Menu_Option sub_menu_option;
+    do {
         menu.delete_records.show_guides();
         sub_menu_option = menu.get_input_option(8);
         switch (sub_menu_option) {
@@ -196,10 +196,10 @@ void do_delete_records_menu(const Menu& menu, Database& db) {
                 const Field field = (sub_menu_option == Menu_Option::one) ? Field::city_name
                     : (sub_menu_option == Menu_Option::two)               ? Field::province
                                                                           : Field::province_id;
-                db.sort_cities(field);
+                db.sort_cities(substring_mode ? field : Field::city_name);
                 const vector<City> matching_records
                     = db.cities_matching_string(field, substring_mode, input);
-                menu.print_records(matching_records);
+                menu.print_matching_records(matching_records);
                 if (!matching_records.empty()
                     && menu.delete_records.confirm_user_wants_to_delete()) {
                     db.delete_cities(matching_records);
@@ -224,10 +224,10 @@ void do_delete_records_menu(const Menu& menu, Database& db) {
                     : (sub_menu_option == Menu_Option::five)               ? Field::longitude
                     : (sub_menu_option == Menu_Option::six)                ? Field::population
                                                             : Field::population_density;
-                db.sort_cities(field);
+                db.sort_cities(range_mode ? field : Field::city_name);
                 const vector<City> matching_records
                     = db.cities_in_number_range(field, inputs.first, inputs.second);
-                menu.print_records(matching_records);
+                menu.print_matching_records(matching_records);
                 if (!matching_records.empty()
                     && menu.delete_records.confirm_user_wants_to_delete()) {
                     db.delete_cities(matching_records);
@@ -242,12 +242,12 @@ void do_delete_records_menu(const Menu& menu, Database& db) {
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
         quick_pause();
-    } // while
+    } while (sub_menu_option != Menu_Option::eight); // 8 = Return to main menu.
 } // do_delete_records_menu
 
 void do_list_records_menu(const Menu& menu, Database& db) {
-    Menu_Option sub_menu_option = Menu_Option::invalid_option;
-    while (sub_menu_option != Menu_Option::eight) { // 8 = Return to main menu.
+    Menu_Option sub_menu_option;
+    do {
         menu.list_records.show_guides();
         sub_menu_option = menu.get_input_option(8);
         Field field;
@@ -282,12 +282,9 @@ void do_list_records_menu(const Menu& menu, Database& db) {
             string_field = false;
             break;
         case Menu_Option::eight: // Return to main menu.
-            break;
+            return;
         default:
             cmpt::error("Invalid / Unimplemented menu option.");
-        }
-        if (sub_menu_option == Menu_Option::eight) {
-            break; // Return to main menu.
         }
         do {
             string_field ? menu.list_records.show_options_for_strings()
@@ -298,9 +295,9 @@ void do_list_records_menu(const Menu& menu, Database& db) {
             }
             const bool reverse_mode = (sub_sub_menu_option == Menu_Option::two);
             db.sort_cities(field, reverse_mode);
-            menu.print_records(db.get_cities());
+            menu.print_matching_records(db.get_cities());
             quick_pause();
         } while (menu.ask_if_user_wants_to_try_again());
         quick_pause();
-    } // while
+    } while (sub_menu_option != Menu_Option::eight); // 8 = Return to main menu.
 } // do_list_records_menu

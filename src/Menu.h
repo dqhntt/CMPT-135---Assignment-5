@@ -35,7 +35,7 @@ public:
     Menu_Option get_input_option(int max_options) const;
     bool ask_if_user_wants_to_try_again() const;
     void show_main_menu() const;
-    void print_records(const std::vector<City>& records) const;
+    void print_matching_records(const std::vector<City>& records) const;
 
     // Sub-menus:
     class Add_records {
