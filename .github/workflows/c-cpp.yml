@@ -2,11 +2,9 @@ name: C/C++ CI
 
 on:
   push:
-    branches:
-      - '**'        # matches every branch
+    branches: [dev]
   pull_request:
-    branches:
-      - '**'        # matches every branch
+    branches: [dev]
 
 jobs:
   build-and-test:
