@@ -68,7 +68,7 @@ dist:
 # Zip all files and folders in current directory to a5.zip,
 # except one folder and some files specified below.
 # If zip is not installed, run:  sudo apt-get install zip -y
-	zip -r a5.zip . -x ./a5.zip ./.gitignore "./tools/*"
+	zip -r a5.zip . -x ./a5.zip ./.gitignore "./tools/*" "./.github/*"
 
 distclean:
 # Remove created zip file.
