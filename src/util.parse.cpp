@@ -13,6 +13,15 @@ bool util::parse::is_valid_DD_longitude(const string& str) {
     return is_valid_num<double>(str) && (stod(str) <= 180.0) && (stod(str) >= -180.0);
 }
 
+bool util::parse::is_string_field(const Field& field) {
+    return (field == Field::city_name || field == Field::province || field == Field::province_id);
+}
+
+bool util::parse::is_numeric_field(const Field& field) {
+    return (field == Field::latitude || field == Field::longitude || field == Field::population
+        || field == Field::population_density);
+}
+
 // This version uses lambda and forward/reverse iterators.
 // Ref: https://en.cppreference.com/w/cpp/string/byte/isspace
 //      https://stackoverflow.com/a/2038101

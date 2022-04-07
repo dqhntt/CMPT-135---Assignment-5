@@ -22,6 +22,8 @@ std::string trim(const std::string& str);
 std::string to_lower(const std::string& str);
 bool is_valid_DD_latitude(const std::string& str);
 bool is_valid_DD_longitude(const std::string& str);
+bool is_string_field(const Field& field);
+bool is_numeric_field(const Field& field);
 
 /**
  * @details
