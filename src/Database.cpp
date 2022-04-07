@@ -2,7 +2,7 @@
 #include "cmpt_error.h"
 #include "util.file.h"
 #include <algorithm>
-#include <iostream>
+#include <ostream>
 using namespace std;
 
 Database::Database(const string& db_filename)
