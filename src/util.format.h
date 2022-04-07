@@ -8,6 +8,7 @@ namespace util::format {
 
 // Format numbers with commas while object is in scope.
 // Reset to previous format once out of scope.
+// e.g., outputs 10,000,000 instead of 10000000.
 // https://en.cppreference.com/w/cpp/locale/locale
 class Commas_thousands_sep_RAII {
 public:

@@ -1,8 +1,8 @@
 #include "Menu.h"
 #include "cmpt_error.h"
+#include "util.format.h"
 #include "util.parse.h"
 #include "util.time.h"
-#include "util.format.h"
 #include <iostream>
 using namespace std;
 
@@ -12,8 +12,7 @@ Menu::Menu()
 
 void show_loading_bar(int how_many_bars, char bar = '-', int total_milliseconds = 250) {
     for (int i = 0; i < how_many_bars; i++) {
-        cout << bar;
-        cout.flush();
+        cout << bar << flush;
         util::time::pause(total_milliseconds / how_many_bars);
     }
     cout << "\n";
@@ -25,15 +24,15 @@ Menu::~Menu() {
     cout << "Thanks for spending " << (time(0) - _start_time) / 60.0 << " minutes with us!\n";
 }
 
-void Menu::print_records(const vector<City>& records) const {
-    // Put commas in numbers.
+void Menu::print_matching_records(const vector<City>& records) const {
+    // Put commas in numbers, e.g., 10,000,000
     const util::format::Commas_thousands_sep_RAII formatter(cout);
     cout << "\n"
             "Here is a list of matching cities:\n"
-            "(Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
-            "Population-Density)"
-         << endl;
-    size_t count = 1;
+            "[Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
+            "Population-Density]"
+            "\n";
+    int count = 1;
     for (const City& city : records) {
         cout << count++ << ") [" << city.name << "];\n"
              << "[" << city.province << "];[" << city.province_id << "];[" << city.latitude
@@ -42,7 +41,7 @@ void Menu::print_records(const vector<City>& records) const {
     }    
     cout << "\n"
          << "Total = " << records.size() << " records found.\n"
-         << endl;
+         << "\n";
 }
 
 void Menu::show_main_menu() const {
@@ -64,7 +63,7 @@ Menu_Option Menu::get_input_option(int max_options) const {
     getline(cin, input);
     Menu_Option option = util::parse::convert_to_menu_option(input, max_options);
     while (option == Menu_Option::invalid_option) {
-        cout << "You entered an invalid option. Please try again: ";
+        cout << "You entered an invalid menu option. Please try again: ";
         getline(cin, input);
         option = util::parse::convert_to_menu_option(input, max_options);
     }
@@ -86,10 +85,9 @@ void Menu::Add_records::show_guides() const {
             "- Population density\n"
             "\n"
             "e.g. Vancouver is a city in British Columbia (BC)\n"
-            "     located at coordinate (N, W): 49.25, -123.1 (DD)\n"
+            "     located at coordinate: 49.25 N, -123.1 W\n"
             "     once with a population of 2,264,823 people and\n"
-            "     a population density of 5,492.6 people per km^2\n"
-            "\n";
+            "     a population density of 5,492.6 people per km^2\n";
 }
 
 // Request new string as needed until it doesn't contain ";".
@@ -152,10 +150,9 @@ void get_input_for_population(City& city) {
 void get_input_for_population_density(City& city) {
     string input;
     getline(cin, input);
-    while (!util::parse::is_valid_num<double>(input) || stod(input) > city.population
-        || stod(input) < 0.0) {
+    while (!util::parse::is_valid_num<double>(input)|| stod(input) < 0.0) {
         cout << "You entered an invalid population density.\n"
-                "It should be non-negative and less than the population. Please try again: ";
+                "It should be a non-negative number. Please try again: ";
         getline(cin, input);
     }
     city.population_density = stod(input);
@@ -192,7 +189,8 @@ void get_input_and_add_to(City& city, const Field& field) {
 
 City Menu::Add_records::get_input() const {
     City city;
-    cout << "Enter the characteristics of your new city to be added:\n";
+    cout << "\n"
+            "Enter the characteristics of your new city to be added:\n";
     cout << "- City name: ";
     get_input_and_add_to(city, Field::city_name);
     cout << "- Its province: ";
@@ -235,11 +233,11 @@ void print_single_record(const City& city) {
          << "+ Name: " << city.name << "\n"
          << "+ Province: " << city.province << "\n"
          << "+ Province Code: " << city.province_id << "\n"
-         << "+ Latitude: " << city.latitude << " degrees North\n"
-         << "+ Longitude: " << city.longitude << " degrees West\n"
+         << "+ Latitude: " << city.latitude << " North\n"
+         << "+ Longitude: " << city.longitude << " West\n"
          << "+ Population: " << city.population << " people\n"
          << "+ Population Density: " << city.population_density << " people per km^2\n"
-         << endl;
+         << "\n";
 }
 
 void Menu::Add_records::say_record_exists(const City& city) const {
@@ -283,7 +281,7 @@ void Menu::By_string::show_guides() const {
     show_loading_bar(20);
     cout << "\n"
             "You can search for exact or partial matches to your input.\n"
-            "Note: queries are case-sensitive, i.e., Van != van\n"
+            "NOTE: queries are case-sensitive, i.e., Van != van\n"
             "\n"
             "(1) Exact matches\n"
             "(2) Partial/substring matches\n"
@@ -292,15 +290,11 @@ void Menu::By_string::show_guides() const {
             "\n";
 }
 
-string get_input_string_trimmed() {
+string Menu::By_string::get_input_string(bool substr_mode) const {
+    cout << "Enter a " << (substr_mode ? "sub" : "") << "string to search for: ";
     string input_str;
     getline(cin, input_str);
     return util::parse::trim(input_str);
-}
-
-string Menu::By_string::get_input_string(bool substr_mode) const {
-    cout << "Enter a " << (substr_mode ? "sub" : "") << "string to search for: ";
-    return get_input_string_trimmed();
 }
 
 void Menu::By_number::show_guides() const {
@@ -361,12 +355,9 @@ bool Menu::Delete_records::confirm_user_wants_to_delete() const {
 }
 
 void Menu::Delete_records::say_records_deleted(int how_many) const {
-    cout << "\n";
-    if (how_many >= 0) {
-        cout << how_many << " ";
-    }
-    cout << "Matching records deleted successfully.\n"
-            "\n";
+    cout << "\n"
+         << how_many << " matching records deleted successfully.\n"
+         << "\n";
 }
 
 void Menu::List_records::show_guides() const {
