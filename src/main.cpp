@@ -34,7 +34,7 @@ void reset_cin() {
 int main() {
     // Ensure cleanup in case of exception.
     try {
-        std::cout << "\nChoose terminal mode to run in.\n"
+        std::cout << "\nChoose a terminal mode to run in.\n"
                      "\n"
                      "(1) Regular mode. [Stable]\n"
                      "(2) With ncurses. [Experimental]\n"

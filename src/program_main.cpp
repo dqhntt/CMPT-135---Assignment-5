@@ -6,7 +6,7 @@
 
 using namespace std;
 
-inline void quick_pause() { util::time::pause(100); }
+void quick_pause() { util::time::pause(100); }
 
 void do_add_records_menu(const Menu& menu, Database& db);
 void do_find_records_menu(const Menu& menu, Database& db);

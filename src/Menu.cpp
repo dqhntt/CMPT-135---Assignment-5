@@ -30,8 +30,8 @@ void Menu::print_records(const vector<City>& records) const {
     const util::format::Commas_thousands_sep_RAII formatter(cout);
     cout << "\n"
             "Here is a list of matching cities:\n"
-            "(Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
-            "Population-Density)"
+            "[Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; "
+            "Population-Density]"
          << endl;
     size_t count = 1;
     for (const City& city : records) {
@@ -64,7 +64,7 @@ Menu_Option Menu::get_input_option(int max_options) const {
     getline(cin, input);
     Menu_Option option = util::parse::convert_to_menu_option(input, max_options);
     while (option == Menu_Option::invalid_option) {
-        cout << "You entered an invalid option. Please try again: ";
+        cout << "You entered an invalid menu option. Please try again: ";
         getline(cin, input);
         option = util::parse::convert_to_menu_option(input, max_options);
     }
@@ -88,8 +88,7 @@ void Menu::Add_records::show_guides() const {
             "e.g. Vancouver is a city in British Columbia (BC)\n"
             "     located at coordinate (N, W): 49.25, -123.1 (DD)\n"
             "     once with a population of 2,264,823 people and\n"
-            "     a population density of 5,492.6 people per km^2\n"
-            "\n";
+            "     a population density of 5,492.6 people per km^2\n";
 }
 
 // Request new string as needed until it doesn't contain ";".
@@ -192,7 +191,8 @@ void get_input_and_add_to(City& city, const Field& field) {
 
 City Menu::Add_records::get_input() const {
     City city;
-    cout << "Enter the characteristics of your new city to be added:\n";
+    cout << "\n"
+            "Enter the characteristics of your new city to be added:\n";
     cout << "- City name: ";
     get_input_and_add_to(city, Field::city_name);
     cout << "- Its province: ";
@@ -283,7 +283,7 @@ void Menu::By_string::show_guides() const {
     show_loading_bar(20);
     cout << "\n"
             "You can search for exact or partial matches to your input.\n"
-            "Note: queries are case-sensitive, i.e., Van != van\n"
+            "NOTE: queries are case-sensitive, i.e., Van != van\n"
             "\n"
             "(1) Exact matches\n"
             "(2) Partial/substring matches\n"
