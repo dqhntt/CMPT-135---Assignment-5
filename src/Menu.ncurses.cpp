@@ -53,13 +53,16 @@ void Menu_ncurses::print_records(const vector<City>& records, WINDOW* rec) const
 
 void Menu_ncurses::show_main_menu() const {
     move(2, 0);
-    show_loading_bar_ncurses(29);
-    mvprintw(3, 0, "Welcome to the City Database!");
-    mvprintw(4, 0, "(1) Add a city.");
-    mvprintw(5, 0, "(2) Find a city.");
-    mvprintw(6, 0, "(3) Delete a city.");
-    mvprintw(7, 0, "(4) List cities.");
-    mvprintw(8, 0, "(5) Quit");
+    show_loading_bar_ncurses(33);
+    mvprintw(3, 0, "| Welcome to the City Database! |");
+    move(4, 0);
+    show_loading_bar_ncurses(33);
+    
+    mvprintw(6, 1, "(A)dd a city.");
+    mvprintw(7, 1, "(F)ind a city.");
+    mvprintw(8, 1, "(D)elete a city.");
+    mvprintw(9, 1, "(L)ist cities.");
+    mvprintw(10, 1, "(Q)uit");
 }
 
 // Menu_Option Menu_ncurses::get_input_option(int max_options) const {

@@ -23,27 +23,27 @@ void draw_menubar(WINDOW* menubar) {
     wbkgd(menubar, COLOR_PAIR(2));
     waddstr(menubar, "Add");
     wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(F1)");
+    waddstr(menubar, "(A)");
     wattroff(menubar, COLOR_PAIR(3));
     wmove(menubar, 0, 15);
     waddstr(menubar, "Find");
     wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(F2)");
+    waddstr(menubar, "(F)");
     wattroff(menubar, COLOR_PAIR(3));
     wmove(menubar, 0, 30);
     waddstr(menubar, "Delete");
     wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(F3)");
+    waddstr(menubar, "(D)");
     wattroff(menubar, COLOR_PAIR(3));
     wmove(menubar, 0, 45);
     waddstr(menubar, "List");
     wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(F4)");
+    waddstr(menubar, "(L)");
     wattroff(menubar, COLOR_PAIR(3));
     wmove(menubar, 0, 60);
     waddstr(menubar, "Quit");
     wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(Esc)");
+    waddstr(menubar, "(Q)");
     wattroff(menubar, COLOR_PAIR(3));
 }
 WINDOW** draw_menu(int start_col) {
@@ -149,9 +149,8 @@ int program_main_ncurses() {
     messagebar = subwin(stdscr, 1, 79, 23, 1);
     draw_menubar(menubar);
     menu.show_main_menu();
-    move(10, 1);
-    printw("Press F1, F2, or other options in the toolbar to open the menus. ");
-    printw("ESC quits.");
+    move(12, 0);
+    printw("Enter the letter of your choice.");
     refresh();
 
     do {
@@ -160,13 +159,13 @@ int program_main_ncurses() {
         key = getch();
         werase(messagebar);
         wrefresh(messagebar);
-        if (key == KEY_F(1)) {
+        if (key == 'a' || key == 'A') {
             //
             // TODO: Execute menu 1.
             //
             touchwin(stdscr);
             refresh();
-        } else if (key == KEY_F(2)) {
+        } else if (key == 'f' || key == 'F') {
             menu_items = draw_menu(15);
             selected_item = scroll_menu(menu_items, 7, 15);
             delete_menu(menu_items, 8);
@@ -176,7 +175,7 @@ int program_main_ncurses() {
                 wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
             touchwin(stdscr);
             refresh();
-        } else if (key == KEY_F(3)) {
+        } else if (key == 'd' || key == 'D') {
             menu_items = draw_menu(30);
             selected_item = scroll_menu(menu_items, 7, 30);
             delete_menu(menu_items, 8);
@@ -186,7 +185,7 @@ int program_main_ncurses() {
                 wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
             touchwin(stdscr);
             refresh();
-        } else if (key == KEY_F(4)) {
+        } else if (key == 'l' || key == 'L') {
             menu_items = draw_menu(45);
             selected_item = scroll_menu(menu_items, 7, 45);
             delete_menu(menu_items, 8);
@@ -196,7 +195,7 @@ int program_main_ncurses() {
                 wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
             touchwin(stdscr);
             refresh();
-        } else if (key != ESCAPE) {
+        } else if (key != ESCAPE && key != 'q' && key != 'Q') {
             WINDOW* error_msg = subwin(stdscr, 1, 80, 15, 0);
             wprintw(error_msg, "You entered an invalid option. Please try again: ");
             touchwin(stdscr);
@@ -206,7 +205,7 @@ int program_main_ncurses() {
             wrefresh(error_msg);
             delwin(error_msg);
         }
-    } while (key != ESCAPE);
+    } while (key != ESCAPE && key != 'q' && key != 'Q');
 
     delwin(menubar);
     delwin(messagebar);
