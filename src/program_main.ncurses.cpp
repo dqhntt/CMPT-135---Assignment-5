@@ -1,6 +1,8 @@
 #include "program_main.h"
 #include "Database.h"
 #include "Menu.ncurses.h"
+#include "Menu.h"
+#include "util.h"
 
 using namespace std;
 
@@ -85,7 +87,7 @@ int scroll_menu(WINDOW** items, int count, int menu_start_col) {
         } else if (key == ENTER) {
             return selected;
         }
-    }
+    }            
 }
 
 int program_main_ncurses() {
@@ -102,37 +104,32 @@ int program_main_ncurses() {
     //
     // This RAII object eliminates the needs to call initscr() and endwin() manually.
     const util::ncurses::Ncurses_RAII nc;
-    // // print to screen
-    // printw("Hello World!");
-    // // move the cursor to row 2, column 20
-    // move(5, 14);
-    // printw("Whoosh!");
-    // // print some numbers in a pattern
-    // int c = 0;
-    // for (int r = 0; r < 10; r++) {
-    //     move(r + 2, c);
-    //     // printw takes a C-string (i.e. a const char*),
-    //     // and we can get a C-string from a std::string
-    //     // using the std::string c_str method.
-    //     printw(to_string(r).c_str());
-    //     c += r;
-    // }
-    // move(2, 10);
-    // printw("Press any key to end.");
-    // // redraw the screen
-    // refresh();
-    // // read a character to pause the program
-    // getch();
+
+    const Menu_ncurses menu;
+    // Menu_Option main_menu_option = Menu_Option::invalid_option;
+
+    //open database
+    Database db;
+    try {
+        db.open("database.txt");
+    } catch (const exception&) {
+        try {
+            db.open("../data/database.txt");
+        } catch (const exception&) { db.open("../data/test_database.txt"); }
+    }
+
 
     int key;
     WINDOW *menubar, *messagebar;
 
     init_curses();
     bkgd(COLOR_PAIR(1));
+    
     menubar = subwin(stdscr, 1, 80, 0, 0);
     messagebar = subwin(stdscr, 1, 79, 23, 1);
     draw_menubar(menubar);
-    move(2, 1);
+    menu.show_main_menu();
+    move(10, 1);
     printw("Press F1 or F2 to open the menus. ");
     printw("ESC quits.");
     refresh();
@@ -143,7 +140,7 @@ int program_main_ncurses() {
         key = getch();
         werase(messagebar);
         wrefresh(messagebar);
-        if (key == KEY_F(1)) {
+        if (key == '1') {
             menu_items = draw_menu(0);
             selected_item = scroll_menu(menu_items, 8, 0);
             delete_menu(menu_items, 9);
@@ -153,7 +150,7 @@ int program_main_ncurses() {
                 wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
             touchwin(stdscr);
             refresh();
-        } else if (key == KEY_F(2)) {
+        } else if (key == '2') {
             menu_items = draw_menu(20);
             selected_item = scroll_menu(menu_items, 8, 20);
             delete_menu(menu_items, 9);
@@ -163,9 +160,18 @@ int program_main_ncurses() {
                 wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
             touchwin(stdscr);
             refresh();
+        } else if(key != ESCAPE){
+            WINDOW* error_msg = subwin(stdscr, 1, 80, 15, 0);
+            wprintw(error_msg, "You entered an invalid option. Please try again: ");
+            touchwin(stdscr);
+            refresh();
+            util::time::pause(600);
+            werase(error_msg);
+            wrefresh(error_msg);
+            delwin(error_msg);
         }
     } while (key != ESCAPE);
-
+    
     delwin(menubar);
     delwin(messagebar);
 
