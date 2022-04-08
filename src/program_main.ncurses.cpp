@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// FIXME: Just testing sample from: http://www.linuxfocus.org/English/March2002/article233.shtml
+// FIXME: Just testing sample from: http://www.linuxfocus.org/English/March2002/article233.shtml :)
 
 const int ENTER = 10;
 const int ESCAPE = 27;
