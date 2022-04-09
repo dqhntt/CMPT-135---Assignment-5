@@ -9,4 +9,6 @@
 #include "util.parse.h"
 #include "util.time.h"
 
+#include "cmpt_error.h"
+
 #endif // UTIL_H

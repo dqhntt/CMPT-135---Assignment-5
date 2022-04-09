@@ -10,6 +10,7 @@ using namespace std;
 const int ENTER = 10;
 const int ESCAPE = 27;
 
+// Moved to class Menu constructor.
 // void init_curses() {
 //     start_color();
 //     init_pair(1, COLOR_WHITE, COLOR_BLUE);
@@ -46,19 +47,19 @@ void draw_menubar(WINDOW* menubar) {
     waddstr(menubar, "(Q)");
     wattroff(menubar, COLOR_PAIR(3));
 }
-WINDOW** draw_menu(int start_col) {
-    WINDOW** items = new WINDOW*[8];
-
-    items[0] = newwin(10, 18, 1, start_col);
+vector<WINDOW*> draw_menu(int start_col) {
+    vector<WINDOW*> items;
+    items.push_back(newwin(10, 18, 1, start_col));
     wbkgd(items[0], COLOR_PAIR(2));
     box(items[0], ACS_VLINE, ACS_HLINE);
-    items[1] = subwin(items[0], 1, 16, 2, start_col + 1);
-    items[2] = subwin(items[0], 1, 16, 3, start_col + 1);
-    items[3] = subwin(items[0], 1, 16, 4, start_col + 1);
-    items[4] = subwin(items[0], 1, 16, 5, start_col + 1);
-    items[5] = subwin(items[0], 1, 16, 6, start_col + 1);
-    items[6] = subwin(items[0], 1, 16, 7, start_col + 1);
-    items[7] = subwin(items[0], 1, 16, 8, start_col + 1);
+    for (int i = 0; i < 7; i++) {
+        items.push_back(subwin(items.front(), 1, 16, (i + 2), start_col + 1));
+    }
+    if (items.size() < 8) {
+        const string error_msg = "Insufficient memory for 7 City's fields in " + string(__func__)
+            + "()\n" + "FILE: " + string(__FILE__);
+        cmpt::error(error_msg);
+    }
     wprintw(items[1], "By city name");
     wprintw(items[2], "By province");
     wprintw(items[3], "By prov code");
@@ -70,12 +71,12 @@ WINDOW** draw_menu(int start_col) {
     wrefresh(items[0]);
     return items;
 }
-void delete_menu(WINDOW* items[], int count) {
-    for (int i = 0; i < count; i++)
-        delwin(items[i]);
-    delete[] items;
+void delete_menu(vector<WINDOW*>& items) {
+    for (WINDOW*& item : items) {
+        delwin(item);
+    }
 }
-int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
+int scroll_menu(vector<WINDOW*>& items, int menu_start_col) {
     int key;
     int selected = 0;
     while (1) {
@@ -84,15 +85,15 @@ int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
             wbkgd(items[selected + 1], COLOR_PAIR(2));
             wnoutrefresh(items[selected + 1]);
             if (key == KEY_DOWN) {
-                selected = (selected + 1) % count;
+                selected = (selected + 1) % (items.size() - 1);
             } else {
-                selected = (selected + count - 1) % count;
+                selected = (selected + (items.size() - 1) - 1) % (items.size() - 1);
             }
             wbkgd(items[selected + 1], COLOR_PAIR(1));
             wnoutrefresh(items[selected + 1]);
             doupdate();
         } else if (key == KEY_LEFT) {
-            delete_menu(items, count + 1);
+            delete_menu(items);
             touchwin(stdscr);
             refresh();
             int new_start_col;
@@ -101,9 +102,9 @@ int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
             else
                 new_start_col = menu_start_col - 15;
             items = draw_menu(new_start_col);
-            return scroll_menu(items, 7, new_start_col);
+            return scroll_menu(items, new_start_col);
         } else if (key == KEY_RIGHT) {
-            delete_menu(items, count + 1);
+            delete_menu(items);
             touchwin(stdscr);
             refresh();
             int new_start_col;
@@ -112,7 +113,7 @@ int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
             else
                 new_start_col = menu_start_col + 15;
             items = draw_menu(new_start_col);
-            return scroll_menu(items, 7, new_start_col);
+            return scroll_menu(items, new_start_col);
         } else if (key == ENTER) {
             return selected;
         } else {
@@ -154,7 +155,7 @@ int program_main_ncurses() {
 
     do {
         int selected_item;
-        WINDOW** menu_items;
+        vector<WINDOW*> menu_items;
         key = getch();
         werase(messagebar);
         wrefresh(messagebar);
@@ -166,8 +167,8 @@ int program_main_ncurses() {
             refresh();
         } else if (key == 'f' || key == 'F') {
             menu_items = draw_menu(15);
-            selected_item = scroll_menu(menu_items, 7, 15);
-            delete_menu(menu_items, 8);
+            selected_item = scroll_menu(menu_items, 15);
+            delete_menu(menu_items);
             if (selected_item < 0)
                 wprintw(messagebar, "You haven't selected any item.");
             else // TODO
@@ -176,8 +177,8 @@ int program_main_ncurses() {
             refresh();
         } else if (key == 'd' || key == 'D') {
             menu_items = draw_menu(30);
-            selected_item = scroll_menu(menu_items, 7, 30);
-            delete_menu(menu_items, 8);
+            selected_item = scroll_menu(menu_items, 30);
+            delete_menu(menu_items);
             if (selected_item < 0)
                 wprintw(messagebar, "You haven't selected any item.");
             else // TODO
@@ -186,8 +187,8 @@ int program_main_ncurses() {
             refresh();
         } else if (key == 'l' || key == 'L') {
             menu_items = draw_menu(45);
-            selected_item = scroll_menu(menu_items, 7, 45);
-            delete_menu(menu_items, 8);
+            selected_item = scroll_menu(menu_items, 45);
+            delete_menu(menu_items);
             if (selected_item < 0)
                 wprintw(messagebar, "You haven't selected any item.");
             else // TODO
