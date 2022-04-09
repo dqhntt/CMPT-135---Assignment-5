@@ -1,10 +1,20 @@
 #include "Menu.ncurses.h"
 #include "cmpt_error.h"
 #include "util.h"
-#include "util.ncurses.h"
 using namespace std;
 
-void show_loading_bar_ncurses(int how_many_bars, const string& bar = "-", int total_milliseconds = 250) {
+Menu_ncurses::Menu_ncurses() {
+    start_color();
+    init_pair(1, COLOR_WHITE, COLOR_BLUE);
+    init_pair(2, COLOR_BLUE, COLOR_WHITE);
+    init_pair(3, COLOR_RED, COLOR_WHITE);
+    curs_set(0);
+    noecho();
+    keypad(stdscr, TRUE);
+}
+
+void show_loading_bar_ncurses(
+    int how_many_bars, const string& bar = "-", int total_milliseconds = 250) {
     for (int i = 0; i < how_many_bars; i++) {
         printw(bar.c_str());
         refresh();
@@ -57,7 +67,7 @@ void Menu_ncurses::show_main_menu() const {
     mvprintw(3, 0, "| Welcome to the City Database! |");
     move(4, 0);
     show_loading_bar_ncurses(33);
-    
+
     mvprintw(6, 1, "(A)dd a city.");
     mvprintw(7, 1, "(F)ind a city.");
     mvprintw(8, 1, "(D)elete a city.");

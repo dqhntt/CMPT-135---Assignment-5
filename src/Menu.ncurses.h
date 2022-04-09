@@ -6,17 +6,12 @@
 #include "util.ncurses.h" // ncurses library is included in this file.
 #include <vector>
 
-// #include < ... >
-
-// namespace ncurses {
-
-// All methods deal with std::cout.
-// Methods returning non-void also deal with std::cin.
-
 using Range_t = std::pair<double, double>;
 
 class Menu_ncurses {
 private:
+    // This RAII object eliminates the needs to call initscr() and endwin() manually.
+    const util::ncurses::Ncurses_RAII nc;
     // Common sub-sub-menus.
     class By_string {
     public:
@@ -30,6 +25,7 @@ private:
     };
 
 public:
+    Menu_ncurses();
     ~Menu_ncurses();
     // Returns any possible Menu_Options up to max_options.
     // All other menu options result in invalid_option.

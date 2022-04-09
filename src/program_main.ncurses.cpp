@@ -10,15 +10,15 @@ using namespace std;
 const int ENTER = 10;
 const int ESCAPE = 27;
 
-void init_curses() {
-    start_color();
-    init_pair(1, COLOR_WHITE, COLOR_BLUE);
-    init_pair(2, COLOR_BLUE, COLOR_WHITE);
-    init_pair(3, COLOR_RED, COLOR_WHITE);
-    curs_set(0);
-    noecho();
-    keypad(stdscr, TRUE);
-}
+// void init_curses() {
+//     start_color();
+//     init_pair(1, COLOR_WHITE, COLOR_BLUE);
+//     init_pair(2, COLOR_BLUE, COLOR_WHITE);
+//     init_pair(3, COLOR_RED, COLOR_WHITE);
+//     curs_set(0);
+//     noecho();
+//     keypad(stdscr, TRUE);
+// }
 void draw_menubar(WINDOW* menubar) {
     wbkgd(menubar, COLOR_PAIR(2));
     waddstr(menubar, "Add");
@@ -49,16 +49,16 @@ void draw_menubar(WINDOW* menubar) {
 WINDOW** draw_menu(int start_col) {
     WINDOW** items = new WINDOW*[8];
 
-    items[0] = newwin(10, 19, 1, start_col);
+    items[0] = newwin(10, 18, 1, start_col);
     wbkgd(items[0], COLOR_PAIR(2));
     box(items[0], ACS_VLINE, ACS_HLINE);
-    items[1] = subwin(items[0], 1, 17, 2, start_col + 1);
-    items[2] = subwin(items[0], 1, 17, 3, start_col + 1);
-    items[3] = subwin(items[0], 1, 17, 4, start_col + 1);
-    items[4] = subwin(items[0], 1, 17, 5, start_col + 1);
-    items[5] = subwin(items[0], 1, 17, 6, start_col + 1);
-    items[6] = subwin(items[0], 1, 17, 7, start_col + 1);
-    items[7] = subwin(items[0], 1, 17, 8, start_col + 1);
+    items[1] = subwin(items[0], 1, 16, 2, start_col + 1);
+    items[2] = subwin(items[0], 1, 16, 3, start_col + 1);
+    items[3] = subwin(items[0], 1, 16, 4, start_col + 1);
+    items[4] = subwin(items[0], 1, 16, 5, start_col + 1);
+    items[5] = subwin(items[0], 1, 16, 6, start_col + 1);
+    items[6] = subwin(items[0], 1, 16, 7, start_col + 1);
+    items[7] = subwin(items[0], 1, 16, 8, start_col + 1);
     wprintw(items[1], "By city name");
     wprintw(items[2], "By province");
     wprintw(items[3], "By prov code");
@@ -97,7 +97,7 @@ int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
             refresh();
             int new_start_col;
             if (menu_start_col <= 15)
-                new_start_col = menu_start_col + 30; // Reset to below menu 4.
+                new_start_col = 45; // Reset to below menu 4.
             else
                 new_start_col = menu_start_col - 15;
             items = draw_menu(new_start_col);
@@ -108,7 +108,7 @@ int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
             refresh();
             int new_start_col;
             if (menu_start_col >= 45)
-                new_start_col = menu_start_col - 30; // Reset to below menu 2.
+                new_start_col = 15; // Reset to below menu 2.
             else
                 new_start_col = menu_start_col + 15;
             items = draw_menu(new_start_col);
@@ -122,10 +122,6 @@ int scroll_menu(WINDOW* items[], int count, int menu_start_col) {
 }
 
 int program_main_ncurses() {
-    // Initialize screen in curses mode
-    // This RAII object eliminates the needs to call initscr() and endwin() manually.
-    const util::ncurses::Ncurses_RAII nc;
-
     Menu_ncurses menu;
     // Menu_Option main_menu_option = Menu_Option::invalid_option;
 
@@ -135,14 +131,17 @@ int program_main_ncurses() {
         db.open("database.txt");
     } catch (const exception&) {
         try {
-            db.open("../data/database.txt");
-        } catch (const exception&) { db.open("../data/test_database.txt"); }
+            db.open("./data/database.txt");
+        } catch (const exception&) {
+            try {
+                db.open("../data/database.txt");
+            } catch (const exception&) { db.open("../data/test_database.txt"); }
+        }
     }
 
     int key;
     WINDOW *menubar, *messagebar;
 
-    init_curses();
     bkgd(COLOR_PAIR(1));
 
     menubar = subwin(stdscr, 1, 80, 0, 0);

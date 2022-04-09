@@ -20,8 +20,12 @@ int program_main() { // Menu controller.
         db.open("database.txt");
     } catch (const exception&) {
         try {
-            db.open("../data/database.txt");
-        } catch (const exception&) { db.open("../data/test_database.txt"); }
+            db.open("./data/database.txt");
+        } catch (const exception&) {
+            try {
+                db.open("../data/database.txt");
+            } catch (const exception&) { db.open("../data/test_database.txt"); }
+        }
     }
     const Menu menu;
     Menu_Option main_menu_option;

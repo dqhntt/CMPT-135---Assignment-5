@@ -1,28 +1,12 @@
 #ifndef UTIL_NCURSES_H
 #define UTIL_NCURSES_H
 
-#include <array>
 #include <form.h> // May not actually need all of these.
 #include <menu.h>
 #include <ncurses.h>
 #include <panel.h>
 
 namespace util::ncurses {
-
-// An array of 8 WINDOWS *
-class NC_WINDOWS : public std::array<WINDOW*, 8> {
-public:
-    NC_WINDOWS() {
-        for (WINDOW*& w : *this) {
-            w = new WINDOW;
-        }
-    }
-    ~NC_WINDOWS() {
-        for (WINDOW*& w : *this) {
-            delete w;
-        }
-    }
-}; // class NC_WINDOWS
 
 ///////////////////////////////////////////////////////////////////////////////
 // Description:
