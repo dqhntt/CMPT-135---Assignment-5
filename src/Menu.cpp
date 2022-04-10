@@ -89,7 +89,7 @@ void Menu::Add_records::show_guides() const {
             "e.g. Vancouver is a city in British Columbia (BC)\n"
             "     located at coordinate: 49.25 N, -123.1 W\n"
             "     once with a population of 2,264,823 people and\n"
-            "     a population density of 5,492.6 people per km^2\n";
+            "     a population density of 5,492.6 people per km^2.\n";
 }
 
 // Request new string as needed until it doesn't contain ";".
@@ -381,9 +381,9 @@ void Menu::List_records::show_guides() const {
 void Menu::List_records::show_options_for_strings(const Field& field) const {
     cout << "\n";
     const string field_name = util::parse::to_string_field(field);
-    show_loading_bar(23 + field_name.size(), '~');
-    cout << "| Listing by strings " << field_name << " |\n";
-    show_loading_bar(23 + field_name.size(), '~');
+    show_loading_bar(27 + field_name.size(), '~');
+    cout << "| Listing by strings for " << field_name << " |\n";
+    show_loading_bar(27 + field_name.size(), '~');
     cout << "\n"
             "Categorical fields in records can be listed in:\n"
             "\n"
@@ -397,9 +397,9 @@ void Menu::List_records::show_options_for_strings(const Field& field) const {
 void Menu::List_records::show_options_for_numbers(const Field& field) const {
     cout << "\n";
     const string field_name = util::parse::to_string_field(field);
-    show_loading_bar(23 + field_name.size(), '~');
-    cout << "| Listing by numbers " << field_name << " |\n";
-    show_loading_bar(23 + field_name.size(), '~');
+    show_loading_bar(27 + field_name.size(), '~');
+    cout << "| Listing by numbers for " << field_name << " |\n";
+    show_loading_bar(27 + field_name.size(), '~');
     cout << "\n"
             "Numerical fields in records can be listed in:\n"
             "\n"

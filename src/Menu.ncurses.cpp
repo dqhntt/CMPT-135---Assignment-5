@@ -19,7 +19,7 @@ Menu_ncurses::Menu_ncurses() {
 }
 
 void show_loading_bar_ncurses(
-    int how_many_bars, const string& bar = "-", int total_milliseconds = 250) {
+    int how_many_bars, const string& bar = "-", int total_milliseconds = 200) {
     for (int i = 0; i < how_many_bars; i++) {
         printw(bar.c_str());
         refresh();
@@ -30,26 +30,27 @@ void show_loading_bar_ncurses(
 
 Menu_ncurses::~Menu_ncurses() {
     printw("\nSaving data to file before exiting");
-    show_loading_bar_ncurses(5, ".", 1500);
+    show_loading_bar_ncurses(5, ".", 1000);
 }
 
 char Menu_ncurses::get_input_option(int max_options) const {
     int cur_y, cur_x;
-    getyx(curscr, cur_y, cur_x);
+    getyx(stdscr, cur_y, cur_x);
     WINDOW* input_box = subwin(stdscr, 6, 45, cur_y + 2, 1);
     box(input_box, '|', '-');
     mvwprintw(input_box, 2, 2, "Enter the option number of your choice: ");
     echo();
     touchwin(stdscr);
     int key = wgetch(input_box);
-    attron(A_REVERSE);
     while (key < '1' || key > min('9', static_cast<char>(max_options + '0'))) {
+        const int color_pair_num = 1 + time(0) % 6;
+        wattron(input_box, COLOR_PAIR(color_pair_num));
         mvwprintw(input_box, 4, 2, "Invalid option.");
-        wmove(input_box, 2, 42); // Back to :
+        wmove(input_box, 2, 42); // Back to "Enter the option... : "
+        wattroff(input_box, COLOR_PAIR(color_pair_num));
         touchwin(stdscr);
         key = wgetch(input_box);
     }
-    attroff(A_REVERSE);
     werase(input_box);
     delwin(input_box);
     refresh();
@@ -59,8 +60,8 @@ char Menu_ncurses::get_input_option(int max_options) const {
 // print records if the cites exist
 void Menu_ncurses::print_matching_records(const vector<City>& records) const {
     printw("\nHere is a list of matching cities:\n");
-    printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ;\n");
-    printw(" Population ; Population-Density]");
+    printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ;"
+           " Population-Density]");
     refresh();
     bkgd(COLOR_PAIR(2));
     for (int i = 0; i < records.size(); i++) {
@@ -83,7 +84,7 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
                 key = getch();
             }
             if (key == 's' || key == 'S') {
-                printw("...\n\n");
+                printw("\n...\n");
                 break; // stop printing
             } else if (key == KEY_UP) {
                 if (i < 18)
@@ -130,12 +131,12 @@ void Menu_ncurses::Add_records::show_guides() const {
            "e.g. Vancouver is a city in British Columbia (BC)\n"
            "     located at coordinate: 49.25 N, -123.1 W\n"
            "     once with a population of 2,264,823 people and\n"
-           "     a population density of 5,492.6 people per km^2\n");
+           "     a population density of 5,492.6 people per km^2.\n");
     refresh();
 }
 
-// // Request new string as needed until it doesn't contain ";".
-// // Works just like std::getline with added feature to request correct input.
+// Request new string as needed until it doesn't contain ";".
+// Works just like std::getline with added feature to request correct input.
 string get_string_no_semicolon() {
     char str[80];
     getstr(str);
@@ -272,10 +273,8 @@ bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
     noecho();
     if (yn == 'y' || yn == 'Y')
         return true;
-    else {
-        bkgd(COLOR_PAIR(1));
-        return false;
-    }
+    bkgd(COLOR_PAIR(1));
+    return false;
 }
 
 void nc_print_single_record(const City& city) {

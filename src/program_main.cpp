@@ -267,7 +267,7 @@ void do_list_records_sub_menu(const Menu& menu, Database& db, const Field& field
             return; // To previous menu.
         }
         const bool reverse_mode = (sub_sub_menu_option == Menu_Option::two);
-        db.sort_cities(field, reverse_mode, 0);
+        db.sort_cities(field, reverse_mode);
         menu.print_matching_records(db.get_cities());
         quick_pause();
     } while (menu.ask_if_user_wants_to_try_again());
