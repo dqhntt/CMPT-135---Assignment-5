@@ -13,6 +13,7 @@ Menu_ncurses::Menu_ncurses() {
     curs_set(0);
     noecho();
     keypad(stdscr, TRUE);
+    scrollok(stdscr, TRUE);
 }
 
 void show_loading_bar_ncurses(
@@ -47,6 +48,7 @@ int Menu_ncurses::get_input_option(int max_options) const {
         touchwin(stdscr);
         key = wgetch(new_box);
     }
+    werase(new_box);
     delwin(new_box);
     refresh();
     return key;
@@ -55,7 +57,6 @@ int Menu_ncurses::get_input_option(int max_options) const {
 // print records if the cites exist
 void Menu_ncurses::print_matching_records(const vector<City>& records) const {
     printw("Here is a list of matching cities:");
-    move(1, 0);
     printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; ");
     printw("Population-Density]");
     refresh();
@@ -66,8 +67,27 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
         printw("\n%s];[%s];[%.3f];[%.3f];[%d];[%.2f]", city.province.c_str(),
             city.province_id.c_str(), city.latitude, city.longitude, city.population,
             city.population_density);
+        //This is to solve the problem that the screen cannot display all the cities together
+        if(count % 9 == 0){ // Do it every 9 cities
+            printw("\n\nPress \"down\" key to go to the next page,"
+                   "\nOR press 's' to skip the displaying process.\n\n");
+            noecho();
+            int key = getch();
+            while(key != KEY_DOWN){
+                if(key == 's' || key == 'S'){
+                    printw("...\n\n");
+                    goto finish; //stop printing
+                }
+                //If user enters other keys, do nothing and get the next input
+                key = getch(); 
+            }
+        } // if 
+        
     }
-    printw("Total = %d records found.", records.size());
+    finish:
+    printw("Total = %d records found.\n\n", records.size());
+    
+    
 }
 
 void Menu_ncurses::show_main_menu() const {
@@ -238,7 +258,11 @@ bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
     printw("\n"
            "Would you like to try again? (y/n): ");
     echo();
-    const char yn = getch();
+    int yn = getch();
+    while(yn != 'y' && yn != 'Y' && yn != 'n' && yn != 'N'){
+        printw("\nPlease press either 'y' or 'n': ");
+        yn = getch();
+    }
     noecho();
     return (yn == 'y' || yn == 'Y');
 }
@@ -259,7 +283,7 @@ void nc_print_single_record(const City& city) {
 
 void Menu_ncurses::Add_records::say_record_exists(const City& city) const {
     printw("\n"
-           "This record already exists in the database!\n\a");
+           "This record already exists in the database!\n");
     nc_print_single_record(city);
 }
 

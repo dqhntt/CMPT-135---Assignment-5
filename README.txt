@@ -3,6 +3,9 @@ CMPT 135 Final Project
 
 Names of Team Members
 ---------------------
+Name: 			Student Number: 
+Aotian Chen 		301360315
+Hieu Duong		301380066
 
 (include the full names, SFU email addresses, and SFU student numbers of all
 team members)
@@ -10,6 +13,8 @@ team members)
 
 Instructions for Compiling and Running
 --------------------------------------
+1. Under the "src" folder, type "make" in the shell to make all the files.
+2. Run the program by typing "./main".
 
 (put instructions here for compiling and running your program; hopefully it's
 just to type "make" in the shell!)
