@@ -1,14 +1,8 @@
 #include "program_main.h"
 #include "Database.h"
-#include "Menu.h"
 #include "Menu.ncurses.h"
 #include "util.h"
 using namespace std;
-
-// FIXME: Just testing sample from: http://www.linuxfocus.org/English/March2002/article233.shtml :)
-
-const int ENTER = 10;
-const int ESCAPE = 27;
 
 // Moved to class Menu constructor.
 // void init_curses() {
@@ -20,113 +14,17 @@ const int ESCAPE = 27;
 //     noecho();
 //     keypad(stdscr, TRUE);
 // }
-void draw_menubar(WINDOW* menubar) {
-    wbkgd(menubar, COLOR_PAIR(2));
-    waddstr(menubar, "Add");
-    wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(A)");
-    wattroff(menubar, COLOR_PAIR(3));
-    wmove(menubar, 0, 15);
-    waddstr(menubar, "Find");
-    wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(F)");
-    wattroff(menubar, COLOR_PAIR(3));
-    wmove(menubar, 0, 30);
-    waddstr(menubar, "Delete");
-    wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(D)");
-    wattroff(menubar, COLOR_PAIR(3));
-    wmove(menubar, 0, 45);
-    waddstr(menubar, "List");
-    wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(L)");
-    wattroff(menubar, COLOR_PAIR(3));
-    wmove(menubar, 0, 60);
-    waddstr(menubar, "Quit");
-    wattron(menubar, COLOR_PAIR(3));
-    waddstr(menubar, "(Q)");
-    wattroff(menubar, COLOR_PAIR(3));
-}
-vector<WINDOW*> draw_menu(int start_col) {
-    vector<WINDOW*> items;
-    items.push_back(newwin(10, 18, 1, start_col));
-    wbkgd(items[0], COLOR_PAIR(2));
-    box(items[0], ACS_VLINE, ACS_HLINE);
-    for (int i = 0; i < 7; i++) {
-        items.push_back(subwin(items.front(), 1, 16, (i + 2), start_col + 1));
-    }
-    if (items.size() < 8) {
-        const string error_msg = "Insufficient memory for 7 City's fields in " + string(__func__)
-            + "()\n" + "FILE: " + string(__FILE__);
-        cmpt::error(error_msg);
-    }
-    wprintw(items[1], "By city name");
-    wprintw(items[2], "By province");
-    wprintw(items[3], "By prov code");
-    wprintw(items[4], "By latitude");
-    wprintw(items[5], "By longitude");
-    wprintw(items[6], "By population");
-    wprintw(items[7], "By pop density");
-    wbkgd(items[1], COLOR_PAIR(1));
-    wrefresh(items[0]);
-    return items;
-}
-void delete_menu(vector<WINDOW*>& items) {
-    for (WINDOW*& item : items) {
-        delwin(item);
-    }
-}
-int scroll_menu(vector<WINDOW*>& items, int menu_start_col) {
-    int key;
-    int selected = 0;
-    while (1) {
-        key = getch();
-        if (key == KEY_DOWN || key == KEY_UP) {
-            wbkgd(items[selected + 1], COLOR_PAIR(2));
-            wnoutrefresh(items[selected + 1]);
-            if (key == KEY_DOWN) {
-                selected = (selected + 1) % (items.size() - 1);
-            } else {
-                selected = (selected + (items.size() - 1) - 1) % (items.size() - 1);
-            }
-            wbkgd(items[selected + 1], COLOR_PAIR(1));
-            wnoutrefresh(items[selected + 1]);
-            doupdate();
-        } else if (key == KEY_LEFT) {
-            delete_menu(items);
-            touchwin(stdscr);
-            refresh();
-            int new_start_col;
-            if (menu_start_col <= 15)
-                new_start_col = 45; // Reset to below menu 4.
-            else
-                new_start_col = menu_start_col - 15;
-            items = draw_menu(new_start_col);
-            return scroll_menu(items, new_start_col);
-        } else if (key == KEY_RIGHT) {
-            delete_menu(items);
-            touchwin(stdscr);
-            refresh();
-            int new_start_col;
-            if (menu_start_col >= 45)
-                new_start_col = 15; // Reset to below menu 2.
-            else
-                new_start_col = menu_start_col + 15;
-            items = draw_menu(new_start_col);
-            return scroll_menu(items, new_start_col);
-        } else if (key == ENTER) {
-            return selected;
-        } else {
-            return -1;
-        }
-    }
-}
 
-int program_main_ncurses() {
-    Menu_ncurses menu;
-    // Menu_Option main_menu_option = Menu_Option::invalid_option;
+void quick_nc_pause() { util::time::pause(100); }
+void nc_say_invalid_option();
+int nc_get_sub_sub_menu_option();
 
-    // open database
+void nc_do_add_records_menu(const Menu_ncurses& menu, Database& db);
+void nc_do_find_records_menu(const Menu_ncurses& menu, Database& db);
+void nc_do_delete_records_menu(const Menu_ncurses& menu, Database& db);
+void nc_do_list_records_menu(const Menu_ncurses& menu, Database& db);
+
+int program_main_ncurses() { // Ncurses menu controller.
     Database db;
     try {
         db.open("database.txt");
@@ -139,76 +37,299 @@ int program_main_ncurses() {
             } catch (const exception&) { db.open("../data/test_database.txt"); }
         }
     }
-
-    int key;
-    WINDOW *menubar, *messagebar;
-
-    bkgd(COLOR_PAIR(1));
-
-    menubar = subwin(stdscr, 1, 80, 0, 0);
-    messagebar = subwin(stdscr, 1, 79, 23, 1);
-    draw_menubar(menubar);
+    Menu_ncurses menu;
     menu.show_main_menu();
-    move(12, 0);
-    printw("Enter the letter of your choice.");
-    refresh();
-
-    do {
-        int selected_item;
-        vector<WINDOW*> menu_items;
-        key = getch();
-        werase(messagebar);
-        wrefresh(messagebar);
-        if (key == 'a' || key == 'A') {
-            //
-            // TODO: Execute menu 1.
-            //
-            touchwin(stdscr);
-            refresh();
-        } else if (key == 'f' || key == 'F') {
-            menu_items = draw_menu(15);
-            selected_item = scroll_menu(menu_items, 15);
-            delete_menu(menu_items);
-            if (selected_item < 0)
-                wprintw(messagebar, "You haven't selected any item.");
-            else // TODO
-                wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
-            touchwin(stdscr);
-            refresh();
-        } else if (key == 'd' || key == 'D') {
-            menu_items = draw_menu(30);
-            selected_item = scroll_menu(menu_items, 30);
-            delete_menu(menu_items);
-            if (selected_item < 0)
-                wprintw(messagebar, "You haven't selected any item.");
-            else // TODO
-                wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
-            touchwin(stdscr);
-            refresh();
-        } else if (key == 'l' || key == 'L') {
-            menu_items = draw_menu(45);
-            selected_item = scroll_menu(menu_items, 45);
-            delete_menu(menu_items);
-            if (selected_item < 0)
-                wprintw(messagebar, "You haven't selected any item.");
-            else // TODO
-                wprintw(messagebar, "You have selected menu item %d.", selected_item + 1);
-            touchwin(stdscr);
-            refresh();
-        } else if (key != ESCAPE && key != 'q' && key != 'Q') {
-            WINDOW* error_msg = subwin(stdscr, 1, 80, 15, 0);
-            wprintw(error_msg, "You entered an invalid option. Please try again: ");
-            touchwin(stdscr);
-            refresh();
-            util::time::pause(600);
-            werase(error_msg);
-            wrefresh(error_msg);
-            delwin(error_msg);
-        }
-    } while (key != ESCAPE && key != 'q' && key != 'Q');
-
-    delwin(menubar);
-    delwin(messagebar);
+    while (true) {
+        quick_nc_pause();
+        switch (getch()) {
+        case '1':
+            nc_do_add_records_menu(menu, db);
+            menu.show_main_menu();
+            break;
+        case '2':
+            nc_do_find_records_menu(menu, db);
+            menu.show_main_menu();
+            break;
+        case '3':
+            nc_do_delete_records_menu(menu, db);
+            menu.show_main_menu();
+            break;
+        case '4':
+            nc_do_list_records_menu(menu, db);
+            menu.show_main_menu();
+            break;
+        case '5':
+            return EXIT_SUCCESS;
+        default:
+            nc_say_invalid_option();
+        } // switch
+        quick_nc_pause();
+    } // while
 
     return EXIT_SUCCESS;
-}
+} // program_main_ncurses
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+void nc_do_add_records_menu(const Menu_ncurses& menu, Database& db) {
+    menu.add_records.show_guides();
+    do {
+        const City city = menu.add_records.get_input();
+        quick_nc_pause();
+        if (db.exists_record(city)) {
+            menu.add_records.say_record_exists(city);
+        } else {
+            db.add_city(city);
+            menu.add_records.say_record_added(city);
+        }
+        quick_nc_pause();
+    } while (menu.ask_if_user_wants_to_try_again());
+} // nc_do_add_records_menu
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+void nc_do_find_records_by_strings_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field);
+void nc_do_find_records_by_numbers_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field);
+
+void nc_do_find_records_menu(const Menu_ncurses& menu, Database& db) {
+    menu.find_records.show_guides();
+    while (true) {
+        switch (getch()) {
+        case '1':
+            nc_do_find_records_by_strings_sub_menu(menu, db, Field::city_name);
+            menu.find_records.show_guides();
+            break;
+        case '2':
+            nc_do_find_records_by_strings_sub_menu(menu, db, Field::province);
+            menu.find_records.show_guides();
+            break;
+        case '3':
+            nc_do_find_records_by_strings_sub_menu(menu, db, Field::province_id);
+            menu.find_records.show_guides();
+            break;
+        case '4':
+            nc_do_find_records_by_numbers_sub_menu(menu, db, Field::latitude);
+            menu.find_records.show_guides();
+            break;
+        case '5':
+            nc_do_find_records_by_numbers_sub_menu(menu, db, Field::longitude);
+            menu.find_records.show_guides();
+            break;
+        case '6':
+            nc_do_find_records_by_numbers_sub_menu(menu, db, Field::population);
+            menu.find_records.show_guides();
+            break;
+        case '7':
+            nc_do_find_records_by_numbers_sub_menu(menu, db, Field::population_density);
+            menu.find_records.show_guides();
+            break;
+        case '8': // Return to main menu.
+            return;
+        default:
+            nc_say_invalid_option();
+        } // switch
+        quick_nc_pause();
+    }
+} // nc_do_find_records_menu
+
+void nc_do_find_records_by_strings_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field) {
+    do {
+        menu.find_records.by_string.show_guides();
+        const int sub_sub_menu_option = menu.get_input_option(3);
+        if (sub_sub_menu_option == 3) {
+            return; // To previous menu.
+        }
+        const bool substring_mode = (sub_sub_menu_option == 2);
+        const string input = menu.find_records.by_string.get_input_string(substring_mode);
+        db.sort_cities(substring_mode ? field : Field::city_name, 0, substring_mode);
+        menu.print_matching_records(db.cities_matching_string(field, substring_mode, input));
+        quick_nc_pause();
+    } while (menu.ask_if_user_wants_to_try_again());
+} // nc_do_find_records_by_strings_sub_menu
+
+void nc_do_find_records_by_numbers_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field) {
+    do {
+        menu.find_records.by_number.show_guides();
+        const int sub_sub_menu_option = menu.get_input_option(3);
+        if (sub_sub_menu_option == 3) {
+            return; // To previous menu.
+        }
+        const bool range_mode = (sub_sub_menu_option == 2);
+        const Range_t inputs = menu.find_records.by_number.get_input_numbers(range_mode);
+        db.sort_cities(range_mode ? field : Field::city_name, 0, range_mode);
+        menu.print_matching_records(db.cities_in_number_range(field, inputs.first, inputs.second));
+        quick_nc_pause();
+    } while (menu.ask_if_user_wants_to_try_again());
+} // nc_do_find_records_by_numbers_sub_menu
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+void nc_do_delete_records_by_strings_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field);
+void nc_do_delete_records_by_numbers_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field);
+
+void nc_do_delete_records_menu(const Menu_ncurses& menu, Database& db) {
+    menu.delete_records.show_guides();
+    while (true) {
+        switch (getch()) {
+        case '1':
+            nc_do_delete_records_by_strings_sub_menu(menu, db, Field::city_name);
+            menu.delete_records.show_guides();
+            break;
+        case '2':
+            nc_do_delete_records_by_strings_sub_menu(menu, db, Field::province);
+            menu.delete_records.show_guides();
+            break;
+        case '3':
+            nc_do_delete_records_by_strings_sub_menu(menu, db, Field::province_id);
+            menu.delete_records.show_guides();
+            break;
+        case '4':
+            nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::latitude);
+            menu.delete_records.show_guides();
+            break;
+        case '5':
+            nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::longitude);
+            menu.delete_records.show_guides();
+            break;
+        case '6':
+            nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::population);
+            menu.delete_records.show_guides();
+            break;
+        case '7':
+            nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::population_density);
+            menu.delete_records.show_guides();
+            break;
+        case '8': // Return to main menu.
+            break;
+        default:
+            nc_say_invalid_option();
+        } // switch
+        quick_nc_pause();
+    }
+} // nc_do_delete_records_menu
+
+void nc_do_delete_records_by_strings_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field) {
+    do {
+        menu.delete_records.by_string.show_guides();
+        const int sub_sub_menu_option = menu.get_input_option(3);
+        if (sub_sub_menu_option == 3) {
+            return; // To previous menu.
+        }
+        const bool substring_mode = (sub_sub_menu_option == 2);
+        const string input = menu.delete_records.by_string.get_input_string(substring_mode);
+        db.sort_cities(substring_mode ? field : Field::city_name, 0, substring_mode);
+        const vector<City> matching_records
+            = db.cities_matching_string(field, substring_mode, input);
+        menu.print_matching_records(matching_records);
+        if (!matching_records.empty() && menu.delete_records.confirm_user_wants_to_delete()) {
+            db.delete_cities(matching_records);
+            menu.delete_records.say_records_deleted(matching_records.size());
+        }
+        quick_nc_pause();
+    } while (menu.ask_if_user_wants_to_try_again());
+} // nc_do_delete_records_by_strings_sub_menu
+
+void nc_do_delete_records_by_numbers_sub_menu(
+    const Menu_ncurses& menu, Database& db, const Field& field) {
+    do {
+        menu.delete_records.by_number.show_guides();
+        const int sub_sub_menu_option = menu.get_input_option(3);
+        if (sub_sub_menu_option == 3) {
+            return; // To previous menu.
+        }
+        const bool range_mode = (sub_sub_menu_option == 2);
+        const Range_t inputs = menu.delete_records.by_number.get_input_numbers(range_mode);
+        db.sort_cities(range_mode ? field : Field::city_name, 0, range_mode);
+        const vector<City> matching_records
+            = db.cities_in_number_range(field, inputs.first, inputs.second);
+        menu.print_matching_records(matching_records);
+        if (!matching_records.empty() && menu.delete_records.confirm_user_wants_to_delete()) {
+            db.delete_cities(matching_records);
+            menu.delete_records.say_records_deleted(matching_records.size());
+        }
+        quick_nc_pause();
+    } while (menu.ask_if_user_wants_to_try_again());
+} // nc_do_delete_records_by_numbers_sub_menu
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+void nc_do_list_records_sub_menu(const Menu_ncurses& menu, Database& db, const Field& field);
+
+void nc_do_list_records_menu(const Menu_ncurses& menu, Database& db) {
+    menu.list_records.show_guides();
+    while (true) {
+        switch (getch()) {
+        case '1':
+            nc_do_list_records_sub_menu(menu, db, Field::city_name);
+            menu.list_records.show_guides();
+            break;
+        case '2':
+            nc_do_list_records_sub_menu(menu, db, Field::province);
+            menu.list_records.show_guides();
+            break;
+        case '3':
+            nc_do_list_records_sub_menu(menu, db, Field::province_id);
+            menu.list_records.show_guides();
+            break;
+        case '4':
+            nc_do_list_records_sub_menu(menu, db, Field::latitude);
+            menu.list_records.show_guides();
+            break;
+        case '5':
+            nc_do_list_records_sub_menu(menu, db, Field::longitude);
+            menu.list_records.show_guides();
+            break;
+        case '6':
+            nc_do_list_records_sub_menu(menu, db, Field::population);
+            menu.list_records.show_guides();
+            break;
+        case '7':
+            nc_do_list_records_sub_menu(menu, db, Field::population_density);
+            menu.list_records.show_guides();
+            break;
+        case '8': // Return to main menu.
+            return;
+        default:
+            nc_say_invalid_option();
+        } // switch
+        quick_nc_pause();
+    }
+} // nc_do_list_records_menu
+
+void nc_do_list_records_sub_menu(const Menu_ncurses& menu, Database& db, const Field& field) {
+    do {
+        util::parse::is_string_field(field) ? menu.list_records.show_options_for_strings()
+                                            : menu.list_records.show_options_for_numbers();
+        const int sub_sub_menu_option = menu.get_input_option(3);
+        if (sub_sub_menu_option == 3) {
+            return; // To previous menu.
+        }
+        const bool reverse_mode = (sub_sub_menu_option == 2);
+        db.sort_cities(field, reverse_mode, 0);
+        menu.print_matching_records(db.get_cities());
+        quick_nc_pause();
+    } while (menu.ask_if_user_wants_to_try_again());
+} // nc_do_list_records_sub_menu
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// int nc_get_sub_sub_menu_option() {
+//     int cur_y, cur_x;
+//     getyx(stdscr, cur_y, cur_x);
+// } // nc_get_sub_sub_menu_option
+
+void nc_say_invalid_option() {
+    echo();
+    attron(A_BOLD | A_BLINK);
+    mvprintw(12, 0, "Invalid option.");
+    attroff(A_BOLD | A_BLINK);
+    addstr(" ");
+    noecho();
+} // nc_say_invalid_option

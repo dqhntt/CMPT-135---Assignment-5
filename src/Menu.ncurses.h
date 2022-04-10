@@ -2,7 +2,6 @@
 #define MENU_NCURSES_H
 
 #include "City.h"
-#include "Menu.h"
 #include "util.ncurses.h" // ncurses library is included in this file.
 #include <vector>
 
@@ -12,6 +11,7 @@ class Menu_ncurses {
 private:
     // This RAII object eliminates the needs to call initscr() and endwin() manually.
     const util::ncurses::Ncurses_RAII nc;
+    int _max_y, _max_x;
     // Common sub-sub-menus.
     class By_string {
     public:
@@ -27,13 +27,11 @@ private:
 public:
     Menu_ncurses();
     ~Menu_ncurses();
-    // Returns any possible Menu_Options up to max_options.
-    // All other menu options result in invalid_option.
-    // Currently support only up to 8 options.
-    Menu_Option get_input_option(int max_options) const;
+    // Returns any possible int btw 1 and max_options.
+    int get_input_option(int max_options) const;
     bool ask_if_user_wants_to_try_again() const;
     void show_main_menu() const;
-    void print_records(const std::vector<City>& records, WINDOW* menubar) const;
+    void print_matching_records(const std::vector<City>& records) const;
 
     // Sub-menus:
     class Add_records {

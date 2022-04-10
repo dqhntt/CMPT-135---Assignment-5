@@ -29,8 +29,7 @@ private:
 public:
     Menu();
     ~Menu();
-    // Returns any possible Menu_Options up to max_options.
-    // All other menu options result in invalid_option.
+    // Returns any possible Menu_Options up to max_options, except for invalid_option.
     // Currently support only up to 8 options.
     Menu_Option get_input_option(int max_options) const;
     bool ask_if_user_wants_to_try_again() const;

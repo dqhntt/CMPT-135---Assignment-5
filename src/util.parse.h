@@ -7,13 +7,9 @@
 
 namespace util::parse {
 
+// For `class Menu`.
 Menu_Option convert_to_menu_option(const std::string& input, int max_options);
 YesNo_Option convert_to_yesno_option(const std::string& input);
-
-namespace ncurses {
-    Menu_Option convert_to_menu_option(const std::string& input);
-    YesNo_Option convert_to_yesno_option(const std::string& input);
-} // namespace ncurses
 
 // Trim str in-place.
 const std::string& trim(std::string& str);
