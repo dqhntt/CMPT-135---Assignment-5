@@ -17,12 +17,12 @@ private:
     // Common sub-sub-menus.
     class By_string {
     public:
-        void show_guides() const;
+        void show_guides(const Field& field) const;
         std::string get_input_string(bool substr_mode) const;
     };
     class By_number {
     public:
-        void show_guides() const;
+        void show_guides(const Field& field) const;
         Range_t get_input_numbers(bool range_mode) const;
     };
 
@@ -61,8 +61,8 @@ public:
     class List_records {
     public:
         void show_guides() const;
-        void show_options_for_strings() const;
-        void show_options_for_numbers() const;
+        void show_options_for_strings(const Field& field) const;
+        void show_options_for_numbers(const Field& field) const;
     } list_records;
 }; // class Menu
 

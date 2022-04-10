@@ -20,6 +20,7 @@ bool is_valid_DD_latitude(const std::string& str);
 bool is_valid_DD_longitude(const std::string& str);
 bool is_string_field(const Field& field);
 bool is_numeric_field(const Field& field);
+std::string to_string_field(const Field& field);
 
 /**
  * @details

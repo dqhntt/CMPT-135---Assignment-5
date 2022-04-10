@@ -5,7 +5,6 @@ using namespace std;
 
 Menu_ncurses::Menu_ncurses() {
     refresh();
-    getmaxyx(stdscr, _max_y, _max_x);
     start_color();
     init_pair(1, COLOR_WHITE, COLOR_BLACK);
     init_pair(2, COLOR_BLUE, COLOR_WHITE);
@@ -37,21 +36,20 @@ Menu_ncurses::~Menu_ncurses() {
 char Menu_ncurses::get_input_option(int max_options) const {
     int cur_y, cur_x;
     getyx(curscr, cur_y, cur_x);
-    WINDOW* input_box = subwin(stdscr, 6, 45, cur_y + 1, 1);
+    WINDOW* input_box = subwin(stdscr, 6, 45, cur_y + 2, 1);
     box(input_box, '|', '-');
     mvwprintw(input_box, 2, 2, "Enter the option number of your choice: ");
     echo();
     touchwin(stdscr);
     int key = wgetch(input_box);
+    attron(A_REVERSE);
     while (key < '1' || key > min('9', static_cast<char>(max_options + '0'))) {
-        int color_pair_num = 1 + time(0) % 6;
-        attron(A_BOLD | A_BLINK);
         mvwprintw(input_box, 4, 2, "Invalid option.");
-        attroff(A_BOLD | A_BLINK);
         wmove(input_box, 2, 42); // Back to :
         touchwin(stdscr);
         key = wgetch(input_box);
     }
+    attroff(A_REVERSE);
     werase(input_box);
     delwin(input_box);
     refresh();
@@ -62,16 +60,17 @@ char Menu_ncurses::get_input_option(int max_options) const {
 void Menu_ncurses::print_matching_records(const vector<City>& records) const {
     printw("\nHere is a list of matching cities:\n");
     printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ;\n");
-    printw("Population ; Population-Density]");
+    printw(" Population ; Population-Density]");
     refresh();
     bkgd(COLOR_PAIR(2));
-    for (const City& city : records) {
-        printw("\n%d) [%s];", count++, city.name.c_str());
+    for (int i = 0; i < records.size(); i++) {
+        City city = records[i];
+        printw("\n%d) [%s];", i + 1, city.name.c_str());
         printw("\n[%s];[%s];[%.3f];[%.3f];[%d];[%.2f]", city.province.c_str(),
             city.province_id.c_str(), city.latitude, city.longitude, city.population,
             city.population_density);
         // This is to solve the problem that the screen cannot display all the cities together
-        if (count % 9 == 0) { // Do it every 9 cities
+        if ((i + 1) % 9 == 0) { // Do it every 9 cities
             attron(A_BOLD | A_BLINK);
             printw("\n\nPress \"down\" key to go to the next page,"
                    "\npress \"up\" key to go to the previous page,"
@@ -79,17 +78,21 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
             attroff(A_BOLD | A_BLINK);
             noecho();
             int key = getch();
-            while (key != KEY_DOWN) {
-                if (key == 's' || key == 'S') {
-                    printw("...\n\n");
-                    goto finish; // stop printing
-                }
+            while (key != KEY_DOWN && key != 's' && key != 'S' && key != KEY_UP) {
                 // If user enters other keys, do nothing and get the next input
                 key = getch();
             }
+            if (key == 's' || key == 'S') {
+                printw("...\n\n");
+                break; // stop printing
+            } else if (key == KEY_UP) {
+                if (i < 18)
+                    i = -1; // Goes back to 1 before index 0 so that in next iteration i = 0;
+                else
+                    i = i - 18;
+            }
         } // if
     }
-finish:
     printw("\n\n"
            "Total = %d records found.\n\n",
         records.size());
@@ -259,8 +262,7 @@ City Menu_ncurses::Add_records::get_input() const {
 }
 
 bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
-    printw("\n"
-           "Would you like to try again? (y/n): ");
+    printw("Would you like to try again? (y/n): ");
     echo();
     int yn = getch();
     while (yn != 'y' && yn != 'Y' && yn != 'n' && yn != 'N') {
@@ -268,7 +270,12 @@ bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
         yn = getch();
     }
     noecho();
-    return (yn == 'y' || yn == 'Y');
+    if (yn == 'y' || yn == 'Y')
+        return true;
+    else {
+        bkgd(COLOR_PAIR(1));
+        return false;
+    }
 }
 
 void nc_print_single_record(const City& city) {
@@ -322,11 +329,13 @@ void Menu_ncurses::Find_records::show_guides() const {
     nc_show_menu_options_for_possible_fields();
 }
 
-void Menu_ncurses::By_string::show_guides() const {
+void Menu_ncurses::By_string::show_guides(const Field& field) const {
     clear();
+    const string field_name = util::parse::to_string_field(field);
     printw("\n"
-           "Searching by strings\n");
-    show_loading_bar_ncurses(20);
+           "Searching by strings for %s\n",
+        field_name.c_str());
+    show_loading_bar_ncurses(25 + field_name.size());
     printw("\n"
            "You can search for exact or partial matches to your input.\n"
            "NOTE: queries are case-sensitive, i.e., Van != van\n"
@@ -350,11 +359,13 @@ string Menu_ncurses::By_string::get_input_string(bool substr_mode) const {
     return nc_get_input_string_trimmed();
 }
 
-void Menu_ncurses::By_number::show_guides() const {
+void Menu_ncurses::By_number::show_guides(const Field& field) const {
     clear();
+    const string field_name = util::parse::to_string_field(field);
     printw("\n"
-           "Searching by numbers\n");
-    show_loading_bar_ncurses(20);
+           "Searching by numbers for %s\n",
+        field_name.c_str());
+    show_loading_bar_ncurses(25 + field_name.size());
     printw("\n"
            "You can search for exact matches or matches in a range of numbers.\n"
            "\n"
@@ -412,12 +423,10 @@ bool Menu_ncurses::Delete_records::confirm_user_wants_to_delete() const {
 }
 
 void Menu_ncurses::Delete_records::say_records_deleted(int how_many) const {
-    printw("\n");
-    if (how_many >= 0) {
-        printw("%d", how_many);
-    }
-    printw("matching records deleted successfully.\n"
-           "\n");
+    printw("\n\n"
+           "%d matching records deleted successfully.\n"
+           "\n",
+        how_many);
     refresh();
 }
 
@@ -431,11 +440,13 @@ void Menu_ncurses::List_records::show_guides() const {
     nc_show_menu_options_for_possible_fields();
 }
 
-void Menu_ncurses::List_records::show_options_for_strings() const {
+void Menu_ncurses::List_records::show_options_for_strings(const Field& field) const {
     clear();
+    const string field_name = util::parse::to_string_field(field);
     printw("\n"
-           "Listing by strings\n");
-    show_loading_bar_ncurses(18);
+           "Listing by strings for %s\n",
+        field_name.c_str());
+    show_loading_bar_ncurses(23 + field_name.size());
     printw("\n"
            "Categorical fields in records can be listed in:\n"
            "\n"
@@ -447,11 +458,13 @@ void Menu_ncurses::List_records::show_options_for_strings() const {
     refresh();
 }
 
-void Menu_ncurses::List_records::show_options_for_numbers() const {
+void Menu_ncurses::List_records::show_options_for_numbers(const Field& field) const {
     clear();
+    const string field_name = util::parse::to_string_field(field);
     printw("\n"
-           "Listing by numbers\n");
-    show_loading_bar_ncurses(18);
+           "Listing by numbers for %s\n",
+        field_name.c_str());
+    show_loading_bar_ncurses(23 + field_name.size());
     printw("\n"
            "Numerical fields in records can be listed in:\n"
            "\n"

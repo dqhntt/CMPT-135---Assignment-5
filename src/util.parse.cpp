@@ -22,6 +22,28 @@ bool util::parse::is_numeric_field(const Field& field) {
         || field == Field::population_density);
 }
 
+std::string util::parse::to_string_field(const Field& field) {
+    switch (field) {
+    case Field::city_name:
+        return "city name";
+    case Field::province:
+        return "province name";
+    case Field::province_id:
+        return "province code";
+    case Field::latitude:
+        return "latitude";
+    case Field::longitude:
+        return "longitude";
+    case Field::population:
+        return "population";
+    case Field::population_density:
+        return "population density";
+    default:
+        cmpt::error("Unknown field.");
+    }
+    return "";
+}
+
 // This version uses lambda and forward/reverse iterators.
 // Ref: https://en.cppreference.com/w/cpp/string/byte/isspace
 //      https://stackoverflow.com/a/2038101

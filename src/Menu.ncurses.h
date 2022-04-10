@@ -2,7 +2,7 @@
 #define MENU_NCURSES_H
 
 #include "City.h"
-#include "util.ncurses.h" // ncurses library is included in this file.
+#include "util.ncurses.h"
 #include <vector>
 
 using Range_t = std::pair<double, double>;
@@ -11,16 +11,16 @@ class Menu_ncurses {
 private:
     // This RAII object eliminates the needs to call initscr() and endwin() manually.
     const util::ncurses::Ncurses_initializer nc_init;
-    int _max_y, _max_x;
+
     // Common sub-sub-menus.
     class By_string {
     public:
-        void show_guides() const;
+        void show_guides(const Field& field) const;
         std::string get_input_string(bool substr_mode) const;
     };
     class By_number {
     public:
-        void show_guides() const;
+        void show_guides(const Field& field) const;
         Range_t get_input_numbers(bool range_mode) const;
     };
 
@@ -58,8 +58,8 @@ public:
     class List_records {
     public:
         void show_guides() const;
-        void show_options_for_strings() const;
-        void show_options_for_numbers() const;
+        void show_options_for_strings(const Field& field) const;
+        void show_options_for_numbers(const Field& field) const;
     } list_records;
 }; // class Menu
 

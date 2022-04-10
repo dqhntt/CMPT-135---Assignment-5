@@ -28,11 +28,9 @@ int program_main() { // Menu controller.
         }
     }
     const Menu menu;
-    Menu_Option main_menu_option;
-    do {
+    while (true) {
         menu.show_main_menu();
-        main_menu_option = menu.get_input_option(5);
-        switch (main_menu_option) {
+        switch (menu.get_input_option(5)) {
         case Menu_Option::one:
             do_add_records_menu(menu, db);
             break;
@@ -51,7 +49,7 @@ int program_main() { // Menu controller.
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
         quick_pause();
-    } while (main_menu_option != Menu_Option::five); // 5 = Quit.
+    } // while
     return EXIT_SUCCESS;
 } // program_main
 
@@ -78,11 +76,9 @@ void do_find_records_by_strings_sub_menu(const Menu& menu, Database& db, const F
 void do_find_records_by_numbers_sub_menu(const Menu& menu, Database& db, const Field& field);
 
 void do_find_records_menu(const Menu& menu, Database& db) {
-    Menu_Option sub_menu_option;
-    do {
+    while (true) {
         menu.find_records.show_guides();
-        sub_menu_option = menu.get_input_option(8);
-        switch (sub_menu_option) {
+        switch (menu.get_input_option(8)) {
         case Menu_Option::one:
             do_find_records_by_strings_sub_menu(menu, db, Field::city_name);
             break;
@@ -110,12 +106,12 @@ void do_find_records_menu(const Menu& menu, Database& db) {
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
         quick_pause();
-    } while (sub_menu_option != Menu_Option::eight); // 8 = Return to main menu.
+    }
 } // do_find_records_menu
 
 void do_find_records_by_strings_sub_menu(const Menu& menu, Database& db, const Field& field) {
     do {
-        menu.find_records.by_string.show_guides();
+        menu.find_records.by_string.show_guides(field);
         const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == Menu_Option::three) {
             return; // To previous menu.
@@ -130,7 +126,7 @@ void do_find_records_by_strings_sub_menu(const Menu& menu, Database& db, const F
 
 void do_find_records_by_numbers_sub_menu(const Menu& menu, Database& db, const Field& field) {
     do {
-        menu.find_records.by_number.show_guides();
+        menu.find_records.by_number.show_guides(field);
         const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == Menu_Option::three) {
             return; // To previous menu.
@@ -149,11 +145,9 @@ void do_delete_records_by_strings_sub_menu(const Menu& menu, Database& db, const
 void do_delete_records_by_numbers_sub_menu(const Menu& menu, Database& db, const Field& field);
 
 void do_delete_records_menu(const Menu& menu, Database& db) {
-    Menu_Option sub_menu_option;
-    do {
+    while (true) {
         menu.delete_records.show_guides();
-        sub_menu_option = menu.get_input_option(8);
-        switch (sub_menu_option) {
+        switch (menu.get_input_option(8)) {
         case Menu_Option::one:
             do_delete_records_by_strings_sub_menu(menu, db, Field::city_name);
             break;
@@ -181,12 +175,12 @@ void do_delete_records_menu(const Menu& menu, Database& db) {
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
         quick_pause();
-    } while (sub_menu_option != Menu_Option::eight); // 8 = Return to main menu.
+    }
 } // do_delete_records_menu
 
 void do_delete_records_by_strings_sub_menu(const Menu& menu, Database& db, const Field& field) {
     do {
-        menu.delete_records.by_string.show_guides();
+        menu.delete_records.by_string.show_guides(field);
         const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == Menu_Option::three) {
             return; // To previous menu.
@@ -207,7 +201,7 @@ void do_delete_records_by_strings_sub_menu(const Menu& menu, Database& db, const
 
 void do_delete_records_by_numbers_sub_menu(const Menu& menu, Database& db, const Field& field) {
     do {
-        menu.delete_records.by_number.show_guides();
+        menu.delete_records.by_number.show_guides(field);
         const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == Menu_Option::three) {
             return; // To previous menu.
@@ -231,11 +225,9 @@ void do_delete_records_by_numbers_sub_menu(const Menu& menu, Database& db, const
 void do_list_records_sub_menu(const Menu& menu, Database& db, const Field& field);
 
 void do_list_records_menu(const Menu& menu, Database& db) {
-    Menu_Option sub_menu_option;
-    do {
+    while (true) {
         menu.list_records.show_guides();
-        sub_menu_option = menu.get_input_option(8);
-        switch (sub_menu_option) {
+        switch (menu.get_input_option(8)) {
         case Menu_Option::one:
             do_list_records_sub_menu(menu, db, Field::city_name);
             break;
@@ -263,13 +255,13 @@ void do_list_records_menu(const Menu& menu, Database& db) {
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch
         quick_pause();
-    } while (sub_menu_option != Menu_Option::eight); // 8 = Return to main menu.
+    }
 } // do_list_records_menu
 
 void do_list_records_sub_menu(const Menu& menu, Database& db, const Field& field) {
     do {
-        util::parse::is_string_field(field) ? menu.list_records.show_options_for_strings()
-                                            : menu.list_records.show_options_for_numbers();
+        util::parse::is_string_field(field) ? menu.list_records.show_options_for_strings(field)
+                                            : menu.list_records.show_options_for_numbers(field);
         const Menu_Option sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == Menu_Option::three) {
             return; // To previous menu.

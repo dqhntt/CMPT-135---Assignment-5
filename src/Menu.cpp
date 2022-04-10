@@ -278,11 +278,12 @@ void Menu::Find_records::show_guides() const {
     show_menu_options_for_possible_fields();
 }
 
-void Menu::By_string::show_guides() const {
+void Menu::By_string::show_guides(const Field& field) const {
     cout << "\n";
-    show_loading_bar(24, '~');
-    cout << "| Searching by strings |\n";
-    show_loading_bar(24, '~');
+    const string field_name = util::parse::to_string_field(field);
+    show_loading_bar(29 + field_name.size(), '~');
+    cout << "| Searching by strings for " << field_name << " |\n";
+    show_loading_bar(29 + field_name.size(), '~');
     cout << "\n"
             "You can search for exact or partial matches to your input.\n"
             "NOTE: queries are case-sensitive, i.e., Van != van\n"
@@ -301,11 +302,12 @@ string Menu::By_string::get_input_string(bool substr_mode) const {
     return util::parse::trim(input_str);
 }
 
-void Menu::By_number::show_guides() const {
+void Menu::By_number::show_guides(const Field& field) const {
     cout << "\n";
-    show_loading_bar(24, '~');
-    cout << "| Searching by numbers |\n";
-    show_loading_bar(24, '~');
+    const string field_name = util::parse::to_string_field(field);
+    show_loading_bar(29 + field_name.size(), '~');
+    cout << "| Searching by numbers for " << field_name << " |\n";
+    show_loading_bar(29 + field_name.size(), '~');
     cout << "\n"
             "You can search for exact matches or matches in a range of numbers.\n"
             "\n"
@@ -376,11 +378,12 @@ void Menu::List_records::show_guides() const {
     show_menu_options_for_possible_fields();
 }
 
-void Menu::List_records::show_options_for_strings() const {
+void Menu::List_records::show_options_for_strings(const Field& field) const {
     cout << "\n";
-    show_loading_bar(22, '~');
-    cout << "| Listing by strings |\n";
-    show_loading_bar(22, '~');
+    const string field_name = util::parse::to_string_field(field);
+    show_loading_bar(23 + field_name.size(), '~');
+    cout << "| Listing by strings " << field_name << " |\n";
+    show_loading_bar(23 + field_name.size(), '~');
     cout << "\n"
             "Categorical fields in records can be listed in:\n"
             "\n"
@@ -391,11 +394,12 @@ void Menu::List_records::show_options_for_strings() const {
             "\n";
 }
 
-void Menu::List_records::show_options_for_numbers() const {
+void Menu::List_records::show_options_for_numbers(const Field& field) const {
     cout << "\n";
-    show_loading_bar(22, '~');
-    cout << "| Listing by numbers |\n";
-    show_loading_bar(22, '~');
+    const string field_name = util::parse::to_string_field(field);
+    show_loading_bar(23 + field_name.size(), '~');
+    cout << "| Listing by numbers " << field_name << " |\n";
+    show_loading_bar(23 + field_name.size(), '~');
     cout << "\n"
             "Numerical fields in records can be listed in:\n"
             "\n"

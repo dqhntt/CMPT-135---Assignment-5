@@ -5,13 +5,6 @@
 using namespace std;
 
 void quick_nc_pause() { util::time::pause(100); }
-void nc_say_invalid_option() {
-    echo();
-    attron(A_BOLD | A_BLINK);
-    mvprintw(14, 0, "Invalid option.");
-    attroff(A_BOLD | A_BLINK);
-    addstr(" ");
-} // nc_say_invalid_option
 
 void nc_do_add_records_menu(const Menu_ncurses& menu, Database& db);
 void nc_do_find_records_menu(const Menu_ncurses& menu, Database& db);
@@ -32,30 +25,24 @@ int program_main_ncurses() { // Ncurses menu controller.
         }
     }
     Menu_ncurses menu;
-    menu.show_main_menu();
     while (true) {
-        quick_nc_pause();
-        switch (getch()) {
+        menu.show_main_menu();
+        switch (menu.get_input_option(5)) {
         case '1':
             nc_do_add_records_menu(menu, db);
-            menu.show_main_menu();
             break;
         case '2':
             nc_do_find_records_menu(menu, db);
-            menu.show_main_menu();
             break;
         case '3':
             nc_do_delete_records_menu(menu, db);
-            menu.show_main_menu();
             break;
         case '4':
             nc_do_list_records_menu(menu, db);
-            menu.show_main_menu();
             break;
         case '5':
             return EXIT_SUCCESS;
-        default:
-            nc_say_invalid_option();
+        default:;
         } // switch
         quick_nc_pause();
     } // while
@@ -87,41 +74,33 @@ void nc_do_find_records_by_numbers_sub_menu(
     const Menu_ncurses& menu, Database& db, const Field& field);
 
 void nc_do_find_records_menu(const Menu_ncurses& menu, Database& db) {
-    menu.find_records.show_guides();
     while (true) {
-        switch (getch()) {
+        menu.find_records.show_guides();
+        switch (menu.get_input_option(8)) {
         case '1':
             nc_do_find_records_by_strings_sub_menu(menu, db, Field::city_name);
-            menu.find_records.show_guides();
             break;
         case '2':
             nc_do_find_records_by_strings_sub_menu(menu, db, Field::province);
-            menu.find_records.show_guides();
             break;
         case '3':
             nc_do_find_records_by_strings_sub_menu(menu, db, Field::province_id);
-            menu.find_records.show_guides();
             break;
         case '4':
             nc_do_find_records_by_numbers_sub_menu(menu, db, Field::latitude);
-            menu.find_records.show_guides();
             break;
         case '5':
             nc_do_find_records_by_numbers_sub_menu(menu, db, Field::longitude);
-            menu.find_records.show_guides();
             break;
         case '6':
             nc_do_find_records_by_numbers_sub_menu(menu, db, Field::population);
-            menu.find_records.show_guides();
             break;
         case '7':
             nc_do_find_records_by_numbers_sub_menu(menu, db, Field::population_density);
-            menu.find_records.show_guides();
             break;
         case '8': // Return to main menu.
             return;
-        default:
-            nc_say_invalid_option();
+        default:;
         } // switch
         quick_nc_pause();
     }
@@ -130,7 +109,7 @@ void nc_do_find_records_menu(const Menu_ncurses& menu, Database& db) {
 void nc_do_find_records_by_strings_sub_menu(
     const Menu_ncurses& menu, Database& db, const Field& field) {
     do {
-        menu.find_records.by_string.show_guides();
+        menu.find_records.by_string.show_guides(field);
         const int sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == '3') {
             return; // To previous menu.
@@ -146,7 +125,7 @@ void nc_do_find_records_by_strings_sub_menu(
 void nc_do_find_records_by_numbers_sub_menu(
     const Menu_ncurses& menu, Database& db, const Field& field) {
     do {
-        menu.find_records.by_number.show_guides();
+        menu.find_records.by_number.show_guides(field);
         const int sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == '3') {
             return; // To previous menu.
@@ -167,41 +146,33 @@ void nc_do_delete_records_by_numbers_sub_menu(
     const Menu_ncurses& menu, Database& db, const Field& field);
 
 void nc_do_delete_records_menu(const Menu_ncurses& menu, Database& db) {
-    menu.delete_records.show_guides();
     while (true) {
-        switch (getch()) {
+        menu.delete_records.show_guides();
+        switch (menu.get_input_option(8)) {
         case '1':
             nc_do_delete_records_by_strings_sub_menu(menu, db, Field::city_name);
-            menu.delete_records.show_guides();
             break;
         case '2':
             nc_do_delete_records_by_strings_sub_menu(menu, db, Field::province);
-            menu.delete_records.show_guides();
             break;
         case '3':
             nc_do_delete_records_by_strings_sub_menu(menu, db, Field::province_id);
-            menu.delete_records.show_guides();
             break;
         case '4':
             nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::latitude);
-            menu.delete_records.show_guides();
             break;
         case '5':
             nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::longitude);
-            menu.delete_records.show_guides();
             break;
         case '6':
             nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::population);
-            menu.delete_records.show_guides();
             break;
         case '7':
             nc_do_delete_records_by_numbers_sub_menu(menu, db, Field::population_density);
-            menu.delete_records.show_guides();
             break;
         case '8': // Return to main menu.
             return;
-        default:
-            nc_say_invalid_option();
+        default:;
         } // switch
         quick_nc_pause();
     }
@@ -210,7 +181,7 @@ void nc_do_delete_records_menu(const Menu_ncurses& menu, Database& db) {
 void nc_do_delete_records_by_strings_sub_menu(
     const Menu_ncurses& menu, Database& db, const Field& field) {
     do {
-        menu.delete_records.by_string.show_guides();
+        menu.delete_records.by_string.show_guides(field);
         const int sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == 3) {
             return; // To previous menu.
@@ -232,7 +203,7 @@ void nc_do_delete_records_by_strings_sub_menu(
 void nc_do_delete_records_by_numbers_sub_menu(
     const Menu_ncurses& menu, Database& db, const Field& field) {
     do {
-        menu.delete_records.by_number.show_guides();
+        menu.delete_records.by_number.show_guides(field);
         const int sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == 3) {
             return; // To previous menu.
@@ -256,41 +227,33 @@ void nc_do_delete_records_by_numbers_sub_menu(
 void nc_do_list_records_sub_menu(const Menu_ncurses& menu, Database& db, const Field& field);
 
 void nc_do_list_records_menu(const Menu_ncurses& menu, Database& db) {
-    menu.list_records.show_guides();
     while (true) {
-        switch (getch()) {
+        menu.list_records.show_guides();
+        switch (menu.get_input_option(8)) {
         case '1':
             nc_do_list_records_sub_menu(menu, db, Field::city_name);
-            menu.list_records.show_guides();
             break;
         case '2':
             nc_do_list_records_sub_menu(menu, db, Field::province);
-            menu.list_records.show_guides();
             break;
         case '3':
             nc_do_list_records_sub_menu(menu, db, Field::province_id);
-            menu.list_records.show_guides();
             break;
         case '4':
             nc_do_list_records_sub_menu(menu, db, Field::latitude);
-            menu.list_records.show_guides();
             break;
         case '5':
             nc_do_list_records_sub_menu(menu, db, Field::longitude);
-            menu.list_records.show_guides();
             break;
         case '6':
             nc_do_list_records_sub_menu(menu, db, Field::population);
-            menu.list_records.show_guides();
             break;
         case '7':
             nc_do_list_records_sub_menu(menu, db, Field::population_density);
-            menu.list_records.show_guides();
             break;
         case '8': // Return to main menu.
             return;
-        default:
-            nc_say_invalid_option();
+        default:;
         } // switch
         quick_nc_pause();
     }
@@ -298,8 +261,8 @@ void nc_do_list_records_menu(const Menu_ncurses& menu, Database& db) {
 
 void nc_do_list_records_sub_menu(const Menu_ncurses& menu, Database& db, const Field& field) {
     do {
-        util::parse::is_string_field(field) ? menu.list_records.show_options_for_strings()
-                                            : menu.list_records.show_options_for_numbers();
+        util::parse::is_string_field(field) ? menu.list_records.show_options_for_strings(field)
+                                            : menu.list_records.show_options_for_numbers(field);
         const int sub_sub_menu_option = menu.get_input_option(3);
         if (sub_sub_menu_option == 3) {
             return; // To previous menu.
