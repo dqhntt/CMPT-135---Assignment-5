@@ -60,34 +60,36 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
     printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; ");
     printw("Population-Density]");
     refresh();
-    int count = 1;
     bkgd(COLOR_PAIR(2));
-    for (const City& city : records) {
-        printw("\n%d) [%s];", count++, city.name.c_str());
+    for (int i = 0; i < records.size(); i++) {
+        City city = records[i];
+        printw("\n%d) [%s];", (i+1), city.name.c_str());
         printw("\n%s];[%s];[%.3f];[%.3f];[%d];[%.2f]", city.province.c_str(),
             city.province_id.c_str(), city.latitude, city.longitude, city.population,
             city.population_density);
-        //This is to solve the problem that the screen cannot display all the cities together
-        if(count % 9 == 0){ // Do it every 9 cities
+        // This is to solve the problem that the screen cannot display all the cities together
+        if ((i+1) % 9 == 0) { // Do it every 9 cities
             printw("\n\nPress \"down\" key to go to the next page,"
+                   "\npress \"up\" key to go to the previous page,"
                    "\nOR press 's' to skip the displaying process.\n\n");
             noecho();
             int key = getch();
-            while(key != KEY_DOWN){
-                if(key == 's' || key == 'S'){
-                    printw("...\n\n");
-                    goto finish; //stop printing
-                }
-                //If user enters other keys, do nothing and get the next input
-                key = getch(); 
+            while (key != KEY_DOWN && key != KEY_UP && key != 's' && key != 'S') {
+                // If user enters other keys, do nothing and get the next input
+                key = getch();
             }
-        } // if 
-        
+            if (key == 's' || key == 'S') {
+                printw("...\n\n");
+                break; // stop printing
+            } else if (key == KEY_UP){
+                if(i < 18)
+                    i = -1; //Goes to one index before 0 so that in next itteration i = 0
+                else
+                    i = (i - 18); //Goes back to the previous page
+            }
+        } // if
     }
-    finish:
     printw("Total = %d records found.\n\n", records.size());
-    
-    
 }
 
 void Menu_ncurses::show_main_menu() const {
@@ -259,7 +261,7 @@ bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
            "Would you like to try again? (y/n): ");
     echo();
     int yn = getch();
-    while(yn != 'y' && yn != 'Y' && yn != 'n' && yn != 'N'){
+    while (yn != 'y' && yn != 'Y' && yn != 'n' && yn != 'N') {
         printw("\nPlease press either 'y' or 'n': ");
         yn = getch();
     }
