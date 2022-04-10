@@ -64,7 +64,6 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
     printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ;\n");
     printw("Population ; Population-Density]");
     refresh();
-    int count = 1;
     bkgd(COLOR_PAIR(2));
     for (const City& city : records) {
         printw("\n%d) [%s];", count++, city.name.c_str());
@@ -75,6 +74,7 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
         if (count % 9 == 0) { // Do it every 9 cities
             attron(A_BOLD | A_BLINK);
             printw("\n\nPress \"down\" key to go to the next page,"
+                   "\npress \"up\" key to go to the previous page,"
                    "\nOR press 's' to skip the displaying process.\n\n");
             attroff(A_BOLD | A_BLINK);
             noecho();
