@@ -10,7 +10,7 @@ using Range_t = std::pair<double, double>;
 class Menu_ncurses {
 private:
     // This RAII object eliminates the needs to call initscr() and endwin() manually.
-    const util::ncurses::Ncurses_RAII nc;
+    const util::ncurses::Ncurses_initializer nc_init;
     int _max_y, _max_x;
     // Common sub-sub-menus.
     class By_string {
@@ -27,8 +27,8 @@ private:
 public:
     Menu_ncurses();
     ~Menu_ncurses();
-    // Returns any possible int btw 1 and max_options.
-    int get_input_option(int max_options) const;
+    // Returns any possible char btw '1' and min('9', max_options).
+    char get_input_option(int max_options) const;
     bool ask_if_user_wants_to_try_again() const;
     void show_main_menu() const;
     void print_matching_records(const std::vector<City>& records) const;

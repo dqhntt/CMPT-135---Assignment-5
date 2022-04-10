@@ -19,18 +19,18 @@ namespace util::ncurses {
 // Ref:
 //    https://docs.oracle.com/cd/E36784_01/html/E36880/isendwin-3curses.html
 //    https://invisible-island.net/ncurses/man/curs_memleaks.3x.html
-class Ncurses_RAII {
+class Ncurses_initializer {
 public:
     // Initialize terminal in curses mode.
-    Ncurses_RAII() { initscr(); }
+    Ncurses_initializer() { initscr(); }
     // End curses mode.
-    ~Ncurses_RAII() {
+    ~Ncurses_initializer() {
         if (!isendwin()) {
             endwin();
         }
         exit_curses(0);
     }
-}; // class Ncurses_RAII
+}; // class Ncurses_initializer
 
 } // namespace util::ncurses
 

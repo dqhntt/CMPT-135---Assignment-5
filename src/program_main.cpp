@@ -176,7 +176,7 @@ void do_delete_records_menu(const Menu& menu, Database& db) {
             do_delete_records_by_numbers_sub_menu(menu, db, Field::population_density);
             break;
         case Menu_Option::eight: // Return to main menu.
-            break;
+            return;
         default:
             cmpt::error("Invalid / Unimplemented menu option.");
         } // switch

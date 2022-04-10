@@ -7,9 +7,12 @@ Menu_ncurses::Menu_ncurses() {
     refresh();
     getmaxyx(stdscr, _max_y, _max_x);
     start_color();
-    init_pair(1, COLOR_WHITE, COLOR_BLUE);
+    init_pair(1, COLOR_WHITE, COLOR_BLACK);
     init_pair(2, COLOR_BLUE, COLOR_WHITE);
     init_pair(3, COLOR_RED, COLOR_WHITE);
+    init_pair(4, COLOR_WHITE, COLOR_BLUE);
+    init_pair(5, COLOR_YELLOW, COLOR_GREEN);
+    init_pair(6, COLOR_RED, COLOR_MAGENTA);
     curs_set(0);
     noecho();
     keypad(stdscr, TRUE);
@@ -28,76 +31,77 @@ void show_loading_bar_ncurses(
 
 Menu_ncurses::~Menu_ncurses() {
     printw("\nSaving data to file before exiting");
-    show_loading_bar_ncurses(5, ".", 2000);
+    show_loading_bar_ncurses(5, ".", 1500);
 }
 
-int Menu_ncurses::get_input_option(int max_options) const {
+char Menu_ncurses::get_input_option(int max_options) const {
     int cur_y, cur_x;
-    getyx(stdscr, cur_y, cur_x);
-    WINDOW* new_box = subwin(stdscr, 6, 45, cur_y + 2, 1);
-    box(new_box, '|', '-');
-    touchwin(stdscr);
-    mvwprintw(new_box, 2, 1, "Enter the option number of your choice: ");
+    getyx(curscr, cur_y, cur_x);
+    WINDOW* input_box = subwin(stdscr, 6, 45, cur_y + 1, 1);
+    box(input_box, '|', '-');
+    mvwprintw(input_box, 2, 2, "Enter the option number of your choice: ");
     echo();
-    int key = wgetch(new_box);
-    while (key < '1' || key > (max_options + '0')) {
+    touchwin(stdscr);
+    int key = wgetch(input_box);
+    while (key < '1' || key > min('9', static_cast<char>(max_options + '0'))) {
+        int color_pair_num = 1 + time(0) % 6;
         attron(A_BOLD | A_BLINK);
-        mvwprintw(new_box, 4, 1, "Invalid option.");
+        mvwprintw(input_box, 4, 2, "Invalid option.");
         attroff(A_BOLD | A_BLINK);
-        wmove(new_box, 2, 41);
+        wmove(input_box, 2, 42); // Back to :
         touchwin(stdscr);
-        key = wgetch(new_box);
+        key = wgetch(input_box);
     }
-    werase(new_box);
-    delwin(new_box);
+    werase(input_box);
+    delwin(input_box);
     refresh();
     return key;
 }
 
 // print records if the cites exist
 void Menu_ncurses::print_matching_records(const vector<City>& records) const {
-    printw("Here is a list of matching cities:");
-    printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ; Population ; ");
-    printw("Population-Density]");
+    printw("\nHere is a list of matching cities:\n");
+    printw("[Name ; Province ; Province-ID ; Latitude ; Longitude ;\n");
+    printw("Population ; Population-Density]");
     refresh();
     int count = 1;
     bkgd(COLOR_PAIR(2));
     for (const City& city : records) {
         printw("\n%d) [%s];", count++, city.name.c_str());
-        printw("\n%s];[%s];[%.3f];[%.3f];[%d];[%.2f]", city.province.c_str(),
+        printw("\n[%s];[%s];[%.3f];[%.3f];[%d];[%.2f]", city.province.c_str(),
             city.province_id.c_str(), city.latitude, city.longitude, city.population,
             city.population_density);
-        //This is to solve the problem that the screen cannot display all the cities together
-        if(count % 9 == 0){ // Do it every 9 cities
+        // This is to solve the problem that the screen cannot display all the cities together
+        if (count % 9 == 0) { // Do it every 9 cities
+            attron(A_BOLD | A_BLINK);
             printw("\n\nPress \"down\" key to go to the next page,"
                    "\nOR press 's' to skip the displaying process.\n\n");
+            attroff(A_BOLD | A_BLINK);
             noecho();
             int key = getch();
-            while(key != KEY_DOWN){
-                if(key == 's' || key == 'S'){
+            while (key != KEY_DOWN) {
+                if (key == 's' || key == 'S') {
                     printw("...\n\n");
-                    goto finish; //stop printing
+                    goto finish; // stop printing
                 }
-                //If user enters other keys, do nothing and get the next input
-                key = getch(); 
+                // If user enters other keys, do nothing and get the next input
+                key = getch();
             }
-        } // if 
-        
+        } // if
     }
-    finish:
-    printw("Total = %d records found.\n\n", records.size());
-    
-    
+finish:
+    printw("\n\n"
+           "Total = %d records found.\n\n",
+        records.size());
 }
 
 void Menu_ncurses::show_main_menu() const {
     clear();
     move(2, 0);
     show_loading_bar_ncurses(33);
-    printw("\n| Welcome to the City Database! |\n");
+    printw("| Welcome to the City Database! |\n");
     show_loading_bar_ncurses(33);
     printw("\n"
-           "\n"
            "(1) Add a city.\n"
            "(2) Find a city.\n"
            "(3) Delete a city.\n"
@@ -259,7 +263,7 @@ bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
            "Would you like to try again? (y/n): ");
     echo();
     int yn = getch();
-    while(yn != 'y' && yn != 'Y' && yn != 'n' && yn != 'N'){
+    while (yn != 'y' && yn != 'Y' && yn != 'n' && yn != 'N') {
         printw("\nPlease press either 'y' or 'n': ");
         yn = getch();
     }

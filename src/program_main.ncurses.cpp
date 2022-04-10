@@ -4,20 +4,14 @@
 #include "util.h"
 using namespace std;
 
-// Moved to class Menu constructor.
-// void init_curses() {
-//     start_color();
-//     init_pair(1, COLOR_WHITE, COLOR_BLUE);
-//     init_pair(2, COLOR_BLUE, COLOR_WHITE);
-//     init_pair(3, COLOR_RED, COLOR_WHITE);
-//     curs_set(0);
-//     noecho();
-//     keypad(stdscr, TRUE);
-// }
-
 void quick_nc_pause() { util::time::pause(100); }
-void nc_say_invalid_option();
-int nc_get_sub_sub_menu_option();
+void nc_say_invalid_option() {
+    echo();
+    attron(A_BOLD | A_BLINK);
+    mvprintw(14, 0, "Invalid option.");
+    attroff(A_BOLD | A_BLINK);
+    addstr(" ");
+} // nc_say_invalid_option
 
 void nc_do_add_records_menu(const Menu_ncurses& menu, Database& db);
 void nc_do_find_records_menu(const Menu_ncurses& menu, Database& db);
@@ -65,7 +59,6 @@ int program_main_ncurses() { // Ncurses menu controller.
         } // switch
         quick_nc_pause();
     } // while
-
     return EXIT_SUCCESS;
 } // program_main_ncurses
 
@@ -206,7 +199,7 @@ void nc_do_delete_records_menu(const Menu_ncurses& menu, Database& db) {
             menu.delete_records.show_guides();
             break;
         case '8': // Return to main menu.
-            break;
+            return;
         default:
             nc_say_invalid_option();
         } // switch
@@ -319,17 +312,3 @@ void nc_do_list_records_sub_menu(const Menu_ncurses& menu, Database& db, const F
 } // nc_do_list_records_sub_menu
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// int nc_get_sub_sub_menu_option() {
-//     int cur_y, cur_x;
-//     getyx(stdscr, cur_y, cur_x);
-// } // nc_get_sub_sub_menu_option
-
-void nc_say_invalid_option() {
-    echo();
-    attron(A_BOLD | A_BLINK);
-    mvprintw(14, 0, "Invalid option.");
-    attroff(A_BOLD | A_BLINK);
-    addstr(" ");
-    noecho();
-} // nc_say_invalid_option
