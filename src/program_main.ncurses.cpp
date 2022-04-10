@@ -139,10 +139,10 @@ void nc_do_find_records_by_strings_sub_menu(
     do {
         menu.find_records.by_string.show_guides();
         const int sub_sub_menu_option = menu.get_input_option(3);
-        if (sub_sub_menu_option == 3) {
+        if (sub_sub_menu_option == '3') {
             return; // To previous menu.
         }
-        const bool substring_mode = (sub_sub_menu_option == 2);
+        const bool substring_mode = (sub_sub_menu_option == '2');
         const string input = menu.find_records.by_string.get_input_string(substring_mode);
         db.sort_cities(substring_mode ? field : Field::city_name, 0, substring_mode);
         menu.print_matching_records(db.cities_matching_string(field, substring_mode, input));
@@ -155,10 +155,10 @@ void nc_do_find_records_by_numbers_sub_menu(
     do {
         menu.find_records.by_number.show_guides();
         const int sub_sub_menu_option = menu.get_input_option(3);
-        if (sub_sub_menu_option == 3) {
+        if (sub_sub_menu_option == '3') {
             return; // To previous menu.
         }
-        const bool range_mode = (sub_sub_menu_option == 2);
+        const bool range_mode = (sub_sub_menu_option == '2');
         const Range_t inputs = menu.find_records.by_number.get_input_numbers(range_mode);
         db.sort_cities(range_mode ? field : Field::city_name, 0, range_mode);
         menu.print_matching_records(db.cities_in_number_range(field, inputs.first, inputs.second));
@@ -328,7 +328,7 @@ void nc_do_list_records_sub_menu(const Menu_ncurses& menu, Database& db, const F
 void nc_say_invalid_option() {
     echo();
     attron(A_BOLD | A_BLINK);
-    mvprintw(12, 0, "Invalid option.");
+    mvprintw(14, 0, "Invalid option.");
     attroff(A_BOLD | A_BLINK);
     addstr(" ");
     noecho();
