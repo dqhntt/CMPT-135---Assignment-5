@@ -41,12 +41,14 @@ public:
         void say_record_exists(const City& city) const;
         void say_record_added(const City& city) const;
     } add_records;
+
     class Find_records {
     public:
         void show_guides() const;
         By_string by_string;
         By_number by_number;
     } find_records;
+
     class Delete_records {
     public:
         void show_guides() const;
@@ -55,6 +57,7 @@ public:
         By_string by_string;
         By_number by_number;
     } delete_records;
+    
     class List_records {
     public:
         void show_guides() const;
@@ -63,6 +66,5 @@ public:
     } list_records;
 }; // class Menu
 
-// } // namespace ncurses
 
 #endif // MENU_NCURSES_H

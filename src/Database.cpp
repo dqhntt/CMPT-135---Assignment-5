@@ -60,7 +60,6 @@ vector<City> Database::cities_matching_string(
 }
 
 // Find the city by number inputs. If we compare the exact number, only 1 number is used.
-//
 vector<City> Database::cities_in_number_range(
     const Field& field, double range_low, double range_high) const {
     vector<City> result;
