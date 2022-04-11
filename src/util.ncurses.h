@@ -28,7 +28,6 @@ public:
         if (!isendwin()) {
             endwin();
         }
-        exit_curses(0);
     }
 }; // class Ncurses_initializer
 
