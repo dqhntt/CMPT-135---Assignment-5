@@ -8,10 +8,10 @@ Menu_ncurses::Menu_ncurses() {
     start_color();
     init_pair(1, COLOR_WHITE, COLOR_BLACK);
     init_pair(2, COLOR_BLUE, COLOR_WHITE);
-    init_pair(3, COLOR_RED, COLOR_WHITE);
+    init_pair(3, COLOR_RED, COLOR_CYAN);
     init_pair(4, COLOR_WHITE, COLOR_BLUE);
-    init_pair(5, COLOR_YELLOW, COLOR_GREEN);
-    init_pair(6, COLOR_RED, COLOR_MAGENTA);
+    init_pair(5, COLOR_BLACK, COLOR_YELLOW);
+    init_pair(6, COLOR_MAGENTA, COLOR_WHITE);
     curs_set(0);
     noecho();
     keypad(stdscr, TRUE);
@@ -71,7 +71,7 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
             city.province_id.c_str(), city.latitude, city.longitude, city.population,
             city.population_density);
         // This is to solve the problem that the screen cannot display all the cities together
-        if ((i + 1) % 9 == 0) { // Do it every 9 cities
+        if ((i + 1) % 10 == 0) { // Do it every 10 cities
             attron(A_BOLD | A_BLINK);
             printw("\n\nPress \"down\" key to go to the next page,"
                    "\npress \"up\" key to go to the previous page,"
@@ -87,10 +87,10 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
                 printw("\n...\n");
                 break; // stop printing
             } else if (key == KEY_UP) {
-                if (i < 18)
+                if (i < 20)
                     i = -1; // Goes back to 1 before index 0 so that in next iteration i = 0;
                 else
-                    i = i - 18;
+                    i = i - 20;
             }
         } // if
     }
@@ -328,7 +328,7 @@ void Menu_ncurses::Find_records::show_guides() const {
 
 void Menu_ncurses::By_string::show_guides(const Field& field) const {
     clear();
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     printw("\n"
            "Searching by strings for %s\n",
         field_name.c_str());
@@ -358,7 +358,7 @@ string Menu_ncurses::By_string::get_input_string(bool substr_mode) const {
 
 void Menu_ncurses::By_number::show_guides(const Field& field) const {
     clear();
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     printw("\n"
            "Searching by numbers for %s\n",
         field_name.c_str());
@@ -439,7 +439,7 @@ void Menu_ncurses::List_records::show_guides() const {
 
 void Menu_ncurses::List_records::show_options_for_strings(const Field& field) const {
     clear();
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     printw("\n"
            "Listing by strings for %s\n",
         field_name.c_str());
@@ -457,7 +457,7 @@ void Menu_ncurses::List_records::show_options_for_strings(const Field& field) co
 
 void Menu_ncurses::List_records::show_options_for_numbers(const Field& field) const {
     clear();
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     printw("\n"
            "Listing by numbers for %s\n",
         field_name.c_str());

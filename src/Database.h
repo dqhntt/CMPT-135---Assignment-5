@@ -41,7 +41,7 @@ public:
     // The allowed fields here are "name", "province_id", "province".
     // The Boolean "substr_mode" determines if we want to compare substring or not.
     std::vector<City> cities_matching_string(
-        const Field& field, bool substr_mode, const std::string& target_data) const;
+        const Field& field, bool substr_mode, const std::string& target_string) const;
 
     // The below 2 functions find target cities by number.
     // The allowed fields here are "latitude", "longitude", "population" and "population_density"

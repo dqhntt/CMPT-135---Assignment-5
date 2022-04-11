@@ -9,7 +9,7 @@ void database_format_test() {
     cout << "Testing " << __func__ << "() ...\n";
 
     const string filename = "../data/test_database.txt";
-    vector<City> data = util::file::read_data(filename);
+    const vector<City> data = util::file::read_data(filename);
 
     // Assert properties of each record in the database.
     // Assuming sensible data.

@@ -18,11 +18,10 @@ bool util::parse::is_string_field(const Field& field) {
 }
 
 bool util::parse::is_numeric_field(const Field& field) {
-    return (field == Field::latitude || field == Field::longitude || field == Field::population
-        || field == Field::population_density);
+    return !is_string_field(field);
 }
 
-std::string util::parse::to_string_field(const Field& field) {
+std::string util::parse::to_string(const Field& field) {
     switch (field) {
     case Field::city_name:
         return "city name";

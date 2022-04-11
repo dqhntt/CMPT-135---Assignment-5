@@ -38,8 +38,8 @@ public:
     public:
         void show_guides() const;
         City get_input() const;
-        void say_record_exists(const City& city) const;
-        void say_record_added(const City& city) const;
+        void say_record_exists(const City& city) const; // and print it.
+        void say_record_added(const City& city) const;  // and print it.
     } add_records;
 
     class Find_records {
@@ -64,7 +64,6 @@ public:
         void show_options_for_strings(const Field& field) const;
         void show_options_for_numbers(const Field& field) const;
     } list_records;
-}; // class Menu
-
+}; // class Menu_ncurses
 
 #endif // MENU_NCURSES_H

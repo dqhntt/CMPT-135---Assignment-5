@@ -14,14 +14,14 @@ class Commas_thousands_separator {
 public:
     // Format on given ostream.
     Commas_thousands_separator(std::ostream& target_ostream)
-        : out(target_ostream) {
-        out.imbue(std::locale("en_US.UTF8"));
+        : os(target_ostream) {
+        os.imbue(std::locale("en_US.UTF8"));
     }
     // Reset format.
-    ~Commas_thousands_separator() { out.imbue(std::locale()); }
+    ~Commas_thousands_separator() { os.imbue(std::locale()); }
 
 private:
-    std::ostream& out;
+    std::ostream& os;
 }; // class Commas_thousands_separator
 
 } // namespace util::format

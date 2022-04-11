@@ -10,7 +10,7 @@ Menu::Menu()
     : _start_time(time(0))
 { }
 
-void show_loading_bar(int how_many_bars, char bar = '-', int total_milliseconds = 100) {
+void show_loading_bar(int how_many_bars, char bar = '-', int total_milliseconds = 200) {
     for (int i = 0; i < how_many_bars; i++) {
         cout << bar << flush;
         util::time::pause(total_milliseconds / how_many_bars);
@@ -280,7 +280,7 @@ void Menu::Find_records::show_guides() const {
 
 void Menu::By_string::show_guides(const Field& field) const {
     cout << "\n";
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     show_loading_bar(29 + field_name.size(), '~');
     cout << "| Searching by strings for " << field_name << " |\n";
     show_loading_bar(29 + field_name.size(), '~');
@@ -304,7 +304,7 @@ string Menu::By_string::get_input_string(bool substr_mode) const {
 
 void Menu::By_number::show_guides(const Field& field) const {
     cout << "\n";
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     show_loading_bar(29 + field_name.size(), '~');
     cout << "| Searching by numbers for " << field_name << " |\n";
     show_loading_bar(29 + field_name.size(), '~');
@@ -380,7 +380,7 @@ void Menu::List_records::show_guides() const {
 
 void Menu::List_records::show_options_for_strings(const Field& field) const {
     cout << "\n";
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     show_loading_bar(27 + field_name.size(), '~');
     cout << "| Listing by strings for " << field_name << " |\n";
     show_loading_bar(27 + field_name.size(), '~');
@@ -396,7 +396,7 @@ void Menu::List_records::show_options_for_strings(const Field& field) const {
 
 void Menu::List_records::show_options_for_numbers(const Field& field) const {
     cout << "\n";
-    const string field_name = util::parse::to_string_field(field);
+    const string field_name = util::parse::to_string(field);
     show_loading_bar(27 + field_name.size(), '~');
     cout << "| Listing by numbers for " << field_name << " |\n";
     show_loading_bar(27 + field_name.size(), '~');

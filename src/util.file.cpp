@@ -22,7 +22,7 @@ vector<City> util::file::read_data(const string& filename, int skip_lines) {
     data.reserve(ESTIMATED_DB_SIZE);
     City city;
     string field;
-    char next = file.peek();
+    int next = file.peek();
     // Parse each line in file.
     while (file.good() && // Not end of file.
            next != EOF && next != '\r' && next != '\n') {

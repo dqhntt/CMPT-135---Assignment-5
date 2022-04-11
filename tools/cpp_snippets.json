@@ -14,28 +14,18 @@
 		"description": "Insert pre-condition and post-condition statements."
 	},
 
-	"Leave to-do notes": {
-		"prefix": "todo",
-		"body": [
-			"// TODO (${1:assignee's name}): ",
-			"//  - ${2:Implement this feature.}",
-			"//  - ${3:Remove this TODO when done.}"
-		],
-		"description": "Leave to-do notes for self or others."
-	},
-
 	"Insert boilerplate for unit tests": {
 		"prefix": "test",
 		"body": [
-			"#include \" \"",
+			"#include \"${2:header_file_to_be_tested.h}\"",
 			"#include <cassert>",
 			"#include <iostream>",
 			"",
-			"void unit_test_something()",
+			"void ${1:name_of_unit_test}()",
 			"{",
 			"    cout << \"Testing \" << __func__ << \"() ...\\n\";",
 			"",
-			"    // TODO",
+			"    ${3:// TODO}",
 			"",
 			"    cout << \"... \" << __func__ << \"() passed.\\n\";",
 			"}",
@@ -49,7 +39,7 @@
 			"",
 			"    // TODO",
 			"",
-			"    unit_test_something();",
+			"    ${1:name_of_unit_test}();",
 			"}"
 		],
 		"description": "Insert templates for unit tests"
