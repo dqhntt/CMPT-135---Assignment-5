@@ -3,9 +3,9 @@ CMPT 135 Final Project
 
 Names of Team Members
 ---------------------
-Name: 			Student Number: 
-Aotian Chen 	301360315
-Hieu Duong		301380066
+Name:             Student Number: 
+Aotian Chen       301360315
+Hieu Duong        301380066
 
 
 Instructions for Compiling and Running

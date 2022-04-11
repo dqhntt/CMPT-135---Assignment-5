@@ -56,7 +56,7 @@ check:
 install-ncurses:
 # Install ncurses on the system and list installed packages.
 	sudo apt-get install libncurses5-dev libncursesw5-dev -y
-	apt list --installed "*ncurses*"
+	@apt list --installed "*ncurses*"
 
 doc:
 # Run doxygen with the specified Doxyfile.
@@ -66,7 +66,7 @@ dist: clean
 # Zip all files and folders in current directory to a5.zip,
 # except for folders and files specified below.
 # If zip is not installed, run:  sudo apt-get install zip -y
-	zip -r a5.zip . -x ./a5.zip ./.gitignore "./.git/*" "./docs/*" "./tools/*" "./src/.vscode/*"
+	@zip -r a5.zip . -x ./a5.zip ./.gitignore "./.git/*" "./docs/*" "./tools/*" "./src/.vscode/*"
 
 distclean:
 # Remove created zip file.
