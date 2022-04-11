@@ -33,7 +33,7 @@ Menu_ncurses::~Menu_ncurses() {
     show_loading_bar_ncurses(5, ".", 1000);
 }
 
-char Menu_ncurses::get_input_option(int max_options) const {
+char Menu_ncurses::get_input_option_key(char max_option_key) const {
     int cur_y, cur_x;
     getyx(stdscr, cur_y, cur_x);
     WINDOW* input_box = subwin(stdscr, 6, 45, cur_y + 2, 1);
@@ -42,11 +42,11 @@ char Menu_ncurses::get_input_option(int max_options) const {
     echo();
     touchwin(stdscr);
     int key = wgetch(input_box);
-    while (key < '1' || key > min('9', static_cast<char>(max_options + '0'))) {
-        const int color_pair_num = 1 + time(0) % 6;
+    while (key < '1' || key > max_option_key) {
+        const int color_pair_num = 1 + clock() % 6;
         wattron(input_box, COLOR_PAIR(color_pair_num));
         mvwprintw(input_box, 4, 2, "Invalid option.");
-        wmove(input_box, 2, 42); // Back to "Enter the option... : "
+        wmove(input_box, 2, 42); // Back to end of "Enter the option... : "
         wattroff(input_box, COLOR_PAIR(color_pair_num));
         touchwin(stdscr);
         key = wgetch(input_box);
@@ -65,7 +65,7 @@ void Menu_ncurses::print_matching_records(const vector<City>& records) const {
     refresh();
     bkgd(COLOR_PAIR(2));
     for (int i = 0; i < records.size(); i++) {
-        City city = records[i];
+        const City city = records[i];
         printw("\n%d) [%s];", i + 1, city.name.c_str());
         printw("\n[%s];[%s];[%.3f];[%.3f];[%d];[%.2f]", city.province.c_str(),
             city.province_id.c_str(), city.latitude, city.longitude, city.population,
