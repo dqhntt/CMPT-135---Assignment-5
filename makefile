@@ -32,10 +32,8 @@
 ###################################################################################################
 
 main:
-# Call make main, make clean-build, and make run in ./src/Makefile
-	$(MAKE) -C ./src/ $@
-	$(MAKE) -C ./src/ clean-build
-	$(MAKE) -C ./src/ run
+# Call make main, and make run in ./src/Makefile
+	$(MAKE) -C ./src/ $@ run
 
 all:
 # Call make all in ./src/Makefile

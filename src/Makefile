@@ -70,13 +70,13 @@ tests: $(TESTS)
 $(TESTS): %.test : %.test.o $(NO_MAIN_SRCS:.cpp=.o)
 
 # Run all executable tests one after the other.
-check:
+check: tests
 	for TEST in $(TESTS); do ./$$TEST; done;
 
-check-main:
+check-main: main
 	valgrind ./main
 
-run:
+run: main
 	./main
 
 clean: clean-main clean-build clean-tests
