@@ -2,8 +2,6 @@
 #
 # Makefile for assignment 5 of CMPT 135 Spring 2022, SFU Surrey.
 #
-# Modified from the original makefile by Toby Donalson.
-#
 # Cite: https://stackoverflow.com/a/63627557
 #
 # Commands for this makefile that can be typed at the command line:
@@ -56,19 +54,19 @@ check:
 	$(MAKE) -C ./src/ tests $@
 
 install-ncurses:
-# Install ncurses on the system.
+# Install ncurses on the system and list installed packages.
 	sudo apt-get install libncurses5-dev libncursesw5-dev -y
-	apt list --installed "*ncurses*"
+	@apt list --installed "*ncurses*"
 
 doc:
 # Run doxygen with the specified Doxyfile.
 	doxygen ./docs/Doxyfile
 
-dist:
+dist: clean
 # Zip all files and folders in current directory to a5.zip,
-# except one folder and some files specified below.
+# except for folders and files specified below.
 # If zip is not installed, run:  sudo apt-get install zip -y
-	zip -r a5.zip . -x ./a5.zip ./.gitignore "./tools/*" "./.github/*"
+	@zip -r a5.zip . -x ./a5.zip ./.gitignore "./.git/*" "./docs/*" "./tools/*" "./src/.vscode/*"
 
 distclean:
 # Remove created zip file.

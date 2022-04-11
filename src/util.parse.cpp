@@ -18,8 +18,29 @@ bool util::parse::is_string_field(const Field& field) {
 }
 
 bool util::parse::is_numeric_field(const Field& field) {
-    return (field == Field::latitude || field == Field::longitude || field == Field::population
-        || field == Field::population_density);
+    return !is_string_field(field);
+}
+
+std::string util::parse::to_string(const Field& field) {
+    switch (field) {
+    case Field::city_name:
+        return "city name";
+    case Field::province:
+        return "province name";
+    case Field::province_id:
+        return "province code";
+    case Field::latitude:
+        return "latitude";
+    case Field::longitude:
+        return "longitude";
+    case Field::population:
+        return "population";
+    case Field::population_density:
+        return "population density";
+    default:
+        cmpt::error("Unknown field.");
+    }
+    return "";
 }
 
 // This version uses lambda and forward/reverse iterators.

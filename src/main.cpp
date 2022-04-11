@@ -36,8 +36,8 @@ int main() {
     try {
         std::cout << "\nChoose a terminal mode to run in.\n"
                      "\n"
-                     "(1) Regular mode. [Stable]\n"
-                     "(2) With ncurses. [Experimental]\n"
+                     "(1) Regular mode.\n"
+                     "(2) With ncurses.\n"
                      "\n"
                      "Enter your option: ";
         int mode = 0;

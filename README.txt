@@ -3,36 +3,39 @@ CMPT 135 Final Project
 
 Names of Team Members
 ---------------------
-Name: 			Student Number: 
-Aotian Chen 		301360315
-Hieu Duong		301380066
-
-(include the full names, SFU email addresses, and SFU student numbers of all
-team members)
+Name:             Student Number: 
+Aotian Chen       301360315
+Hieu Duong        301380066
 
 
 Instructions for Compiling and Running
 --------------------------------------
-1. Under the "src" folder, type "make" in the shell to make all the files.
-2. Run the program by typing "./main".
+Unzip archive to folder "a5".
+Under that folder, type "make" in the shell to make all the necessary files and run the program.
 
-(put instructions here for compiling and running your program; hopefully it's
-just to type "make" in the shell!)
+In the rare event that the program can't be compiled, 
+a pre-compiled binary executable named "main" is provided in that folder.
+To run this backup, type "./main" from within this folder.
 
 
 Limitations
 -----------
-
-(if you didn't implement all requested features, list which ones are missing)
+N/A
 
 
 Known Bugs
 ----------
-
-(list all known bugs)
+N/A
 
 
 Extra Features
 --------------
+We provided options for users to choose either run in the terminal (regular mode) or ncurses mode.
 
-(if your program has any extra or special features, tell us about them)
+
+References
+----------
+Our dataset comes from Canada Cites Database. 
+Web site: 
+https://simplemaps.com/data/canada-cities
+

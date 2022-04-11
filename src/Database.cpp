@@ -32,7 +32,7 @@ void Database::open(const string& target_filename) {
 // If it finds the city in database, append the city to the result
 // If it does not find it, return an empty vector
 vector<City> Database::cities_matching_string(
-    const Field& field, bool substring_mode, const string& target_data) const {
+    const Field& field, bool substr_mode, const std::string& target_string) const {
     vector<City> result;
     for (const City& c : _cities) {
         string target;
@@ -48,11 +48,11 @@ vector<City> Database::cities_matching_string(
         }
 
         // Compare the whole string or substring depending on the boolean "substring"
-        if (substring_mode == true) {
-            if (target.find(target_data) != string::npos)
+        if (substr_mode == true) {
+            if (target.find(target_string) != string::npos)
                 result.push_back(c);
         } else {
-            if (target == target_data)
+            if (target == target_string)
                 result.push_back(c);
         }
     } // end of for loop
@@ -60,12 +60,11 @@ vector<City> Database::cities_matching_string(
 }
 
 // Find the city by number inputs. If we compare the exact number, only 1 number is used.
-//
 vector<City> Database::cities_in_number_range(
     const Field& field, double range_low, double range_high) const {
     vector<City> result;
     for (const City& c : _cities) {
-        double target;
+        double target = 0.0;
         // Choose the target depending on data type
         if (field == Field::latitude) {
             target = c.latitude;
