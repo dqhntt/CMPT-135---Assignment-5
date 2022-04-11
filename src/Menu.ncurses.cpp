@@ -271,10 +271,8 @@ bool Menu_ncurses::ask_if_user_wants_to_try_again() const {
         yn = getch();
     }
     noecho();
-    if (yn == 'y' || yn == 'Y')
-        return true;
     bkgd(COLOR_PAIR(1));
-    return false;
+    return (yn == 'y' || yn == 'Y');
 }
 
 void nc_print_single_record(const City& city) {
