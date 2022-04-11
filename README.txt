@@ -4,13 +4,18 @@ CMPT 135 Final Project
 Names of Team Members
 ---------------------
 Name: 			Student Number: 
-Aotian Chen 		301360315
+Aotian Chen 	301360315
 Hieu Duong		301380066
 
 
 Instructions for Compiling and Running
 --------------------------------------
-Under the "CMPT-135---Assignment-5" folder, type "make" in the shell to make an all the files.
+Unzip archive to folder "a5".
+Under that folder, type "make" in the shell to make all the necessary files and run the program.
+
+In the rare event that the program can't be compiled, 
+a pre-compiled binary executable named "main" is provided in that folder.
+To run this backup, type "./main" from within this folder.
 
 
 Limitations
