@@ -18,7 +18,6 @@ namespace util::ncurses {
 //    and `endwin()` upon object destruction.
 // Ref:
 //    https://docs.oracle.com/cd/E36784_01/html/E36880/isendwin-3curses.html
-//    https://invisible-island.net/ncurses/man/curs_memleaks.3x.html
 class Ncurses_initializer {
 public:
     // Initialize terminal in curses mode.

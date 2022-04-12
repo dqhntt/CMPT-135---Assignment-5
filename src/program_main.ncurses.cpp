@@ -24,7 +24,7 @@ int program_main_ncurses() { // Ncurses menu controller.
             } catch (const exception&) { db.open("../data/test_database.txt"); }
         }
     }
-    Menu_ncurses menu;
+    const Menu_ncurses menu;
     while (true) {
         menu.show_main_menu();
         switch (menu.get_input_option_key('5')) {

@@ -32,7 +32,7 @@ void Database::open(const string& target_filename) {
 // If it finds the city in database, append the city to the result
 // If it does not find it, return an empty vector
 vector<City> Database::cities_matching_string(
-    const Field& field, bool substr_mode, const std::string& target_string) const {
+    const Field& field, bool substr_mode, const string& target_string) const {
     vector<City> result;
     for (const City& c : _cities) {
         string target;

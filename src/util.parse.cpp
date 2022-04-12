@@ -21,7 +21,7 @@ bool util::parse::is_numeric_field(const Field& field) {
     return !is_string_field(field);
 }
 
-std::string util::parse::to_string(const Field& field) {
+string util::parse::to_string(const Field& field) {
     switch (field) {
     case Field::city_name:
         return "city name";

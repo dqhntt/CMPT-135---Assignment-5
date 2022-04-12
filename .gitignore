@@ -37,6 +37,3 @@ docs/html/
 *.app
 *.test
 src/main
-
-# Folders
-docs/html/
